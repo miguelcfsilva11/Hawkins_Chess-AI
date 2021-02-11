@@ -96,19 +96,21 @@ class generator:
                     if i-1 > -1 and k-2 > -1: final_options.append((i-1, k-2))
                     if i-2 > -1 and k+1 < 8 :final_options.append((i-2, k+1))
                     if i-2 > -1 and k-1 > -1 :final_options.append((i-2, k-1))
-                print(final_options)
                 for position in final_options:
+                    option = deepcopy(mx)
                     result = rules.check_order(mx, (i,k), position, player, last_move)
-                    if result[0]:
-                        print("found result")
-                        possible_states.append(generator.move(self, (i,k), position, player, result[1], mx))
+                    if  result[0] and (i,k) != position and mx[position[0]][position[1]] not in pieces: possible_states.append(generator.move(self, (i,k), position, player, result[1], option))
                 final_options = []
+        #for mx in possible_states:
+         #   printable_matrix = ("\t8 {0}\n\t7 {1}\n\t6 {2}\n"
+          #                   "\t5 {3}\n\t4 {4}\n\t3 {5}\n "
+           #                   "\t2 {6}\n\t1 {7}\n\t {8}\t{9}{10}{11}{12}{13}{14}{15}").format(mx[0], mx[1], mx[2], mx[3],
+            #                                        mx[4], mx[5], mx[6], mx[7],"   a", " b", "    c","    d","    e","    f","    g","    h")
+            #print("\n" + printable_matrix + "\n")
         return possible_states
 
     def move(self, pos, final, player, order, mx):
-        print(order)
         if order == "en_passant":
-            print("order processed")
             mx[final[0]][final[1]] = mx[pos[0]][pos[1]]
             mx[pos[0]][pos[1]] = "-"
             mx[pos[0]][final[1]] = "-"
@@ -124,5 +126,16 @@ class generator:
         return mx
 
 rules = rules()
+
+
+mx=[["r","n","b","q","k","b","n","r"],
+    ["p","p","p","p","p","p","p","p"],
+    ["-","-","-","-","-","-","-","-"],
+    ["-","-","-","-","-","-","-","-"],
+    ["-","-","-","-","-","-","-","-"],
+    ["-","-","-","-","-","-","-","-"],
+    ["P","P","P","P","P","P","P","P"],
+    ["R","N","B","Q","K","B","N","R"]]
+
 
 #todo read everyscript again try to use idiomatic python and list comprehensions whenever i can

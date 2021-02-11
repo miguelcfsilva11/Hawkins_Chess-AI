@@ -51,7 +51,7 @@ class board:
                 print("Bye!")
 
     def output_matrix(self,mx):
-        #os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
+        os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
         printable_matrix = ("\t8 {0}\n\t7 {1}\n\t6 {2}\n"
                              "\t5 {3}\n\t4 {4}\n\t3 {5}\n "
                               "\t2 {6}\n\t1 {7}\n\t {8}\t{9}{10}{11}{12}{13}{14}{15}").format(mx[0], mx[1], mx[2], mx[3],
@@ -112,8 +112,6 @@ class board:
                         continue
                     moves_log.append(human_move)
                     if result[1] == "en_passant":
-                        print("sure")
-                        print(result[1])
                         mx = generator.move(initial_pos, final, self.player1, "en_passant", mx)
                     elif result[1] == "promotion":
                         mx = generator.move(initial_pos, final, self.player1, "promotion", mx)
@@ -124,6 +122,7 @@ class board:
                     if playable == False:
                         board.endgame()
                     else:
+                        print("Hawkins is thinking...")
                         mx = mcts.search(mx, self.player2, moves_log[-1])
                         board.final(mx, self.player2)
                         board.endgame()

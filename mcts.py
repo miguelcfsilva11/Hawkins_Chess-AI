@@ -15,11 +15,11 @@ class tree:
 class mcts:
     def search(self, mx, player, last_move):
         root = tree(mx)
-        for i in range(400):
+        for i in range(10):
             leaf = mcts.expand(self, root.board, player, root, last_move)
-            print("hey")
-            result = mcts.rollout(self, leaf)
+            result = mcts.rollout(self, leaf, last_move)
             mcts.backpropagate(self, leaf, root, result)
+        mx = (mcts.best_child(self, root).board)       
         return mcts.best_child(self, root).board
 
     def expand(self, mx, player, root, last_move):
@@ -39,46 +39,41 @@ class mcts:
         for j in root.children:
             if j.visits == 0:
                 return j #first iterations of the loop
-        print("hey there")
         return mcts.expansion_choice(self, root) #choose the one with most potential
 
-    def rollout(self, leaf):
+    def rollout(self, leaf, last_move):
+        global white_pieces
+        global black_pieces
         mx = leaf.board
         swap = 1
-        while mcts.final(self, mx, "O") == 0:
+        while mcts.final(self, mx, "Black") == 0:
             if swap == 1: # "X" playing
-                possible_states = []
-                possible_nodes = mcts.generate_states(self, mx, "X")
-                for i in possible_nodes:
-                    possible_states.append(i.board)
+                possible_states = generator.possible_matrix(mx, "White", white_pieces, last_move)
                 if len(possible_states) == 1:
                     mx =  possible_states[0]
-                    if mcts.final(self, mx, "X") == 2:
-                        return -1.4 #loss
-                    elif mcts.final(self, mx, "X") == 1:
-                        return 0.4 #tie
+                    if mcts.final(self, mx, "White") == 2:
+                        return -1 #loss
+                    elif mcts.final(self, mx, "White") == 1:
+                        return 0 #tie
                 else:
                     choice = random.randrange(0, len(possible_states))
                     mx = possible_states[choice]
-                    if mcts.final(self, mx, "X") == 2:
-                        return -1.4
-                    if mcts.final(self, mx, "X") == 1:
-                        return 0.4
+                    if mcts.final(self, mx, "White") == 2:
+                        return -1
+                    if mcts.final(self, mx, "White") == 1:
+                        return 0
             elif swap == 0: # "O" playing
-                possible_states = []
-                possible_nodes = mcts.generate_states(self, mx, "O")
-                for i in possible_nodes:
-                    possible_states.append(i.board)
+                possible_states = generator.possible_matrix(mx, "Black", white_pieces, last_move)
                 if len(possible_states) == 1: mx =  possible_states[0]
                 else:
                     choice = random.randrange(0, len(possible_states))
                     mx = possible_states[choice]
             swap += 1
             swap = swap % 2
-        if mcts.final(self, mx, "O") == 2:
-            return 0.8 #win
-        elif mcts.final(self, mx, "O") == 1:
-            return 0.4
+        if mcts.final(self, mx, "Black") == 2:
+            return 1 #win
+        elif mcts.final(self, mx, "Black") == 1:
+            return 0
 
 
     def backpropagate(self, leaf, root, result): # updating our prospects stats
@@ -86,39 +81,19 @@ class mcts:
         leaf.visits += 1
         root.visits += 1
 
-    #def generate_states(self, mx, player, last_move):
-        
-        
 
-    def final(self,mx, player): #check result
-        possible_draw = True
-        win = False
-        for i in mx: #lines
-            if i == [player, player, player]:
-                win = True
-                possible_draw = False
-        if mx[0][0] == player: #diagonals
-            if mx[1][1] == player:
-                if mx[2][2] == player:
-                    win = True
-                    possible_draw = False
-        if mx[0][2] == player:
-            if mx[1][1] == player:
-                if mx[2][0] == player:
-                    win = True
-                    possible_draw = False
-        for i in range(3): #collumns
-            if mx[0][i] == player and mx[1][i] == player and mx[2][i] == player:
-                win = True
-                possible_draw = False
-        for i in range(3):
-            for k in range(3):
-                if mx[i][k] == "-":
-                    possible_draw = False
-        if possible_draw: #outputs
-            return 1
-        if win:
+    def final(self,mx, player):
+        possible_draw = 1
+        possible_win = 1
+        if rules.is_checkmate(mx, player):
             return 2
+        for i in mx:
+            for k in i:
+                if k != "-":
+                    if k.upper() not in "K":
+                        possible_draw = 0
+        if possible_draw == 1:
+            return 1
         return 0
 
     def calculate_score(self, score, child_visits, parent_visits, c): #UCB1

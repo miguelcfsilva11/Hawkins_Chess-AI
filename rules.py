@@ -3,7 +3,6 @@ from movements import *
 class rules:
 
     def check_order(self, mx, pos, final, player, last_move):
-        print("times", pos, final)
         if mx[pos[0]][pos[1]].upper() in "P": #if pawn
             return movements.pawn_movement(mx,pos, final, last_move, player)
         if mx[pos[0]][pos[1]].upper() in "B": #if bishop
@@ -32,9 +31,9 @@ class rules:
                     if k == "k":
                         return False
             return True
-        for i in mx:
-            for k in i:
-                if k == "K":
+        for i in range(len(mx)):
+            for k in range(len(mx[i])):
+                if mx[i][k] == "K":
                     return False
         return True
         

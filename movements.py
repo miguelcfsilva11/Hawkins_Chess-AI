@@ -75,7 +75,6 @@ class movements:
 
     def bishop_movement(self, mx, pos, final, steps):
         current = pos
-        print("bishop found")
         for _ in range(steps): #max diagonal length
             current = (current[0]-1, current[1]+1)
             if 0 > current[0] or current[0] > 7 or 0 > current[1] or current[1] > 7:
@@ -115,7 +114,6 @@ class movements:
 
     def rook_movement(self, mx, pos, final, steps):
         current = pos
-        print("rook found")
         for _ in range(steps): #max row/collumn length
             current = (current[0]-1, current[1])
             if 0 > current[0] or current[0] > 7 or 0 > current[1] or current[1] > 7:
