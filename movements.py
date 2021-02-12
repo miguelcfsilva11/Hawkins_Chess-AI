@@ -12,29 +12,30 @@ class movements:
     def pawn_movement(self,mx, pos, final, last_move, player):
         if player == "White":
             if pos[0]-1 == final[0] and pos[1] == final[1]:
-                if mx[final[0]][final[1]] == "-": #checking if there's space
+                if mx[final[0]*8 + final[1]] == "-": #checking if there's space
                     if final[0] == 0:
                         return (True, "promotion")
                     return (True, "step")  #moving pawn one space
             if pos[0]-2 == final[0] and pos[1] == final[1]:
+                #print("this is it!")
                 if pos[0] == 6 and final[0] == 4: #checking if the pawn is in its initial place
-                    if mx[final[0]][final[1]] == "-" and mx[final[0]+1][final[1]] == "-": 
+                    if mx[final[0]*8 + final[1]] == "-" and mx[(final[0]+1)*8 + final[1]] == "-": 
                         return (True, "step")  #moving pawn two space
 
             if pos[0]-1 == final[0] and pos[1] == final[1]-1:
-                if mx[final[0]][final[1]] != "-": #checking if there's a piece there to be eaten
+                if mx[final[0]*8 + final[1]] != "-": #checking if there's a piece there to be eaten
                     return (True, "step")  #capturing piece
                 else:
-                    if mx[pos[0]][pos[1]+1] == "p": #checking en passant
+                    if mx[pos[0]*8 + pos[1]+1] == "p": #checking en passant
                         if pos[0] == 3:
                             pawn_pos = list(last_move)
                             if 8-int(pawn_pos[3]) == 3 and 8-int(pawn_pos[1]) == 1 and movements.alge(self, pawn_pos[0])-1 == pos[1]+1:
                                 return (True, "en_passant")  
             if pos[0]-1 == final[0] and pos[1] == final[1]+1:
-                if mx[final[0]][final[1]] != "-":
+                if mx[final[0]*8 + final[1]] != "-":
                     return (True, "step")
                 else:
-                    if mx[pos[0]][pos[1]-1] == "p": # checking en passant
+                    if mx[pos[0]*8 + pos[1]-1] == "p": # checking en passant
                         if pos[0] == 3:
                             pawn_pos = list(last_move)
                             if 8-int(pawn_pos[3]) == 3 and 8-int(pawn_pos[1]) == 1 and movements.alge(self, pawn_pos[0])-1 == pos[1]-1:
@@ -44,29 +45,29 @@ class movements:
         else:
 
             if pos[0]+1 == final[0] and pos[1] == final[1]:
-                if mx[final[0]][final[1]] == "-": #checking if there's space
+                if mx[final[0]*8 + final[1]] == "-": #checking if there's space
                     if final[0] == 0:
                         return (True, "promotion")
                     return (True, "step")  #moving pawn one space
             if pos[0]+2 == final[0] and pos[1] == final[1]:
                 if pos[0] == 1 and final[0] == 3: #checking if the pawn is in its initial place
-                    if mx[final[0]][final[1]] == "-" and mx[final[0]-1][final[1]] == "-": 
+                    if mx[final[0]*8 + final[1]] == "-" and mx[(final[0]-1) * 8 + final[1]] == "-": 
                         return (True, "step")  #moving pawn two space
 
             if pos[0]+1 == final[0] and pos[1] == final[1]-1:
-                if mx[final[0]][final[1]] != "-": #checking if there's a piece there to be eaten
+                if mx[final[0]*8 + final[1]] != "-": #checking if there's a piece there to be eaten
                     return (True, "step")  #capturing piece
                 else:
-                    if mx[pos[0]][pos[1]+1] == "p": #checking en passant
+                    if mx[pos[0]*8 + pos[1]+1] == "p": #checking en passant
                         if pos[0] == 4:
                             pawn_pos = list(last_move)
                             if 8-int(pawn_pos[3]) == 4 and 8-int(pawn_pos[1]) == 6 and movements.alge(self, pawn_pos[0])-1 == pos[1]+1:
                                 return (True, "en_passant")  
             if pos[0]+1 == final[0] and pos[1] == final[1]+1:
-                if mx[final[0]][final[1]] != "-":
+                if mx[final[0]*8 + final[1]] != "-":
                     return (True, "step")
                 else:
-                    if mx[pos[0]][pos[1]-1] == "p": # checking en passant
+                    if mx[pos[0]*8 + pos[1]-1] == "p": # checking en passant
                         if pos[0] == 4:
                             pawn_pos = list(last_move)
                             if 8-int(pawn_pos[3]) == 4 and 8-int(pawn_pos[1]) == 6 and movements.alge(self, pawn_pos[0])-1 == pos[1]-1:
@@ -81,7 +82,7 @@ class movements:
                 break
             if current == final:
                 return (True, "step")
-            if mx[current[0]][current[1]] != "-":
+            if mx[current[0]*8 + current[1]] != "-":
                 break
         current = pos
         for _ in range(steps):
@@ -90,7 +91,7 @@ class movements:
                 break
             if current == final:
                 return (True, "step")
-            if mx[current[0]][current[1]] != "-":
+            if mx[current[0]*8 + current[1]] != "-":
                 break
         current = pos
         for _ in range(steps):
@@ -99,7 +100,7 @@ class movements:
                 break
             if current == final:
                 return (True, "step")
-            if mx[current[0]][current[1]] != "-":
+            if mx[current[0]*8 + current[1]] != "-":
                 break
         current = pos
         for _ in range(steps):
@@ -108,7 +109,7 @@ class movements:
                 break
             if current == final:
                 return (True, "step")
-            if mx[current[0]][current[1]] != "-":
+            if mx[current[0]*8 +current[1]] != "-":
                 break
         return (False, "nothing")
 
@@ -120,7 +121,7 @@ class movements:
                 break
             if current == final:
                 return (True, "step")
-            if mx[current[0]][current[1]] != "-":
+            if mx[current[0]*8 + current[1]] != "-":
                 break
         current = pos
         for _ in range(steps):
@@ -129,7 +130,7 @@ class movements:
                 break
             if current == final:
                 return (True, "step")
-            if mx[current[0]][current[1]] != "-":
+            if mx[current[0]*8 + current[1]] != "-":
                 break
         current = pos
         for _ in range(steps):
@@ -138,7 +139,7 @@ class movements:
                 break
             if current == final:
                 return (True, "step")
-            if mx[current[0]][current[1]] != "-":
+            if mx[current[0]*8 + current[1]] != "-":
                 break
         current = pos
         for _ in range(steps): 
@@ -147,7 +148,7 @@ class movements:
                 break
             if current == final:
                 return (True, "step")
-            if mx[current[0]][current[1]] != "-":
+            if mx[current[0]*8 + current[1]] != "-":
                 break
         return (False, "nothing")
 

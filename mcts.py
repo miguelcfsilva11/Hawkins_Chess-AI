@@ -13,66 +13,66 @@ class tree:
         self.score = 0
         self.children = []
 class mcts:
-    def search(self, mx, player, last_move):
-        root = tree(mx)
-        for i in range(10):
+    def search(self, mxs, player, last_move):
+        root = tree(mxs)
+        for i in range(500):
             leaf = mcts.expand(self, root.board, player, root, last_move)
             result = mcts.rollout(self, leaf, last_move)
-            mcts.backpropagate(self, leaf, root, result)
-        mx = (mcts.best_child(self, root).board)       
+            mcts.backpropagate(self, leaf, root, result)       
         return mcts.best_child(self, root).board
 
-    def expand(self, mx, player, root, last_move):
+    def expand(self, mxs, player, root, last_move):
         global white_pieces
         global black_pieces
         plays = []
+        #print(mxs)
         if player == "Black":
-            matrices = generator.possible_matrix(mx, player, black_pieces, last_move) #all possible plays
+            matrices = generator.possible_matrix(mxs, player, black_pieces, last_move) #all possible plays
         if player == "White":
-            matrices = generator.possible_matrix(mx, player, white_pieces, last_move) #all possible plays
+            matrices = generator.possible_matrix(mxs, player, white_pieces, last_move) #all possible plays
         if root.visits == 0:
-            for j in matrices:
-                child_node = tree(j)
+            for matrix in matrices:
+                child_node = tree(matrix)
                 plays.append(child_node)
-            for j in plays:
-                root.children.append(j) #create child_nodes in case they havent been created yet
-        for j in root.children:
-            if j.visits == 0:
-                return j #first iterations of the loop
+            for child in plays:
+                root.children.append(child) #create child_nodes in case they havent been created yet
+        for child in root.children:
+            if child.visits == 0:
+                return child #first iterations of the loop
         return mcts.expansion_choice(self, root) #choose the one with most potential
 
     def rollout(self, leaf, last_move):
         global white_pieces
         global black_pieces
-        mx = leaf.board
+        mxs = leaf.board
         swap = 1
-        while mcts.final(self, mx, "Black") == 0:
-            if swap == 1: # "X" playing
-                possible_states = generator.possible_matrix(mx, "White", white_pieces, last_move)
+        while mcts.final(self, mxs, "Black") == 0:
+            if swap == 1: # "White's" playing
+                possible_states = generator.possible_matrix(mxs, "White", white_pieces, last_move)
                 if len(possible_states) == 1:
-                    mx =  possible_states[0]
-                    if mcts.final(self, mx, "White") == 2:
+                    mxs =  possible_states[0]
+                    if mcts.final(self, mxs, "White") == 2:
                         return -1 #loss
-                    elif mcts.final(self, mx, "White") == 1:
+                    elif mcts.final(self, mxs, "White") == 1:
                         return 0 #tie
                 else:
                     choice = random.randrange(0, len(possible_states))
                     mx = possible_states[choice]
-                    if mcts.final(self, mx, "White") == 2:
+                    if mcts.final(self, mxs, "White") == 2:
                         return -1
-                    if mcts.final(self, mx, "White") == 1:
+                    if mcts.final(self, mxs, "White") == 1:
                         return 0
-            elif swap == 0: # "O" playing
-                possible_states = generator.possible_matrix(mx, "Black", white_pieces, last_move)
-                if len(possible_states) == 1: mx =  possible_states[0]
+            elif swap == 0: # "Black" playing
+                possible_states = generator.possible_matrix(mxs, "Black", black_pieces, last_move)
+                if len(possible_states) == 1: mxs =  possible_states[0]
                 else:
                     choice = random.randrange(0, len(possible_states))
-                    mx = possible_states[choice]
+                    mxs = possible_states[choice]
             swap += 1
             swap = swap % 2
-        if mcts.final(self, mx, "Black") == 2:
+        if mcts.final(self, mxs, "Black") == 2:
             return 1 #win
-        elif mcts.final(self, mx, "Black") == 1:
+        elif mcts.final(self, mxs, "Black") == 1:
             return 0
 
 
@@ -88,10 +88,9 @@ class mcts:
         if rules.is_checkmate(mx, player):
             return 2
         for i in mx:
-            for k in i:
-                if k != "-":
-                    if k.upper() not in "K":
-                        possible_draw = 0
+            if i != "-":
+                if i.upper() not in "K":
+                    possible_draw = 0
         if possible_draw == 1:
             return 1
         return 0
@@ -101,19 +100,19 @@ class mcts:
 
     def expansion_choice(self, root): #returns most promising node
         threshold = -1*10**6
-        for j in root.children:
-            potential = mcts.calculate_score(self, j.score, j.visits, root.visits, 1.414)
+        for child in root.children:
+            potential = mcts.calculate_score(self, child.score, child.visits, root.visits, 1.414)
             if potential > threshold:
-                choice = j
+                choice = child
                 threshold = potential
         return choice
 
     def best_child(self,root):
         threshold = -1*10**6
-        for j in root.children:
-            if j.visits > threshold:
-                win_choice = j
-                threshold = j.visits
+        for child in root.children:
+            if child.visits > threshold:
+                win_choice = child
+                threshold = child.visits
         return win_choice
 
 generator = generator()

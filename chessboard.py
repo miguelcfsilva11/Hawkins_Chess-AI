@@ -67,10 +67,9 @@ class board:
             message = ("Checkmate! {0} wins!").format(player)
             print(message)
         for i in mx:
-            for k in i:
-                if k != "-":
-                    if k.upper() not in "K":
-                        possible_draw = 0
+            if i != "-":
+                if i.upper() not in "K":
+                    possible_draw = 0
         if possible_draw == 1:
             playable = 0
             message = ("It's a Tie!")
@@ -103,27 +102,33 @@ class board:
                     break
                 else:
                     pos = list(human_move)
-                    print(pos)
+                    #print(pos)
                     initial_pos = (8-int(pos[1]), movements.alge(pos[0])-1)
                     final = (8-int(pos[3]), movements.alge(pos[2])-1)
-                    result = rules.check_order(mx, initial_pos, final, self.player1, moves_log[-1])
+                    mxs= ""
+                    for row in range(len(mx)):
+                        for col in range(len(mx[row])):
+                            mxs += mx[row][col]  
+                    result = rules.check_order(mxs, initial_pos, final, self.player1, moves_log[-1])
+                    #print(result)
                     if not result[0] or initial_pos == final or mx[final[0]][final[1]] in white_pieces:
                         print("Illegal move, chief!")
                         continue
                     moves_log.append(human_move)
                     if result[1] == "en_passant":
-                        mx = generator.move(initial_pos, final, self.player1, "en_passant", mx)
+                        mx = generator.move(initial_pos, final, self.player1, "en_passant", mxs)
                     elif result[1] == "promotion":
-                        mx = generator.move(initial_pos, final, self.player1, "promotion", mx)
+                        mx = generator.move(initial_pos, final, self.player1, "promotion", mxs)
                     else:
-                        mx = generator.move(initial_pos, final, self.player1, "step", mx)
+                        mx = generator.move(initial_pos, final, self.player1, "step", mxs)
                     board.final(mx, self.player1)
                     board.output_matrix(mx)
                     if playable == False:
                         board.endgame()
                     else:
+                        #print(mxs)
                         print("Hawkins is thinking...")
-                        mx = mcts.search(mx, self.player2, moves_log[-1])
+                        mx = mcts.search(mxs, self.player2, moves_log[-1])
                         board.final(mx, self.player2)
                         board.endgame()
                         if playable == False:
