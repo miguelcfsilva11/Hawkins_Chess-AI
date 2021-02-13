@@ -137,6 +137,3 @@ class generator:
         return mx
 
 rules = rules()
-
-
-#todo read everyscript again try to use idiomatic python and list comprehensions whenever i can

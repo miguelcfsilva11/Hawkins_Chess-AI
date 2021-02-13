@@ -27,13 +27,13 @@ board_pieces = {
 }
 white_pieces = {"P", "R", "K", "Q", "N", "B"}
 black_pieces = {"p", "r", "k", "q", "n", "b"}
+moves_log = ["Start:"] #placeholder move
 
 mx = "rnbqkbnrpppppppp--------------------------------PPPPPPPPRNBQKBNR"
 
 castling_chance = True
-moves_log = ["Start:"] #placeholder move
-      
 playable = True
+
 class board:
     def __init__(self, board = "current"):
         self.player1 = "White"
@@ -77,11 +77,11 @@ class board:
             print("                          " + colors.BOLD + colors.GRAY + str(8-row) + colors.RESET +  " " + line)
         print(colors.BOLD + colors.GRAY + "                            a b c d e f g h" + colors.RESET)
 
-    def final(self,mx, player):
+    def final(self,mx, player, last_move):
         global playable
         possible_draw = 1
         possible_win = 1
-        if rules.is_checkmate(mx, player):
+        if rules.is_checkmate(mx, player, last_move):
             playable = 0
             message = ("Checkmate! {0} wins!").format(player)
             print(message)
@@ -142,7 +142,7 @@ class board:
                     else:
                         print(colors.BOLD + "\n\t\t          ┏━━━━━━━━━━━━━━━━━━\n" +  colors.BLINKING + "\t\t            Hawkins' move... " + colors.RESET)
                         mx = mcts.search(mx, self.player2, moves_log[-1])
-                        board.final(mx, self.player2)
+                        board.final(mx, self.player2, moves_log[-1])
                         board.endgame()
                         if playable == False:
                             continue

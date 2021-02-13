@@ -34,10 +34,17 @@ class rules:
             if i == "K":
                 return False
         return True
-    #def is_check(self, mx, player):
+
+    def is_check(self, mx, player, last_move):
+        for matrix in generator.possible_matrix(mx, player, white_pieces, last_move):
+            king_found = False
+            for letter in matrix:
+                if (letter == "k" and player == "White") or (letter = "K" and player == "Black"):
+                    king_found = True
+            if king_found == False:
+                return True
 
 movements = movements()
 
 
-#todo make a new script with movements, this one will only check rules. Otherwise gets too big.
-#todo queen's moves will be a combination of rook's, bishop's and king's
+#todo change 'final' functions to first chech is_check, if true, checkmate
