@@ -55,9 +55,9 @@ class board:
         os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
         global board_pieces
         if player == "White":
-            print("\n\t\t        " + colors.BOLD + colors.DARK + backgrounds.WHITE + "    Your turn   " + colors.RESET + "\n")
+            print("\n\n\n\t\t            " + colors.BOLD + colors.DARK + backgrounds.WHITE + "    Your turn   " + colors.RESET + "\n")
         else:
-            print("\n\t\t        " + colors.BOLD + colors.WHITE + backgrounds.BLACK + "  Hawkins' turn " + colors.RESET + "\n")
+            print("\n\n\n\t\t            " + colors.BOLD + colors.WHITE + backgrounds.BLACK + "  Hawkins' turn " + colors.RESET + "\n")
         for row in range(8):
             if row%2 == 0:
                 current_color = "white"
@@ -74,8 +74,8 @@ class board:
                     current_color = "white"
                     continue
             line = "".join(line)
-            print("                      " + colors.BOLD + colors.GRAY + str(8-row) + colors.RESET +  " " + line)
-        print(colors.BOLD + colors.GRAY + "                        a b c d e f g h" + colors.RESET)
+            print("                          " + colors.BOLD + colors.GRAY + str(8-row) + colors.RESET +  " " + line)
+        print(colors.BOLD + colors.GRAY + "                            a b c d e f g h" + colors.RESET)
 
     def final(self,mx, player):
         global playable
@@ -96,12 +96,12 @@ class board:
         
     def help_me(self):
         os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
-        print("\n\n\t    Hey! Let's play Chess! What's your move?\n\n" + colors.RESET + "   Use algebraic notation to tell us that! For example, writing 'e2e3'" 
-        "\n   would move your pawn from e2 to e3. To quit write the word 'stop'."
-              "\n   Type 'castle' in case you want to make that play.\n   Take a look at the board and do your best!\n") 
-        choice = input("\t    Understood? Type " + colors.BOLD + "anything" + colors.RESET + " to resume the game!\n\n\t\t\t    ")
+        print("\n\n\n\n\t        Hey! Let's play Chess! What's your move?\n\n" + colors.RESET + "       Use algebraic notation to tell us that! For example, writing 'e2e3'" 
+        "\n       would move your pawn from e2 to e3. To quit write the word 'stop'."
+              "\n       Type 'castle' in case you want to make that play.\n       Take a look at the board and do your best!\n") 
+        choice = input("\t        Understood? Type " + colors.BOLD + "anything" + colors.RESET + " to resume the game!\n\n\t\t\t    ")
         board.output_matrix(mx, "White") 
-        
+
     def gameplay(self):
         global mx
         global pieces_taken
@@ -114,7 +114,7 @@ class board:
 
         while playable:
             try:
-                human_move = input(colors.BOLD + "\n\t\t      ┏━━━━━━━━━━━━━━━━━━\n" + "\t\t        Make your move: ")
+                human_move = input(colors.BOLD + "\n\t\t          ┏━━━━━━━━━━━━━━━━━━\n" + "\t\t            Make your move: ")
                 if human_move.upper() in "STOP":
                     break
                 if human_move.upper() in "HELP":
@@ -128,7 +128,7 @@ class board:
                     #print(result)
                     if not result[0] or initial_pos == final or mx[final[0]*8 + final[1]] in white_pieces:
                         board.output_matrix(mx, "White")
-                        print(colors.BOLD + "\n\t\t      Illegal move, chief!")
+                        print(colors.BOLD + "\n\t\t          Illegal move, chief!")
                         continue
                     moves_log.append(human_move)
                     if result[1] == "en_passant":
@@ -143,7 +143,7 @@ class board:
                         board.endgame()
                     else:
                         #print(mxs)
-                        print(colors.BOLD + "\n\t\t      ┏━━━━━━━━━━━━━━━━━━\n" +  colors.BLINKING + "\t\t        Hawkins' move... " + colors.RESET)
+                        print(colors.BOLD + "\n\t\t          ┏━━━━━━━━━━━━━━━━━━\n" +  colors.BLINKING + "\t\t            Hawkins' move... " + colors.RESET)
                         mx = mcts.search(mx, self.player2, moves_log[-1])
                         board.final(mx, self.player2)
                         board.endgame()
@@ -151,9 +151,10 @@ class board:
                             continue
                         else:
                             board.output_matrix(mx, "White")
-            except Exception as e:
-                print(e)
-                print("That's not valid!")
+            except Exception:
+                board.output_matrix(mx, "White")
+                print(colors.BOLD + "\n\t\t           That's not valid!")
+                continue
 
 colors = colors()
 backgrounds = backgrounds()
