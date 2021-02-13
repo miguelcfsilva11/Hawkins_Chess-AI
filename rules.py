@@ -4,7 +4,6 @@ class rules:
 
     def check_order(self, mx, pos, final, player, last_move):
         if mx[pos[0]*8 + pos[1]].upper() in "P": #if pawn
-            #print("its a pawn!")
             return movements.pawn_movement(mx,pos, final, last_move, player)
         if mx[pos[0]*8 + pos[1]].upper() in "B": #if bishop
             return movements.bishop_movement(mx, pos, final, 8)

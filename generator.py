@@ -5,7 +5,6 @@ class generator:
         possible_states = [] #generate child_nodes
         final_options = []
         for i in range(len(mx)):
-            #print(i)
             row = i//8
             col = i%8
             if mx[i].upper() in "P" and mx[i] in pieces:
@@ -113,7 +112,6 @@ class generator:
             for position in final_options:
                 option = str(mx[:])
                 result = rules.check_order(mx, (row,col), position, player, last_move)
-                #print(result)
                 if result[0] and (row,col) != position and mx[position[0]*8 + position[1]] not in pieces:
                     possible_states.append(generator.move(self, (row,col), position, player, result[1], option))
             final_options = []

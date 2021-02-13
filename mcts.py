@@ -17,32 +17,16 @@ class tree:
 class mcts:
     def search(self, mxs, player, last_move):
         root = tree(mxs)
-        """
-        for i in range(8):
-            line = list(mxs[0+8*i: 8 +8*i])
-            line = " ".join(line)
-            print("\t" + line)
-        """
         for _ in range(30):
             leaf = mcts.expand(self, root.board, player, root, last_move)
             result = mcts.rollout(self, leaf, last_move)
             mcts.backpropagate(self, leaf, root, result)
-        """
-        for j in root.children:
-            mx = j.board
-            for i in range(8):
-                line = list(mx[0+8*i: 8 +8*i])
-                line = " ".join(line)
-                print("\t" + line)
-            print("\n\n\n")
-        """      
         return mcts.best_child(self, root).board
 
     def expand(self, mxs, player, root, last_move):
         global white_pieces
         global black_pieces
         plays = []
-        #print(mxs)
         if player == "Black":
             matrices = generator.possible_matrix(mxs, player, black_pieces, last_move) #all possible plays
         if player == "White":
