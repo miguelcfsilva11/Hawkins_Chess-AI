@@ -35,7 +35,8 @@ class rules:
             if i == "K":
                 return False
         return True
-        
+    #def is_check(self, mx, player):
+
 movements = movements()
 
 

@@ -14,6 +14,7 @@ class colors:
     GRAY   = '\x1b[38;5;242m'
     BOLD   = '\x1b[1m'
     UNDERLINE  = '\x1b[4m'
+    BLINKING = '\33[5m'
     DULL_GRAY  = '\x1b[38;5;238;1m'
     DULL_GREEN = '\x1b[38;5;28;1m'
 
@@ -34,3 +35,4 @@ class styles:
     PADDING_SMALL  = '  '
     PADDING_MEDIUM = '      '
     PADDING_LARGE  = '          '
+

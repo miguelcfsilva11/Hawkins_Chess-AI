@@ -24,6 +24,8 @@ class movements:
 
             if pos[0]-1 == final[0] and pos[1] == final[1]-1:
                 if mx[final[0]*8 + final[1]] != "-": #checking if there's a piece there to be eaten
+                    if final[0] == 0:
+                        return (True, "promotion")
                     return (True, "step")  #capturing piece
                 else:
                     if mx[pos[0]*8 + pos[1]+1] == "p": #checking en passant
@@ -33,6 +35,8 @@ class movements:
                                 return (True, "en_passant")  
             if pos[0]-1 == final[0] and pos[1] == final[1]+1:
                 if mx[final[0]*8 + final[1]] != "-":
+                    if final[0] == 0:
+                        return (True, "promotion")
                     return (True, "step")
                 else:
                     if mx[pos[0]*8 + pos[1]-1] == "p": # checking en passant
@@ -46,7 +50,7 @@ class movements:
 
             if pos[0]+1 == final[0] and pos[1] == final[1]:
                 if mx[final[0]*8 + final[1]] == "-": #checking if there's space
-                    if final[0] == 0:
+                    if final[0] == 7:
                         return (True, "promotion")
                     return (True, "step")  #moving pawn one space
             if pos[0]+2 == final[0] and pos[1] == final[1]:
@@ -56,6 +60,8 @@ class movements:
 
             if pos[0]+1 == final[0] and pos[1] == final[1]-1:
                 if mx[final[0]*8 + final[1]] != "-": #checking if there's a piece there to be eaten
+                    if final[0] == 7:
+                        return (True, "promotion")
                     return (True, "step")  #capturing piece
                 else:
                     if mx[pos[0]*8 + pos[1]+1] == "p": #checking en passant
@@ -65,6 +71,8 @@ class movements:
                                 return (True, "en_passant")  
             if pos[0]+1 == final[0] and pos[1] == final[1]+1:
                 if mx[final[0]*8 + final[1]] != "-":
+                    if final[0] == 7:
+                        return (True, "promotion")
                     return (True, "step")
                 else:
                     if mx[pos[0]*8 + pos[1]-1] == "p": # checking en passant

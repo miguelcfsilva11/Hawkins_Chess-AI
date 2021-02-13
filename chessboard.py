@@ -5,22 +5,30 @@ from copy import deepcopy
 from generator import *
 from mcts import *
 from rules import *
-from ui import *
+from util import *
 
 pieces_taken = {}
 
+board_pieces = {
+    'R': colors.LIGHT + '♜ ' + colors.RESET,
+    'N': colors.LIGHT + '♞ ' + colors.RESET,
+    'B': colors.LIGHT + '♗ ' + colors.RESET,
+    'Q': colors.LIGHT + '♕ ' + colors.RESET,
+    'K': colors.LIGHT + '♔ ' + colors.RESET,
+    'P': colors.LIGHT + '♙ ' + colors.RESET,
+    # Black
+    'r': colors.DARK + '♜ ' + colors.RESET,
+    'n': colors.DARK + '♞ ' + colors.RESET,
+    'b': colors.DARK + '♝ ' + colors.RESET,
+    'q': colors.DARK + '♛ ' + colors.RESET,
+    'k': colors.DARK + '♚ ' + colors.RESET,
+    'p': colors.DARK + '♙ ' + colors.RESET,
+    "-": "  "
+}
 white_pieces = {"P", "R", "K", "Q", "N", "B"}
 black_pieces = {"p", "r", "k", "q", "n", "b"}
 
-mx=[["r","n","b","q","k","b","n","r"],
-    ["p","p","p","p","p","p","p","p"],
-    ["-","-","-","-","-","-","-","-"],
-    ["-","-","-","-","-","-","-","-"],
-    ["-","-","-","-","-","-","-","-"],
-    ["-","-","-","-","-","-","-","-"],
-    ["P","P","P","P","P","P","P","P"],
-    ["R","N","B","Q","K","B","N","R"]]
-
+mx = "rnbqkbnrpppppppp--------------------------------PPPPPPPPRNBQKBNR"
 
 castling_chance = True
 moves_log = ["Start:"] #placeholder move
@@ -38,26 +46,37 @@ class board:
             repeat = input("Want to play again?\nY/N?: ")
             if repeat.upper() in "Y":
                 playable = True
-                mx=[["r","n","b","q","k","b","n","r"],
-                    ["p","p","p","p","p","p","p","p"],
-                    ["-","-","-","-","-","-","-","-"],
-                    ["-","-","-","-","-","-","-","-"],
-                    ["-","-","-","-","-","-","-","-"],
-                    ["-","-","-","-","-","-","-","-"],
-                    ["P","P","P","P","P","P","P","P"],
-                    ["R","N","B","Q","K","B","N","R"]]
+                mx = "rnbqkbnrpppppppp--------------------------------PPPPPPPPRNBQKBNR"
                 board.output_matrix(mx)
             else:
                 print("Bye!")
 
-    def output_matrix(self,mx):
+    def output_matrix(self,mx,player):
         os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
-        printable_matrix = ("\t8 {0}\n\t7 {1}\n\t6 {2}\n"
-                             "\t5 {3}\n\t4 {4}\n\t3 {5}\n "
-                              "\t2 {6}\n\t1 {7}\n\t {8}\t{9}{10}{11}{12}{13}{14}{15}").format(mx[0], mx[1], mx[2], mx[3],
-                                                    mx[4], mx[5], mx[6], mx[7],"   a", " b", "    c","    d","    e","    f","    g","    h")
-        print("\n" + printable_matrix + "\n")
-    
+        global board_pieces
+        if player == "White":
+            print("\n\t\t        " + colors.BOLD + colors.DARK + backgrounds.WHITE + "    Your turn   " + colors.RESET + "\n")
+        else:
+            print("\n\t\t        " + colors.BOLD + colors.WHITE + backgrounds.BLACK + "  Hawkins' turn " + colors.RESET + "\n")
+        for row in range(8):
+            if row%2 == 0:
+                current_color = "white"
+            else:
+                current_color = "black"
+            line = list(mx[0+8*row: 8 +8*row])
+            for piece in range(len(line)):
+                if current_color == "white":
+                    line[piece] = backgrounds.LIGHT + board_pieces[line[piece]] + colors.RESET
+                    current_color = "black"
+                    continue
+                elif current_color == "black":
+                    line[piece] = backgrounds.DARK + board_pieces[line[piece]] + colors.RESET
+                    current_color = "white"
+                    continue
+            line = "".join(line)
+            print("                      " + colors.BOLD + colors.GRAY + str(8-row) + colors.RESET +  " " + line)
+        print(colors.BOLD + colors.GRAY + "                        a b c d e f g h" + colors.RESET)
+
     def final(self,mx, player):
         global playable
         possible_draw = 1
@@ -75,6 +94,13 @@ class board:
             message = ("It's a Tie!")
             print(message)
         
+    def help_me(self):
+        os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
+        print("\n\n\t    Hey! Let's play Chess! What's your move?\n\n" + colors.RESET + "   Use algebraic notation to tell us that! For example, writing 'e2e3'" 
+        "\n   would move your pawn from e2 to e3. To quit write the word 'stop'."
+              "\n   Type 'castle' in case you want to make that play.\n   Take a look at the board and do your best!\n") 
+        choice = input("\t    Understood? Type " + colors.BOLD + "anything" + colors.RESET + " to resume the game!\n\n\t\t\t    ")
+        board.output_matrix(mx, "White") 
         
     def gameplay(self):
         global mx
@@ -84,57 +110,47 @@ class board:
         global white_pieces
         global black_pieces
 
-        os.system('cls' if os.name == 'nt' else 'clear')
-        print("\nHey! Let's play Chess! What's your first move?\nUse algebraic notation to tell us that! For example, writing 'e2e3'" 
-        "\nwould move your pawn from e2 to e3. To quit write the word 'stop'."
-              "\nTake a look at the board!\n")
-
-        printable_matrix = ("\t8 {0}\n\t7 {1}\n\t6 {2}\n"
-                             "\t5 {3}\n\t4 {4}\n\t3 {5}\n "
-                              "\t2 {6}\n\t1 {7}\n\t {8}\t{9}{10}{11}{12}{13}{14}{15}").format(mx[0], mx[1], mx[2], mx[3],
-                                                    mx[4], mx[5], mx[6], mx[7],"   a", " b", "    c","    d","    e","    f","    g","    h")
-        print("\n" + printable_matrix + "\n")
+        board.output_matrix(mx, "White")
 
         while playable:
             try:
-                human_move = input("Choose your position: ")
+                human_move = input(colors.BOLD + "\n\t\t      ┏━━━━━━━━━━━━━━━━━━\n" + "\t\t        Make your move: ")
                 if human_move.upper() in "STOP":
                     break
+                if human_move.upper() in "HELP":
+                    board.help_me()
                 else:
                     pos = list(human_move)
                     #print(pos)
                     initial_pos = (8-int(pos[1]), movements.alge(pos[0])-1)
                     final = (8-int(pos[3]), movements.alge(pos[2])-1)
-                    mxs= ""
-                    for row in range(len(mx)):
-                        for col in range(len(mx[row])):
-                            mxs += mx[row][col]  
-                    result = rules.check_order(mxs, initial_pos, final, self.player1, moves_log[-1])
+                    result = rules.check_order(mx, initial_pos, final, self.player1, moves_log[-1])
                     #print(result)
-                    if not result[0] or initial_pos == final or mx[final[0]][final[1]] in white_pieces:
-                        print("Illegal move, chief!")
+                    if not result[0] or initial_pos == final or mx[final[0]*8 + final[1]] in white_pieces:
+                        board.output_matrix(mx, "White")
+                        print(colors.BOLD + "\n\t\t      Illegal move, chief!")
                         continue
                     moves_log.append(human_move)
                     if result[1] == "en_passant":
-                        mx = generator.move(initial_pos, final, self.player1, "en_passant", mxs)
+                        mx = generator.move(initial_pos, final, self.player1, "en_passant", mx)
                     elif result[1] == "promotion":
-                        mx = generator.move(initial_pos, final, self.player1, "promotion", mxs)
+                        mx = generator.move(initial_pos, final, self.player1, "promotion", mx)
                     else:
-                        mx = generator.move(initial_pos, final, self.player1, "step", mxs)
+                        mx = generator.move(initial_pos, final, self.player1, "step", mx)
                     board.final(mx, self.player1)
-                    board.output_matrix(mx)
+                    board.output_matrix(mx, "Black")
                     if playable == False:
                         board.endgame()
                     else:
                         #print(mxs)
-                        print("Hawkins is thinking...")
-                        mx = mcts.search(mxs, self.player2, moves_log[-1])
+                        print(colors.BOLD + "\n\t\t      ┏━━━━━━━━━━━━━━━━━━\n" +  colors.BLINKING + "\t\t        Hawkins' move... " + colors.RESET)
+                        mx = mcts.search(mx, self.player2, moves_log[-1])
                         board.final(mx, self.player2)
                         board.endgame()
                         if playable == False:
                             continue
                         else:
-                            board.output_matrix(mx)
+                            board.output_matrix(mx, "White")
             except Exception as e:
                 print(e)
                 print("That's not valid!")
@@ -145,6 +161,8 @@ styles = styles()
 rules = rules()
 mcts = mcts()
 board = board()
-board.gameplay()
+
+if __name__ == "__main__":
+    board.gameplay()
 
 #todo as of now, this is a copy of tic-tac-toe. Tommorrow, we'll make this functional.
