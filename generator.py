@@ -1,9 +1,15 @@
 from rules import*
 
 class generator:
+
+    def turn_alge(self, number):
+        turn_alge_dic = {0: "a", 1:"b", 2:"c",
+            3: "d", 4:"e", 5:"f", 6:"g", 7:"h"}
+        return turn_alge_dic[number]
     def possible_matrix(self, mx, player, pieces, last_move):
         possible_states = [] #generate child_nodes
         final_options = []
+        algebric_states = []
         for i in range(len(mx)):
             row = i//8
             col = i%8
@@ -62,12 +68,6 @@ class generator:
                 while current[0] > 0 and current[1] > 0:
                     current= (current[0]-1, current[1]-1)
                     final_options.append(current)
-                current = (row,col)
-                while current[0] < 7 and current[1] < 7:
-                    current= (current[0]+1, current[1]+1)
-                    final_options.append(current)
-                current = (row,col)
-                while current[0] < 7 and current[1] > 0:
                     current= (current[0]+1, current[1]-1)
                     final_options.append(current)
                 current = (row,col)
@@ -112,11 +112,17 @@ class generator:
             for position in final_options:
                 option = str(mx[:])
                 result = rules.check_order(mx, (row,col), position, player, last_move)
-                if result[0] and (row,col) != position and mx[position[0]*8 + position[1]] not in pieces:
+                attacked = rules.is_attacked(mx, player, pieces, last_move)
+                print("got a position")
+                if result[0] and (row,col) != position and mx[position[0]*8 + position[1]] not in pieces and not attacked:
                     possible_states.append(generator.move(self, (row,col), position, player, result[1], option))
+                    alge_order = generator.turn_alge(self, col) + str(8-row) +  generator.turn_alge(self, position[1]) + str(8-position[0])
+                    algebric_states.append(alge_order)
+                    print((row,col), position)
+                    print(alge_order)
             final_options = []
-
-        return possible_states
+        print(algebric_states)
+        return (possible_states, algebric_states)
 
     def move(self, pos, final, player, order, mx):
         mx = list(mx)

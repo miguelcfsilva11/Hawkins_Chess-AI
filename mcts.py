@@ -29,9 +29,9 @@ class mcts:
 
         plays = []
         if player == "Black":
-            matrices = generator.possible_matrix(mxs, player, black_pieces, last_move) #all possible plays
+            matrices = generator.possible_matrix(mxs, player, black_pieces, last_move)[0] #all possible plays
         if player == "White":
-            matrices = generator.possible_matrix(mxs, player, white_pieces, last_move) #all possible plays
+            matrices = generator.possible_matrix(mxs, player, white_pieces, last_move)[0] #all possible plays
         if root.visits == 0:
             for matrix in matrices:
                 child_node = tree(matrix)
@@ -50,7 +50,7 @@ class mcts:
         swap = 1
         while mcts.final(self, mxs, "Black") == 0:
             if swap == 1: # "White's" playing
-                possible_states = generator.possible_matrix(mxs, "White", white_pieces, last_move)
+                possible_states = generator.possible_matrix(mxs, "White", white_pieces, last_move)[0]
                 if len(possible_states) == 1:
                     mxs =  possible_states[0]
                     if mcts.final(self, mxs, "White", last_move) == 2:
@@ -65,7 +65,7 @@ class mcts:
                     if mcts.final(self, mxs, "White", last_move) == 1:
                         return 0
             elif swap == 0: # "Black" playing
-                possible_states = generator.possible_matrix(mxs, "Black", black_pieces, last_move)
+                possible_states = generator.possible_matrix(mxs, "Black", black_pieces, last_move)[0]
                 if len(possible_states) == 1: mxs =  possible_states[0]
                 else:
                     choice = random.randrange(0, len(possible_states))

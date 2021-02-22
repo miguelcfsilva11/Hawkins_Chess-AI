@@ -10,6 +10,7 @@ from util import *
 pieces_taken = {}
 
 board_pieces = {
+    
     'R': colors.LIGHT + '♜ ' + colors.RESET,
     'N': colors.LIGHT + '♞ ' + colors.RESET,
     'B': colors.LIGHT + '♗ ' + colors.RESET,
@@ -52,7 +53,7 @@ class board:
                 print("Bye!")
 
     def output_matrix(self,mx,player):
-        os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
+        #os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
         global board_pieces
         if player == "White":
             print("\n\n\n\t\t            " + colors.BOLD + colors.DARK + backgrounds.WHITE + "    Your turn   " + colors.RESET + "\n")
@@ -124,7 +125,8 @@ class board:
                     initial_pos = (8-int(pos[1]), movements.alge(pos[0])-1)
                     final = (8-int(pos[3]), movements.alge(pos[2])-1)
                     result = rules.check_order(mx, initial_pos, final, self.player1, moves_log[-1])
-                    if not result[0] or initial_pos == final or mx[final[0]*8 + final[1]] in white_pieces:
+                    valid_moves = generator.possible_matrix(mx, "White", white_pieces, moves_log[-1])[1]
+                    if human_move not in valid_moves or initial_pos == final or mx[final[0]*8 + final[1]] in white_pieces:
                         board.output_matrix(mx, "White")
                         print(colors.BOLD + "\n\t\t          Illegal move, chief!")
                         continue
@@ -135,7 +137,7 @@ class board:
                         mx = generator.move(initial_pos, final, self.player1, "promotion", mx)
                     else:
                         mx = generator.move(initial_pos, final, self.player1, "step", mx)
-                    board.final(mx, self.player1)
+                    board.final(mx, self.player1, moves_log[-1])
                     board.output_matrix(mx, "Black")
                     if playable == False:
                         board.endgame()
@@ -148,8 +150,9 @@ class board:
                             continue
                         else:
                             board.output_matrix(mx, "White")
-            except Exception:
+            except Exception as e:
                 board.output_matrix(mx, "White")
+                print(e)
                 print(colors.BOLD + "\n\t\t           That's not valid!")
                 continue
 

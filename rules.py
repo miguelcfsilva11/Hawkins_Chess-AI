@@ -39,12 +39,114 @@ class rules:
         for matrix in generator.possible_matrix(mx, player, white_pieces, last_move):
             king_found = False
             for letter in matrix:
-                if (letter == "k" and player == "White") or (letter = "K" and player == "Black"):
+                if (letter == "k" and player == "White") or (letter == "K" and player == "Black"):
                     king_found = True
             if king_found == False:
                 return True
 
+    def is_attacked(self, mx, player, pieces, last_move):
+        if player == "White":
+            for i in range(len(mx)):
+                if mx[i] == "K":
+                    row = i//8
+                    col = i%8
+                    break
+        else:            
+            for i in range(len(mx)):
+                if mx[i] == "k":
+                    row = i//8
+                    col = i%8
+                    break
+            
+        current = (row, col)
+        #pawn threat
+        print("have we gotten here?")
+        if row-1 > -1 and col + 1 < 8 and mx[(row-1)*8 + col+1].upper() in "P" and mx[(row-1)*8 + col+1] not in pieces: return True
+        if row-1 > -1 and col - 1 > -1 and mx[(row-1)*8 + col-1].upper() in "P" and mx[(row-1)*8 + col-1] not in pieces: return True
+        
+        #knigth threat
+
+        if row+1 < 8 and col+ 2 < 8 and mx[(row+1)*8 + col+2].upper() in "N" and mx[(row+1)*8 + col+2] not in pieces: return True
+        if row+1 < 8 and col- 2 > -1 and mx[(row+1)*8 + col-2].upper() in "N" and mx[(row+1)*8 + col-2] not in pieces: return True
+        if row+2 < 8 and col-1 > -1 and mx[(row+2)*8 + col-1].upper() in "N" and mx[(row+2)*8 + col-1] not in pieces: return True
+        if row+2 < 8 and col+1 < 8 and mx[(row+2)*8 + col+1].upper() in "N" and mx[(row+2)*8 + col+1] not in pieces: return True
+        if row-1 > -1 and col+2 < 8 and mx[(row-1)*8 + col+2].upper() in "N" and mx[(row-1)*8 + col+2] not in pieces: return True
+        if row-1 > -1 and col-2 > -1 and mx[(row-1)*8 + col-2].upper() in "N" and mx[(row-1)*8 + col-2] not in pieces: return True
+        if row-2 > -1 and col+1 < 8 and mx[(row-2)*8 + col+1].upper() in "N" and mx[(row-2)*8 + col+1] not in pieces: return True
+        if row-2 > -1 and col-1 > -1 and mx[(row-2)*8 + col-1].upper() in "N" and mx[(row-2)*8 + col-1] not in pieces: return True
+
+        #king threat
+        
+        if row+1 < 8 and col+1 < 8 and mx[(row+1)*8 + col+1].upper() in "K" and mx[(row+1)*8 + col+1] not in pieces: return True
+        if row+1 <8 and mx[(row+1)*8 + col].upper() in "K" and mx[(row+1)*8 + col] not in pieces: return True
+        if row+1 <8 and col-1 > -1 and mx[(row+1)*8 + col-1].upper() in "K" and mx[(row+1)*8 + col-1] not in pieces: return True 
+        if row-1 > -1 and col+1 < 8 and mx[(row-1)*8 + col+1].upper() in "K" and mx[(row-1)*8 + col+1] not in pieces: return True
+        if row-1 > -1 and mx[(row-1)*8 + col].upper() in "K" and mx[(row-1)*8 + col] not in pieces: return True
+        if row-1 > -1 and col-1 > -1 and mx[(row-1)*8 + col-1].upper() in "K" and mx[(row-1)*8 + col-1] not in pieces: return True
+        if col+1 <8 and mx[(row)*8 + col+1].upper() in "K" and mx[(row)*8 + col+1] not in pieces: return True
+        if col-1 > -1 and mx[(row)*8 + col-1].upper() in "K" and mx[(row)*8 + col-1] not in pieces: return True
+
+
+        while current[0] < 7 and current[1] < 7: #threat from first diagonal direction
+            if mx[(row+1)*8 + col + 1].upper() in "BQ" and mx[(row+1)*8 + col + 1] not in pieces:
+                return True
+            if mx[(row+1)*8 + col + 1] != "-":
+                break
+            current = (current[0]+1, current[1]+1)
+        current = (row, col)
+        while current[0] < 7 and current[1] > 0: #threat from second diagonal direction
+            if mx[(row+1)*8 + col - 1].upper() in  "BQ" and mx[(row+1)*8 + col - 1] not in pieces:
+                return True
+            if mx[(row+1)*8 + col - 1] != "-":
+                break
+            current = (current[0]+1, current[1]-1)
+        current = (row, col)
+        while current[0] > 0 and current[1] < 7: #threat from third diagonal direction
+            if mx[(row-1)*8 + col + 1].upper() in "BQ" and mx[(row-1)*8 + col + 1] not in pieces:
+                return True
+            if mx[(row-1)*8 + col + 1] != "-":
+                break
+            current = (current[0]-1, current[1]+1)
+        current = (row, col)
+        while current[0] > 0 and current[1] > 0: #threat from forth diagonal direction
+            if mx[(row-1)*8 + col- 1].upper() in "BQ" and mx[(row-1)*8 + col - 1] not in pieces:
+                return True
+            if mx[(row-1)*8 + col - 1] != "-":
+                break
+            current = (current[0]-1, current[1]-1)
+        current = (row, col)
+        while current[0] < 7: #threat from downwards
+            if mx[(row+1)*8 + col].upper() in "RQ" and mx[(row+1)*8 + col] not in pieces:
+                return True
+            if mx[(row+1)*8 + col] != "-":
+                break
+            current = (current[0]+1, current[1])
+        current = (row, col)
+        while current[1] > 0: #threat from the left
+            if mx[(row)*8 + col - 1].upper() in "RQ" and mx[(row)*8 + col- 1] not in pieces:
+                return True
+            if mx[(row)*8 + col - 1] != "-":
+                break
+            current = (current[0], current[1]-1)
+        current = (row, col)
+        while current[0] > 0: #threat from upwards
+            if mx[(row-1)*8 + col].upper() in "RQ" and mx[(row-1)*8 + col] not in pieces:
+                return True
+            if mx[(row-1)*8 + col] != "-":
+                break
+            current = (current[0]-1, current[1])
+        current = (row, col)
+        while current[1] < 7: #threat from the right
+            if mx[(row)*8 + col+1].upper() in "RQ" and mx[(row)*8 + col + 1] not in pieces:
+                return True
+            if mx[(row)*8 + col + 1] != "-":
+                break
+            current = (current[0], current[1]+1)
+        print("something went wrong")
+        return False
+
 movements = movements()
 
 
-#todo change 'final' functions to first chech is_check, if true, checkmate
+#todo remove checkmate functions, dictate whether is CM or not based on the len(valid_moves)
+#transposition tables
