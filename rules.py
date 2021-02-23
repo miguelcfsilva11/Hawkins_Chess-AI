@@ -64,58 +64,58 @@ class rules:
 
 
         while current[0] < 7 and current[1] < 7: #threat from first diagonal direction
-            if mx[(row+1)*8 + col + 1].upper() in "BQ" and mx[(row+1)*8 + col + 1] not in pieces:
+            if mx[(current[0]+1)*8 + current[1] + 1].upper() in "BQ" and mx[(current[0]+1)*8 + current[1] + 1] not in pieces:
                 return True
-            if mx[(row+1)*8 + col + 1] != "-":
+            if mx[(current[0]+1)*8 + current[1] + 1] != "-":
                 break
             current = (current[0]+1, current[1]+1)
         current = (row, col)
         while current[0] < 7 and current[1] > 0: #threat from second diagonal direction
-            if mx[(row+1)*8 + col - 1].upper() in  "BQ" and mx[(row+1)*8 + col - 1] not in pieces:
+            if mx[(current[0]+1)*8 + current[1] - 1].upper() in  "BQ" and mx[(current[0]+1)*8 + current[1] - 1] not in pieces:
                 return True
-            if mx[(row+1)*8 + col - 1] != "-":
+            if mx[(current[0]+1)*8 + current[1] - 1] != "-":
                 break
             current = (current[0]+1, current[1]-1)
         current = (row, col)
         while current[0] > 0 and current[1] < 7: #threat from third diagonal direction
-            if mx[(row-1)*8 + col + 1].upper() in "BQ" and mx[(row-1)*8 + col + 1] not in pieces:
+            if mx[(current[0]-1)*8 + current[1] + 1].upper() in "BQ" and mx[(current[0]-1)*8 + current[1] + 1] not in pieces:
                 return True
-            if mx[(row-1)*8 + col + 1] != "-":
+            if mx[(current[0]-1)*8 + current[1] + 1] != "-":
                 break
             current = (current[0]-1, current[1]+1)
         current = (row, col)
         while current[0] > 0 and current[1] > 0: #threat from forth diagonal direction
-            if mx[(row-1)*8 + col- 1].upper() in "BQ" and mx[(row-1)*8 + col - 1] not in pieces:
+            if mx[(current[0]-1)*8 + current[1]- 1].upper() in "BQ" and mx[(current[0]-1)*8 + current[1] - 1] not in pieces:
                 return True
-            if mx[(row-1)*8 + col - 1] != "-":
+            if mx[(current[0]-1)*8 + current[1] - 1] != "-":
                 break
             current = (current[0]-1, current[1]-1)
         current = (row, col)
         while current[0] < 7: #threat from downwards
-            if mx[(row+1)*8 + col].upper() in "RQ" and mx[(row+1)*8 + col] not in pieces:
+            if mx[(current[0]+1)*8 + current[1]].upper() in "RQ" and mx[(current[0]+1)*8 + current[1]] not in pieces:
                 return True
-            if mx[(row+1)*8 + col] != "-":
+            if mx[(current[0]+1)*8 + current[1]] != "-":
                 break
             current = (current[0]+1, current[1])
         current = (row, col)
         while current[1] > 0: #threat from the left
-            if mx[(row)*8 + col - 1].upper() in "RQ" and mx[(row)*8 + col- 1] not in pieces:
+            if mx[(current[0])*8 + current[1] - 1].upper() in "RQ" and mx[(current[0])*8 + current[1]- 1] not in pieces:
                 return True
-            if mx[(row)*8 + col - 1] != "-":
+            if mx[(current[0])*8 + current[1] - 1] != "-":
                 break
             current = (current[0], current[1]-1)
         current = (row, col)
         while current[0] > 0: #threat from upwards
-            if mx[(row-1)*8 + col].upper() in "RQ" and mx[(row-1)*8 + col] not in pieces:
+            if mx[(current[0]-1)*8 + current[1]].upper() in "RQ" and mx[(current[0]-1)*8 + current[1]] not in pieces:
                 return True
-            if mx[(row-1)*8 + col] != "-":
+            if mx[(current[0]-1)*8 + current[1]] != "-":
                 break
             current = (current[0]-1, current[1])
         current = (row, col)
         while current[1] < 7: #threat from the right
-            if mx[(row)*8 + col+1].upper() in "RQ" and mx[(row)*8 + col + 1] not in pieces:
+            if mx[(current[0])*8 + current[1]+1].upper() in "RQ" and mx[(current[0])*8 + current[1] + 1] not in pieces:
                 return True
-            if mx[(row)*8 + col + 1] != "-":
+            if mx[(current[0])*8 + current[1] + 1] != "-":
                 break
             current = (current[0], current[1]+1)
         print("noice")
