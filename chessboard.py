@@ -26,19 +26,19 @@ board_pieces = {
     'p': colors.DARK + '♙ ' + colors.RESET,
     "-": "  "
 }
-white_pieces = {"P", "R", "K", "Q", "N", "B"}
-black_pieces = {"p", "r", "k", "q", "n", "b"}
-moves_log = ["Start:"] #placeholder move
-
+moves_log = ["Start"] #placeholder move
 mx = "rnbqkbnrpppppppp--------------------------------PPPPPPPPRNBQKBNR"
 
 castling_chance = True
 playable = True
 
 class board:
+
     def __init__(self, board = "current"):
         self.player1 = "White"
         self.player2 = "Black"
+        self.player1pieces = {"P", "R", "K", "Q", "N", "B"}
+        self.player2pieces = {"p", "r", "k", "q", "n", "b"}
 
     def endgame(self):
         global playable
@@ -78,14 +78,21 @@ class board:
             print("                          " + colors.BOLD + colors.GRAY + str(8-row) + colors.RESET +  " " + line)
         print(colors.BOLD + colors.GRAY + "                            a b c d e f g h" + colors.RESET)
 
-    def final(self,mx, player, last_move):
+    def final(self,mx, player, pieces, last_move):
         global playable
         possible_draw = 1
         possible_win = 1
-        if rules.is_checkmate(mx, player, last_move):
+        in_check= rules.is_attacked(mx, player, pieces, last_move)
+        if in_check:
+            print("Check!")
+        valid_moves = generator.possible_matrix(mx, player, pieces, last_move)[1]
+        print(valid_moves)
+        if len(valid_moves) == 0 and in_check:
+            print("Checkmate!")
             playable = 0
-            message = ("Checkmate! {0} wins!").format(player)
-            print(message)
+        if len(valid_moves) == 0 and not in_check:
+            print("Stalemate!")
+            playable = 0
         for i in mx:
             if i != "-":
                 if i.upper() not in "K":
@@ -108,8 +115,6 @@ class board:
         global pieces_taken
         global playable
         global moves_log
-        global white_pieces
-        global black_pieces
 
         board.output_matrix(mx, "White")
 
@@ -125,8 +130,8 @@ class board:
                     initial_pos = (8-int(pos[1]), movements.alge(pos[0])-1)
                     final = (8-int(pos[3]), movements.alge(pos[2])-1)
                     result = rules.check_order(mx, initial_pos, final, self.player1, moves_log[-1])
-                    valid_moves = generator.possible_matrix(mx, "White", white_pieces, moves_log[-1])[1]
-                    if human_move not in valid_moves or initial_pos == final or mx[final[0]*8 + final[1]] in white_pieces:
+                    valid_moves = generator.possible_matrix(mx, "White", self.player1pieces, moves_log[-1])[1]
+                    if human_move not in valid_moves or initial_pos == final or mx[final[0]*8 + final[1]] in self.player1pieces:
                         board.output_matrix(mx, "White")
                         print(colors.BOLD + "\n\t\t          Illegal move, chief!")
                         continue
@@ -137,14 +142,14 @@ class board:
                         mx = generator.move(initial_pos, final, self.player1, "promotion", mx)
                     else:
                         mx = generator.move(initial_pos, final, self.player1, "step", mx)
-                    board.final(mx, self.player1, moves_log[-1])
+                    board.final(mx, self.player2, self.player2pieces, moves_log[-1])
                     board.output_matrix(mx, "Black")
                     if playable == False:
                         board.endgame()
                     else:
                         print(colors.BOLD + "\n\t\t          ┏━━━━━━━━━━━━━━━━━━\n" +  colors.BLINKING + "\t\t            Hawkins' move... " + colors.RESET)
                         mx = mcts.search(mx, self.player2, moves_log[-1])
-                        board.final(mx, self.player2, moves_log[-1])
+                        board.final(mx, self.player1, self.player1pieces, moves_log[-1])
                         board.endgame()
                         if playable == False:
                             continue
