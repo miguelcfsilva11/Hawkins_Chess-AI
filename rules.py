@@ -23,44 +23,20 @@ class rules:
                 return movements.bishop_movement(mx, pos, final, 8)
         return (False, "nothing")
 
-
-    def is_checkmate (self, mx, player):
-        if player == "White":
-            for i in mx:
-                if i == "k":
-                    return False
-            return True
-        for i in mx:
-            if i == "K":
-                return False
-        return True
-
-    def is_check(self, mx, player, last_move):
-        for matrix in generator.possible_matrix(mx, player, white_pieces, last_move):
-            king_found = False
-            for letter in matrix:
-                if (letter == "k" and player == "White") or (letter == "K" and player == "Black"):
-                    king_found = True
-            if king_found == False:
-                return True
-
     def is_attacked(self, mx, player, pieces, last_move):
-        if player == "White":
-            for i in range(len(mx)):
-                if mx[i] == "K":
-                    row = i//8
-                    col = i%8
-                    break
-        else:            
-            for i in range(len(mx)):
-                if mx[i] == "k":
-                    row = i//8
-                    col = i%8
-                    break
-            
+        for i in range(len(mx)):
+            if mx[i].upper() in "K" and mx[i] in pieces:
+                row = i//8
+                col = i%8
+                break
+        print("row1 defined")
+        try:
+            print(row)
+        except:
+            print("hey bitch")
         current = (row, col)
         #pawn threat
-        print("have we gotten here?")
+        #print("have we gotten here?")
         if row-1 > -1 and col + 1 < 8 and mx[(row-1)*8 + col+1].upper() in "P" and mx[(row-1)*8 + col+1] not in pieces: return True
         if row-1 > -1 and col - 1 > -1 and mx[(row-1)*8 + col-1].upper() in "P" and mx[(row-1)*8 + col-1] not in pieces: return True
         
@@ -142,7 +118,7 @@ class rules:
             if mx[(row)*8 + col + 1] != "-":
                 break
             current = (current[0], current[1]+1)
-        print("something went wrong")
+        print("noice")
         return False
 
 movements = movements()

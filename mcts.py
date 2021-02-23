@@ -48,54 +48,50 @@ class mcts:
         global black_pieces
         mxs = leaf.board
         swap = 1
-        while mcts.final(self, mxs, "Black") == 0:
+        while mcts.material_left(self, mxs):
             if swap == 1: # "White's" playing
                 possible_states = generator.possible_matrix(mxs, "White", white_pieces, last_move)[0]
+                if len(possible_states) == 0:
+                    if rules.is_attacked(mxs, "White", white_pieces, last_move):
+                        return 1
+                    return 0
                 if len(possible_states) == 1:
                     mxs =  possible_states[0]
-                    if mcts.final(self, mxs, "White", last_move) == 2:
-                        return -1 #loss
-                    elif mcts.final(self, mxs, "White", last_move) == 1:
-                        return 0 #tie
                 else:
                     choice = random.randrange(0, len(possible_states))
                     mx = possible_states[choice]
-                    if mcts.final(self, mxs, "White",last_move) == 2:
-                        return -1
-                    if mcts.final(self, mxs, "White", last_move) == 1:
-                        return 0
             elif swap == 0: # "Black" playing
                 possible_states = generator.possible_matrix(mxs, "Black", black_pieces, last_move)[0]
-                if len(possible_states) == 1: mxs =  possible_states[0]
+                if len(possible_states) == 0:
+                    if rules.is_attacked(mxs, "Black", black_pieces, last_move):
+                        return -1
+                    return 0
+                if len(possible_states) == 1:
+                    mxs =  possible_states[0]
                 else:
                     choice = random.randrange(0, len(possible_states))
                     mxs = possible_states[choice]
             swap += 1
             swap = swap % 2
-        if mcts.final(self, mxs, "Black", last_move) == 2:
-            return 1 #win
-        elif mcts.final(self, mxs, "Black", last_move) == 1:
-            return 0
-
+        return 0
 
     def backpropagate(self, leaf, root, result): # updating our prospects stats
         leaf.score += result
         leaf.visits += 1
         root.visits += 1
 
-
-    def final(self,mx, player, last_move):
-        possible_draw = 1
-        possible_win = 1
-        if rules.is_checkmate(mx, player, last_move):
-            return 2
+    def material_left(self, mx):
+        king_counter = 0
+        minor_counter = 0
         for i in mx:
-            if i != "-":
-                if i.upper() not in "K":
-                    possible_draw = 0
-        if possible_draw == 1:
-            return 1
-        return 0
+            if i.upper() in "K":
+                king_counter +=1
+            if i != "-" and i.upper() not in "K":
+                minor_counter +=1
+        if king_counter != 2:
+            return False
+        if minor_counter == 0:
+            return True
 
     def calculate_score(self, score, child_visits, parent_visits, c): #UCB1
         return score / child_visits + c * math.sqrt(math.log(parent_visits) / child_visits)
