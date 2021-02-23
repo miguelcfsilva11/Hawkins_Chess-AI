@@ -13,6 +13,7 @@ class generator:
         for i in range(len(mx)):
             row = i//8
             col = i%8
+            print("row2 edfined")
             if mx[i].upper() in "P" and mx[i] in pieces:
                 if player == "Black":
                     if row+1 < 8: final_options.append((row+1,col))
@@ -113,15 +114,19 @@ class generator:
                 option = str(mx[:])
                 result = rules.check_order(mx, (row,col), position, player, last_move)
                 attacked = rules.is_attacked(mx, player, pieces, last_move)
-                print("got a position")
-                if result[0] and (row,col) != position and mx[position[0]*8 + position[1]] not in pieces and not attacked:
-                    possible_states.append(generator.move(self, (row,col), position, player, result[1], option))
-                    alge_order = generator.turn_alge(self, col) + str(8-row) +  generator.turn_alge(self, position[1]) + str(8-position[0])
-                    algebric_states.append(alge_order)
-                    print((row,col), position)
-                    print(alge_order)
+                #print("got a position")
+                if result[0] and (row,col) != position and mx[position[0]*8 + position[1]] not in pieces:
+                    possible = generator.move(self, (row,col), position, player, result[1], option)
+                    attacked = rules.is_attacked(possible, player, pieces, last_move)
+                    if not attacked:
+                        possible_states.append(possible)
+                        alge_order = generator.turn_alge(self, col) + str(8-row) +  generator.turn_alge(self, position[1]) + str(8-position[0])
+                        algebric_states.append(alge_order)
+                    #print((row,col), position)
+                    #print(alge_order)
             final_options = []
-        print(algebric_states)
+        #print(algebric_states)
+        print("ok")
         return (possible_states, algebric_states)
 
     def move(self, pos, final, player, order, mx):
