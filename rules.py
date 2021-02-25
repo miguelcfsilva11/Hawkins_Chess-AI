@@ -1,7 +1,7 @@
 from movements import *
 
 class rules:
-
+    
     def check_order(self, mx, pos, final, player, last_move):
         if mx[pos[0]*8 + pos[1]].upper() in "P": #if pawn
             return movements.pawn_movement(mx,pos, final, last_move, player)
@@ -23,12 +23,16 @@ class rules:
                 return movements.bishop_movement(mx, pos, final, 8)
         return (False, "nothing")
 
-    def is_attacked(self, mx, player, pieces, last_move):
-        for i in range(len(mx)):
-            if mx[i].upper() in "K" and mx[i] in pieces:
-                row = i//8
-                col = i%8
-                break
+    def is_attacked(self, mx, player, pieces, last_move, step):
+        if step != 0:
+            row = step//8
+            col = step%8
+        else:
+            for i in range(len(mx)):
+                if mx[i].upper() in "K" and mx[i] in pieces:
+                    row = i//8
+                    col = i%8
+                    break
         print("row1 defined")
         try:
             print(row)
