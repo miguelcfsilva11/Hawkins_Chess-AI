@@ -15,23 +15,20 @@ class tree:
         self.score = 0
         self.children = []
 class mcts:
-    def search(self, mxs, player, last_move):
-        root = tree(mxs)
+    def search(self, mx, player, last_move, castling_chance):
+        root = tree(mx)
         for _ in range(30):
-            leaf = mcts.expand(self, root.board, player, root, last_move)
-            result = mcts.rollout(self, leaf, last_move)
+            leaf = mcts.expand(self, root.board, player, root, last_move, castling_chance)
+            result = mcts.rollout(self, leaf, last_move, castling_chance)
             mcts.backpropagate(self, leaf, root, result)
         return mcts.best_child(self, root).board
 
-    def expand(self, mxs, player, root, last_move):
+    def expand(self, mx, player, root, last_move, castling_chance):
         global white_pieces
         global black_pieces
-
+        black_castling = [True if x != 0 else False for x in castling_chance][2:]
         plays = []
-        if player == "Black":
-            matrices = generator.possible_matrix(mxs, player, black_pieces, last_move)[0] #all possible plays
-        if player == "White":
-            matrices = generator.possible_matrix(mxs, player, white_pieces, last_move)[0] #all possible plays
+        matrices = generator.possible_matrix(mx, player, black_pieces, last_move, black_castling)[0] #all possible plays
         if root.visits == 0:
             for matrix in matrices:
                 child_node = tree(matrix)
@@ -43,34 +40,54 @@ class mcts:
                 return child #first iterations of the loop
         return mcts.expansion_choice(self, root) #choose the one with most potential
 
-    def rollout(self, leaf, last_move):
+    def rollout(self, leaf, last_move, castling_chance):
         global white_pieces
         global black_pieces
-        mxs = leaf.board
+        mx = leaf.board
         swap = 1
-        while mcts.material_left(self, mxs):
+        black_castling = [True if x != 0 else False for x in castling_chance][2:]
+        white_castling = [True if x != 0 else False for x in castling_chance][:2]
+        while mcts.material_left(self, mx):
             if swap == 1: # "White's" playing
-                possible_states = generator.possible_matrix(mxs, "White", white_pieces, last_move)[0]
+                possible_states = generator.possible_matrix(mx, "White", white_pieces, last_move, white_castling)[0]
                 if len(possible_states) == 0:
-                    if rules.is_attacked(mxs, "White", white_pieces, last_move):
+                    if rules.is_attacked(mx, "White", white_pieces, last_move, 0):
                         return 1
                     return 0
                 if len(possible_states) == 1:
-                    mxs =  possible_states[0]
+                    mx =  possible_states[0]
                 else:
                     choice = random.randrange(0, len(possible_states))
                     mx = possible_states[choice]
+                if True in white_castling:
+                    if mx[7*8+4] != "K":
+                        white_castling = [False, False]
+                    else:
+                        if white_castling[0] == True and mx[7*8] != "R":
+                            black_castling[0] = False
+                        if black_castling[1] == True and mx[7*8 + 7]!= "R":
+                            black_castling[1] = False
+
             elif swap == 0: # "Black" playing
-                possible_states = generator.possible_matrix(mxs, "Black", black_pieces, last_move)[0]
+                if True in black_castling:
+                    if mx[4] != "k":
+                        black_castling = [False, False]
+                    else:
+                        if black_castling[0] == True and mx[0] != "r":
+                            black_castling[0] = False
+                        if black_castling[1] == True and mx[7]!= "r":
+                            black_castling[1] = False
+
+                possible_states = generator.possible_matrix(mx, "Black", black_pieces, last_move, black_castling)[0]
                 if len(possible_states) == 0:
-                    if rules.is_attacked(mxs, "Black", black_pieces, last_move):
+                    if rules.is_attacked(mx, "Black", black_pieces, last_move, 0):
                         return -1
                     return 0
                 if len(possible_states) == 1:
-                    mxs =  possible_states[0]
+                    mx =  possible_states[0]
                 else:
                     choice = random.randrange(0, len(possible_states))
-                    mxs = possible_states[choice]
+                    mx = possible_states[choice]
             swap += 1
             swap = swap % 2
         return 0

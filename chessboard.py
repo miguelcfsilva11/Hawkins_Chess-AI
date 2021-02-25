@@ -26,10 +26,10 @@ board_pieces = {
     'p': colors.DARK + '♙ ' + colors.RESET,
     "-": "  "
 }
+
 moves_log = ["Start"] #placeholder move
 mx = "rnbqkbnrpppppppp--------------------------------PPPPPPPPRNBQKBNR"
-
-castling_chance = True
+castling_chance = ["WhiteL", "WhiteR", "BlackL", "BlackR"]
 playable = True
 
 class board:
@@ -46,9 +46,11 @@ class board:
         if playable == False:
             repeat = input("Want to play again?\nY/N?: ")
             if repeat.upper() in "Y":
-                playable = True
+                moves_log = ["Start"] #placeholder move
                 mx = "rnbqkbnrpppppppp--------------------------------PPPPPPPPRNBQKBNR"
-                board.output_matrix(mx)
+                castling_chance = ["WhiteL", "WhiteR", "BlackL", "BlackR"]
+                playable = True
+                board.output_matrix(mx, "White")
             else:
                 print("Bye!")
 
@@ -80,12 +82,17 @@ class board:
 
     def final(self,mx, player, pieces, last_move):
         global playable
+        global castling_chance
         possible_draw = 1
         possible_win = 1
-        in_check= rules.is_attacked(mx, player, pieces, last_move)
+        if player == "White":
+            player_castling = [True if x != 0 else False for x in castling_chance][:2]
+        else:
+            player_castling = [True if x != 0 else False for x in castling_chance][2:]
+        in_check= rules.is_attacked(mx, player, pieces, last_move, 0)
         if in_check:
             print("Check!")
-        valid_moves = generator.possible_matrix(mx, player, pieces, last_move)[1]
+        valid_moves = generator.possible_matrix(mx, player, pieces, last_move, player_castling)[1]
         print(valid_moves)
         if len(valid_moves) == 0 and in_check:
             print("Checkmate!")
@@ -115,22 +122,39 @@ class board:
         global pieces_taken
         global playable
         global moves_log
-
+        global castling_chance
         board.output_matrix(mx, "White")
 
         while playable:
             try:
+                player_castling = [True if x != 0 else False for x in castling_chance]
                 human_move = input(colors.BOLD + "\n\t\t          ┏━━━━━━━━━━━━━━━━━━\n" + "\t\t            Make your move: ")
                 if human_move.upper() in "STOP":
                     break
-                if human_move.upper() in "HELP":
+                elif human_move.upper() in "HELP":
                     board.help_me()
+                elif human_move.upper() in "CASTLEL":
+                    valid_moves = generator.possible_matrix(mx, "White", self.player1pieces, moves_log[-1], player_castling[:2])[1]
+                    if human_move in valid_moves:
+                        mx = generator.castle(mx, "White", "left")
+                    else:
+                        board.output_matrix(mx, "White")
+                        print(colors.BOLD + "\n\t\t          Illegal move, chief!")
+                        continue
+                elif human_move.upper() in "CASTLER":
+                    valid_moves = generator.possible_matrix(mx, "White", self.player1pieces, moves_log[-1], player_castling[:2])[1]
+                    if human_move in valid_moves:
+                        mx = generator.castle(mx, "White", "right")
+                    else:
+                        board.output_matrix(mx, "White")
+                        print(colors.BOLD + "\n\t\t          Illegal move, chief!")
+                        continue
                 else:
                     pos = list(human_move)
                     initial_pos = (8-int(pos[1]), movements.alge(pos[0])-1)
                     final = (8-int(pos[3]), movements.alge(pos[2])-1)
                     result = rules.check_order(mx, initial_pos, final, self.player1, moves_log[-1])
-                    valid_moves = generator.possible_matrix(mx, "White", self.player1pieces, moves_log[-1])[1]
+                    valid_moves = generator.possible_matrix(mx, "White", self.player1pieces, moves_log[-1], player_castling)[1]
                     if human_move not in valid_moves or initial_pos == final or mx[final[0]*8 + final[1]] in self.player1pieces:
                         board.output_matrix(mx, "White")
                         print(colors.BOLD + "\n\t\t          Illegal move, chief!")
@@ -142,19 +166,40 @@ class board:
                         mx = generator.move(initial_pos, final, self.player1, "promotion", mx)
                     else:
                         mx = generator.move(initial_pos, final, self.player1, "step", mx)
-                    board.final(mx, self.player2, self.player2pieces, moves_log[-1])
-                    board.output_matrix(mx, "Black")
-                    if playable == False:
-                        board.endgame()
+  
+                if True in player_castling[:2]:
+                    if mx[7*8 + 4] != "K":
+                        castling_chance[:2] =  [0,0]
                     else:
-                        print(colors.BOLD + "\n\t\t          ┏━━━━━━━━━━━━━━━━━━\n" +  colors.BLINKING + "\t\t            Hawkins' move... " + colors.RESET)
-                        mx = mcts.search(mx, self.player2, moves_log[-1])
-                        board.final(mx, self.player1, self.player1pieces, moves_log[-1])
-                        board.endgame()
-                        if playable == False:
-                            continue
+                        if player_castling[0] == True and mx[7*8] != "R":
+                            castling_chance[0] = 0
+                        if player_castling[1] == True and mx[7*8 + 7]!= "R":
+                            castling_chance[1] = 0
+
+                board.final(mx, self.player2, self.player2pieces, moves_log[-1])
+                board.output_matrix(mx, "Black")
+                if playable == False:
+                    board.endgame()
+                else:
+                    print(colors.BOLD + "\n\t\t          ┏━━━━━━━━━━━━━━━━━━\n" +  colors.BLINKING + "\t\t            Hawkins' move... " + colors.RESET)
+                    mx = mcts.search(mx, self.player2, moves_log[-1], castling_chance)
+                    
+                    if True in player_castling[2:]:
+                        if mx[4] != "k":
+                            castling_chance[2:] =  [0,0]
                         else:
-                            board.output_matrix(mx, "White")
+                            if player_castling[2] == True and mx[0] != "r":
+                                castling_chance[3] = 0
+                            if player_castling[3] == True and mx[7]!= "r":
+                                castling_chance[3] = 0
+                    board.final(mx, self.player1, self.player1pieces, moves_log[-1])
+                    board.endgame()
+
+                    if playable == False:
+                        continue
+                    else:
+                        board.output_matrix(mx, "White")
+                        print(moves_log)
             except Exception as e:
                 board.output_matrix(mx, "White")
                 print(e)
@@ -169,3 +214,13 @@ board = board()
 
 if __name__ == "__main__":
     board.gameplay()
+
+#todo castling, para isso no nosso generator vamos adicionar um parametro chamado castling. Assim a função podera ser chamada tendo em conta isso
+#todo mcts tb tera um pequeno update, vamos transpor a informação de castling para o bot.
+#todo mcts no rollout vai ter uma validação para ver, caso o valor transposto de castling seja true, se o castling a cada jogada do random playout muda ou nao.
+#todo mcts esta validação passará por 2 fases (restante validação no gerador), primeira ver se o valor de castling é possivel, caso tenha mexido alguma das 3 peças chave, passa a ser false.
+#todo implementar variavel no mcts tal que se depois de uma jogada der castling, passar a chamar com valores de castling false. Para isso temos de guardar
+# numa outra variavel local dentro do random playout para evitar alterar o castling quando o mcts procurar numa leaf diferente (nao ser afetada pelo random playout)
+
+# added step variable to is attacked
+# added chance castling to search and generator
