@@ -10,6 +10,7 @@ class movements:
         return alge_dic[letter]
     
     def pawn_movement(self,mx, pos, final, last_move, player):
+        print(final)
         if player == "White":
             if pos[0]-1 == final[0] and pos[1] == final[1]:
                 if mx[final[0]*8 + final[1]] == "-": #checking if there's space
