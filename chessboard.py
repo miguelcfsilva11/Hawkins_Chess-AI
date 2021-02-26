@@ -161,11 +161,14 @@ class board:
                         continue
                     moves_log.append(human_move)
                     if result[1] == "en_passant":
-                        mx = generator.move(initial_pos, final, self.player1, "en_passant", mx)
+                        mx = generator.move(initial_pos, final, self.player1, "en_passant", mx, "letter")
                     elif result[1] == "promotion":
-                        mx = generator.move(initial_pos, final, self.player1, "promotion", mx)
+                        choice =  input("Promote to?")
+                        while choice.upper() not in "QRKB":
+                            choice = input("Choose a valid letter...")
+                        mx = generator.move(initial_pos, final, self.player1, "promotion", mx, choice)
                     else:
-                        mx = generator.move(initial_pos, final, self.player1, "step", mx)
+                        mx = generator.move(initial_pos, final, self.player1, "step", mx, "letter")
   
                 if True in player_castling[:2]:
                     if mx[7*8 + 4] != "K":

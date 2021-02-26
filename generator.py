@@ -133,21 +133,32 @@ class generator:
                 result = rules.check_order(mx, (row,col), position, player, last_move)
                 attacked = rules.is_attacked(mx, player, pieces, last_move, False)
                 #print("got a position")
-                if result[0] and (row,col) != position and mx[position[0]*8 + position[1]] not in pieces:
-                    possible = generator.move(self, (row,col), position, player, result[1], option)
-                    attacked = rules.is_attacked(possible, player, pieces, last_move, False)
-                    if not attacked:
-                        possible_states.append(possible)
-                        alge_order = generator.turn_alge(self, col) + str(8-row) +  generator.turn_alge(self, position[1]) + str(8-position[0])
-                        algebric_states.append(alge_order)
-                    #print((row,col), position)
-                    #print(alge_order)
+                if result[1] == "promotion":
+                    if result[0] and (row,col) != position and mx[position[0]*8 + position[1]] not in pieces:
+                        for letter in "QRKB":
+                            possible = generator.move(self, (row,col), position, player, result[1], option, letter)
+                            attacked = rules.is_attacked(possible, player, pieces, last_move, False)
+                            if not attacked:
+                                possible_states.append(possible)
+                                alge_order = generator.turn_alge(self, col) + str(8-row) +  generator.turn_alge(self, position[1]) + str(8-position[0])
+                                algebric_states.append(alge_order)
+
+                else:
+                    if result[0] and (row,col) != position and mx[position[0]*8 + position[1]] not in pieces:
+                        possible = generator.move(self, (row,col), position, player, result[1], option, "letter")
+                        attacked = rules.is_attacked(possible, player, pieces, last_move, False)
+                        if not attacked:
+                            possible_states.append(possible)
+                            alge_order = generator.turn_alge(self, col) + str(8-row) +  generator.turn_alge(self, position[1]) + str(8-position[0])
+                            algebric_states.append(alge_order)
+                        #print((row,col), position)
+                        #print(alge_order)
             final_options = []
         #print(algebric_states)
         print("ok")
         return (possible_states, algebric_states)
 
-    def move(self, pos, final, player, order, mx):
+    def move(self, pos, final, player, order, mx, letter):
         mx = list(mx)
         if order == "en_passant":
             mx[final[0]*8 + final[1]] = mx[pos[0]*8 + pos[1]]
@@ -155,9 +166,9 @@ class generator:
             mx[pos[0]*8 + final[1]] = "-"
         elif order == "promotion":
             if player == "White":
-                mx[final[0]*8 + final[1]] = "Q"
+                mx[final[0]*8 + final[1]] = letter.upper()
             elif player == "Black":
-                mx[final[0]*8 + final[1]] = "q"
+                mx[final[0]*8 + final[1]] = letter.lower()
             mx[pos[0]*8 + pos[1]] = "-"
         else:
             mx[final[0]*8 + final[1]] = mx[pos[0]*8 + pos[1]]
