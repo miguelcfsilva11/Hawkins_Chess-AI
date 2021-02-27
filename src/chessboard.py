@@ -77,8 +77,8 @@ class board:
                     current_color = "white"
                     continue
             line = "".join(line)
-            print("                          " + colors.BOLD + colors.GRAY + str(8-row) + colors.RESET +  " " + line)
-        print(colors.BOLD + colors.GRAY + "                            a b c d e f g h" + colors.RESET)
+            print(paddings.GAME_PAD + colors.BOLD + colors.GRAY + str(8-row) + colors.RESET +  " " + line)
+        print(colors.BOLD + colors.GRAY + paddings.GAME_PAD + "a b c d e f g h" + colors.RESET)
 
     def final(self,mx, player, pieces, last_move):
         global playable
@@ -222,13 +222,3 @@ board = board()
 
 if __name__ == "__main__":
     board.gameplay()
-
-#todo castling, para isso no nosso generator vamos adicionar um parametro chamado castling. Assim a função podera ser chamada tendo em conta isso
-#todo mcts tb tera um pequeno update, vamos transpor a informação de castling para o bot.
-#todo mcts no rollout vai ter uma validação para ver, caso o valor transposto de castling seja true, se o castling a cada jogada do random playout muda ou nao.
-#todo mcts esta validação passará por 2 fases (restante validação no gerador), primeira ver se o valor de castling é possivel, caso tenha mexido alguma das 3 peças chave, passa a ser false.
-#todo implementar variavel no mcts tal que se depois de uma jogada der castling, passar a chamar com valores de castling false. Para isso temos de guardar
-# numa outra variavel local dentro do random playout para evitar alterar o castling quando o mcts procurar numa leaf diferente (nao ser afetada pelo random playout)
-
-# added step variable to is attacked
-# added chance castling to search and generator
