@@ -36,4 +36,5 @@ class paddings:
     MIN_PAD = "       "
     MID_PAD = "\t\t          "
     BIG_PAD = "\t\t            "
+    GAME_PAD = "                          "
 
