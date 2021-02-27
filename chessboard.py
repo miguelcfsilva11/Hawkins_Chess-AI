@@ -58,9 +58,9 @@ class board:
         #os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
         global board_pieces
         if player == "White":
-            print("\n\n\n\t\t            " + colors.BOLD + colors.DARK + backgrounds.WHITE + "    Your turn   " + colors.RESET + "\n")
+            print("\n\n\n" + paddings.BIG_PAD + colors.BOLD + colors.DARK + backgrounds.WHITE + "    Your turn   " + colors.RESET + "\n")
         else:
-            print("\n\n\n\t\t            " + colors.BOLD + colors.WHITE + backgrounds.BLACK + "  Hawkins' turn " + colors.RESET + "\n")
+            print("\n\n\n" + paddings.BIG_PAD + colors.BOLD + colors.WHITE + backgrounds.BLACK + "  Hawkins' turn " + colors.RESET + "\n")
         for row in range(8):
             if row%2 == 0:
                 current_color = "white"
