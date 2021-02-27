@@ -78,7 +78,7 @@ class board:
                     continue
             line = "".join(line)
             print(paddings.GAME_PAD + colors.BOLD + colors.GRAY + str(8-row) + colors.RESET +  " " + line)
-        print(colors.BOLD + colors.GRAY + paddings.GAME_PAD + "a b c d e f g h" + colors.RESET)
+        print(colors.BOLD + colors.GRAY + paddings.GAME_PAD + "  a b c d e f g h" + colors.RESET)
 
     def final(self,mx, player, pieces, last_move):
         global playable
