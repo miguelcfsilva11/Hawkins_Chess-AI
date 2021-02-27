@@ -29,3 +29,11 @@ class backgrounds:
     BLACK = '\x1b[48;5;232;1m'
     WHITE = '\x1b[48;5;15;1m'
     RED   = '\x1b[48;5;9;1m'
+
+class paddings:
+
+    CENTER_PAD = "\t        "
+    MIN_PAD = "       "
+    MID_PAD = "\t\t          "
+    BIG_PAD = "\t\t            "
+

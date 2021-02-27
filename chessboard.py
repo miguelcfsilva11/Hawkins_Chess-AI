@@ -110,13 +110,17 @@ class board:
             print(message)
         
     def help_me(self):
-        os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
-        print("\n\n\n\n\t        Hey! Let's play Chess! What's your move?\n\n" + colors.RESET + "       Use algebraic notation to tell us that! For example, writing 'e2e3'" 
-        "\n       would move your pawn from e2 to e3. To quit write the word 'stop'."
-              "\n       Type 'castle' in case you want to make that play.\n       Take a look at the board and do your best!\n") 
-        choice = input("\t        Understood? Type " + colors.BOLD + "anything" + colors.RESET + " to resume the game!\n\n\t\t\t    ")
-        board.output_matrix(mx, "White") 
 
+        os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
+
+        print("\n\n\n\n" + paddings.CENTER_PAD + "Hey! Let's play Chess! What's your move?\n\n" + colors.RESET + paddings.MIN_PAD +
+        "Use algebraic notation to tell us that! For example, writing 'e2e3'\n" + paddings.MIN_PAD + 
+        "would move your pawn from e2 to e3. To quit write the word 'stop'.\n" + paddings.MIN_PAD +
+        "Type 'castle' in case you want to make that play.\n" + paddings.MIN_PAD + "Take a look at the board and do your best!\n") 
+
+        choice = input(paddings.CENTER_PAD + "Understood? Type " + colors.BOLD + "anything" + colors.RESET + " to resume the game!\n\n" + paddings.BIG_PAD)
+        board.output_matrix(mx, "White") 
+        
     def gameplay(self):
         global mx
         global pieces_taken
@@ -128,7 +132,7 @@ class board:
         while playable:
             try:
                 player_castling = [True if x != 0 else False for x in castling_chance]
-                human_move = input(colors.BOLD + "\n\t\t          ┏━━━━━━━━━━━━━━━━━━\n" + "\t\t            Make your move: ")
+                human_move = input(colors.BOLD + "\n" + paddings.MID_PAD + "┏━━━━━━━━━━━━━━━━━━\n" + paddings.BIG_PAD +"Make your move: ")
                 if human_move.upper() in "STOP":
                     break
                 elif human_move.upper() in "HELP":
@@ -139,7 +143,7 @@ class board:
                         mx = generator.castle(mx, "White", "left")
                     else:
                         board.output_matrix(mx, "White")
-                        print(colors.BOLD + "\n\t\t          Illegal move, chief!")
+                        print(colors.BOLD + "\n"+ paddings.MID_PAD + "Illegal move, chief!")
                         continue
                 elif human_move.upper() in "CASTLER":
                     valid_moves = generator.possible_matrix(mx, "White", self.player1pieces, moves_log[-1], player_castling[:2])[1]
@@ -147,7 +151,7 @@ class board:
                         mx = generator.castle(mx, "White", "right")
                     else:
                         board.output_matrix(mx, "White")
-                        print(colors.BOLD + "\n\t\t          Illegal move, chief!")
+                        print(colors.BOLD + "\n" + paddings.MID_PAD + "Illegal move, chief!")
                         continue
                 else:
                     pos = list(human_move)
@@ -157,7 +161,7 @@ class board:
                     valid_moves = generator.possible_matrix(mx, "White", self.player1pieces, moves_log[-1], player_castling)[1]
                     if human_move not in valid_moves or initial_pos == final or mx[final[0]*8 + final[1]] in self.player1pieces:
                         board.output_matrix(mx, "White")
-                        print(colors.BOLD + "\n\t\t          Illegal move, chief!")
+                        print(colors.BOLD + "\n" + paddings.MID_PAD + "Illegal move, chief!")
                         continue
                     moves_log.append(human_move)
                     if result[1] == "en_passant":
@@ -184,7 +188,7 @@ class board:
                 if playable == False:
                     board.endgame()
                 else:
-                    print(colors.BOLD + "\n\t\t          ┏━━━━━━━━━━━━━━━━━━\n" +  colors.BLINKING + "\t\t            Hawkins' move... " + colors.RESET)
+                    print(colors.BOLD + "\n" +  paddings.MID_PAD + "┏━━━━━━━━━━━━━━━━━━\n" +  colors.BLINKING + paddings.BIG_PAD + "Hawkins' move... " + colors.RESET)
                     mx = mcts.search(mx, self.player2, moves_log[-1], castling_chance)
                     
                     if True in player_castling[2:]:
@@ -206,11 +210,12 @@ class board:
             except Exception as e:
                 board.output_matrix(mx, "White")
                 print(e)
-                print(colors.BOLD + "\n\t\t           That's not valid!")
+                print(colors.BOLD + "\n" + paddings.MID_PAD + "That's not valid!")
                 continue
 
 colors = colors()
 backgrounds = backgrounds()
+paddings = paddings()
 rules = rules()
 mcts = mcts()
 board = board()
