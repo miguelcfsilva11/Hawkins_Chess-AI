@@ -1,6 +1,7 @@
 import math
 import random
 import os
+#import sys
 from copy import deepcopy
 from generator import *
 from mcts import *
@@ -42,6 +43,8 @@ class board:
 
     def endgame(self):
         global playable
+        global moves_log
+        global castling_chance
         global mx
         if playable == False:
             repeat = input("Want to play again?\nY/N?: ")
@@ -168,7 +171,7 @@ class board:
                         mx = generator.move(initial_pos, final, self.player1, "en_passant", mx, "letter")
                     elif result[1] == "promotion":
                         choice =  input("Promote to?")
-                        while choice.upper() not in "QRKB":
+                        while choice.upper() not in "QRNB":
                             choice = input("Choose a valid letter...")
                         mx = generator.move(initial_pos, final, self.player1, "promotion", mx, choice)
                     else:
@@ -201,7 +204,6 @@ class board:
                                 castling_chance[3] = 0
                     board.final(mx, self.player1, self.player1pieces, moves_log[-1])
                     board.endgame()
-
                     if playable == False:
                         continue
                     else:
@@ -210,6 +212,9 @@ class board:
             except Exception as e:
                 board.output_matrix(mx, "White")
                 print(e)
+                exc_type, exc_obj, exc_tb = sys.exc_info()
+                fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+                print(exc_type, fname, exc_tb.tb_lineno)
                 print(colors.BOLD + "\n" + paddings.MID_PAD + "That's not valid!")
                 continue
 

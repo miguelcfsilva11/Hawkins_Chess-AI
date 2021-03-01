@@ -31,7 +31,6 @@ class generator:
         for i in range(len(mx)):
             row = i//8
             col = i%8
-            print("row2 edfined")
             if mx[i].upper() in "P" and mx[i] in pieces:
                 if player == "Black":
                     if row+1 < 8: final_options.append((row+1,col))
@@ -155,7 +154,6 @@ class generator:
                         #print(alge_order)
             final_options = []
         #print(algebric_states)
-        print("ok")
         return (possible_states, algebric_states)
 
     def move(self, pos, final, player, order, mx, letter):
@@ -193,14 +191,14 @@ class generator:
         if player == "Black":
             if side == "right":
                 new_mx[4] = "-"
-                new_mx[5] = "R"
-                new_mx[6] = "K"
+                new_mx[5] = "r"
+                new_mx[6] = "k"
                 new_mx[7] = "-"
             if side == "left":
                 new_mx[0] = "-"
                 new_mx[1] = "-"
-                new_mx[2] = "K"
-                new_mx[3] = "R"
+                new_mx[2] = "k"
+                new_mx[3] = "r"
                 new_mx[4] = "-"
         mx = "".join(new_mx)
         return mx

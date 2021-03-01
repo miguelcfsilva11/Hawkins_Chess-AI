@@ -24,21 +24,19 @@ class rules:
         return (False, "nothing")
 
     def is_attacked(self, mx, player, pieces, last_move, step):
+        for i in range(len(mx)):
+            if mx[i].upper() in "K" and mx[i] in pieces:
+                row = i//8
+                col = i%8
+                break
         if step != 0:
             row = step//8
             col = step%8
-        else:
-            for i in range(len(mx)):
-                if mx[i].upper() in "K" and mx[i] in pieces:
-                    row = i//8
-                    col = i%8
-                    break
-        print("row1 defined")
         try:
-            print(row)
+            current = (row, col)   
         except:
-            print("hey bitch")
-        current = (row, col)
+            print(mx)
+            print("hey")  
         #pawn threat
         #print("have we gotten here?")
         if row-1 > -1 and col + 1 < 8 and mx[(row-1)*8 + col+1].upper() in "P" and mx[(row-1)*8 + col+1] not in pieces: return True
@@ -122,11 +120,10 @@ class rules:
             if mx[(current[0])*8 + current[1] + 1] != "-":
                 break
             current = (current[0], current[1]+1)
-        print("noice")
         return False
 
 movements = movements()
 
-
+#print(rules.is_attacked(self, "r--q-RK-p--p-pp------n-p-pb-p---P-p------------b-PPPPP--RNnQKBNR", "White"))
 #todo remove checkmate functions, dictate whether is CM or not based on the len(valid_moves)
 #transposition tables
