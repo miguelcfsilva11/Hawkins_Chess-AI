@@ -2,10 +2,11 @@ import random
 import math
 import copy
 from generator import *
+from heuristic import *
 
 white_pieces = {"P", "R", "K", "Q", "N", "B"}
 black_pieces = {"p", "r", "k", "q", "n", "b"}
-
+transposition_table = {}
 
 
 class tree:
@@ -16,11 +17,14 @@ class tree:
         self.children = []
 class mcts:
     def search(self, mx, player, last_move, castling_chance):
+        global transposition_table
+        depth = 7
         root = tree(mx)
         for _ in range(30):
             leaf = mcts.expand(self, root.board, player, root, last_move, castling_chance)
-            result = mcts.rollout(self, leaf, last_move, castling_chance)
+            result = mcts.rollout(self, leaf, last_move, castling_chance, depth)
             mcts.backpropagate(self, leaf, root, result)
+        transposition_table = {}
         return mcts.best_child(self, root).board
 
     def expand(self, mx, player, root, last_move, castling_chance):
@@ -40,19 +44,23 @@ class mcts:
                 return child #first iterations of the loop
         return mcts.expansion_choice(self, root) #choose the one with most potential
 
-    def rollout(self, leaf, last_move, castling_chance):
+    def rollout(self, leaf, last_move, castling_chance, depth):
+        global transposition_table
         global white_pieces
         global black_pieces
         mx = leaf.board
         swap = 1
+        level = 0 
         black_castling = [True if x != 0 else False for x in castling_chance][2:]
         white_castling = [True if x != 0 else False for x in castling_chance][:2]
-        while mcts.material_left(self, mx):
+        while mcts.material_left(self, mx) and level <= depth:
             if swap == 1: # "White's" playing
                 possible_states = generator.possible_matrix(mx, "White", white_pieces, last_move, white_castling)[0]
                 if len(possible_states) == 0:
                     if rules.is_attacked(mx, "White", white_pieces, last_move, 0):
+                        transposition_table[mx] = 1
                         return 1
+                    transposition_table[mx] = 0
                     return 0
                 if len(possible_states) == 1:
                     mx =  possible_states[0]
@@ -81,16 +89,20 @@ class mcts:
                 possible_states = generator.possible_matrix(mx, "Black", black_pieces, last_move, black_castling)[0]
                 if len(possible_states) == 0:
                     if rules.is_attacked(mx, "Black", black_pieces, last_move, 0):
+                        transposition_table[mx] = -1
                         return -1
+                    transposition_table[mx] = 0
                     return 0
                 if len(possible_states) == 1:
                     mx =  possible_states[0]
                 else:
                     choice = random.randrange(0, len(possible_states))
                     mx = possible_states[choice]
+            level += 1
             swap += 1
             swap = swap % 2
-        return 0
+        transposition_table[mx] = points.zobrist(mx)
+        return points.zobrist(mx)
 
     def backpropagate(self, leaf, root, result): # updating our prospects stats
         leaf.score += result
@@ -131,4 +143,5 @@ class mcts:
         return win_choice
 
 generator = generator()
+points = points()
 #todo create script that generates possible matrix
