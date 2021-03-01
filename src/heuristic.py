@@ -2,5 +2,6 @@
 class points:
     def evaluate(self, mx):
         pass
-    def zobrist(self, mx):
+class zobrist:
+    def key_generator(self, mx):
         pass

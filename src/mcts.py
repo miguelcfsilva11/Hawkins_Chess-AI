@@ -24,6 +24,7 @@ class mcts:
             leaf = mcts.expand(self, root.board, player, root, last_move, castling_chance)
             result = mcts.rollout(self, leaf, last_move, castling_chance, depth)
             mcts.backpropagate(self, leaf, root, result)
+        print(transposition_table)
         transposition_table = {}
         return mcts.best_child(self, root).board
 
@@ -101,8 +102,8 @@ class mcts:
             level += 1
             swap += 1
             swap = swap % 2
-        transposition_table[mx] = points.zobrist(mx)
-        return points.zobrist(mx)
+        transposition_table[mx] = points.evaluate(mx)
+        return 0
 
     def backpropagate(self, leaf, root, result): # updating our prospects stats
         leaf.score += result
@@ -144,4 +145,5 @@ class mcts:
 
 generator = generator()
 points = points()
+zobrist = zobrist()
 #todo create script that generates possible matrix
