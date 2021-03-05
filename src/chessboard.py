@@ -29,6 +29,7 @@ board_pieces = {
 }
 
 moves_log = ["Start"] #placeholder move
+san_moves_log = ["Start"] #placeholder move
 mx = "rnbqkbnrpppppppp--------------------------------PPPPPPPPRNBQKBNR"
 castling_chance = ["WhiteL", "WhiteR", "BlackL", "BlackR"]
 playable = True
@@ -223,7 +224,8 @@ class board:
                         if mx[final[0]*8 + final[1]] not in self.player1pieces and mx[final[0]*8 + final[1]] != "-":
                             flags["capture_flag"] =  True   
                         mx = generator.move(initial_pos, final, self.player1, "step", mx, "letter")
-                    moves_log.append(board.convert_to_san(human_move, piece_moved, flags["capture_flag"], flags["check_flag"], flags["ambiguous_flag"]))
+                    moves_log.append(human_move)
+                    san_moves_log.append(board.convert_to_san(human_move, piece_moved, flags["capture_flag"], flags["check_flag"], flags["ambiguous_flag"]))
                     print(moves_log)
                 if True in player_castling[:2]:
                     if mx[7*8 + 4] != "K":
@@ -241,12 +243,13 @@ class board:
                     print(colors.BOLD + "\n" +  paddings.MID_PAD + "┏━━━━━━━━━━━━━━━━━━\n" +  colors.BLINKING + paddings.BIG_PAD + "Hawkins' move... " + colors.RESET)
                     if opening_state:
                         fen_state = generator.fen_generator(mx)
-                        possible_lines = [line for line in game_moves if line[:round+1] == moves_log[1:]]
+                        print(moves_log[1:])
+                        print(game_moves[0][:round+1])
+                        possible_lines = [line for line in game_moves if line[:round*2+1] == san_moves_log[1:]]
                         if len(possible_lines) != 0:
-                            print(fen_state)
-                            print(possible_lines)
                             choice = random.randrange(0, len(possible_lines))
                             ai_response = possible_lines[choice][1+round*2]
+                            san_moves_log.append(ai_response)
                             move = generator.change_notation(fen_state, ai_response)
                             pos = list(move)
                             initial_pos = (8-int(pos[1]), movements.alge(pos[0])-1)
@@ -257,7 +260,9 @@ class board:
                             else:
                                 mx = generator.move(initial_pos, final, self.player1, "step", mx, "letter")
                         else:
+                            print("Dataset not enough")
                             mx = mcts.search(mx, self.player2, moves_log[-1], castling_chance)
+                            opening_state = False
                     else:
                         mx = mcts.search(mx, self.player2, moves_log[-1], castling_chance)
                     if True in player_castling[2:]:
@@ -277,6 +282,8 @@ class board:
                         print(moves_log)
                     board.flags_reset(flags)
                     round += 1
+                    if round == 8:
+                        opening_state = False
             except Exception as e:
                 board.output_matrix(mx, "White")
                 print(e)
