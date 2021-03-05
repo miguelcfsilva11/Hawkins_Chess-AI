@@ -124,6 +124,3 @@ class rules:
 
 movements = movements()
 
-#print(rules.is_attacked(self, "r--q-RK-p--p-pp------n-p-pb-p---P-p------------b-PPPPP--RNnQKBNR", "White"))
-#todo remove checkmate functions, dictate whether is CM or not based on the len(valid_moves)
-#transposition tables

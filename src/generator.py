@@ -1,4 +1,8 @@
+import chess
+import io
 from rules import*
+
+
 
 class generator:
 
@@ -202,5 +206,34 @@ class generator:
                 new_mx[4] = "-"
         mx = "".join(new_mx)
         return mx
+    def fen_generator(self, mx):
+        import io
+        # Use StringIO to build string more efficiently than concatenating
+        with io.StringIO() as s:
+            for row in range(8):
+                empty = 0
+                for col in range(8):
+                    if mx[row*8 + col] != "-":
+                        if empty > 0:
+                            s.write(str(empty))
+                            empty = 0
+                        s.write(mx[row*8 + col])
+                    else:
+                        empty += 1
+                if empty > 0:
+                    s.write(str(empty))
+                s.write('/')
+            # Move one position back to overwrite last '/'
+            s.seek(s.tell() - 1)
+            # If you do not have the additional information choose what to put
+            s.write(' b KQkq - 0 1')
+            return s.getvalue()
+
+    def change_notation(self, fen, move):
+        board = chess.Board(fen)
+        coordmove = str(board.parse_san(move))
+        return coordmove
+generator_io = generator()
+#print(generator_io.change_notation("rnbqkbnr/pppppppp/8/8/4P3/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1", "Nf6"))
 
 rules = rules()
