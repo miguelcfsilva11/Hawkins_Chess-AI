@@ -20,7 +20,7 @@ class mcts:
         global transposition_table
         depth = 7
         root = tree(mx)
-        for _ in range(1000):
+        for _ in range(30):
             leaf = mcts.expand(self, root.board, player, root, last_move, castling_chance)
             result = mcts.rollout(self, leaf, last_move, castling_chance, depth)
             mcts.backpropagate(self, leaf, root, result)
@@ -131,9 +131,13 @@ class mcts:
         threshold = -1*10**6
         for child in root.children:
             potential = mcts.calculate_score(self, child.score, child.visits, root.visits, 1.414)
+            print(potential)
+            print(potential > threshold)
             if potential > threshold:
+                print("reached")
                 choice = child
                 threshold = potential
+        print(mcts.calculate_score(self, choice.score, choice.visits, root.visits, 1.414), "here")
         return choice
 
     def best_child(self,root):
@@ -148,4 +152,3 @@ class mcts:
 generator = generator()
 points = points()
 zobrist = zobrist()
-#todo create script that generates possible matrix
