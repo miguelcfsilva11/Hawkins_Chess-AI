@@ -19,15 +19,16 @@ class tree:
 class mcts:
     def search(self, mx, player, last_move, castling_chance):
         global transposition_table
-        depth = 3
+        depth = 16
         root = tree(mx)
+        cicles = 0
         starting_point = time.time()
-        for _ in range(3000):
+        while time.time() - starting_point <= 10:
+            cicles += 1
             leaf = mcts.expand(self, root.board, player, root, last_move, castling_chance)
             result = mcts.rollout(self, leaf, last_move, castling_chance, depth)
             mcts.backpropagate(self, leaf, root, result)
-            if time.time() - starting_point > 10:
-                break
+        print(len(transposition_table), cicles)
         transposition_table = {}
         return mcts.best_child(self, root).board
 
@@ -61,7 +62,7 @@ class mcts:
             if swap == 1: # "White's" playing
                 possible_states = generator.possible_matrix(mx, "White", white_pieces, last_move, white_castling)[0]
                 if len(possible_states) == 0:
-                    if rules.is_attacked(mx, "White", white_pieces, last_move, 0):
+                    if rules.is_attacked(mx, "White", white_pieces, last_move, False):
                         transposition_table[mx] = 300
                         return 300
                     transposition_table[mx] = 0
@@ -93,7 +94,7 @@ class mcts:
                 possible_states = generator.possible_matrix(mx, "Black", black_pieces, last_move, black_castling)[0]
                 if len(possible_states) == 0:
                     print(level)
-                    if rules.is_attacked(mx, "Black", black_pieces, last_move, 0):
+                    if rules.is_attacked(mx, "Black", black_pieces, last_move, False):
                         transposition_table[mx] = -300
                         return -300
                     transposition_table[mx] = 0
