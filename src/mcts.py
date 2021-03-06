@@ -1,4 +1,5 @@
 import random
+import time
 import math
 import copy
 from generator import *
@@ -20,10 +21,13 @@ class mcts:
         global transposition_table
         depth = 3
         root = tree(mx)
+        starting_point = time.time()
         for _ in range(3000):
             leaf = mcts.expand(self, root.board, player, root, last_move, castling_chance)
             result = mcts.rollout(self, leaf, last_move, castling_chance, depth)
             mcts.backpropagate(self, leaf, root, result)
+            if time.time() - starting_point > 10:
+                break
         transposition_table = {}
         return mcts.best_child(self, root).board
 
