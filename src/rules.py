@@ -29,7 +29,7 @@ class rules:
                 row = i//8
                 col = i%8
                 break
-        if step != 0:
+        if step:
             row = step//8
             col = step%8
         try:
@@ -38,8 +38,12 @@ class rules:
             print(mx)
         #pawn threat
         #print("have we gotten here?")
-        if row-1 > -1 and col + 1 < 8 and mx[(row-1)*8 + col+1].upper() in "P" and mx[(row-1)*8 + col+1] not in pieces: return True
-        if row-1 > -1 and col - 1 > -1 and mx[(row-1)*8 + col-1].upper() in "P" and mx[(row-1)*8 + col-1] not in pieces: return True
+        if player == "White":
+            if row-1 > -1 and col + 1 < 8 and mx[(row-1)*8 + col+1].upper() in "P" and mx[(row-1)*8 + col+1] not in pieces: return True
+            if row-1 > -1 and col - 1 > -1 and mx[(row-1)*8 + col-1].upper() in "P" and mx[(row-1)*8 + col-1] not in pieces: return True
+        else:
+            if row+1 < 8 and col + 1 < 8 and mx[(row+1)*8 + col+1].upper() in "P" and mx[(row+1)*8 + col+1] not in pieces: return True
+            if row+1 < 8 and col - 1 > -1 and mx[(row+1)*8 + col-1].upper() in "P" and mx[(row+1)*8 + col-1] not in pieces: return True
         
         #knigth threat
 

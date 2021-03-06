@@ -9,7 +9,6 @@ from mcts import *
 from rules import *
 from util import *
 
-pieces_taken = {}
 board_pieces = {
     
     'R': colors.LIGHT + '♜ ' + colors.RESET,
@@ -120,7 +119,7 @@ class board:
             player_castling = [True if x != 0 else False for x in castling_chance][:2]
         else:
             player_castling = [True if x != 0 else False for x in castling_chance][2:]
-        in_check= rules.is_attacked(mx, player, pieces, last_move, 0)
+        in_check= rules.is_attacked(mx, player, pieces, last_move, False)
         if in_check:
             print("Check!")
         valid_moves = generator.possible_matrix(mx, player, pieces, last_move, player_castling)[1]
@@ -153,7 +152,6 @@ class board:
         
     def gameplay(self):
         global mx
-        global pieces_taken
         global playable
         global moves_log
         global castling_chance
