@@ -105,7 +105,7 @@ class mcts:
         if mx in transposition_table.keys():
             return transposition_table[mx]
         transposition_table[mx] = points.evaluate(mx)
-        print(transposition_table[mx]) #this is a placeholder for a evaluation function
+        #print(transposition_table[mx]) #this is a placeholder for a evaluation function
         return transposition_table[mx]
 
     def backpropagate(self, leaf, root, result): # updating our prospects stats
@@ -145,13 +145,13 @@ class mcts:
 
     def best_child(self,root):
         threshold = -1*10**6
-        print("we_got_here")
+        #print("we_got_here")
         for child in root.children:
             print(points.evaluate(child.board))
             if child.visits > threshold:
                 win_choice = child
                 threshold = child.visits
-        print("winning", points.evaluate(win_choice.board))
+        #print("winning", points.evaluate(win_choice.board))
         return win_choice
 
 

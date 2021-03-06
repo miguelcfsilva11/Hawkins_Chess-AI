@@ -1,7 +1,7 @@
 import math
 import random
 import os
-#import sys
+import sys
 from gamelists import game_moves
 from copy import deepcopy
 from generator import *
@@ -85,7 +85,7 @@ class board:
 
 
     def output_matrix(self,mx,player):
-        #os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
+        os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
         global board_pieces
         if player == "White":
             print("\n\n\n" + paddings.BIG_PAD + colors.BOLD + colors.DARK + backgrounds.WHITE + "    Your turn   " + colors.RESET + "\n")
@@ -124,7 +124,6 @@ class board:
         if in_check:
             print("Check!")
         valid_moves = generator.possible_matrix(mx, player, pieces, last_move, player_castling)[1]
-        print(valid_moves)
         if len(valid_moves) == 0 and in_check:
             print("Checkmate!")
             playable = 0
@@ -150,7 +149,7 @@ class board:
         "Type 'castle' in case you want to make that play.\n" + paddings.MIN_PAD + "Take a look at the board and do your best!\n") 
 
         choice = input(paddings.CENTER_PAD + "Understood? Type " + colors.BOLD + "anything" + colors.RESET + " to resume the game!\n\n" + paddings.BIG_PAD)
-        board.output_matrix(mx, "White") 
+        board.output_matrix(mx, self.player1) 
         
     def gameplay(self):
         global mx
@@ -226,7 +225,7 @@ class board:
                         mx = generator.move(initial_pos, final, self.player1, "step", mx, "letter")
                     moves_log.append(human_move)
                     san_moves_log.append(board.convert_to_san(human_move, piece_moved, flags["capture_flag"], flags["check_flag"], flags["ambiguous_flag"]))
-                    print(moves_log)
+                    #print(moves_log)
                 if True in player_castling[:2]:
                     if mx[7*8 + 4] != "K":
                         castling_chance[:2] =  [0,0]
@@ -278,14 +277,14 @@ class board:
                     if playable == False:
                         continue
                     else:
-                        board.output_matrix(mx, "White")
-                        print(moves_log)
+                        board.output_matrix(mx, self.player1)
+                        #print(moves_log)
                     board.flags_reset(flags)
                     round += 1
                     if round == 8:
                         opening_state = False
             except Exception as e:
-                board.output_matrix(mx, "White")
+                board.output_matrix(mx, self.player1)
                 print(e)
                 exc_type, exc_obj, exc_tb = sys.exc_info()
                 fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]

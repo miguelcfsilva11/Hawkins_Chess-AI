@@ -36,7 +36,6 @@ class rules:
             current = (row, col)   
         except:
             print(mx)
-            print("hey")  
         #pawn threat
         #print("have we gotten here?")
         if row-1 > -1 and col + 1 < 8 and mx[(row-1)*8 + col+1].upper() in "P" and mx[(row-1)*8 + col+1] not in pieces: return True
