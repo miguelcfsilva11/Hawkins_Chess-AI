@@ -53,9 +53,9 @@ class mcts:
         level = 0 
         black_castling = [True if x != 0 else False for x in castling_chance][2:]
         white_castling = [True if x != 0 else False for x in castling_chance][:2]
-        possible_states = generator.possible_matrix(mx, "White", white_pieces, last_move, white_castling)[0]
         while mcts.material_left(self, mx) and level <= depth:
             if swap == 1: # "White's" playing
+                possible_states = generator.possible_matrix(mx, "White", white_pieces, last_move, white_castling)[0]
                 if len(possible_states) == 0:
                     if rules.is_attacked(mx, "White", white_pieces, last_move, 0):
                         transposition_table[mx] = 300
