@@ -90,8 +90,6 @@ class generator:
                 while current[0] > 0 and current[1] > 0:
                     current= (current[0]-1, current[1]-1)
                     final_options.append(current)
-                    current= (current[0]+1, current[1]-1)
-                    final_options.append(current)
                 current = (row,col)
                 while current[0] < 7 and current[1] < 7:
                     current= (current[0]+1, current[1]+1)
@@ -116,6 +114,7 @@ class generator:
                 while current[1] < 7:
                     current = (current[0], current[1]+1)
                     final_options.append(current) 
+                current = (row,col)
 
             if mx[i].upper() in "K" and mx[i] in pieces:
 
