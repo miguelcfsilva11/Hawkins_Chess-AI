@@ -243,8 +243,8 @@ class board:
                     print(colors.BOLD + "\n" +  paddings.MID_PAD + "┏━━━━━━━━━━━━━━━━━━\n" +  colors.BLINKING + paddings.BIG_PAD + "Hawkins' move... " + colors.RESET)
                     if opening_state:
                         fen_state = generator.fen_generator(mx)
-                        print(moves_log[1:])
-                        print(game_moves[0][:round+1])
+                        #print(moves_log[1:])
+                        #print(game_moves[0][:round+1])
                         possible_lines = [line for line in game_moves if line[:round*2+1] == san_moves_log[1:]]
                         if len(possible_lines) != 0:
                             choice = random.randrange(0, len(possible_lines))
@@ -260,7 +260,7 @@ class board:
                             else:
                                 mx = generator.move(initial_pos, final, self.player1, "step", mx, "letter")
                         else:
-                            print("Dataset not enough")
+                            #print("Dataset not enough")
                             mx = mcts.search(mx, self.player2, moves_log[-1], castling_chance)
                             opening_state = False
                     else:

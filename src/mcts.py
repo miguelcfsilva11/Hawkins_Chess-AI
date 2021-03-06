@@ -18,9 +18,9 @@ class tree:
 class mcts:
     def search(self, mx, player, last_move, castling_chance):
         global transposition_table
-        depth = 7
+        depth = 3
         root = tree(mx)
-        for _ in range(30):
+        for _ in range(3000):
             leaf = mcts.expand(self, root.board, player, root, last_move, castling_chance)
             result = mcts.rollout(self, leaf, last_move, castling_chance, depth)
             mcts.backpropagate(self, leaf, root, result)
@@ -58,8 +58,8 @@ class mcts:
             if swap == 1: # "White's" playing
                 if len(possible_states) == 0:
                     if rules.is_attacked(mx, "White", white_pieces, last_move, 0):
-                        transposition_table[mx] = 1
-                        return 1
+                        transposition_table[mx] = 300
+                        return 300
                     transposition_table[mx] = 0
                     return 0
                 if len(possible_states) == 1:
@@ -90,8 +90,8 @@ class mcts:
                 if len(possible_states) == 0:
                     print(level)
                     if rules.is_attacked(mx, "Black", black_pieces, last_move, 0):
-                        transposition_table[mx] = -1
-                        return -1
+                        transposition_table[mx] = -300
+                        return -300
                     transposition_table[mx] = 0
                     return 0
                 if len(possible_states) == 1:
@@ -102,8 +102,11 @@ class mcts:
             level += 1
             swap += 1
             swap = swap % 2
-        transposition_table[mx] = 0 #this is a placeholder for a evaluation function
-        return 0
+        if mx in transposition_table.keys():
+            return transposition_table[mx]
+        transposition_table[mx] = points.evaluate(mx)
+        print(transposition_table[mx]) #this is a placeholder for a evaluation function
+        return transposition_table[mx]
 
     def backpropagate(self, leaf, root, result): # updating our prospects stats
         leaf.score += result
@@ -131,24 +134,26 @@ class mcts:
         threshold = -1*10**6
         for child in root.children:
             potential = mcts.calculate_score(self, child.score, child.visits, root.visits, 1.414)
-            print(potential)
-            print(potential > threshold)
+            #print(potential)
+            #print(potential > threshold)
             if potential > threshold:
-                print("reached")
+                #print("reached")
                 choice = child
                 threshold = potential
-        print(mcts.calculate_score(self, choice.score, choice.visits, root.visits, 1.414), "here")
+        #print(mcts.calculate_score(self, choice.score, choice.visits, root.visits, 1.414), "here")
         return choice
 
     def best_child(self,root):
         threshold = -1*10**6
+        print("we_got_here")
         for child in root.children:
+            print(points.evaluate(child.board))
             if child.visits > threshold:
                 win_choice = child
                 threshold = child.visits
+        print("winning", points.evaluate(win_choice.board))
         return win_choice
 
 
 generator = generator()
 points = points()
-zobrist = zobrist()
