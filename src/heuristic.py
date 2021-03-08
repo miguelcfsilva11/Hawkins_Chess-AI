@@ -88,12 +88,12 @@ class points:
             score += piece_value[mx[pos]]
 
             if mx[pos].lower() == mx[pos]:
-                score -= (piece_to_table[mx[pos]][pos]/9)
+                score -= (piece_to_table[mx[pos]][pos]/3)
             else:
-                score += (piece_to_table[mx[pos]][pos]/9)
+                score += (piece_to_table[mx[pos]][pos]/3)
         if minor_pieces <= 2:
-            score += (kingend_table[::-1][black_king_spot] - kingend_table[white_king_spot])/9
+            score += (kingend_table[::-1][black_king_spot] - kingend_table[white_king_spot])/3
         else:
-            score += (kingmid_table[::-1][black_king_spot] - kingmid_table[white_king_spot])/9
+            score += (kingmid_table[::-1][black_king_spot] - kingmid_table[white_king_spot])/3
 
         return score
