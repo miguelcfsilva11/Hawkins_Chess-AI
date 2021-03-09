@@ -1,8 +1,7 @@
 import chess
 import io
 from rules import*
-
-
+from operator import itemgetter
 
 class generator:
 
@@ -11,7 +10,11 @@ class generator:
             3: "d", 4:"e", 5:"f", 6:"g", 7:"h"}
         return turn_alge_dic[number]
     def possible_matrix(self, mx, player, pieces, last_move, castling_chance):
-        possible_states = [] #generate child_nodes
+
+        piece_value = {"P": -10, "Q": -90, "B": -30, "N": -30, "R": -50,
+                        "p": 10, "q": 90, "b": 30, "n": 30, "r": 50, "k": 0, "K": 0}
+
+        order_list = [] #generate child_nodes
         final_options = []
         algebric_states = []
         if True in castling_chance:
@@ -24,13 +27,15 @@ class generator:
                     if mx[king_side*8+4] in pieces and mx[king_side*8+7] in pieces and not rules.is_attacked(mx, player, pieces, last_move, king_side*8+5):
                         if not rules.is_attacked(mx, player, pieces, last_move, king_side*8+6):
                             algebric_states.append("castleR")
-                            possible_states.append(generator.castle(self,mx, player, "right"))
+                            value = 20
+                            order_list.append((generator.castle(self,mx, player, "right"), value))
             if castling_chance[0] == True:
                 if mx[king_side*8].upper() in "R" and mx[king_side*8+1] == "-" and mx[king_side*8+2] == "-" and mx[king_side*8+3] == "-" and mx[king_side*8+4].upper() in "K":
                     if mx[king_side*8+4] in pieces and mx[king_side*8] in pieces and not rules.is_attacked(mx, player, pieces, last_move, king_side*8+1):
                         if not rules.is_attacked(mx, player, pieces, last_move, king_side*8+2) and not rules.is_attacked(mx, player, pieces, last_move, king_side*8+3):
                             algebric_states.append("castleL")
-                            possible_states.append(generator.castle(self, mx, player, "left"))
+                            value = 20
+                            order_list.append((generator.castle(self, mx, player, "left"), 20))
         
         for i in range(len(mx)):
             row = i//8
@@ -50,68 +55,164 @@ class generator:
             if mx[i].upper() in "B" and mx[i] in pieces:
                 current = (row,col)
                 while current[0] > 0 and current[1] < 7:
+                    if mx[(current[0]-1)*8 + current[1]+1] != "-":
+                        if mx[(current[0]-1)*8 + current[1]+1] not in pieces:
+                            current= (current[0]-1, current[1]+1)
+                            final_options.append(current)
+                            break
+                        break
                     current= (current[0]-1, current[1]+1)
                     final_options.append(current)
                 current = (row,col)
                 while current[0] > 0 and current[1] > 0:
+                    if mx[(current[0]-1)*8 + current[1]-1] != "-":
+                        if mx[(current[0]-1)*8 + current[1]-1] not in pieces:
+                            current= (current[0]-1, current[1]-1)
+                            final_options.append(current)
+                            break
+                        break
                     current= (current[0]-1, current[1]-1)
                     final_options.append(current)
                 current = (row,col)
                 while current[0] < 7 and current[1] < 7:
+                    if mx[(current[0]+1)*8 + current[1]+1] != "-":
+                        if mx[(current[0]+1)*8 + current[1]+1] not in pieces:
+                            current= (current[0]+1, current[1]+1)
+                            final_options.append(current)
+                            break
+                        break
                     current= (current[0]+1, current[1]+1)
                     final_options.append(current)
                 current = (row,col)
                 while current[0] < 7 and current[1] > 0:
+                    if mx[(current[0]+1)*8 + current[1]-1] != "-":
+                        if mx[(current[0]+1)*8 + current[1]-1] not in pieces:
+                            current= (current[0]+1, current[1]-1)
+                            final_options.append(current)
+                            break
+                        break
                     current= (current[0]+1, current[1]-1)
                     final_options.append(current)
             if mx[i].upper() in "R" and mx[i] in pieces:
                 current = (row,col)
                 while current[0] > 0:
+                    if mx[(current[0]-1)*8 + current[1]] != "-":
+                        if mx[(current[0]-1)*8 + current[1]] not in pieces:
+                            current= (current[0]-1, current[1])
+                            final_options.append(current)
+                            break
+                        break
                     current= (current[0]-1, current[1])
                     final_options.append(current)
                 current = (row,col)
                 while current[1] > 0:
+                    if mx[(current[0])*8 + current[1]-1] != "-":
+                        if mx[(current[0])*8 + current[1]-1] not in pieces:
+                            current= (current[0], current[1]-1)
+                            final_options.append(current)
+                            break
+                        break
                     current= (current[0], current[1]-1)
                     final_options.append(current)
                 current = (row,col)
                 while current[0] < 7:
+                    if mx[(current[0]+1)*8 + current[1]] != "-":
+                        if mx[(current[0]+1)*8 + current[1]] not in pieces:
+                            current= (current[0]+1, current[1])
+                            final_options.append(current)
+                            break
+                        break
                     current= (current[0]+1, current[1])
                     final_options.append(current)
                 current = (row,col)
                 while current[1] < 7:
+                    if mx[(current[0])*8 + current[1]+1] != "-":
+                        if mx[(current[0])*8 + current[1]+1] not in pieces:
+                            current= (current[0], current[1]+1)
+                            final_options.append(current)
+                            break
+                        break
                     current= (current[0], current[1]+1)
                     final_options.append(current)
             if mx[i].upper() in "Q" and mx[i] in pieces:
                 current = (row,col)
                 while current[0] > 0 and current[1] < 7:
+                    if mx[(current[0]-1)*8 + current[1]+1] != "-":
+                        if mx[(current[0]-1)*8 + current[1]+1] not in pieces:
+                            current= (current[0]-1, current[1]+1)
+                            final_options.append(current)
+                            break
+                        break
                     current= (current[0]-1, current[1]+1)
                     final_options.append(current)
                 current = (row,col)
                 while current[0] > 0 and current[1] > 0:
+                    if mx[(current[0]-1)*8 + current[1]-1] != "-":
+                        if mx[(current[0]-1)*8 + current[1]-1] not in pieces:
+                            current= (current[0]-1, current[1]-1)
+                            final_options.append(current)
+                            break
+                        break
                     current= (current[0]-1, current[1]-1)
                     final_options.append(current)
                 current = (row,col)
                 while current[0] < 7 and current[1] < 7:
+                    if mx[(current[0]+1)*8 + current[1]+1] != "-":
+                        if mx[(current[0]+1)*8 + current[1]+1] not in pieces:
+                            current= (current[0]+1, current[1]+1)
+                            final_options.append(current)
+                            break
+                        break
                     current= (current[0]+1, current[1]+1)
-                    final_options.append(current)
+                    final_options.append(current)    
                 current = (row,col)
                 while current[0] <7 and current[1] > 0:
+                    if mx[(current[0]+1)*8 + current[1]-1] != "-":
+                        if mx[(current[0]+1)*8 + current[1]-1] not in pieces:
+                            current= (current[0]+1, current[1]-1)
+                            final_options.append(current)
+                            break
+                        break
                     current= (current[0]+1, current[1]-1)
                     final_options.append(current)
                 current = (row,col)
                 while current[0] > 0:
+                    if mx[(current[0]-1)*8 + current[1]] != "-":
+                        if mx[(current[0]-1)*8 + current[1]] not in pieces:
+                            current= (current[0]-1, current[1])
+                            final_options.append(current)
+                            break
+                        break
                     current= (current[0]-1, current[1])
                     final_options.append(current)
                 current = (row,col)
                 while current[1] > 0:
+                    if mx[(current[0])*8 + current[1]-1] != "-":
+                        if mx[(current[0])*8 + current[1]-1] not in pieces:
+                            current= (current[0], current[1]-1)
+                            final_options.append(current)
+                            break
+                        break
                     current= (current[0], current[1]-1)
                     final_options.append(current)
                 current = (row,col)
                 while current[0] < 7:
+                    if mx[(current[0]+1)*8 + current[1]] != "-":
+                        if mx[(current[0]+1)*8 + current[1]] not in pieces:
+                            current= (current[0]+1, current[1])
+                            final_options.append(current)
+                            break
+                        break
                     current= (current[0]+1, current[1])
                     final_options.append(current)
                 current = (row,col)
                 while current[1] < 7:
+                    if mx[(current[0])*8 + current[1]+1] != "-":
+                        if mx[(current[0])*8 + current[1]+1] not in pieces:
+                            current= (current[0], current[1]+1)
+                            final_options.append(current)
+                            break
+                        break
                     current = (current[0], current[1]+1)
                     final_options.append(current) 
                 current = (row,col)
@@ -149,7 +250,8 @@ class generator:
                             possible = generator.move(self, (row,col), position, player, result[1], option, letter)
                             attacked = rules.is_attacked(possible, player, pieces, last_move, False)
                             if not attacked:
-                                possible_states.append(possible)
+                                value = 90
+                                order_list.append((possible, value))
                                 alge_order = generator.turn_alge(self, col) + str(8-row) +  generator.turn_alge(self, position[1]) + str(8-position[0])
                                 algebric_states.append(alge_order)
 
@@ -158,12 +260,19 @@ class generator:
                         possible = generator.move(self, (row,col), position, player, result[1], option, "letter")
                         attacked = rules.is_attacked(possible, player, pieces, last_move, False)
                         if not attacked:
-                            possible_states.append(possible)
+                            if mx[position[0]*8+ position[1]] not in pieces and mx[position[0]*8 + position[1]] != "-":
+                                value =  (piece_value[mx[position[0]*8 + position[1]]] - piece_value[mx[row*8+col]])*10
+                                order_list.append((possible, value))
+                            else:
+                                value = 0
+                                order_list.append((possible, value))
                             alge_order = generator.turn_alge(self, col) + str(8-row) +  generator.turn_alge(self, position[1]) + str(8-position[0])
                             algebric_states.append(alge_order)
                         #print((row,col), position)
                         #print(alge_order)
             final_options = []
+        ordered_list = sorted(order_list, key=itemgetter(1), reverse = True)
+        possible_states = [tuple[0] for tuple in ordered_list]
         #print(algebric_states)
         return (possible_states, algebric_states)
 
@@ -242,5 +351,5 @@ class generator:
         return coordmove
 generator_io = generator()
 #print(generator_io.change_notation("rnbqkbnr/pppppppp/8/8/4P3/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1", "Nf6"))
-
+#TODO otimizar o gerador
 rules = rules()
