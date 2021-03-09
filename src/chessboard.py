@@ -259,10 +259,10 @@ class board:
                                 mx = generator.move(initial_pos, final, self.player1, "step", mx, "letter")
                         else:
                             #print("Dataset not enough")
-                            mx = mcts.search(mx, self.player2, moves_log[-1], castling_chance)
+                            mx = hawkins.search(mx, self.player2, moves_log[-1], castling_chance)
                             opening_state = False
                     else:
-                        mx = mcts.search(mx, self.player2, moves_log[-1], castling_chance)
+                        mx = hawkins.search(mx, self.player2, moves_log[-1], castling_chance)
                     if True in player_castling[2:]:
                         if mx[4] != "k":
                             castling_chance[2:] =  [0,0]
@@ -274,6 +274,7 @@ class board:
                     board.final(mx, self.player1, self.player1pieces, moves_log[-1])
                     board.endgame()
                     if playable == False:
+                        board.output_matrix(mx, self.player1)
                         continue
                     else:
                         board.output_matrix(mx, self.player1)
@@ -295,13 +296,10 @@ colors = colors()
 backgrounds = backgrounds()
 paddings = paddings()
 rules = rules()
-mcts = mcts()
+hawkins = hawkins()
 board = board()
 
 if __name__ == "__main__":
     board.gameplay()
 
-#TODO temos um problema grande com o tratamento dos dados em opening_var. Fazer algo em relação a isso
-#TODO limpar os 1. e 2. que se encontram na text file com filtros
-#TODO extrair a palavra seguinte (encontrei no stackoverflow uma solução), armazenar numa lista temp
-#TODO converter os valores que eles me dão em notação miguel
+#TODO no final do minimax, gerar capturas
