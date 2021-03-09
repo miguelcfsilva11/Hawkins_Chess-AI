@@ -67,6 +67,7 @@ class mcts:
         print(abroll_score)
         score += abroll_score
         return abroll_score
+        """
         while mcts.material_left(self, mx) and level <= depth:
             if swap == 1: # "White's" playing
                 possible_states = generator.possible_matrix(mx, "White", white_pieces, last_move, white_castling)[0]
@@ -123,6 +124,7 @@ class mcts:
         #print(transposition_table[mx]) #this is a placeholder for a evaluation function
         score += 0.3 * transposition_table[mx]
         return score
+        """
     def backpropagate(self, leaf, root, result): # updating our prospects stats
         leaf.score += result
         leaf.visits += 1
@@ -245,9 +247,9 @@ class mcts:
         #print("we_got_here")
         for child in root.children:
             print(points.evaluate(child.board))
-            if child.visits > threshold:
+            if child.score > threshold:
                 win_choice = child
-                threshold = child.visits
+                threshold = child.score
         print("hey", points.evaluate(win_choice.board))
         return win_choice
 
