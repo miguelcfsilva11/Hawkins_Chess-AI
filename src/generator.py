@@ -15,6 +15,7 @@ class generator:
                         "p": 10, "q": 90, "b": 30, "n": 30, "r": 50, "k": 0, "K": 0}
 
         order_list = [] #generate child_nodes
+        captures = []
         final_options = []
         algebric_states = []
         if True in castling_chance:
@@ -262,6 +263,8 @@ class generator:
                         if not attacked:
                             if mx[position[0]*8+ position[1]] not in pieces and mx[position[0]*8 + position[1]] != "-":
                                 value =  (piece_value[mx[position[0]*8 + position[1]]] - piece_value[mx[row*8+col]])*10
+                                if value > 10:
+                                    captures.append((possible, value))
                                 order_list.append((possible, value))
                             else:
                                 value = 0
@@ -271,10 +274,10 @@ class generator:
                         #print((row,col), position)
                         #print(alge_order)
             final_options = []
-        ordered_list = sorted(order_list, key=itemgetter(1), reverse = True)
-        possible_states = [tuple[0] for tuple in ordered_list]
+        capture_moves = [tuple[0] for tuple in sorted(captures, key=itemgetter(1), reverse=True)]
+        possible_states = [tuple[0] for tuple in sorted(order_list, key=itemgetter(1), reverse = True)]
         #print(algebric_states)
-        return (possible_states, algebric_states)
+        return (possible_states, algebric_states, capture_moves)
 
     def move(self, pos, final, player, order, mx, letter):
         mx = list(mx)
