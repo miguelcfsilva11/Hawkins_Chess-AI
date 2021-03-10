@@ -21,33 +21,27 @@ class hawkins:
     def search(self, mx, player, last_move, castling_chance):
         global transposition_table
         global node
-        white_pieces = {"P", "R", "K", "Q", "N", "B"}
-        black_pieces = {"p", "r", "k", "q", "n", "b"}
-        root = tree(mx)
-
-        black_castling = [True if x != 0 else False for x in castling_chance][2:]
-        plays = []
-        matrices = generator.possible_matrix(mx, player, black_pieces, last_move, black_castling)[0] #all possible plays
         quiet = False
-        for matrix in matrices:
-            child_node = tree(matrix)
-            plays.append(child_node)
-        for child in plays:
-            root.children.append(child) #create child_nodes in case they havent been created yet
-        cicles = 1
+        black_pieces = {"p", "r", "k", "q", "n", "b"}
+        black_castling = [True if x != 0 else False for x in castling_chance][2:]
+        matrices = generator.possible_matrix(mx, player, black_pieces, last_move, black_castling)[0] #all possible plays
+
+        root = tree(mx)
+        root.children = [tree(matrix) for matrix in matrices]
+
         starting_point = time.time()
         for depth in range(1, 4):
             if depth == 3:
                 quiet = True
+
             for child in root.children:
                 child.score = hawkins.minimax(self, child.board, depth, -1*10**6, 1*10**6, False, castling_chance, last_move, quiet)
-            cicles += 1
+                
             root.children = sorted(root.children, key = lambda child: child.score, reverse = True)
             best_move = hawkins.best_child(self, root).board
             if time.time() - starting_point >= 10:
                 transposition_table = {}
                 print(node)
-                print(cicles)
                 node = 0
                 return best_move
             else:
@@ -55,7 +49,6 @@ class hawkins:
                 continue
         print(node)
         node = 0
-        print(cicles)
         return best_move
 
     def q_search(self, mx, depth, alpha, beta, maximizing_player, castling_chance, last_move):
