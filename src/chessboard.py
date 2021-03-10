@@ -5,10 +5,10 @@ import os
 from gamelists import game_moves
 from copy import deepcopy
 from generator import *
-from mcts import *
+from ai import *
 from rules import *
 from util import *
-
+import time
 
 board_pieces = {
     
@@ -30,7 +30,7 @@ board_pieces = {
 
 moves_log = ["Start"] #placeholder move
 san_moves_log = ["Start"] #placeholder move
-mx = "rnbqkbnrpppppppp--------------------------------PPPPPPPPRNBQKBNR"
+mx = "-----k----r---------------------------------K-------------------"
 castling_chance = ["WhiteL", "WhiteR", "BlackL", "BlackR"]
 playable = True
 in_check = False
@@ -158,7 +158,6 @@ class board:
         global castling_chance
         board.output_matrix(mx, "White")
         opening_state = True
-        sample_text = "d4"
         round = 0
         flags = {"capture_flag": False, "check_flag": False, "ambiguous_flag": False}
 
@@ -259,7 +258,9 @@ class board:
                                 mx = generator.move(initial_pos, final, self.player1, "step", mx, "letter")
                         else:
                             #print("Dataset not enough")
+                            starting_point = time.time()
                             mx = hawkins.search(mx, self.player2, moves_log[-1], castling_chance)
+                            print(time.time()-starting_point)
                             opening_state = False
                     else:
                         mx = hawkins.search(mx, self.player2, moves_log[-1], castling_chance)
@@ -271,14 +272,11 @@ class board:
                                 castling_chance[3] = 0
                             if player_castling[3] == True and mx[7]!= "r":
                                 castling_chance[3] = 0
+                    board.output_matrix(mx, self.player1)
                     board.final(mx, self.player1, self.player1pieces, moves_log[-1])
                     board.endgame()
                     if playable == False:
-                        board.output_matrix(mx, self.player1)
                         continue
-                    else:
-                        board.output_matrix(mx, self.player1)
-                        #print(moves_log)
                     board.flags_reset(flags)
                     round += 1
                     if round == 8:
