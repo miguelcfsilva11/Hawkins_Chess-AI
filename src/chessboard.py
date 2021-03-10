@@ -30,7 +30,7 @@ board_pieces = {
 
 moves_log = ["Start"] #placeholder move
 san_moves_log = ["Start"] #placeholder move
-mx = "-----k----r---------------------------------K-------------------"
+mx = "rnbqkbnrpppppppp--------------------------------PPPPPPPPRNBQKBNR"
 castling_chance = ["WhiteL", "WhiteR", "BlackL", "BlackR"]
 playable = True
 in_check = False
@@ -263,7 +263,9 @@ class board:
                             print(time.time()-starting_point)
                             opening_state = False
                     else:
+                        starting_point = time.time()
                         mx = hawkins.search(mx, self.player2, moves_log[-1], castling_chance)
+                        print(time.time()-starting_point)
                     if True in player_castling[2:]:
                         if mx[4] != "k":
                             castling_chance[2:] =  [0,0]
