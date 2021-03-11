@@ -10,6 +10,7 @@ from rules import *
 from util import *
 import time
 
+
 board_pieces = {
     
     'R': colors.LIGHT + '♜ ' + colors.RESET,
@@ -292,6 +293,7 @@ class board:
                 print(colors.BOLD + "\n" + paddings.MID_PAD + "That's not valid!")
                 continue
 
+
 colors = colors()
 backgrounds = backgrounds()
 paddings = paddings()
@@ -301,5 +303,5 @@ board = board()
 
 if __name__ == "__main__":
     board.gameplay()
-
+    
 #TODO no final do minimax, gerar capturas
