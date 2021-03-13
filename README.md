@@ -1,2 +1,2 @@
 # Hawkins - Chess AI
-"Hawkins" is Chess AI powered by Monte Carlo tree search algorithm (reinforcement learning). 
+"Hawkins" is a Chess AI powered by Minimax search algorithm. It makes use of various optimization techniques, mostly extensions of alpha-beta pruning and other traditional chess engine methods.
