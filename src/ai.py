@@ -30,12 +30,12 @@ class hawkins:
 
         starting_point = time.time()
         for depth in range(1, 6):
-            print(depth)
+            #print(depth)
             best_move = hawkins.minimax(self, root.board, depth, -1*10**5, 1*10**5, True, castling_chance, last_move, quiet)[1]
             if time.time() - starting_point >= 10:
                 transposition_table = {}
-                print(node)
-                print(cut)
+                #print(node)
+                #print(cut)
                 cut = 0
                 node = 0
                 return best_move
@@ -142,8 +142,8 @@ class hawkins:
                 else:
                     eval = hawkins.minimax(self, state, depth-1, alpha, beta, False, castling_chance, last_move, quiet)
                     transposition_table[state] = eval[1]
-                if depth == 5:
-                    print(eval[0], state)
+                #if depth == 5:
+                    #print(eval[0], state)
                 if eval[0] > max_eval:
                     max_eval = eval[0]
                     chosen = state
