@@ -11,7 +11,7 @@ class generator:
         return turn_alge_dic[number]
     def possible_matrix(self, mx, player, pieces, last_move, castling_chance):
 
-        piece_value = {"P": -10, "Q": -90, "B": -30, "N": -30, "R": -50,
+        piece_value = {"P": 10, "Q": 90, "B": 30, "N": 30, "R": 50,
                         "p": 10, "q": 90, "b": 30, "n": 30, "r": 50, "k": 0, "K": 0}
 
         order_list = [] #generate child_nodes
@@ -262,7 +262,7 @@ class generator:
                         attacked = rules.is_attacked(possible, player, pieces, last_move, False)
                         if not attacked:
                             if mx[position[0]*8+ position[1]] not in pieces and mx[position[0]*8 + position[1]] != "-":
-                                value =  (piece_value[mx[position[0]*8 + position[1]]] - piece_value[mx[row*8+col]])*10
+                                value =  piece_value[mx[position[0]*8 + position[1]]]
                                 if value > 10:
                                     captures.append((possible, value))
                                 order_list.append((possible, value))
@@ -323,8 +323,8 @@ class generator:
                 new_mx[2] = "k"
                 new_mx[3] = "r"
                 new_mx[4] = "-"
-        mx = "".join(new_mx)
-        return mx
+        kx = "".join(new_mx)
+        return kx
     def fen_generator(self, mx):
         import io
         # Use StringIO to build string more efficiently than concatenating
