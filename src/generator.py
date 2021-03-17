@@ -26,13 +26,13 @@ class generator:
             if castling_chance[1] == True:
                 if mx[king_side*8 + 5] == "-" and mx[king_side*8+6] == "-" and mx[king_side*8+4].upper() in "K" and mx[king_side*8+7].upper() in "R":
                     if mx[king_side*8+4] in pieces and mx[king_side*8+7] in pieces and not rules.is_attacked(mx, player, pieces, last_move, king_side*8+5):
-                        if not rules.is_attacked(mx, player, pieces, last_move, king_side*8+6):
+                        if not rules.is_attacked(mx, player, pieces, last_move, king_side*8+6) and not rules.is_attacked(mx, player, pieces, last_move, king_side*8+4):
                             algebric_states.append("castleR")
                             value = 20
                             order_list.append((generator.castle(self,mx, player, "right"), value))
             if castling_chance[0] == True:
                 if mx[king_side*8].upper() in "R" and mx[king_side*8+1] == "-" and mx[king_side*8+2] == "-" and mx[king_side*8+3] == "-" and mx[king_side*8+4].upper() in "K":
-                    if mx[king_side*8+4] in pieces and mx[king_side*8] in pieces and not rules.is_attacked(mx, player, pieces, last_move, king_side*8+1):
+                    if mx[king_side*8+4] in pieces and mx[king_side*8] in pieces and not rules.is_attacked(mx, player, pieces, last_move, king_side*8+1) and not rules.is_attacked(mx, player, pieces, last_move, king_side*8+4):
                         if not rules.is_attacked(mx, player, pieces, last_move, king_side*8+2) and not rules.is_attacked(mx, player, pieces, last_move, king_side*8+3):
                             algebric_states.append("castleL")
                             value = 20
