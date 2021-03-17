@@ -23,18 +23,14 @@ class hawkins:
         global transposition_table
         global node
         global cut
+        
         quiet = False
-        black_pieces = {"p", "r", "k", "q", "n", "b"}
-        black_castling = [True if x != 0 else False for x in castling_chance][2:]
-        matrices = generator.possible_matrix(mx, player, black_pieces, last_move, black_castling)[0] #all possible plays
 
         root = tree(mx)
 
         starting_point = time.time()
         for depth in range(1, 6):
             print(depth)
-            if depth == 5:
-                quiet = False
             best_move = hawkins.minimax(self, root.board, depth, -1*10**5, 1*10**5, True, castling_chance, last_move, quiet)[1]
             if time.time() - starting_point >= 10:
                 transposition_table = {}
@@ -52,31 +48,32 @@ class hawkins:
         node = 0
         return best_move
 
-    def q_search(self, mx, alpha, beta, maximizing_player, castling_chance, last_move):
+    def q_search(self, mx, depth, alpha, beta, maximizing_player, castling_chance, last_move):
         global transposition_table
         global node
         global cut
         white_pieces = {"P", "R", "K", "Q", "N", "B"}
         black_pieces = {"p", "r", "k", "q", "n", "b"}
         node += 1
-        eval = points.evaluate(mx)
-        if eval >= beta:
+        evaluation = points.evaluate(mx)
+        if depth == 0:
+            return (evaluation, mx)
+        if evaluation >= beta:
             cut += 1
             return (beta, mx)
-        alpha = max(alpha, eval)
-
+        alpha = max(alpha, evaluation)
 
         if not maximizing_player: player, pieces = "White", white_pieces
         else: player, pieces = "Black", black_pieces
+
         capture_moves = generator.possible_matrix(mx, player, pieces, last_move, [False, False])[2]
         for capture in capture_moves:
             node += 1
-            eval = -hawkins.q_search(self, capture, -beta, -alpha, not maximizing_player, castling_chance, last_move)[0] #negamax hybrid
-            if eval >= beta:
+            eval = hawkins.q_search(self, capture, depth-1, -beta, -alpha, not maximizing_player, castling_chance, last_move) #negamax hybrid
+            if -eval[0] >= beta:
                 cut += 1
                 return (beta, mx)
-            alpha = max(alpha, eval)
-        transposition_table[mx] = alpha    
+            alpha = max(alpha, -eval[0])   
         return (alpha, mx)
 
     def minimax(self, mx, depth, alpha, beta, maximizing_player, castling_chance, last_move, quiet):
@@ -91,11 +88,8 @@ class hawkins:
         node += 1
         if depth == 0:
             if quiet:
-               return hawkins.q_search(self, mx, alpha, beta, not maximizing_player, castling_chance, last_move)
-            if mx in transposition_table.keys():
-                return (transposition_table[mx], mx)
-            transposition_table[mx] = points.evaluate(mx)
-            return (transposition_table[mx], mx)
+               return hawkins.q_search(self, mx, 2, alpha, beta, not maximizing_player, castling_chance, last_move)
+            return (points.evaluate(mx), mx)
 
         if not maximizing_player:
             if True in white_castling:
