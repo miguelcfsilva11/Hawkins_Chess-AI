@@ -33,6 +33,7 @@ moves_log = ["Start"] #placeholder move
 san_moves_log = ["Start"] #placeholder move
 mx = "rnbqkbnrpppppppp--------------------------------PPPPPPPPRNBQKBNR"
 castling_chance = ["WhiteL", "WhiteR", "BlackL", "BlackR"]
+opening_state = True
 playable = True
 in_check = False
 
@@ -47,6 +48,7 @@ class board:
     def endgame(self):
         global playable
         global in_check
+        global opening_state
         global moves_log
         global castling_chance
         global mx
@@ -56,6 +58,7 @@ class board:
                 moves_log = ["Start"] #placeholder move
                 mx = "rnbqkbnrpppppppp--------------------------------PPPPPPPPRNBQKBNR"
                 castling_chance = ["WhiteL", "WhiteR", "BlackL", "BlackR"]
+                opening_state = True
                 playable = True
                 in_check = False
                 board.output_matrix(mx, "White")
@@ -83,6 +86,15 @@ class board:
             if ambiguous_flag:
                 san_move = san_move[:1] + move[0] + san_move[1:]
             return san_move
+
+    def get_move(self, mx, temp_mx):
+        move = ""
+        for i in range(len(mx)):
+            if mx[i] != temp_mx[i]:
+                row = i//8
+                col = i%8
+                move += generator.turn_alge(col) + str(8-row)
+        return move
 
 
     def output_matrix(self,mx,player):
@@ -157,13 +169,14 @@ class board:
         global playable
         global moves_log
         global castling_chance
+        global opening_state
         board.output_matrix(mx, "White")
-        opening_state = True
         round = 0
         flags = {"capture_flag": False, "check_flag": False, "ambiguous_flag": False}
 
         while playable:
             try:
+                temp_mx = mx
                 player_castling = [True if x != 0 else False for x in castling_chance]
                 human_move = input(colors.BOLD + "\n" + paddings.MID_PAD + "┏━━━━━━━━━━━━━━━━━━\n" + paddings.BIG_PAD +"Make your move: ")
                 if human_move.upper() in "STOP":
@@ -278,6 +291,7 @@ class board:
                     board.output_matrix(mx, self.player1)
                     board.final(mx, self.player1, self.player1pieces, moves_log[-1])
                     board.endgame()
+                    moves_log.append(board.get_move(mx, temp_mx))
                     if playable == False:
                         continue
                     board.flags_reset(flags)
