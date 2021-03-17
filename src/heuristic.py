@@ -98,5 +98,5 @@ class points:
 		return score
 """
 points = points()
-print(points.evaluate("rnbqk-nrpppppppp-------------------------------bPPPPPPPPRNBQKBNR"))
+print(points.evaluate("r-b-kb-rpppp-ppp--n---------p-q---B-------------PPPP-PPPRNBQR-K-"))
 """
