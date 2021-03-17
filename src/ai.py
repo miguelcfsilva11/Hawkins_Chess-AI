@@ -23,7 +23,6 @@ class hawkins:
         global transposition_table
         global node
         global cut
-        global best_move
         quiet = False
         black_pieces = {"p", "r", "k", "q", "n", "b"}
         black_castling = [True if x != 0 else False for x in castling_chance][2:]
@@ -124,7 +123,6 @@ class hawkins:
         if mx in transposition_table.keys():
             print("insertion")
             possible_states.insert(0, transposition_table[mx])
-            print(best_move)
 
         if len(possible_states) == 0:
             if rules.is_attacked(mx, player, pieces, last_move, False):
