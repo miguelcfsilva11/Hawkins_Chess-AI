@@ -121,11 +121,9 @@ class hawkins:
         if len(possible_states) == 0:
             if rules.is_attacked(mx, player, pieces, last_move, False):
                 if player == "White":
-                    transposition_table[mx] = 300
-                    return (300, mx)
+                    return (10000, mx)
                 else:
-                    transposition_table[mx] = -300
-                    return (-300, mx)
+                    return (-10000, mx)
             transposition_table[mx] = 0
             return (0, mx)
 
@@ -170,17 +168,6 @@ class hawkins:
                     cut += 1
                     break
             return (min_eval, chosen)
-
-    def best_child(self,root):
-        threshold = -1*10**6
-        #print("we_got_here")
-        for child in root.children:
-            #print(points.evaluate(child.board))
-            if child.score > threshold:
-                win_choice = child
-                threshold = child.score
-        #print("hey", points.evaluate(win_choice.board))
-        return win_choice
 
 
 generator = generator()
