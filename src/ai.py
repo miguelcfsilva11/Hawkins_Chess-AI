@@ -162,7 +162,7 @@ class hawkins:
         
         if maximizing_player:
             
-            max_eval = -1*10**5~
+            max_eval = -1*10**5
 
             for state in possible_states:
                 node+= 1
@@ -188,7 +188,7 @@ class hawkins:
         else:
 
             min_eval = 1*10**5
-            
+
             for state in possible_states:
                 node += 1
                 if state in transposition_table.keys():
