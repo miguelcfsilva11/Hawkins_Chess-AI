@@ -5,17 +5,19 @@ import copy
 from generator import *
 from heuristic import *
 
+# The 'node' and 'cut' variables store, respectively,
+# the number of nodes visited throughout the program
+# and the number of times the tree was subjected to
+# alpha-beta pruning.
+
 node = 0
 cut = 0
 transposition_table = {}
 
-class tree:
+# The transposition table will function as a cache that holds
+# previously evaluated positions' best move, which avoids
+# spending resources on analysing all options from that point on.
 
-    def __init__(self, board):
-        self.board = board
-        self.visits = 0
-        self.score = 0
-        self.children = []
 
 class hawkins:
 
@@ -25,33 +27,39 @@ class hawkins:
         global cut
         
         quiet = False
-
-        root = tree(mx)
+        
+        # This boolean,'quiet', controls whether the engine performs a
+        # Quiescence Search at the end of the Minimax Search, looking to evaluate
+        # less 'noisy' positions per se, where less pieces seem to be hanging.
+        # Enabling this option will result a critical loss of performance.
 
         starting_point = time.time()
         for depth in range(1, 6):
-            #print(depth)
-            best_move = hawkins.minimax(self, root.board, depth, -1*10**5, 1*10**5, True, castling_chance, last_move, quiet)[1]
+            
+            # Iterative deepening, perfect when dealing with time constrains
+            # as it allow us to store the best move from previous iterations
+            # and evaluate that same position first in the next one, 
+            # which makes the pruning even more agressive.
+
+            best_move = hawkins.minimax(self, mx, depth, -1*10**5, 1*10**5, True, castling_chance, last_move, quiet)[1]
             if time.time() - starting_point >= 10:
-                transposition_table = {}
-                #print(node)
-                #print(cut)
-                cut = 0
-                node = 0
                 return best_move
             else:
-                print(node)
                 transposition_table = {}
-                transposition_table[root.board] = best_move
-                continue
-        print(node)
-        node = 0
+                transposition_table[mx] = best_move
+                
+                # Storing the best move found in the transposition table,
+                # in order to evaluate it first and hopefuly discard
+                # other options sooner.
+
         return best_move
 
     def q_search(self, mx, depth, alpha, beta, maximizing_player, castling_chance, last_move):
+
         global transposition_table
         global node
         global cut
+
         white_pieces = {"P", "R", "K", "Q", "N", "B"}
         black_pieces = {"p", "r", "k", "q", "n", "b"}
         node += 1
@@ -68,12 +76,19 @@ class hawkins:
 
         capture_moves = generator.possible_matrix(mx, player, pieces, last_move, [False, False])[2]
         for capture in capture_moves:
+
+            # A Negamax Search hybrid, that looks for all possible captures
+            # in the given state of the board, stoping when it reaches
+            # an certain depth.
+
             node += 1
-            eval = hawkins.q_search(self, capture, depth-1, -beta, -alpha, not maximizing_player, castling_chance, last_move) #negamax hybrid
+            eval = hawkins.q_search(self, capture, depth-1, -beta, -alpha, not maximizing_player, castling_chance, last_move)
+
             if -eval[0] >= beta:
                 cut += 1
                 return (beta, mx)
             alpha = max(alpha, -eval[0])   
+
         return (alpha, mx)
 
     def minimax(self, mx, depth, alpha, beta, maximizing_player, castling_chance, last_move, quiet):
@@ -92,8 +107,12 @@ class hawkins:
             return (points.evaluate(mx), mx)
 
         if not maximizing_player:
+
+            # Checking if the 'White' castled in this play
+            # by looking at the position of its key pieces.
+            # Same goes for 'Black' after the 'else' statement.
+
             if True in white_castling:
-                #print(mx)
                 if mx[7*8+4] != "K":
                     white_castling = [False, False]
                 else:
@@ -112,47 +131,64 @@ class hawkins:
                     if black_castling[1] == True and mx[7]!= "r":
                         black_castling[1] = False            
             player, pieces, updated_castling = "Black", black_pieces, black_castling
+
+        # Generating all possible moves based
+        # on the player's pieces and permission to castle.
+
         moves_generator = generator.possible_matrix(mx, player, pieces, last_move, updated_castling) 
         possible_states = moves_generator[0]
-        if mx in transposition_table.keys():
-            print("insertion")
-            possible_states.insert(0, transposition_table[mx])
 
         if len(possible_states) == 0:
             if rules.is_attacked(mx, player, pieces, last_move, False):
                 if player == "White":
                     return (10000, mx)
+                
+                # Checkmate must be much more valuable than
+                # all the pieces' values combined.
+
                 else:
                     return (-10000, mx)
             transposition_table[mx] = 0
             return (0, mx)
 
         if mx in transposition_table.keys():
+
+            # At first, the only move stored in the transposition table
+            # is the best move found in the previous iteration.
+            # We want to evaluate it again at a deeper search
+            # before any other play as it is the most promissing.
+
             possible_states.insert(0, transposition_table[mx])
         
         if maximizing_player:
-            max_eval = -1*10**5
+            
+            max_eval = -1*10**5~
+
             for state in possible_states:
                 node+= 1
-                #print(state)
                 if state in transposition_table.keys():
                     eval = (points.evaluate(transposition_table[state]), transposition_table[state])
                 else:
+                    
+                    # Simple Minimax Search algorithm
+
                     eval = hawkins.minimax(self, state, depth-1, alpha, beta, False, castling_chance, last_move, quiet)
                     transposition_table[state] = eval[1]
-                #if depth == 5:
-                    #print(eval[0], state)
                 if eval[0] > max_eval:
                     max_eval = eval[0]
                     chosen = state
                 alpha = max(alpha, eval[0])
                 if beta <= alpha:
+                    # Pruning
+
                     cut += 1
                     break
             return (max_eval, chosen)
 
         else:
+
             min_eval = 1*10**5
+            
             for state in possible_states:
                 node += 1
                 if state in transposition_table.keys():
@@ -165,6 +201,8 @@ class hawkins:
                     chosen = state
                 beta = min(beta, eval[0])
                 if beta <= alpha:
+                    # Pruning
+
                     cut += 1
                     break
             return (min_eval, chosen)
