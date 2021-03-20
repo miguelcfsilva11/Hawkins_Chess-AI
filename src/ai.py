@@ -173,7 +173,8 @@ class hawkins:
                     # Simple Minimax Search algorithm
 
                     eval = hawkins.minimax(self, state, depth-1, alpha, beta, False, castling_chance, last_move, quiet)
-                    transposition_table[state] = eval[1]
+                    if eval[0] not in (10000, 0 -10000):
+                        transposition_table[state] = eval[1]
                 if eval[0] > max_eval:
                     max_eval = eval[0]
                     chosen = state
@@ -195,7 +196,8 @@ class hawkins:
                     eval = (points.evaluate(transposition_table[state]), transposition_table[state])
                 else:
                     eval = hawkins.minimax(self, state, depth-1, alpha, beta, True, castling_chance, last_move, quiet)
-                    transposition_table[state] = eval[1]
+                    if eval[0] not in (10000, 0 -10000):
+                        transposition_table[state] = eval[1]
                 if eval[0] < min_eval:
                     min_eval = eval[0]
                     chosen = state
