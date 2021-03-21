@@ -167,6 +167,11 @@ class hawkins:
             for state in possible_states:
                 node+= 1
                 if state in transposition_table.keys():
+
+                # We should not waste resources analyzing
+                # a position previously evaluated. We must
+                # immediately return the best move recorded.
+
                     eval = (points.evaluate(transposition_table[state]), transposition_table[state])
                 else:
                     
@@ -174,6 +179,13 @@ class hawkins:
 
                     eval = hawkins.minimax(self, state, depth-1, alpha, beta, False, castling_chance, last_move, quiet)
                     if eval[0] not in (10000, 0 -10000):
+
+                        # If the Minimax Search resulted in a endgame state,
+                        # we won't add it to the transposition table.
+                        # If we did so, the state could be found in the transposition table
+                        # for the remaining of the search, and be wrongly evaluated
+                        # (as our evaluation function doesn't recognise endgame states).
+
                         transposition_table[state] = eval[1]
                 if eval[0] > max_eval:
                     max_eval = eval[0]
