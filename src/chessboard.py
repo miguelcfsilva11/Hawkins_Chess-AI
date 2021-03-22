@@ -45,9 +45,10 @@ san_moves_log = ["Start"]
 # The variable 'mx' will hold our current game state in
 # the form of a string for efficiency purposes.
 # The following string represents the initial state of the board.
+#-----------R--------k----B---p-p-------P----N-P-----K----------q
+#----------------K------p--p---k---b-p----------R---------r------
 
-
-mx = "rnbqkbnrpppppppp--------------------------------PPPPPPPPRNBQKBNR"
+mx = "-----------R--------k----B---p-p-------P----N-P-----K----------q"
 
 castling_chance = ["WhiteL", "WhiteR", "BlackL", "BlackR"]
 opening_state = True
