@@ -39,9 +39,13 @@ board_pieces = {
 moves_log = ["Start"]
 san_moves_log = ["Start"]
 
+moves_log = ["Start"]
+san_moves_log = ["Start"]
+
 # The variable 'mx' will hold our current game state in
 # the form of a string for efficiency purposes.
 # The following string represents the initial state of the board.
+
 
 mx = "rnbqkbnrpppppppp--------------------------------PPPPPPPPRNBQKBNR"
 
@@ -138,7 +142,7 @@ class board:
         # contain the game's state into a full-fledged
         # chessboard for a more complete experience.
 
-        os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
+        #os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
 
         if player == "White":
             print("\n\n\n" + paddings.BIG_PAD + colors.BOLD + colors.DARK + backgrounds.WHITE + "    Your turn   " + colors.RESET + "\n")
@@ -445,3 +449,5 @@ board = board()
 
 if __name__ == "__main__":
     board.gameplay()
+
+#TODO white king spot referenced, e transposition tables
