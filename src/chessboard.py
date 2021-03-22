@@ -451,4 +451,4 @@ board = board()
 if __name__ == "__main__":
     board.gameplay()
 
-#TODO white king spot referenced, e transposition tables
+#TODO white king spot referenced bug
