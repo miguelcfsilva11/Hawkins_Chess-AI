@@ -9,4 +9,4 @@ Hawkins plays at a really high-level, even when compared to the strongest AIs ev
 
 <img src="image/Stockfish_vs_Hawkins.gif" width="300" height="300">
 
-**Stockfish vs Hawkins, 0-1** ([PGN](image/Stockfish_vs_Hawkins.pgn)
+**Stockfish vs Hawkins, 0-1** ([PGN](image/Stockfish_vs_Hawkins.pgn))
