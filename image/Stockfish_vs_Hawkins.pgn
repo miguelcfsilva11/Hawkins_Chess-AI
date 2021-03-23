@@ -1,0 +1,20 @@
+[Event "Casual Correspondence game"]
+[Site "https://lichess.org/1mj28UJo"]
+[Date "2021.03.22"]
+[White "Stockfish level 5"]
+[Black "hawkins"]
+[Result "0-1"]
+[UTCDate "2021.03.22"]
+[UTCTime "20:01:34"]
+[WhiteElo "?"]
+[BlackElo "?"]
+[Variant "Standard"]
+[TimeControl "-"]
+[ECO "D00"]
+[Opening "Queen's Pawn Game"]
+[Termination "Normal"]
+[Annotator "lichess.org"]
+
+1. e3 d5 2. d4 { D00 Queen's Pawn Game } Nc6 3. c4 Nf6 4. Nc3 dxc4 5. Qa4 a6 6. Bxc4 Ng4 7. Qc2 b5 8. Be2 Bd7 9. Qb3 b4 10. Bc4 e6 11. Ne4 Na5 12. Qc2 Nxc4 13. Ne2 Nb6 14. a4 a5 15. b3 f5 16. h3 Qh4 17. g3 Qh6 18. Nc5 Bc6 19. e4 g5 20. f3 Nh2 21. Rxh2 fxe4 22. fxe4 Be7 23. Qd2 O-O 24. Qc2 Qf6 25. Bxg5 Qf1+ 26. Kd2 Bxg5+ 27. Nf4 Bxf4+ 28. gxf4 Qxf4+ 29. Kd1 Qf1+ 30. Kd2 Rf2+ 31. Rxf2 Qxf2+ 32. Kc1 Qe3+ 33. Kb2 Qxd4+ 34. Ka2 Re8 35. Rf1 h6 36. Rf2 Nxa4 37. Nxa4 Bxe4 38. Rf4 Bxc2 39. Rxd4 Rf8 40. Rg4+ Kh8 41. Kb2 Rf2 42. Rg1 Bd1+ 43. Kb1 Bxb3 44. Nc5 Bd5 45. Rd1 Rh2 46. h4 Rxh4 47. Rg1 Rc4 48. Nd7 Be4+ 49. Ka2 Rc2+ 50. Kb3 Rc3+ 51. Kb2 Rc2+ 52. Kb3 Rc3+ 53. Ka4 Bc6+ 54. Kxa5 Bxd7 55. Rd1 Bc6 56. Kxb4 Rc2 57. Rd3 Kg7 58. Rg3+ Kf6 59. Rh3 Kg6 60. Kb3 Rc1 61. Re3 Kf5 62. Rh3 Kg6 63. Re3 Kf5 64. Re2 e5 65. Rh2 Kg5 66. Rh3 Bd5+ 67. Kb4 c5+ 68. Kb5 e4 69. Ka5 Rb1 70. Ka6 Bc4+ 71. Ka7 Bd3 72. Re3 Kg4 73. Rh3 Kxh3 74. Ka8 e3 75. Ka7 e2 76. Ka8 e1=Q 77. Ka7 Qa5# { Black wins by checkmate. } 0-1
+
+
