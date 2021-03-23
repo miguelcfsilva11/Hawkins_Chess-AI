@@ -6,5 +6,7 @@
 # Engine Performance
 
 Hawkins plays at a really high-level, even when compared to the strongest AIs ever written in Python. In this particular game, Hawkins went head to head with Stockfish's fifth level on [lichess](https://lichess.org/) (rated ~2000 ELO), and won after dozens of well-crafted moves.
+
 <img src="image/Stockfish_vs_Hawkins.gif" width="300" height="300">
+
 **Stockfish vs Hawkins, 0-1**
