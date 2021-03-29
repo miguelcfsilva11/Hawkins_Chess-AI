@@ -1,7 +1,10 @@
 # this file will contain the eval function / heuristics needed to evaluate a each game state
 # reenter values for returned score, as of now, it can surpass winning score
-import math
 
+import math
+from functools import lru_cache
+
+@lru_cache(maxsize = 50000)
 class points:
 	def evaluate(self, mx):
 

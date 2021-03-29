@@ -1,4 +1,5 @@
 from movements import *
+from functools import lru_cache
 
 class rules:
     
@@ -23,6 +24,7 @@ class rules:
                 return movements.bishop_movement(mx, pos, final, 8)
         return (False, "nothing")
 
+    @lru_cache(maxsize = 20000)
     def is_attacked(self, mx, player, pieces, last_move, step):
         for i in range(len(mx)):
             if mx[i].upper() in "K" and mx[i] in pieces:
