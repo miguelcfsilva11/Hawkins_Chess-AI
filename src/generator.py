@@ -3,12 +3,15 @@ import io
 from rules import*
 from operator import itemgetter
 
+
 class generator:
 
     def turn_alge(self, number):
         turn_alge_dic = {0: "a", 1:"b", 2:"c",
             3: "d", 4:"e", 5:"f", 6:"g", 7:"h"}
         return turn_alge_dic[number]
+
+
     def possible_matrix(self, mx, player, pieces, last_move, castling_chance):
 
         piece_value = {"P": 10, "Q": 90, "B": 30, "N": 30, "R": 50,
@@ -325,7 +328,9 @@ class generator:
                 new_mx[4] = "-"
         kx = "".join(new_mx)
         return kx
-    def fen_generator(self, mx):
+
+    def fen_generator(self, mx, player):
+        
         import io
         # Use StringIO to build string more efficiently than concatenating
         with io.StringIO() as s:
@@ -345,7 +350,11 @@ class generator:
             # Move one position back to overwrite last '/'
             s.seek(s.tell() - 1)
             # If you do not have the additional information choose what to put
-            s.write(' b KQkq - 0 1')
+            if player == "Black":
+                s.write(' b KQkq - 0 1')
+            else:
+                s.write(' w KQkq - 0 1')
+
             return s.getvalue()
 
     def change_notation(self, fen, move):
