@@ -22,13 +22,17 @@ first_search = {}
 
 class hawkins:
 
-    def search(self, mx, player, last_move, castling_chance):
+    def search(self, mx, player, depth, last_move, castling_chance):
         global transposition_table
         global first_search
         global node
         global cut
 
-        
+        if player == "Black":
+            maximize = True
+        else:
+            maximize = False
+
         quiet = False
         
         # This boolean,'quiet', controls whether the engine performs a
@@ -37,27 +41,27 @@ class hawkins:
         # Enabling this option will result a critical loss of performance.
 
         starting_point = time.time()
-        for depth in range(1, 6):
+        for level in range(1, depth + 1):
             
             # Iterative deepening, perfect when dealing with time constrains
             # as it allow us to store the best move from previous iterations
             # and evaluate that same position first in the next one, 
             # which makes the pruning even more agressive.
+
             print(len(transposition_table))
-            best_move = hawkins.minimax(self, mx, depth, -1*10**5, 1*10**5, True, castling_chance, last_move, quiet)[1]
+            best_move = hawkins.minimax(self, mx, level, -1*10**5, 1*10**5, maximize, castling_chance, last_move, quiet)[1]
             print(len(transposition_table))
             #print(best_move)
             if time.time() - starting_point >= 10:
                 transposition_table = {}
                 return best_move
             else:
-                transposition_table = {}
                 first_search[mx] = best_move
                 
                 # Storing the best move found in the transposition table,
                 # in order to evaluate it first and hopefuly discard
                 # other options sooner.
-
+        transposition_table = {}
         return best_move
 
     def q_search(self, mx, depth, alpha, beta, maximizing_player, castling_chance, last_move):
@@ -116,7 +120,7 @@ class hawkins:
         # a position previously evaluated. We must
         # immediately return the best move recorded.
 
-        if mx in transposition_table.keys():
+        if mx in transposition_table.keys() and transposition_table[mx][3] >= depth:
             if transposition_table[mx][2] == "Exact":
                 if alpha <= transposition_table[mx][0] <= beta:
                     return transposition_table[mx][:2]
@@ -165,11 +169,11 @@ class hawkins:
         # Generating all possible moves based
         # on the player's pieces and permission to castle.
 
-        moves_generator = generator.possible_matrix(mx, player, pieces, last_move, updated_castling) 
+        moves_generator = generator.possible_matrix(mx, player, tuple(pieces), last_move, tuple(updated_castling)) 
         possible_states = moves_generator[0]
 
         if len(possible_states) == 0:
-            if rules.is_attacked(mx, player, pieces, last_move, False):
+            if rules.is_attacked(mx, player, tuple(pieces), last_move, False):
                 if player == "White":
                     return (10000, mx)
                 
@@ -218,7 +222,7 @@ class hawkins:
                 elif flag == "":
                     flag = "Exact"
 
-            transposition_table[mx] = (max_eval, chosen, flag)
+            transposition_table[mx] = (max_eval, chosen, flag, depth)
             return (max_eval, chosen)
 
         else:
@@ -247,7 +251,7 @@ class hawkins:
                 elif flag == "":
                     flag = "Exact"
 
-            transposition_table[mx] = (min_eval, chosen, flag)
+            transposition_table[mx] = (min_eval, chosen, flag, depth)
             return (min_eval, chosen)
 
 
