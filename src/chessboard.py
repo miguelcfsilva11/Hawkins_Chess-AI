@@ -48,7 +48,7 @@ san_moves_log = ["Start"]
 #-----------R--------k----B---p-p-------P----N-P-----K----------q
 #----------------K------p--p---k---b-p----------R---------r------
 
-mx = "-----------R--------k----B---p-p-------P----N-P-----K----------q"
+mx = "rnbqkbnrpppppppp--------------------------------PPPPPPPPRNBQKBNR"
 
 castling_chance = ["WhiteL", "WhiteR", "BlackL", "BlackR"]
 opening_state = True
@@ -57,7 +57,7 @@ in_check = False
 
 class board:
 
-    def __init__(self, board = "current"):
+    def __init__(self, player, depth):
 
         # Creating 'board' object that will have
         # two distinct players and their respective
@@ -67,6 +67,13 @@ class board:
         self.player2 = "Black"
         self.player1pieces = {"P", "R", "K", "Q", "N", "B"}
         self.player2pieces = {"p", "r", "k", "q", "n", "b"}
+
+        if player == "Black":
+
+            self.player1, self.player2 = self.player2, self.player1
+            self.player1pieces, self.player2pieces = self.player2pieces, self.player1pieces
+
+        self.depth = depth
 
     def endgame(self):
 
@@ -91,7 +98,7 @@ class board:
                 playable = True
                 in_check = False
 
-                board.output_matrix(mx, "White")
+                board.output_matrix(mx, self.player1)
 
             else:
                 print("Bye!")
@@ -103,7 +110,7 @@ class board:
     def convert_to_san(self, move, piece, capture_flag, check_flag, ambiguous_flag):
 
         san_move = ""
-        if piece == "P":
+        if piece.upper() in "P":
             san_move =  move[2:]
             if capture_flag:
                 san_move = move[0] +  "x" + san_move
@@ -111,9 +118,9 @@ class board:
                 san_move += "+"
             return san_move
         else:
-            san_move = piece + move[2:]
+            san_move = piece.upper() + move[2:]
             if capture_flag:
-                san_move = piece + "x" + move[2:]
+                san_move = piece.upper() + "x" + move[2:]
             if check_flag:
                 san_move = san_move + "+"
             if ambiguous_flag:
@@ -143,9 +150,9 @@ class board:
         # contain the game's state into a full-fledged
         # chessboard for a more complete experience.
 
-        #os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
+        os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
 
-        if player == "White":
+        if player == self.player1:
             print("\n\n\n" + paddings.BIG_PAD + colors.BOLD + colors.DARK + backgrounds.WHITE + "    Your turn   " + colors.RESET + "\n")
         
         else:
@@ -183,11 +190,11 @@ class board:
             player_castling = [True if x != 0 else False for x in castling_chance][:2]
         else:
             player_castling = [True if x != 0 else False for x in castling_chance][2:]
-        in_check= rules.is_attacked(mx, player, pieces, last_move, False)
+        in_check= rules.is_attacked(mx, player, tuple(pieces), last_move, False)
         if in_check:
             print("Check!")
 
-        valid_moves = generator.possible_matrix(mx, player, pieces, last_move, player_castling)[1]
+        valid_moves = generator.possible_matrix(mx, player, tuple(pieces), last_move, tuple(player_castling))[1]
 
         if len(valid_moves) == 0 and in_check:
             
@@ -250,6 +257,50 @@ class board:
         while playable:
 
             try:
+                if round == 0 and self.player1 == "Black":
+                    temp_mx = mx
+
+                    # Storing the current game's state
+                    # before the AI's turn.
+
+                    print(colors.BOLD + "\n" +  paddings.MID_PAD + "┏━━━━━━━━━━━━━━━━━━\n" +  colors.BLINKING + paddings.BIG_PAD + "Hawkins' move... " + colors.RESET)
+
+                    fen_state = generator.fen_generator(mx, self.player2)
+
+                    # 'fen_state' will be needed in order
+                    # to convert the move that will be extracted
+                    # from gamelists.py's database to Coordinate Notation.
+
+                    possible_lines = [line for line in game_moves]
+                        
+                    if len(possible_lines) != 0:
+                            
+                        # Pick a move from gamelists.py's database,
+                        # limited to the games that are exactly the same
+                        # to the one being played up until this point.
+
+                        choice = random.randrange(0, len(possible_lines))
+                        ai_response = possible_lines[choice][0]
+                        san_moves_log.append(ai_response)
+                        move = generator.change_notation(fen_state, ai_response)
+                            
+                        pos = list(move)
+                        initial_pos = (8-int(pos[1]), movements.alge(pos[0])-1)
+                        final = (8-int(pos[3]), movements.alge(pos[2])-1)
+                            
+                        result = rules.check_order(mx, initial_pos, final, self.player1, moves_log[-1])
+                            
+                        if result[1] == "en_passant":
+                            mx = generator.move(initial_pos, final, self.player1, "en_passant", mx, "letter")
+                        else:
+                            mx = generator.move(initial_pos, final, self.player1, "step", mx, "letter")
+
+                    board.output_matrix(mx, self.player1)
+                    moves_log.append(board.get_move(mx, temp_mx))
+
+                    board.flags_reset(flags)
+                    round += 1
+
 
                 player_castling = [True if x != 0 else False for x in castling_chance]
                 human_move = input(colors.BOLD + "\n" + paddings.MID_PAD + "┏━━━━━━━━━━━━━━━━━━\n" + paddings.BIG_PAD +"Make your move: ")
@@ -258,7 +309,7 @@ class board:
                 elif human_move.upper() in "HELP":
                     board.help_me()
                 elif human_move.upper() in "CASTLEL":
-                    valid_moves = generator.possible_matrix(mx, self.player1, self.player1pieces, moves_log[-1], player_castling[:2])[1]
+                    valid_moves = generator.possible_matrix(mx, self.player1, tuple(self.player1pieces), moves_log[-1], tuple(player_castling[:2]))[1]
                     if human_move in valid_moves:
                         mx = generator.castle(mx, self.player1, "left")
                         moves_log.append("O-O")
@@ -267,7 +318,7 @@ class board:
                         print(colors.BOLD + "\n"+ paddings.MID_PAD + "Illegal move, chief!")
                         continue
                 elif human_move.upper() in "CASTLER":
-                    valid_moves = generator.possible_matrix(mx, self.player1, self.player1pieces, moves_log[-1], player_castling[:2])[1]
+                    valid_moves = generator.possible_matrix(mx, self.player1, tuple(self.player1pieces), moves_log[-1], tuple(player_castling[:2]))[1]
                     if human_move in valid_moves:
                         mx = generator.castle(mx, self.player1, "right")
                         moves_log.append("O-O-O")
@@ -285,7 +336,7 @@ class board:
                     final = (8-int(pos[3]), movements.alge(pos[2])-1)
                     
                     result = rules.check_order(mx, initial_pos, final, self.player1, moves_log[-1])
-                    valid_moves = generator.possible_matrix(mx, self.player1, self.player1pieces, moves_log[-1], player_castling)[1]
+                    valid_moves = generator.possible_matrix(mx, self.player1, tuple(self.player1pieces), moves_log[-1], tuple(player_castling))[1]
                     
                     if human_move not in valid_moves or initial_pos == final or mx[final[0]*8 + final[1]] in self.player1pieces:
                         
@@ -293,7 +344,7 @@ class board:
                         print(colors.BOLD + "\n" + paddings.MID_PAD + "Illegal move, chief!")
                         continue
 
-                    if mx[initial_pos[0]*8 + initial_pos[1]] == "P":
+                    if mx[initial_pos[0]*8 + initial_pos[1]].upper() in "P":
                         piece_moved = "P"
 
                     else:
@@ -313,7 +364,7 @@ class board:
                                 flags["ambiguous_flag"] = True
 
 
-                    if rules.is_attacked(mx, self.player2, self.player2pieces, moves_log[-1], False):
+                    if rules.is_attacked(mx, self.player2, tuple(self.player2pieces), moves_log[-1], False):
                         flags["check_flag"] = True
 
                     if result[1] == "en_passant":
@@ -350,7 +401,7 @@ class board:
                         if player_castling[1] == True and mx[7*8 + 7]!= "R":
                             castling_chance[1] = 0
 
-                board.final(mx, self.player2, self.player2pieces, moves_log[-1])
+                board.final(mx, self.player2, tuple(self.player2pieces), moves_log[-1])
                 board.output_matrix(mx, self.player2)
 
                 if playable == False:
@@ -366,14 +417,17 @@ class board:
                     
                     if opening_state:
 
-                        fen_state = generator.fen_generator(mx)
+                        fen_state = generator.fen_generator(mx, self.player2)
 
                         # 'fen_state' will be needed in order
                         # to convert the move that will be extracted
                         # from gamelists.py's database to Coordinate Notation.
 
-                        possible_lines = [line for line in game_moves if line[:round*2+1] == san_moves_log[1:]]
-                        
+                        if self.player2 == "Black":
+                            possible_lines = [line for line in game_moves if line[:round*2+1] == san_moves_log[1:]]
+                        else:
+                            possible_lines = [line for line in game_moves if line[:round*2] == san_moves_log[1:]]
+
                         if len(possible_lines) != 0:
                             
                             # Pick a move from gamelists.py's database,
@@ -381,7 +435,12 @@ class board:
                             # to the one being played up until this point.
 
                             choice = random.randrange(0, len(possible_lines))
-                            ai_response = possible_lines[choice][1+round*2]
+
+                            if self.player2 == "Black":
+                                ai_response = possible_lines[choice][1+round*2]
+                            else:
+                                ai_response = possible_lines[choice][round*2]
+
                             san_moves_log.append(ai_response)
                             move = generator.change_notation(fen_state, ai_response)
                             
@@ -398,12 +457,12 @@ class board:
                         else:
 
                             starting_point = time.time()
-                            mx = hawkins.search(mx, self.player2, moves_log[-1], castling_chance)
+                            mx = hawkins.search(mx, self.player2, self.depth, moves_log[-1], castling_chance)
                             print(time.time()-starting_point)
                             opening_state = False
                     else:
                         starting_point = time.time()
-                        mx = hawkins.search(mx, self.player2, moves_log[-1], castling_chance)
+                        mx = hawkins.search(mx, self.player2, self.depth, moves_log[-1], castling_chance)
                         print(time.time()-starting_point)
                     
                     if True in player_castling[2:]:
@@ -446,9 +505,53 @@ backgrounds = backgrounds()
 paddings = paddings()
 rules = rules()
 hawkins = hawkins()
-board = board()
 
 if __name__ == "__main__":
+
+    os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
+    print("\n\t HAWKINS\n")
+    print("1 - Play the White Pieces\n2 - Play the Black Pieces\n3 - Game Difficulty\n")
+
+    player = "NA"
+    depth = 5
+    choice = input()
+
+    while choice not in ("1", "2"):
+
+        if choice != "3":
+
+            os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
+            print("\n\t HAWKINS\n")
+            print("1 - Play the White Pieces\n2 - Play the Black Pieces\n3 - Game Difficulty")
+            print("\nPlease select a valid option!\n")
+            choice = input()
+
+        while choice == "3":
+
+            os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
+            print("\n\t HAWKINS\n")
+            print("Press any key to exit the game difficulty menu\n\n1 - Apprentice (900 ELO)\n2 - Magician (1300 ELO)\n3 - Grand Mage (2000 ELO)\n\n")
+            print("The AI's strength was estimated when facing Stockfish on lichess.org\n")
+            difficulty = input()
+
+            if difficulty == "1":
+                depth = 3
+            elif difficulty == "2":
+                depth = 4
+            elif difficulty == "3":
+                depth = 5
+
+            os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
+            print("\n\t HAWKINS\n")
+            print("1 - Play the White Pieces\n2 - Play the Black Pieces\n3 - Game Difficulty\n")
+            choice = input()
+
+    if choice == "1":
+        player = "White"
+    elif choice == "2":
+        player = "Black"
+
+    board = board(player, depth)
     board.gameplay()
 
 #TODO white king spot referenced bug
