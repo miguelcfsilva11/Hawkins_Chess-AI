@@ -2,8 +2,9 @@ import random
 import time
 import math
 import copy
-from generator import *
-from heuristic import *
+from generator import generator
+from heuristic import evaluate
+from rules import is_attacked, check_order
 
 # The 'node' and 'cut' variables store, respectively,
 # the number of nodes visited throughout the program
@@ -48,10 +49,12 @@ class hawkins:
             # and evaluate that same position first in the next one, 
             # which makes the pruning even more agressive.
 
-            print(len(transposition_table))
-            best_move = hawkins.minimax(self, mx, level, -1*10**5, 1*10**5, maximize, castling_chance, last_move, quiet)[1]
-            print(len(transposition_table))
-            #print(best_move)
+
+            search = hawkins.minimax(self, mx, level, -1*10**5, 1*10**5, maximize, castling_chance, last_move, quiet)
+            best_move = search[1]
+            if search[0] == 10000:
+                return best_move
+
             if time.time() - starting_point >= 10:
                 transposition_table = {}
                 return best_move
@@ -61,6 +64,7 @@ class hawkins:
                 # Storing the best move found in the transposition table,
                 # in order to evaluate it first and hopefuly discard
                 # other options sooner.
+
         transposition_table = {}
         return best_move
 
@@ -74,7 +78,7 @@ class hawkins:
         white_pieces = {"P", "R", "K", "Q", "N", "B"}
         black_pieces = {"p", "r", "k", "q", "n", "b"}
         node += 1
-        evaluation = points.evaluate(mx)
+        evaluation = evaluate(mx)
         if depth == 0:
             return (evaluation, mx)
         if evaluation >= beta:
@@ -104,7 +108,7 @@ class hawkins:
 
     
     def minimax(self, mx, depth, alpha, beta, maximizing_player, castling_chance, last_move, quiet):
-        #print(maximizing_player)
+
         global node
         global cut
         global first_search
@@ -138,7 +142,7 @@ class hawkins:
         if depth == 0:
             if quiet:
                return hawkins.q_search(self, mx, 2, alpha, beta, not maximizing_player, castling_chance, last_move)
-            return (points.evaluate(mx), mx)
+            return (evaluate(mx), mx)
 
         if not maximizing_player:
 
@@ -173,7 +177,7 @@ class hawkins:
         possible_states = moves_generator[0]
 
         if len(possible_states) == 0:
-            if rules.is_attacked(mx, player, tuple(pieces), last_move, False):
+            if is_attacked(mx, player, tuple(pieces), last_move, False):
                 if player == "White":
                     return (10000, mx)
                 
@@ -256,4 +260,3 @@ class hawkins:
 
 
 generator = generator()
-points = points()
