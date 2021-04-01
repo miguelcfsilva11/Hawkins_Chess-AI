@@ -1,4 +1,7 @@
 import math, random, os, sys
+
+sys.path.insert(0, 'data')
+
 from gamelists import game_moves
 from generator import generator
 from ai import hawkins
@@ -308,6 +311,11 @@ class board:
 
                 player_castling = [True if x != 0 else False for x in castling_chance]
                 human_move = input(colors.BOLD + "\n" + paddings.MID_PAD + "┏━━━━━━━━━━━━━━━━━━\n" + paddings.BIG_PAD +"Make your move: ")
+                
+                while human_move == '':
+                    board.output_matrix(self, mx, self.player1)
+                    human_move = input(colors.BOLD + "\n" + paddings.MID_PAD + "┏━━━━━━━━━━━━━━━━━━\n" + paddings.BIG_PAD +"Make your move: ")
+                
                 if human_move.upper() in "STOP":
                     break
                 elif human_move.upper() in "HELP":
@@ -492,13 +500,9 @@ class board:
                     if round == 8:
                         opening_state = False
                     
-            except Exception as e:
+            except:
 
                 board.output_matrix(self, mx, self.player1)
-                print(e)
-                exc_type, exc_tb = sys.exc_info()
-                fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-                print(exc_type, fname, exc_tb.tb_lineno)
                 print(colors.BOLD + "\n" + paddings.MID_PAD + "That's not valid!")
 
                 continue
@@ -512,30 +516,30 @@ hawkins = hawkins()
 if __name__ == "__main__":
 
     os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
-    print("\n\t HAWKINS\n")
+    print(colors.BOLD + "\n\t HAWKINS\n" + colors.RESET + "━━━━━━━━━━━━━━━━━━━━━━━━━")
     print("1 - Play the White Pieces\n2 - Play the Black Pieces\n3 - Game Difficulty\n")
 
     player = "NA"
     depth = 5
-    choice = input()
+    choice = input("--> ")
 
     while choice not in ("1", "2"):
 
         if choice != "3":
 
             os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
-            print("\n\t HAWKINS\n")
+            print(colors.BOLD + "\n\t HAWKINS\n" + colors.RESET + "━━━━━━━━━━━━━━━━━━━━━━━━━")
             print("1 - Play the White Pieces\n2 - Play the Black Pieces\n3 - Game Difficulty")
             print("\nPlease select a valid option!\n")
-            choice = input()
+            choice = input("--> ")
 
         while choice == "3":
 
             os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
-            print("\n\t HAWKINS\n")
+            print(colors.BOLD + "\n\t HAWKINS\n" + colors.RESET + "━━━━━━━━━━━━━━━━━━━━━━━━━")
             print("Press any key to exit the game difficulty menu\n\n1 - Apprentice (900 ELO)\n2 - Magician (1300 ELO)\n3 - Grand Mage (2000 ELO)\n\n")
             print("The AI's strength was estimated when facing Stockfish on lichess.org\n")
-            difficulty = input()
+            difficulty = input("--> ")
 
             if difficulty == "1":
                 depth = 3
@@ -545,9 +549,9 @@ if __name__ == "__main__":
                 depth = 5
 
             os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
-            print("\n\t HAWKINS\n")
+            print(colors.BOLD + "\n\t HAWKINS\n" + colors.RESET + "━━━━━━━━━━━━━━━━━━━━━━━━━")
             print("1 - Play the White Pieces\n2 - Play the Black Pieces\n3 - Game Difficulty\n")
-            choice = input()
+            choice = input("--> ")
 
     if choice == "1":
         player = "White"
