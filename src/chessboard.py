@@ -1,12 +1,9 @@
-import math
-import random
-import os
-#import sys
+import math, random, os, sys
 from gamelists import game_moves
-from copy import deepcopy
-from generator import *
-from ai import *
-from rules import *
+from generator import generator
+from ai import hawkins
+from movements import movements
+from rules import is_attacked, check_order
 from util import *
 import time
 
@@ -39,18 +36,17 @@ board_pieces = {
 moves_log = ["Start"]
 san_moves_log = ["Start"]
 
-moves_log = ["Start"]
-san_moves_log = ["Start"]
-
 # The variable 'mx' will hold our current game state in
 # the form of a string for efficiency purposes.
 # The following string represents the initial state of the board.
+
 #-----------R--------k----B---p-p-------P----N-P-----K----------q
 #----------------K------p--p---k---b-p----------R---------r------
 
 mx = "rnbqkbnrpppppppp--------------------------------PPPPPPPPRNBQKBNR"
 
 castling_chance = ["WhiteL", "WhiteR", "BlackL", "BlackR"]
+
 opening_state = True
 playable = True
 in_check = False
@@ -74,6 +70,7 @@ class board:
             self.player1pieces, self.player2pieces = self.player2pieces, self.player1pieces
 
         self.depth = depth
+        board.gameplay(self)
 
     def endgame(self):
 
@@ -98,16 +95,21 @@ class board:
                 playable = True
                 in_check = False
 
-                board.output_matrix(mx, self.player1)
+                self.player1, self.player2 = self.player2, self.player1
+                self.player1pieces, self.player2pieces = self.player2pieces, self.player1pieces
+
+                board.output_matrix(self, mx, self.player1)
 
             else:
                 print("Bye!")
 
-    def flags_reset(self, flags):
+    @staticmethod
+    def flags_reset(flags):
         for state in flags.keys():
             flags[state] = False
 
-    def convert_to_san(self, move, piece, capture_flag, check_flag, ambiguous_flag):
+    @staticmethod
+    def convert_to_san(move, piece, capture_flag, check_flag, ambiguous_flag):
 
         san_move = ""
         if piece.upper() in "P":
@@ -127,7 +129,8 @@ class board:
                 san_move = san_move[:1] + move[0] + san_move[1:]
             return san_move
 
-    def get_move(self, mx, temp_mx):
+    @staticmethod
+    def get_move(mx, temp_mx):
 
         # Given the board's state before the AI's move
         # and the one returned by the Minimax Search,
@@ -142,7 +145,7 @@ class board:
         return move
 
 
-    def output_matrix(self,mx,player):
+    def output_matrix(self, mx, player):
 
         global board_pieces
 
@@ -177,20 +180,21 @@ class board:
             print(paddings.GAME_PAD + colors.BOLD + colors.GRAY + str(8-row) + colors.RESET +  " " + line)
         print(colors.BOLD + colors.GRAY + paddings.GAME_PAD + "  a b c d e f g h" + colors.RESET)
 
-    def final(self,mx, player, pieces, last_move):
+    @staticmethod
+    def final(mx, player, pieces, last_move):
 
         global playable
         global castling_chance
         global in_check
 
-        possible_draw = 1
-        possible_win = 1
+        possible_draw = True
 
         if player == "White":
             player_castling = [True if x != 0 else False for x in castling_chance][:2]
         else:
             player_castling = [True if x != 0 else False for x in castling_chance][2:]
-        in_check= rules.is_attacked(mx, player, tuple(pieces), last_move, False)
+
+        in_check= is_attacked(mx, player, tuple(pieces), last_move, False)
         if in_check:
             print("Check!")
 
@@ -214,11 +218,11 @@ class board:
                 if i.upper() not in "K":
                     possible_draw = 0
         
-        if possible_draw == 1:
+        if possible_draw:
             playable = 0
-            message = ("It's a Tie!")
-            print(message)
-        
+            print("It's a Tie!")
+
+    
     def help_me(self):
 
         # A call for help, that explains the
@@ -231,9 +235,9 @@ class board:
         "would move your pawn from e2 to e3. To quit write the word 'stop'.\n" + paddings.MIN_PAD +
         "Type 'castle' in case you want to make that play.\n" + paddings.MIN_PAD + "Take a look at the board and do your best!\n") 
 
-        choice = input(paddings.CENTER_PAD + "Understood? Type " + colors.BOLD + "anything" + colors.RESET + " to resume the game!\n\n" + paddings.BIG_PAD)
+        input(paddings.CENTER_PAD + "Understood? Type " + colors.BOLD + "anything" + colors.RESET + " to resume the game!\n\n" + paddings.BIG_PAD)
         
-        board.output_matrix(mx, self.player1) 
+        board.output_matrix(self, mx, self.player1) 
         
     def gameplay(self):
 
@@ -252,7 +256,7 @@ class board:
 
         flags = {"capture_flag": False, "check_flag": False, "ambiguous_flag": False}
 
-        board.output_matrix(mx, "White")
+        board.output_matrix(self, mx, "White")
 
         while playable:
 
@@ -288,14 +292,14 @@ class board:
                         initial_pos = (8-int(pos[1]), movements.alge(pos[0])-1)
                         final = (8-int(pos[3]), movements.alge(pos[2])-1)
                             
-                        result = rules.check_order(mx, initial_pos, final, self.player1, moves_log[-1])
+                        result = check_order(mx, initial_pos, final, self.player1, moves_log[-1])
                             
                         if result[1] == "en_passant":
                             mx = generator.move(initial_pos, final, self.player1, "en_passant", mx, "letter")
                         else:
                             mx = generator.move(initial_pos, final, self.player1, "step", mx, "letter")
 
-                    board.output_matrix(mx, self.player1)
+                    board.output_matrix(self, mx, self.player1)
                     moves_log.append(board.get_move(mx, temp_mx))
 
                     board.flags_reset(flags)
@@ -307,14 +311,14 @@ class board:
                 if human_move.upper() in "STOP":
                     break
                 elif human_move.upper() in "HELP":
-                    board.help_me()
+                    board.help_me(self)
                 elif human_move.upper() in "CASTLEL":
-                    valid_moves = generator.possible_matrix(mx, self.player1, tuple(self.player1pieces), moves_log[-1], tuple(player_castling[:2]))[1]
+                    valid_moves = generator.possible_matrix( mx, self.player1, tuple(self.player1pieces), moves_log[-1], tuple(player_castling[:2]))[1]
                     if human_move in valid_moves:
                         mx = generator.castle(mx, self.player1, "left")
                         moves_log.append("O-O")
                     else:
-                        board.output_matrix(mx, self.player1)
+                        board.output_matrix(self, mx, self.player1)
                         print(colors.BOLD + "\n"+ paddings.MID_PAD + "Illegal move, chief!")
                         continue
                 elif human_move.upper() in "CASTLER":
@@ -323,7 +327,7 @@ class board:
                         mx = generator.castle(mx, self.player1, "right")
                         moves_log.append("O-O-O")
                     else:
-                        board.output_matrix(mx, self.player1)
+                        board.output_matrix(self, mx, self.player1)
                         print(colors.BOLD + "\n" + paddings.MID_PAD + "Illegal move, chief!")
                         continue
                 else:
@@ -335,12 +339,12 @@ class board:
                     initial_pos = (8-int(pos[1]), movements.alge(pos[0])-1)
                     final = (8-int(pos[3]), movements.alge(pos[2])-1)
                     
-                    result = rules.check_order(mx, initial_pos, final, self.player1, moves_log[-1])
+                    result = check_order(mx, initial_pos, final, self.player1, moves_log[-1])
                     valid_moves = generator.possible_matrix(mx, self.player1, tuple(self.player1pieces), moves_log[-1], tuple(player_castling))[1]
                     
                     if human_move not in valid_moves or initial_pos == final or mx[final[0]*8 + final[1]] in self.player1pieces:
                         
-                        board.output_matrix(mx, self.player1)
+                        board.output_matrix(self, mx, self.player1)
                         print(colors.BOLD + "\n" + paddings.MID_PAD + "Illegal move, chief!")
                         continue
 
@@ -364,7 +368,7 @@ class board:
                                 flags["ambiguous_flag"] = True
 
 
-                    if rules.is_attacked(mx, self.player2, tuple(self.player2pieces), moves_log[-1], False):
+                    if is_attacked(mx, self.player2, tuple(self.player2pieces), moves_log[-1], False):
                         flags["check_flag"] = True
 
                     if result[1] == "en_passant":
@@ -402,10 +406,10 @@ class board:
                             castling_chance[1] = 0
 
                 board.final(mx, self.player2, tuple(self.player2pieces), moves_log[-1])
-                board.output_matrix(mx, self.player2)
+                board.output_matrix(self, mx, self.player2)
 
                 if playable == False:
-                    board.endgame()
+                    board.endgame(self)
 
                 else:
                     temp_mx = mx
@@ -448,7 +452,7 @@ class board:
                             initial_pos = (8-int(pos[1]), movements.alge(pos[0])-1)
                             final = (8-int(pos[3]), movements.alge(pos[2])-1)
                             
-                            result = rules.check_order(mx, initial_pos, final, self.player1, moves_log[-1])
+                            result = check_order(mx, initial_pos, final, self.player1, moves_log[-1])
                             
                             if result[1] == "en_passant":
                                 mx = generator.move(initial_pos, final, self.player1, "en_passant", mx, "letter")
@@ -474,9 +478,9 @@ class board:
                             if player_castling[3] == True and mx[7]!= "r":
                                 castling_chance[3] = 0
 
-                    board.output_matrix(mx, self.player1)
+                    board.output_matrix(self, mx, self.player1)
                     board.final(mx, self.player1, self.player1pieces, moves_log[-1])
-                    board.endgame()
+                    board.endgame(self)
                     moves_log.append(board.get_move(mx, temp_mx))
 
                     if playable == False:
@@ -490,9 +494,9 @@ class board:
                     
             except Exception as e:
 
-                board.output_matrix(mx, self.player1)
+                board.output_matrix(self, mx, self.player1)
                 print(e)
-                exc_type, exc_obj, exc_tb = sys.exc_info()
+                exc_type, exc_tb = sys.exc_info()
                 fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
                 print(exc_type, fname, exc_tb.tb_lineno)
                 print(colors.BOLD + "\n" + paddings.MID_PAD + "That's not valid!")
@@ -503,7 +507,6 @@ class board:
 colors = colors()
 backgrounds = backgrounds()
 paddings = paddings()
-rules = rules()
 hawkins = hawkins()
 
 if __name__ == "__main__":
@@ -551,7 +554,4 @@ if __name__ == "__main__":
     elif choice == "2":
         player = "Black"
 
-    board = board(player, depth)
-    board.gameplay()
-
-#TODO white king spot referenced bug
+    board(player, depth)
