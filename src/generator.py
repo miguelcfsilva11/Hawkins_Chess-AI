@@ -1,18 +1,18 @@
-import chess
-import io
-from rules import*
+import chess, io
+from rules import is_attacked, check_order
 from operator import itemgetter
 
 
 class generator:
 
-    def turn_alge(self, number):
+    @staticmethod
+    def turn_alge(number):
         turn_alge_dic = {0: "a", 1:"b", 2:"c",
             3: "d", 4:"e", 5:"f", 6:"g", 7:"h"}
         return turn_alge_dic[number]
 
-
-    def possible_matrix(self, mx, player, pieces, last_move, castling_chance):
+    @staticmethod
+    def possible_matrix(mx, player, pieces, last_move, castling_chance):
 
         piece_value = {"P": 10, "Q": 90, "B": 30, "N": 30, "R": 50,
                         "p": 10, "q": 90, "b": 30, "n": 30, "r": 50, "k": 0, "K": 0}
@@ -28,18 +28,18 @@ class generator:
                 king_side = 7
             if castling_chance[1] == True:
                 if mx[king_side*8 + 5] == "-" and mx[king_side*8+6] == "-" and mx[king_side*8+4].upper() in "K" and mx[king_side*8+7].upper() in "R":
-                    if mx[king_side*8+4] in pieces and mx[king_side*8+7] in pieces and not rules.is_attacked(mx, player, pieces, last_move, king_side*8+5):
-                        if not rules.is_attacked(mx, player, pieces, last_move, king_side*8+6) and not rules.is_attacked(mx, player, pieces, last_move, king_side*8+4):
+                    if mx[king_side*8+4] in pieces and mx[king_side*8+7] in pieces and not is_attacked(mx, player, pieces, last_move, king_side*8+5):
+                        if not is_attacked(mx, player, pieces, last_move, king_side*8+6) and not is_attacked(mx, player, pieces, last_move, king_side*8+4):
                             algebric_states.append("castleR")
                             value = 20
-                            order_list.append((generator.castle(self,mx, player, "right"), value))
+                            order_list.append((generator.castle(mx, player, "right"), value))
             if castling_chance[0] == True:
                 if mx[king_side*8].upper() in "R" and mx[king_side*8+1] == "-" and mx[king_side*8+2] == "-" and mx[king_side*8+3] == "-" and mx[king_side*8+4].upper() in "K":
-                    if mx[king_side*8+4] in pieces and mx[king_side*8] in pieces and not rules.is_attacked(mx, player, pieces, last_move, king_side*8+1) and not rules.is_attacked(mx, player, pieces, last_move, king_side*8+4):
-                        if not rules.is_attacked(mx, player, pieces, last_move, king_side*8+2) and not rules.is_attacked(mx, player, pieces, last_move, king_side*8+3):
+                    if mx[king_side*8+4] in pieces and mx[king_side*8] in pieces and not is_attacked(mx, player, pieces, last_move, king_side*8+1) and not is_attacked(mx, player, pieces, last_move, king_side*8+4):
+                        if not is_attacked(mx, player, pieces, last_move, king_side*8+2) and not is_attacked(mx, player, pieces, last_move, king_side*8+3):
                             algebric_states.append("castleL")
                             value = 20
-                            order_list.append((generator.castle(self, mx, player, "left"), 20))
+                            order_list.append((generator.castle(mx, player, "left"), 20))
         
         for i in range(len(mx)):
             row = i//8
@@ -245,24 +245,24 @@ class generator:
 
             for position in final_options:
                 option = str(mx[:])
-                result = rules.check_order(mx, (row,col), position, player, last_move)
-                attacked = rules.is_attacked(mx, player, pieces, last_move, False)
+                result = check_order(mx, (row,col), position, player, last_move)
+                attacked = is_attacked(mx, player, pieces, last_move, False)
                 #print("got a position")
                 if result[1] == "promotion":
                     if result[0] and (row,col) != position and mx[position[0]*8 + position[1]] not in pieces:
                         for letter in "QRKB":
-                            possible = generator.move(self, (row,col), position, player, result[1], option, letter)
-                            attacked = rules.is_attacked(possible, player, pieces, last_move, False)
+                            possible = generator.move((row,col), position, player, result[1], option, letter)
+                            attacked = is_attacked(possible, player, pieces, last_move, False)
                             if not attacked:
                                 value = 90
                                 order_list.append((possible, value))
-                                alge_order = generator.turn_alge(self, col) + str(8-row) +  generator.turn_alge(self, position[1]) + str(8-position[0])
+                                alge_order = generator.turn_alge(col) + str(8-row) +  generator.turn_alge(position[1]) + str(8-position[0])
                                 algebric_states.append(alge_order)
 
                 else:
                     if result[0] and (row,col) != position and mx[position[0]*8 + position[1]] not in pieces:
-                        possible = generator.move(self, (row,col), position, player, result[1], option, "letter")
-                        attacked = rules.is_attacked(possible, player, pieces, last_move, False)
+                        possible = generator.move((row,col), position, player, result[1], option, "letter")
+                        attacked = is_attacked(possible, player, pieces, last_move, False)
                         if not attacked:
                             if mx[position[0]*8+ position[1]] not in pieces and mx[position[0]*8 + position[1]] != "-":
                                 value =  piece_value[mx[position[0]*8 + position[1]]]
@@ -272,17 +272,17 @@ class generator:
                             else:
                                 value = 0
                                 order_list.append((possible, value))
-                            alge_order = generator.turn_alge(self, col) + str(8-row) +  generator.turn_alge(self, position[1]) + str(8-position[0])
+                            alge_order = generator.turn_alge(col) + str(8-row) +  generator.turn_alge(position[1]) + str(8-position[0])
                             algebric_states.append(alge_order)
-                        #print((row,col), position)
-                        #print(alge_order)
+
             final_options = []
         capture_moves = [tuple[0] for tuple in sorted(captures, key=itemgetter(1), reverse=True)]
         possible_states = [tuple[0] for tuple in sorted(order_list, key=itemgetter(1), reverse = True)]
-        #print(algebric_states)
+
         return (possible_states, algebric_states, capture_moves)
 
-    def move(self, pos, final, player, order, mx, letter):
+    @staticmethod
+    def move(pos, final, player, order, mx, letter):
         mx = list(mx)
         if order == "en_passant":
             mx[final[0]*8 + final[1]] = mx[pos[0]*8 + pos[1]]
@@ -300,7 +300,8 @@ class generator:
         mx = "".join(mx)
         return mx
 
-    def castle(self, mx, player, side):
+    @staticmethod
+    def castle(mx, player, side):
         new_mx = list(mx)
         if player == "White":
             if side == "right":
@@ -329,10 +330,13 @@ class generator:
         kx = "".join(new_mx)
         return kx
 
-    def fen_generator(self, mx, player):
+    @staticmethod
+    def fen_generator(mx, player):
         
         import io
+
         # Use StringIO to build string more efficiently than concatenating
+
         with io.StringIO() as s:
             for row in range(8):
                 empty = 0
@@ -349,7 +353,7 @@ class generator:
                 s.write('/')
             # Move one position back to overwrite last '/'
             s.seek(s.tell() - 1)
-            # If you do not have the additional information choose what to put
+
             if player == "Black":
                 s.write(' b KQkq - 0 1')
             else:
@@ -357,11 +361,8 @@ class generator:
 
             return s.getvalue()
 
-    def change_notation(self, fen, move):
+    @staticmethod
+    def change_notation(fen, move):
         board = chess.Board(fen)
         coordmove = str(board.parse_san(move))
         return coordmove
-generator_io = generator()
-#print(generator_io.change_notation("rnbqkbnr/pppppppp/8/8/4P3/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1", "Nf6"))
-#TODO otimizar o gerador
-rules = rules()
