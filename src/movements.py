@@ -1,6 +1,7 @@
 class movements:
 
-    def alge(self, letter):
+    @staticmethod
+    def alge(letter):
         
         alge_dic = {"a": 1, "b": 2,
         "c": 3, "d": 4,
@@ -32,7 +33,7 @@ class movements:
                     if mx[pos[0]*8 + pos[1]+1] == "p": #checking en passant
                         if pos[0] == 3:
                             pawn_pos = list(last_move)
-                            if last_move != "O-O-O" and last_move != "O-O" and 8-int(pawn_pos[3]) == 3 and 8-int(pawn_pos[1]) == 1 and movements.alge(self, pawn_pos[0])-1 == pos[1]+1:
+                            if last_move != "O-O-O" and last_move != "O-O" and 8-int(pawn_pos[3]) == 3 and 8-int(pawn_pos[1]) == 1 and movements.alge(pawn_pos[0])-1 == pos[1]+1:
                                 return (True, "en_passant")  
             if pos[0]-1 == final[0] and pos[1] == final[1]+1:
                 if mx[final[0]*8 + final[1]] != "-":
@@ -43,7 +44,7 @@ class movements:
                     if mx[pos[0]*8 + pos[1]-1] == "p": # checking en passant
                         if pos[0] == 3:
                             pawn_pos = list(last_move)
-                            if last_move != "O-O-O" and last_move != "O-O" and 8-int(pawn_pos[3]) == 3 and 8-int(pawn_pos[1]) == 1 and movements.alge(self, pawn_pos[0])-1 == pos[1]-1:
+                            if last_move != "O-O-O" and last_move != "O-O" and 8-int(pawn_pos[3]) == 3 and 8-int(pawn_pos[1]) == 1 and movements.alge(pawn_pos[0])-1 == pos[1]-1:
                                 return (True, "en_passant")
             return (False, "nothing")
 
@@ -68,7 +69,7 @@ class movements:
                     if mx[pos[0]*8 + pos[1]+1] == "p": #checking en passant
                         if pos[0] == 4:
                             pawn_pos = list(last_move)
-                            if last_move != "O-O-O" and last_move != "O-O" and 8-int(pawn_pos[3]) == 4 and 8-int(pawn_pos[1]) == 6 and movements.alge(self, pawn_pos[0])-1 == pos[1]+1:
+                            if last_move != "O-O-O" and last_move != "O-O" and 8-int(pawn_pos[3]) == 4 and 8-int(pawn_pos[1]) == 6 and movements.alge(pawn_pos[0])-1 == pos[1]+1:
                                 return (True, "en_passant")  
             if pos[0]+1 == final[0] and pos[1] == final[1]+1:
                 if mx[final[0]*8 + final[1]] != "-":
@@ -79,7 +80,7 @@ class movements:
                     if mx[pos[0]*8 + pos[1]-1] == "p": # checking en passant
                         if pos[0] == 4:
                             pawn_pos = list(last_move)
-                            if last_move != "O-O-O" and last_move != "O-O" and 8-int(pawn_pos[3]) == 4 and 8-int(pawn_pos[1]) == 6 and movements.alge(self, pawn_pos[0])-1 == pos[1]-1:
+                            if last_move != "O-O-O" and last_move != "O-O" and 8-int(pawn_pos[3]) == 4 and 8-int(pawn_pos[1]) == 6 and movements.alge(pawn_pos[0])-1 == pos[1]-1:
                                 return (True, "en_passant")
             return (False, "nothing")
 
