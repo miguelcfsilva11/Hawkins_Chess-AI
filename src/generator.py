@@ -244,10 +244,11 @@ class generator:
                 if row-2 > -1 and col-1 > -1 :final_options.append((row-2, col-1))
 
             for position in final_options:
+                
                 option = str(mx[:])
                 result = check_order(mx, (row,col), position, player, last_move)
                 attacked = is_attacked(mx, player, pieces, last_move, False)
-                #print("got a position")
+
                 if result[1] == "promotion":
                     if result[0] and (row,col) != position and mx[position[0]*8 + position[1]] not in pieces:
                         for letter in "QRKB":
