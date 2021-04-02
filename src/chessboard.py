@@ -168,8 +168,10 @@ class board:
             if player == "White":
                 eval = -eval
 
-            print(7 + int((1 + eval/60)))
-            eval_bar = colors.BOLD + paddings.GAME_PAD + "  " + backgrounds.RED + " "*(7 + int((1 + -eval/80) + 0.5)) + backgrounds.GREEN_LIGHT + " "*(7 + int((1 + eval/80) + 0.5)) + colors.RESET
+            white_score = 7 + int((1 + -eval/80) + 0.5)
+            black_score = 7 + int((1 + eval/80) + 0.5)
+
+            eval_bar = colors.BOLD + paddings.GAME_PAD + "  " + backgrounds.RED + " "*(min(white_score, 16)) + backgrounds.GREEN_LIGHT + " "*(min(black_score, 16)) + colors.RESET
             print("\n\n\n" + paddings.BIG_PAD + colors.BOLD + colors.DARK + backgrounds.WHITE + "    Your turn   " + colors.RESET + "\n")
         
         else:
