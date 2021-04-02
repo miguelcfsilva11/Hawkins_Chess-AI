@@ -7,6 +7,7 @@ from generator import generator
 from ai import hawkins
 from movements import movements
 from rules import is_attacked, check_order
+from heuristic import evaluate
 from util import *
 import time
 
@@ -21,7 +22,7 @@ board_pieces = {
     'Q': colors.LIGHT + '♕ ' + colors.RESET,
     'K': colors.LIGHT + '♔ ' + colors.RESET,
     'P': colors.LIGHT + '♙ ' + colors.RESET,
-    # Black
+
     'r': colors.DARK + '♜ ' + colors.RESET,
     'n': colors.DARK + '♞ ' + colors.RESET,
     'b': colors.DARK + '♝ ' + colors.RESET,
@@ -43,11 +44,10 @@ san_moves_log = ["Start"]
 # the form of a string for efficiency purposes.
 # The following string represents the initial state of the board.
 
-#-----------R--------k----B---p-p-------P----N-P-----K----------q
-#----------------K------p--p---k---b-p----------R---------r------
 
 mx = "rnbqkbnrpppppppp--------------------------------PPPPPPPPRNBQKBNR"
 
+eval_bar = ""
 castling_chance = ["WhiteL", "WhiteR", "BlackL", "BlackR"]
 
 opening_state = True
@@ -81,6 +81,8 @@ class board:
         global in_check
         global opening_state
         global moves_log
+        global san_moves_log
+        global eval_bar
         global castling_chance
         global mx
 
@@ -92,6 +94,8 @@ class board:
                 # Reseting all variables to their initial value.
 
                 moves_log = ["Start"]
+                san_moves_log = ["Start"]
+                eval_bar = ""
                 mx = "rnbqkbnrpppppppp--------------------------------PPPPPPPPRNBQKBNR"
                 castling_chance = ["WhiteL", "WhiteR", "BlackL", "BlackR"]
                 opening_state = True
@@ -151,17 +155,25 @@ class board:
     def output_matrix(self, mx, player):
 
         global board_pieces
+        global eval_bar
 
         # This function formats the strings that
         # contain the game's state into a full-fledged
         # chessboard for a more complete experience.
 
         os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
+        eval = evaluate(mx)
 
         if player == self.player1:
+            if player == "White":
+                eval = -eval
+
+            print(7 + int((1 + eval/60)))
+            eval_bar = colors.BOLD + paddings.GAME_PAD + "  " + backgrounds.RED + " "*(7 + int((1 + -eval/80) + 0.5)) + backgrounds.GREEN_LIGHT + " "*(7 + int((1 + eval/80) + 0.5)) + colors.RESET
             print("\n\n\n" + paddings.BIG_PAD + colors.BOLD + colors.DARK + backgrounds.WHITE + "    Your turn   " + colors.RESET + "\n")
         
         else:
+
             print("\n\n\n" + paddings.BIG_PAD + colors.BOLD + colors.WHITE + backgrounds.BLACK + "  Hawkins' turn " + colors.RESET + "\n")
         
         for row in range(8):
@@ -182,6 +194,7 @@ class board:
             line = "".join(line)
             print(paddings.GAME_PAD + colors.BOLD + colors.GRAY + str(8-row) + colors.RESET +  " " + line)
         print(colors.BOLD + colors.GRAY + paddings.GAME_PAD + "  a b c d e f g h" + colors.RESET)
+        print(eval_bar)
 
     @staticmethod
     def final(mx, player, pieces, last_move):
@@ -235,8 +248,10 @@ class board:
 
         print("\n\n\n\n" + paddings.CENTER_PAD + "Hey! Let's play Chess! What's your move?\n\n" + colors.RESET + paddings.MIN_PAD +
         "Use algebraic notation to tell us that! For example, writing 'e2e3'\n" + paddings.MIN_PAD + 
-        "would move your pawn from e2 to e3. To quit write the word 'stop'.\n" + paddings.MIN_PAD +
-        "Type 'castle' in case you want to make that play.\n" + paddings.MIN_PAD + "Take a look at the board and do your best!\n") 
+        "would move your pawn from e2 to e3. To quit write the word " + colors.BOLD + "'stop'" + colors.RESET, "\n" + paddings.MIN_PAD +
+        "and to reset the game, just write " +  colors.BOLD + "'restart'" + colors.RESET + ".\n" + paddings.MIN_PAD +
+        "Type " + colors.BOLD + "'castleL'" + colors.RESET + " or " + colors.BOLD + "'castleR'" + colors.RESET +
+        " in case you want to make that play\n" + paddings.MIN_PAD + "Take a look at the board and do your best!\n") 
 
         input(paddings.CENTER_PAD + "Understood? Type " + colors.BOLD + "anything" + colors.RESET + " to resume the game!\n\n" + paddings.BIG_PAD)
         
@@ -318,8 +333,16 @@ class board:
                 
                 if human_move.upper() in "STOP":
                     break
+
+                if human_move.upper() in "RESTART":
+                    playable = False
+                    board.endgame(self)
+
                 elif human_move.upper() in "HELP":
+
                     board.help_me(self)
+                    continue
+
                 elif human_move.upper() in "CASTLEL":
                     valid_moves = generator.possible_matrix( mx, self.player1, tuple(self.player1pieces), moves_log[-1], tuple(player_castling[:2]))[1]
                     if human_move in valid_moves:
