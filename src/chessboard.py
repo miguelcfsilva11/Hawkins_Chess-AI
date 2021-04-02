@@ -4,7 +4,7 @@ sys.path.insert(0, 'data')
 
 from gamelists import game_moves
 from generator import generator
-from ai import hawkins
+from ai import Hawkins, Pluto
 from movements import movements
 from rules import is_attacked, check_order
 from heuristic import evaluate
@@ -168,8 +168,8 @@ class board:
             if player == "White":
                 eval = -eval
 
-            white_score = 7 + int((1 + -eval/80) + 0.5)
-            black_score = 7 + int((1 + eval/80) + 0.5)
+            white_score = 7 + int((1 + -eval/200) + 0.5)
+            black_score = 7 + int((1 + eval/200) + 0.5)
 
             eval_bar = colors.BOLD + paddings.GAME_PAD + "  " + backgrounds.RED + " "*(min(white_score, 16)) + backgrounds.GREEN_LIGHT + " "*(min(black_score, 16)) + colors.RESET
             print("\n\n\n" + paddings.BIG_PAD + colors.BOLD + colors.DARK + backgrounds.WHITE + "    Your turn   " + colors.RESET + "\n")
@@ -214,7 +214,7 @@ class board:
 
         in_check= is_attacked(mx, player, tuple(pieces), last_move, False)
         if in_check:
-            print("Check!")
+            print(paddings.BIG_PAD + colors.BOLD + "Check!" + colors.RESET)
 
         valid_moves = generator.possible_matrix(mx, player, tuple(pieces), last_move, tuple(player_castling))[1]
 
@@ -224,11 +224,11 @@ class board:
             # and remains in 'check', declare checkmate.
             # Otherwise, it will be declared stalemate.
 
-            print("Checkmate!")
+            print(paddings.BIG_PAD + colors.BOLD + "Checkmate!" + colors.RESET)
             playable = 0
 
         if len(valid_moves) == 0 and not in_check:
-            print("Stalemate!")
+            print(paddings.BIG_PAD + colors.BOLD + "Stalemate!" + colors.RESET)
             playable = 0
 
         for i in mx:
@@ -493,14 +493,18 @@ class board:
                                 mx = generator.move(initial_pos, final, self.player1, "step", mx, "letter")
                         else:
 
-                            starting_point = time.time()
-                            mx = hawkins.search(mx, self.player2, self.depth, moves_log[-1], castling_chance)
-                            print(time.time()-starting_point)
+                            if self.depth == 1:
+                                mx = pluto.search(mx, self.player2, moves_log[-1], castling_chance)
+                            else:
+                                mx = hawkins.search(mx, self.player2, self.depth, moves_log[-1], castling_chance)
                             opening_state = False
                     else:
-                        starting_point = time.time()
-                        mx = hawkins.search(mx, self.player2, self.depth, moves_log[-1], castling_chance)
-                        print(time.time()-starting_point)
+
+                        if self.depth == 1:
+                            mx = pluto.search(mx, self.player2, moves_log[-1], castling_chance)
+                        else:
+                            mx = hawkins.search(mx, self.player2, self.depth, moves_log[-1], castling_chance)
+
                     
                     if True in player_castling[2:]:
                         if mx[4] != "k":
@@ -536,13 +540,15 @@ class board:
 colors = colors()
 backgrounds = backgrounds()
 paddings = paddings()
-hawkins = hawkins()
+hawkins = Hawkins()
+pluto = Pluto()
 
 if __name__ == "__main__":
 
     os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
     print(colors.BOLD + "\n\t HAWKINS\n" + colors.RESET + "━━━━━━━━━━━━━━━━━━━━━━━━━")
     print("1 - Play the White Pieces\n2 - Play the Black Pieces\n3 - Game Difficulty\n")
+    print("(To learn more about the commands\ntype 'help' once the game starts)\n")
 
     player = "NA"
     depth = 5
@@ -562,15 +568,18 @@ if __name__ == "__main__":
 
             os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
             print(colors.BOLD + "\n\t HAWKINS\n" + colors.RESET + "━━━━━━━━━━━━━━━━━━━━━━━━━")
-            print("Press any key to exit the game difficulty menu\n\n1 - Apprentice (900 ELO)\n2 - Magician (1300 ELO)\n3 - Grand Mage (2000 ELO)\n\n")
-            print("The AI's strength was estimated when facing Stockfish on lichess.org\n")
+            print("Press any key to exit the game difficulty menu\n\n1 - Apprentice (500 ELO)\n2 - Magician (1000 ELO)"
+            "\n3 - Purple Sorcerer (1500 ELO)\n4 - Grand Mage (2000 ELO)\n\n")
+            print("The AI's strength was estimated when facing\nStockfish, another open-source engine on lichess.org\n")
             difficulty = input("--> ")
 
             if difficulty == "1":
-                depth = 3
+                depth = 1
             elif difficulty == "2":
-                depth = 4
+                depth = 3
             elif difficulty == "3":
+                depth = 4
+            elif difficulty == "4":
                 depth = 5
 
             os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
