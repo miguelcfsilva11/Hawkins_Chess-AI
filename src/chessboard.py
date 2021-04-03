@@ -57,10 +57,14 @@ in_check = False
 class board:
 
     def __init__(self, player, depth):
+        """
+        Creating 'board' object that will have
+        two distinct players and their respective
+        pieces associated to them.
 
-        # Creating 'board' object that will have
-        # two distinct players and their respective
-        # pieces associated to them.
+        :param player: pieces that the user wants to play with.
+        :param depth: controls the AI's level of difficulty. 
+        """
 
         self.player1 = "White"
         self.player2 = "Black"
@@ -76,6 +80,10 @@ class board:
         board.gameplay(self)
 
     def endgame(self):
+        """
+        If the game has ended, presents to
+        the user the option of play once again.
+        """
 
         global playable
         global in_check
@@ -110,15 +118,41 @@ class board:
             else:
                 print("Bye!")
 
+
     @staticmethod
     def flags_reset(flags):
+        """
+        Resets any dictionary keys'
+        values to False.
+        """
         for state in flags.keys():
             flags[state] = False
 
+
     @staticmethod
     def convert_to_san(move, piece, capture_flag, check_flag, ambiguous_flag):
+        """
+        Converts a string that represents a move
+        in Coordinate Notation to SAN Notation,
+        given the values of the following flags.
 
+        :param move: move that was played in Coordinate Notation
+        :param piece: piece that was played.
+
+        :param capture_flag: A boolean value that holds
+        information on whether the move was capture.
+
+        :param check_flag: A boolean value that holds
+        information on whether the move resulted
+        in 'Check'.
+
+        :param ambiguous_flag: A boolean value that holds
+        information on whether the final position of
+        piece that was played could have been reached
+        by other piece of that same kind.
+        """
         san_move = ""
+
         if piece.upper() in "P":
             san_move =  move[2:]
             if capture_flag:
@@ -126,22 +160,29 @@ class board:
             if check_flag:
                 san_move += "+"
             return san_move
+
         else:
             san_move = piece.upper() + move[2:]
+
             if capture_flag:
                 san_move = piece.upper() + "x" + move[2:]
             if check_flag:
                 san_move = san_move + "+"
             if ambiguous_flag:
                 san_move = san_move[:1] + move[0] + san_move[1:]
+
             return san_move
 
     @staticmethod
     def get_move(mx, temp_mx):
+        """
+        Given the board's state before the AI's
+        turn to play, and the one after it moves,
+        return the play that was made in Coordinate Notation.
 
-        # Given the board's state before the AI's move
-        # and the one returned by the Minimax Search,
-        # convert the play that was made into Coordinate Notation.
+        :param mx: current board's state.
+        :param temp_mx: board's state before AI's response.
+        """
 
         move = ""
         for i in range(len(mx)):
@@ -153,13 +194,17 @@ class board:
 
 
     def output_matrix(self, mx, player):
+        """
+        This function formats the strings that
+        contain the game's state into a full-fledged
+        chessboard for a more complete experience.
+
+        :param mx: board's state.
+        :param player: the one expected to play.
+        """
 
         global board_pieces
         global eval_bar
-
-        # This function formats the strings that
-        # contain the game's state into a full-fledged
-        # chessboard for a more complete experience.
 
         os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
         eval = evaluate(mx)
@@ -198,8 +243,17 @@ class board:
         print(colors.BOLD + colors.GRAY + paddings.GAME_PAD + "  a b c d e f g h" + colors.RESET)
         print(eval_bar)
 
+
     @staticmethod
     def final(mx, player, pieces, last_move):
+        """
+        Checks whether the game has ended.
+
+        :param mx: board's state.
+        :param player: the one expected to play.
+        :param pieces: player's pieces.
+        :param last_move: the last move played.
+        """
 
         global playable
         global castling_chance
@@ -242,9 +296,10 @@ class board:
 
     
     def help_me(self):
-
-        # A call for help, that explains the
-        # basic knowledge needed for someone to play.
+        """
+        A call for help, that explains the
+        basic knowledge needed for someone to play.
+        """
 
         os.system('cls' if os.name == 'nt' else 'clear') # nt is for Windows, otherwise Linux or Mac
 
@@ -260,6 +315,9 @@ class board:
         board.output_matrix(self, mx, self.player1) 
         
     def gameplay(self):
+        """
+        Runs the game.
+        """
 
         global mx
         global playable
@@ -494,6 +552,11 @@ class board:
                         else:
 
                             if self.depth == 1:
+                                
+                                # If the user selected the easiest level, ask Pluto
+                                # (a weaker, Monte Carlo Tree Search AI) to play
+                                # instead of Hawkins, who may be too strong.
+
                                 mx = pluto.search(mx, self.player2, moves_log[-1], castling_chance)
                             else:
                                 mx = hawkins.search(mx, self.player2, self.depth, moves_log[-1], castling_chance)
