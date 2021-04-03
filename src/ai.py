@@ -24,7 +24,18 @@ first_search = {}
 class Hawkins:
 
     def search(self, mx, player, depth, last_move, castling_chance):
+        """
+        Performs iterative, deeper Minimax Searches
+        while there is computational resources left.
 
+        :param mx: board's state.
+        :param player: the color of AI's pieces.
+        :param depth: max search depth.
+        :param last_move: the last move played.
+
+        :param castling_chance: an array that holds
+        information on whether each player can castle.
+        """
         global transposition_table
         global first_search
         global node
@@ -35,13 +46,6 @@ class Hawkins:
         else:
             maximize = False
 
-        quiet = False
-        
-        # This boolean,'quiet', controls whether the engine performs a
-        # Quiescence Search at the end of the Minimax Search, looking to evaluate
-        # less 'noisy' positions per se, where less pieces seem to be hanging.
-        # Enabling this option will result a critical loss of performance.
-
         starting_point = time.time()
         for level in range(1, depth + 1):
             
@@ -50,8 +54,7 @@ class Hawkins:
             # and evaluate that same position first in the next one, 
             # which makes the pruning even more agressive.
 
-
-            search = Hawkins.minimax(self, mx, level, -1*10**5, 1*10**5, maximize, castling_chance, last_move, quiet)
+            search = Hawkins.minimax(self, mx, level, -1*10**5, 1*10**5, maximize, castling_chance, last_move)
             best_move = search[1]
             if search[0] == 10000:
                 return best_move
@@ -69,47 +72,31 @@ class Hawkins:
         transposition_table = {}
         return best_move
 
-    def q_search(self, mx, depth, alpha, beta, maximizing_player, castling_chance, last_move):
-
-        global transposition_table
-        global first_search
-        global node
-        global cut
-
-        white_pieces = {"P", "R", "K", "Q", "N", "B"}
-        black_pieces = {"p", "r", "k", "q", "n", "b"}
-
-        node += 1
-        evaluation = evaluate(mx)
-        if depth == 0:
-            return (evaluation, mx)
-        if evaluation >= beta:
-            cut += 1
-            return (beta, mx)
-        alpha = max(alpha, evaluation)
-
-        if not maximizing_player: player, pieces = "White", white_pieces
-        else: player, pieces = "Black", black_pieces
-
-        capture_moves = generator.possible_matrix(mx, player, pieces, last_move, [False, False])[2]
-        for capture in capture_moves:
-
-            # A Negamax Search hybrid, that looks for all possible captures
-            # in the given state of the board, stoping when it reaches
-            # an certain depth.
-
-            node += 1
-            eval = Hawkins.q_search(self, capture, depth-1, -beta, -alpha, not maximizing_player, castling_chance, last_move)
-
-            if -eval[0] >= beta:
-                cut += 1
-                return (beta, mx)
-            alpha = max(alpha, -eval[0])   
-
-        return (alpha, mx)
-
     
-    def minimax(self, mx, depth, alpha, beta, maximizing_player, castling_chance, last_move, quiet):
+    def minimax(self, mx, depth, alpha, beta, maximizing_player, castling_chance, last_move):
+        """
+        A Minimax Search that makes use of
+        multiple alpha-beta pruning extensions,
+        neat move-ordering and many optimization techniques.
+
+        :param mx: board's state.
+        :param depth: max search depth.
+        :param alpha: alpha cutoff value.
+        :param beta: beta cutoff value.
+
+        :param maximizing_player: the evaluation function
+        returns positive values when the black pieces are
+        favored, and negative scores when the white pieces
+        take the advantage. With that in mind, depending on
+        the AI's pieces we can tell the search to maximize,
+        or to minimize each given decision (black to maximize,
+        white to minimize).
+
+        :param castling_chance: an array that holds
+        information on whether each player can castle.
+
+        :param last_move: the last move played.
+        """
 
         global node
         global cut
@@ -144,8 +131,6 @@ class Hawkins:
 
 
         if depth == 0:
-            if quiet:
-               return Hawkins.q_search(self, mx, 2, alpha, beta, not maximizing_player, castling_chance, last_move)
             return (evaluate(mx), mx)
 
         if not maximizing_player:
@@ -211,7 +196,7 @@ class Hawkins:
             for state in possible_states:
 
                 node += 1
-                eval = Hawkins.minimax(self, state, depth-1, alpha, beta, False, castling_chance, last_move, quiet)
+                eval = Hawkins.minimax(self, state, depth-1, alpha, beta, False, castling_chance, last_move)
 
                 if eval[0] > max_eval:
                     max_eval = eval[0]
@@ -240,7 +225,7 @@ class Hawkins:
             for state in possible_states:
                 
                 node += 1
-                eval = Hawkins.minimax(self, state, depth-1, alpha, beta, True, castling_chance, last_move, quiet)
+                eval = Hawkins.minimax(self, state, depth-1, alpha, beta, True, castling_chance, last_move)
 
                 if eval[0] < min_eval:
                     min_eval = eval[0]
@@ -267,6 +252,10 @@ class Hawkins:
 class Tree:
 
     def __init__(self, board):
+        """
+        Tree constructor.
+        """
+
         self.board = board
         self.visits = 0
         self.score = 0
@@ -275,8 +264,22 @@ class Tree:
 class Pluto:
 
     def search(self, mx, player, last_move, castling_chance):
+        """
+        Monte Carlo Tree Search algorithm, that uses
+        random rollouts and no previous knowledge of
+        the game to play.
+
+        :param mx: board's state.
+        :param player: the color of AI's pieces.
+        :param last_move: the last move played.
+        :param castling_chance: an array that holds
+        information on whether each player can castle.
+        """
 
         depth = 3
+
+        #Cutoff depth
+
         starting_point = time.time()
         root = Tree(mx)
 
@@ -289,6 +292,18 @@ class Pluto:
         return Pluto.best_child(self, root).board
 
     def expand(self, mx, player, root, last_move, castling_chance):
+        """
+        On this phase, we expand the tree by adding
+        to the root its child nodes and we select
+        one of those states to be explored.
+
+        :param mx: board's state
+        :param player: the color of AI's pieces.
+        :param root: root object.
+        :param last_move: the last move played.
+        :param castling_chance: an array that holds
+        information on whether each player can castle.
+        """
 
         white_pieces = {"P", "R", "K", "Q", "N", "B"}
         black_pieces = {"p", "r", "k", "q", "n", "b"}
@@ -301,17 +316,35 @@ class Pluto:
         else:
             pieces, updated_castling = black_pieces, black_castling
 
-        matrices  = generator.possible_matrix(mx, player, tuple(pieces), last_move, tuple(updated_castling))[0]
-        root.children = [Tree(matrix) for matrix in matrices] #create child_nodes in case they havent been created yet
+        if len(root.children) == 0:
+            matrices  = generator.possible_matrix(mx, player, tuple(pieces), last_move, tuple(updated_castling))[0]
+            root.children = [Tree(matrix) for matrix in matrices]
         
         for child in root.children:
             if child.visits == 0:
-                return child #first iterations of the loop
 
-        return Pluto.expansion_choice(self, root) #choose the one with most potential
+                # We must visit the nodes that haven't
+                # been explored yet first.
+
+                return child
+
+        # In case every single node has been chosen
+        # atleast once, then we must choose the one
+        # that seems to have the most potential.
+
+        return Pluto.expansion_choice(self, root)
 
     def rollout(self, player, leaf, last_move, castling_chance, depth):
- 
+        """
+        Random rollout phase.
+
+        :param player: color of AI's pieces.
+        :param leaf: child node.
+        :param last_move: the last move played.
+        :param castling chance: an array that holds
+        information on whether each player can castle.
+        :param depth: max_depth search.
+        """
         level = 0
         mx = leaf.board
         
@@ -388,6 +421,10 @@ class Pluto:
         return evaluate(mx)
         
     def material_left(self, mx):
+        """
+        Resumes the random rollout while
+        there are sufficient pieces left.
+        """
 
         king_counter = 0
         minor_counter = 0
@@ -403,16 +440,25 @@ class Pluto:
         else:
             return True
 
-    def backpropagate(self, leaf, root, result): # updating our prospects stats
+    def backpropagate(self, leaf, root, result):
+        """
+        Updates our prospects stats
+        after the rollout phase ends.
+        """
 
         leaf.score += result
         leaf.visits += 1
         root.visits += 1
 
-    def calculate_score(self, score, child_visits, parent_visits, c): #UCB1
+    def calculate_score(self, score, child_visits, parent_visits, c):
+
         return score / child_visits + c * math.sqrt(math.log(parent_visits) / child_visits)
 
-    def expansion_choice(self, root): #returns most promising node
+    def expansion_choice(self, root): 
+        """
+        Returns most promising node
+        according to the UCB1 formula.
+        """
 
         threshold = -1*10**6
 
@@ -427,6 +473,10 @@ class Pluto:
 
         
     def best_child(self,root):
+        """
+        Returns most promising node
+        based on its number of visits.
+        """
 
         threshold = -1*10**6
 
