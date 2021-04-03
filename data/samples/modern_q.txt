@@ -1,0 +1,4368 @@
+
+1.d4 g6 2.e4 Bg7 3.c4 d6 4.Nc3 e5 5.Nge2 Nc6 6.Be3 exd4 7.Nxd4 Nge7 8.h4 f5
+1.d4 d6 2.c4 g6 3.Nc3 Bg7 4.e4 Nf6 5.f4 O-O 6.Nf3 c5 7.d5 e6 8.Be2 exd5 9.cxd5 Bg4
+1.d4 g6 2.e4 Bg7 3.c4 d6 4.Nc3 c5 5.d5 Bxc3+ 6.bxc3 f5 7.exf5 Bxf5 8.Ne2 Qa5
+1.c4 g6 2.d4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Nge2 e5 6.Be3 f5 7.dxe5 dxe5 8.Qxd8+ Nxd8
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nc6 5.Be3 e5 6.d5 Nce7 7.g4 h5 8.g5 f5 9.gxf6 Nxf6
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 e5 5.d5 a5 6.Be3 Na6 7.Nge2 f5 8.exf5 gxf5
+1.d4 d6 2.c4 g6 3.Nc3 Bg7 4.e4 Nf6 5.Nf3 O-O 6.Be2 c6 7.O-O e5 8.Be3 Re8
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nc6 5.Nge2 e5 6.Be3 Nf6 7.f3 exd4 8.Nxd4 Bd7
+1.d4 d6 2.e4 g6 3.c4 Bg7 4.Nc3 e5 5.Nf3 exd4 6.Nxd4 Ne7 7.h4 Nbc6 8.Be3 f5
+1.d4 g6 2.e4 Bg7 3.c4 d6 4.Nc3 Nf6 5.Nf3 O-O 6.h3 e5 7.d5 Nh5 8.g3 Qe8 9.Be2 f5
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nc6 5.Be3 e5 6.Nge2 Nf6 7.d5 Ne7 8.f3 O-O
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nf6 5.Nf3 O-O 6.Be2 e5 7.dxe5 dxe5 8.Qxd8 Rxd8
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Be3 Nf6 6.f3 O-O 7.Nge2 a6 8.Qd2 b5
+1.e4 d6 2.d4 g6 3.c4 Bg7 4.Nc3 Nc6 5.Be3 e5 6.d5 Nce7 7.Qd2 f5 8.f3 Nf6 9.Bd3 O-O
+1.c4 g6 2.Nc3 Bg7 3.d4 d6 4.e4 Nc6 5.Nge2 e5 6.Be3 exd4 7.Nxd4 Nge7 8.Qd2 O-O
+1.d4 d6 2.c4 g6 3.e4 Bg7 4.Nc3 Nc6 5.Be3 e5 6.Nge2 Nf6 7.f3 O-O 8.d5 Ne7
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nf6 5.f3 O-O 6.Be3 Nc6 7.Nge2 a6 8.Qd2 Bd7
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Be3 e5 6.Nge2 f5 7.exf5 gxf5 8.dxe5 dxe5
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nf6 5.Be2 O-O 6.Be3 Na6 7.Nf3 e5 8.O-O Ng4
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 e5 5.dxe5 dxe5 6.Qxd8+ Kxd8 7.Bg5+ f6 8.O-O-O+ Nd7
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.d5 a5 6.Bd3 Na6 7.Nge2 Qh4 8.Qa4+ Bd7
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nf6 5.Bd3 O-O 6.Nge2 c5 7.d5 e6 8.O-O Ng4
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Nf3 e5 6.Bg5 f6 7.Be3 Nh6 8.dxe5 dxe5
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Nge2 Nf6 6.h3 O-O 7.g4 e5 8.d5 Nd4 9.Bg2 c5
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.d5 a5 6.Bd3 Na6 7.h3 h5 8.a3 f5 9.b4 f4
+1.d4 d6 2.c4 g6 3.Nc3 Bg7 4.e4 e5 5.d5 a5 6.Nge2 Na6 7.Ng3 h5 8.Be3 h4 9.Nge2 Nc5
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nd7 5.Be3 e5 6.Nge2 Ne7 7.Qd2 h6 8.f4 exf4
+1.d4 g6 2.c4 d6 3.Nc3 Bg7 4.e4 e5 5.d5 f5 6.exf5 gxf5 7.Qh5+ Kf8 8.f4 Nf6
+1.d4 d6 2.e4 g6 3.c4 Bg7 4.Nc3 Nc6 5.Nge2 e5 6.Be3 exd4 7.Nxd4 Nge7 8.Be2 O-O
+9.Qd2 f5 10.exf5 Nxf5 11.Nxf5 Bxf5 12.O-O-O a5 13.g4 Bxc3 14.Qd5+ Kg7 15.bxc3 Bd7
+16.h4 Qf6 17.Qd2 Rae8 18.Bh6+ Kg8 19.Bxf8 Rxf8 20.Rh2 b6 21.h5 g5 22.h6 Be8
+23.Bd3 Ne5 24.Bf5 Kh8 25.Qe2 Bg6 26.Bxg6 Qf4+ 27.Kc2 Qxh2 28.Bf5 Qxh6 29.Qe4 Qf6
+30.Rh1 h6 31.f4 gxf4 32.Qxf4 Kg7 33.Rh5 Nf7 34.Qd4 Re8 35.Bd3 c5 36.Qd5 Re5
+37.Qg2 Ng5 38.Qb7+ Re7 39.Qg2 Nf3 40.Kb2 Ne1 41.Qf1 Qf2+ 42.Kb3 a4+ 43.Ka3 Qd2  0-1
+
+[Event "Villa Tehuelches Open"]
+[Site "Villa Tehuelches CHI"]
+[Date "2019.07.14"]
+[Round "7.1"]
+[White "Henriquez Villagra,C"]
+[Black "Rodriguez Vila,A"]
+[Result "1-0"]
+[WhiteElo "2560"]
+[BlackElo "2492"]
+[ECO "A42"]
+
+1.d4 d6 2.c4 g6 3.Nc3 Bg7 4.e4 e5 5.d5 a5 6.Bd3 Na6 7.Nge2 Nh6 8.h4 O-O 9.h5 g5
+10.Qd2 Nc5 11.Bc2 f6 12.Ng3 c6 13.a4 Qb6 14.Ra3 Qb4 15.Qe2 cxd5 16.cxd5 f5
+17.exf5 Nxf5 18.Nxf5 Bxf5 19.h6 Bxc2 20.Qxc2 Bf6 21.O-O Rac8 22.Be3 Qh4 23.Bxc5 Rxc5
+24.Qf5 Kh8 25.Ne4 Rc4 26.Nxd6 Qg4 27.Qxg4 Rxg4 28.Nxb7 Rd4 29.Nxa5 e4 30.Nc6 Rxd5
+31.b4 g4 32.Re3 Rd6 33.b5 Re6 34.Rfe1 Rfe8 35.a5 Bg5 36.a6 Bxe3 37.fxe3 Rxh6
+38.a7 Ra8 39.b6 Rxc6 40.b7 Rcc8 41.Rb1 Kg7 42.bxc8=Q Rxc8 43.Rb8  1-0
+
+[Event "47th Sparkassen Open"]
+[Site "Dortmund GER"]
+[Date "2019.07.15"]
+[Round "3.26"]
+[White "Toel,K"]
+[Black "Gluma,Christian"]
+[Result "1-0"]
+[WhiteElo "2068"]
+[BlackElo "1876"]
+[ECO "A42"]
+
+1.d4 g6 2.e4 Bg7 3.c4 d6 4.Nc3 e5 5.dxe5 Bxe5 6.Qc2 Nc6 7.Be3 Bg7 8.O-O-O Be6
+9.Nf3 Qe7 10.Nd5 Qd7 11.Kb1 Nge7 12.Bg5 Bxd5 13.cxd5 Ne5 14.Nd4 a6 15.h3 c5
+16.dxc6 N5xc6 17.Nxc6 Nxc6 18.Bc4 Rc8 19.Qd2 Nd4 20.Rc1 O-O 21.Bh6 Bxh6 22.Qxh6 Qa4
+23.Bd5 Rc2 24.Rxc2 Qxc2+ 25.Ka1 Rc8 26.Qf4 Rc7 27.a3 Nb5 28.Qe3 Nc3 29.Rc1 Qxc1+
+30.Qxc1 Nxd5 31.Qg5 Ne7 32.e5 dxe5 33.Qxe5 Rc1+ 34.Ka2 Nc6 35.Qe3 Rd1 36.Qe8+ Kg7
+37.Qc8 Rd2 38.Qxb7 Ne5 39.Qc7 Re2 40.f4 Ng4 41.hxg4 Rxg2 42.Qe5+ Kg8 43.g5  1-0
+
+[Event "FSIM July 2019"]
+[Site "Budapest HUN"]
+[Date "2019.07.16"]
+[Round "9.3"]
+[White "Farkas,Ti"]
+[Black "Vegh,E"]
+[Result "1/2-1/2"]
+[WhiteElo "2314"]
+[BlackElo "2220"]
+[ECO "A42"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nc6 5.d5 Nd4 6.Be3 c5 7.Nge2 Qb6 8.Nxd4 cxd4
+9.Na4 Qa5+ 10.b4 Qxb4+ 11.Bd2 Qa3 12.Bc1 Qb4+ 13.Bd2 Qa3 14.Bc1 Qb4+ 15.Bd2  1/2-1/2
+
+[Event "European Youth U18 Teams"]
+[Site "Pardubice CZE"]
+[Date "2019.07.16"]
+[Round "6.2"]
+[White "Badelka,Olga"]
+[Black "Schoppen,Casper"]
+[Result "1/2-1/2"]
+[WhiteElo "2386"]
+[BlackElo "2493"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.d5 Nd7 6.Be3 Ne7 7.g4 O-O 8.Bd3 f5 9.gxf5 gxf5
+10.exf5 Nxf5 11.Bxf5 Rxf5 12.Nge2 Rf7 13.Ne4 Nf6 14.Ng5 Rf8 15.Qc2 Qe8 16.Rg1 Qg6
+17.Qb3 Ng4 18.c5 Kh8 19.h3 Nxe3 20.fxe3 Qh5 21.Ne6 Bxe6 22.dxe6 dxc5 23.Qc4 b5
+24.Qxc5 Rae8 25.Rd1 Qh4+ 26.Kd2 Rxe6 27.Kc1 Qh6 28.Kb1 Rg6 29.Rgf1 Rgf6 30.Rg1 Rg6
+31.Rgf1 Rgf6 32.Rg1 a6 33.Qxc7 R6f7 34.Qc5 Qxh3 35.Rxg7 Qf5+ 36.e4 Qxe4+
+37.Ka1 Qxe2 38.Rgg1 Qe4 39.Rge1 Qf4 40.Rxe5 Qf6 41.a3 Rg7 42.Rde1 Rg2 43.Qb4 Rg6
+44.Qc5 Rg2 45.Qb4 Rg6 46.Qc5 Rg2  1/2-1/2
+
+[Event "12th Paleochora Open 2019"]
+[Site "Paleochora GRE"]
+[Date "2019.07.17"]
+[Round "6.6"]
+[White "Mozharov,M"]
+[Black "Apanasenok,A"]
+[Result "1-0"]
+[WhiteElo "2561"]
+[BlackElo "2202"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 e5 5.Nf3 Nc6 6.Bg5 f6 7.Be3 Nh6 8.dxe5 dxe5
+9.Qxd8+ Kxd8 10.Rd1+ Bd7 11.c5 Kc8 12.Bc4 Re8 13.O-O Be6 14.Nd5 Nf7 15.Bb5 Rf8
+16.Nd2 Bxd5 17.exd5 Ne7 18.Bc4 Nf5 19.g4 Nxe3 20.fxe3 Kd7 21.Ne4 Rad8 22.Nxf6+ Bxf6
+23.Rxf6 Ng5 24.c6+ bxc6 25.Rxc6 Rb8 26.Bb3 Rf3 27.Rdc1 Rxb3 28.axb3 Rxe3
+29.Rxc7+ Kd6 30.Rxa7 Kxd5 31.Ra5+ Kd6 32.Rd1+ Ke6 33.Ra6+ Ke7 34.Rb6 e4 35.Ra1 Nh3+
+36.Kh1  1-0
+
+[Event "30th Czech Rapid G1 2019"]
+[Site "Pardubice CZE"]
+[Date "2019.07.18"]
+[Round "4.9"]
+[White "Gutman,G"]
+[Black "Rasik,V"]
+[Result "1/2-1/2"]
+[WhiteElo "2466"]
+[BlackElo "2470"]
+[ECO "E70"]
+
+1.d4 d6 2.c4 g6 3.Nc3 Bg7 4.e4 Nf6 5.Nge2 a6 6.Ng3 c6 7.h4 h5 8.Bg5 b5 9.a3 O-O
+10.Qd2 Nbd7 11.Bh6 bxc4 12.Bxg7 Kxg7 13.Bxc4 d5 14.Ba2 dxe4 15.O-O-O Rb8
+16.Rhe1 Nb6 17.Ncxe4 Nbd5 18.Qg5 Rb5 19.Nc5 Qd6 20.Qe5 Qxe5 21.Rxe5 e6 22.Rd2 Rd8
+23.Bc4 Rb6 24.Re1 a5 25.Nf1 Rb8 26.Nh2 Nb6 27.Ba2 Nfd5 28.Nf3 Nd7 29.Nxd7 Bxd7
+30.g3 Be8 31.Rc2 Ne7 32.Re5 Rb5 33.Bc4 Rxe5 34.dxe5 Nf5 35.Rd2 Rb8 36.Ng5 Kf8
+37.Ne4 c5 38.Kc2 Nd4+ 39.Kc3 Nf3 40.Rd6 Nxe5 41.Ba2 Ke7 42.Ra6 Bb5 43.Ra7+ Kf8
+44.f4 Nc6 45.Rc7 Nd4 46.Ng5 Be8 47.Rxc5 Ne2+ 48.Kc2 Nd4+  1/2-1/2
+
+[Event "30th Czech Rapid G1 2019"]
+[Site "Pardubice CZE"]
+[Date "2019.07.18"]
+[Round "5.14"]
+[White "Mirzoev,E"]
+[Black "Piesik,P"]
+[Result "1/2-1/2"]
+[WhiteElo "2493"]
+[BlackElo "2421"]
+[ECO "A42"]
+
+1.c4 g6 2.d4 Bg7 3.e4 d6 4.Nc3 Nd7 5.Be3 e5 6.d5 a5 7.Bd3 Ngf6 8.f3 Nc5 9.Bc2 Nh5
+10.Nge2 f5 11.exf5 Bxf5 12.Bxc5 dxc5 13.Ba4+ Bd7 14.Ne4 b6 15.N2c3 O-O 16.Bxd7 Qxd7
+17.Qd2 Rf4 18.O-O Bh6 19.Qe2 Rf7 20.g3 Ng7 21.g4 Bf4 22.Kg2 Raf8 23.Nf2 Ne8
+24.Nce4 Qe7 25.Nd3 Qh4 26.Kh1 Nd6 27.Nxd6 cxd6 28.Rg1 Kg7 29.Raf1 Rh8 30.Rg2 h5
+31.g5 Rf5 32.Rfg1 Rhf8 33.Nf2 Kf7 34.Ne4 Ke7 35.Qd3 Qh3 36.Nf2 Qh4 37.Qb3 Rb8
+38.Ne4 Qh3 39.Nf2 Qh4 40.Ne4  1/2-1/2
+
+[Event "Tal Memorial Blitz 2019"]
+[Site "Riga LAT"]
+[Date "2019.07.18"]
+[Round "3.8"]
+[White "Postny,E"]
+[Black "Cruz,Cr"]
+[Result "1-0"]
+[WhiteElo "2601"]
+[BlackElo "2562"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 e5 5.d5 Nh6 6.Nf3 O-O 7.Be2 a5 8.h4 f5 9.h5 f4
+10.hxg6 hxg6 11.Bd2 Na6 12.Qc2 Ng4 13.Rf1 c6 14.O-O-O Bd7 15.Kb1 Qe7 16.Ne1 Rfc8
+17.Na4 cxd5 18.Nb6 dxe4 19.Nxd7 Qxd7 20.Qxe4 Qf5 21.Bd3 Qxe4 22.Bxe4 Nc5
+23.Bxg6 Rd8 24.Nd3 Nxd3 25.Bxd3 Nf6 26.f3 Kf7 27.Bc3 Nd7 28.Be4 Nc5 29.Bd5+ Ke7
+30.Rh1 a4 31.Rh7 Kf6 32.Bb4 Rh8 33.Rxh8 Rxh8 34.Bxc5 dxc5 35.Bxb7 Rh2 36.Rd6+ Kg5
+37.Be4 Bf6 38.Rd2 Kh4 39.a3 Kg3 40.b4 axb3 41.a4 Rxg2 42.Rxg2+ Kxg2 43.a5 Bd8
+44.a6 Bb6 45.Kb2 Kf2 46.Kxb3 Ke3 47.Ka4 Kd4 48.Kb5 Ba7 49.Kc6  1-0
+
+[Event "47th Sparkassen Open"]
+[Site "Dortmund GER"]
+[Date "2019.07.19"]
+[Round "7.16"]
+[White "Gallasch,Jonas"]
+[Black "Buchholz,Peter"]
+[Result "1/2-1/2"]
+[WhiteElo "1996"]
+[BlackElo ""]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.dxe5 dxe5 6.Qxd8+ Kxd8 7.Bg5+ f6 8.Be3 Be6
+9.Nf3 Nd7 10.O-O-O Bh6 11.Nd5 Bxe3+ 12.Nxe3 c6 13.Bd3 Kc7 14.g4 Ne7 15.h4 h6
+16.g5 fxg5 17.hxg5 Rhf8 18.Nd2 h5 19.f3  1/2-1/2
+
+[Event "12th Paleochora Open 2019"]
+[Site "Paleochora GRE"]
+[Date "2019.07.19"]
+[Round "8.16"]
+[White "David,Alb"]
+[Black "Apanasenok,A"]
+[Result "1-0"]
+[WhiteElo "2553"]
+[BlackElo "2202"]
+[ECO "A42"]
+
+1.c4 g6 2.d4 Bg7 3.e4 d6 4.Nc3 e5 5.dxe5 dxe5 6.Qxd8+ Kxd8 7.f4 Be6 8.Nf3 Nd7
+9.Be2 h6 10.g3 Ne7 11.O-O Bh3 12.Rd1 Kc8 13.Be3 Re8 14.Rd3 Nc6 15.Rad1 Bf8
+16.f5 Bc5 17.Rxd7 Bxe3+ 18.Kh1 gxf5 19.Rxf7 fxe4 20.Nxe4 b6 21.c5 Nd4 22.Ba6+ Kd8
+23.Nf6 Be6 24.Nxe5 Bd5+ 25.Nxd5 Rxe5 26.Nxe3  1-0
+
+[Event "39th Plunge Open 2019"]
+[Site "Plateliai LTU"]
+[Date "2019.07.19"]
+[Round "7.12"]
+[White "Skierus,A"]
+[Black "Kuvsinov,A"]
+[Result "1-0"]
+[WhiteElo "1910"]
+[BlackElo "1726"]
+[ECO "A42"]
+
+1.d4 d6 2.c4 g6 3.Nc3 Bg7 4.e4 Nc6 5.Nge2 e5 6.Be3 Nge7 7.d5  1-0
+
+[Event "21st Sant Marti Open 2019"]
+[Site "Barcelona ESP"]
+[Date "2019.07.20"]
+[Round "8.11"]
+[White "Piceu,T"]
+[Black "Moskalenko,V1"]
+[Result "1-0"]
+[WhiteElo "2368"]
+[BlackElo "2500"]
+[ECO "E77"]
+
+1.d4 g6 2.e4 Bg7 3.c4 d6 4.Nc3 Nf6 5.f4 c5 6.d5 O-O 7.Nf3 e6 8.Be2 exd5 9.cxd5 Bg4
+10.O-O Bxf3 11.Bxf3 Nbd7 12.Re1 Re8 13.Be3 b5 14.e5 dxe5 15.Nxb5 Qb6 16.Nc3 exf4
+17.Bf2 Ne5 18.Na4 Qd6 19.Nxc5 g5 20.Ne4 Nxe4 21.Bxe4 Nd7 22.Rc1 Nf6 23.Bf3 h5
+24.h3 Rxe1+ 25.Bxe1 Re8 26.Bf2 Qd7 27.d6 Re6 28.Rc7 Qxd6 29.Rxa7 Qe5 30.Bxh5 Nxh5
+31.Qxh5 Rg6 32.b4 Qd5 33.Ra5 Qb7 34.a3 g4 35.hxg4 Qe4 36.Qf5 Qe2 37.Ra8+ Kh7
+38.Qh5+ Rh6 39.Qf5+ Rg6 40.Rd8 Bf6 41.Qh5+ Rh6 42.Qxf7+  1-0
+
+[Event "Xtracon Chess Open 2019"]
+[Site "Helsingor DEN"]
+[Date "2019.07.20"]
+[Round "1.116"]
+[White "Werner,Jakob"]
+[Black "Lilja,R"]
+[Result "0-1"]
+[WhiteElo "1681"]
+[BlackElo "2126"]
+[ECO "E81"]
+
+1.d4 g6 2.e4 Bg7 3.c4 d6 4.Nc3 Nf6 5.f3 O-O 6.Be3 c5 7.Nge2 Nc6 8.dxc5 dxc5
+9.Qxd8 Rxd8 10.Bxc5 b6 11.Ba3 Nd7 12.O-O-O Ba6 13.b3 Nc5 14.Bxc5 bxc5 15.Nd5 Rac8
+16.f4 e6 17.Ne3 Nb4 18.Kb1 Bb7 19.Ng3 Bh6 20.Be2 Bxf4 21.Ng4 Bxg3 22.hxg3 Rxd1+
+23.Rxd1 Bxe4+ 24.Kb2 Bxg2 25.Rd7 Bc6 26.Rd6 Be8 27.Bf3 Kg7 28.Ne5 Kf6 29.Ng4+ Ke7
+30.Rd2 h5 31.Nf2 Bc6 32.Bxc6 Nxc6 33.Ne4 Ne5 34.Kc3 Rc7 35.a3 Ng4 36.Re2 Nf6
+37.Ng5 a5 38.Nf3 Ng4 39.Nd2 Nf6 40.Nf3 Nd7 41.Nd2 f5 42.b4 cxb4+ 43.axb4 axb4+
+44.Kxb4 Rb7+ 45.Kc3 Nc5 46.Re1 Rd7 47.Re3 Kf6 48.Nf3 Ne4+ 49.Rxe4 fxe4 50.Nd4 e5
+51.Ne2 g5 52.Kb4 e3 53.Nc3 h4 54.gxh4 gxh4 55.c5 h3 56.Ne4+ Kf5 57.c6 Rc7
+58.Nd6+ Kf4 59.Kc5 h2 60.Kb6 Rxc6+  0-1
+
+[Event "TCh-TUR Super League 2019"]
+[Site "Konya TUR"]
+[Date "2019.07.21"]
+[Round "6.6"]
+[White "Soysal,Serkan"]
+[Black "Kerigan,D"]
+[Result "0-1"]
+[WhiteElo "2431"]
+[BlackElo "2398"]
+[ECO "E71"]
+
+1.d4 g6 2.e4 d6 3.c4 Bg7 4.Nc3 Nf6 5.h3 O-O 6.Be3 c5 7.dxc5 dxc5 8.Qxd8 Rxd8
+9.e5 Nfd7 10.f4 b6 11.Be2 Bb7 12.Nf3 Nc6 13.Kf2 Nf8 14.Rad1 Ne6 15.Nd5 Kf8
+16.Bd3 Rd7 17.h4 Rad8 18.h5 Nc7 19.Nxc7 Rxd3 20.Rxd3 Rxd3 21.h6 Bh8 22.Nd5 Ba6
+23.b3 f6 24.f5 gxf5 25.e6 Ne5 26.Bf4 Ng4+ 27.Ke1 Ne5 28.Rh3 Rxd5 29.Bxe5 Rd8
+30.Bc7 Rc8 31.Bh2 Rc6 32.Rh5 Bc8 33.Rxf5 Bxe6 34.Rf4 Bf7 35.Nh4 Re6+ 36.Kd2 Re5
+37.g4 Rg5 38.Re4 e5 39.Nf3 Rg6 40.g5 f5 41.Rxe5 Bxe5 42.Bxe5 Re6 43.Bf6 Re4
+44.Ne5 Be8 45.a3 Kg8 46.Kd3 Bh5 47.Nc6 Bg6 48.Ne5 f4 49.Kd2 Bh5  0-1
+
+[Event "39th Plunge Open 2019"]
+[Site "Plateliai LTU"]
+[Date "2019.07.21"]
+[Round "9.3"]
+[White "Juksta,Karolis"]
+[Black "Bagdanskis,Dangis"]
+[Result "1-0"]
+[WhiteElo "2261"]
+[BlackElo "1806"]
+[ECO "E73"]
+
+1.d4 d6 2.e4 g6 3.c4 Bg7 4.Nc3 Nf6 5.Be2 O-O 6.Be3 Nfd7 7.Nf3 e5 8.O-O Nc6
+9.Qd2 f5 10.exf5 Rxf5 11.d5 Ne7 12.Ng5 Nc5 13.Bg4 Rxg5 14.Bxc8 Rh5 15.Bg4 Rh4
+16.h3 h5 17.Bg5 hxg4 18.Bxh4 gxh3 19.Qg5 hxg2 20.Kxg2 Bf8 21.Qg3 Qe8 22.Bxe7 Bxe7
+23.Rh1 Kg7 24.Qh3 Qd7 25.Qh7+ Kf6 26.Rh3 e4 27.b4 Nd3 28.Nxe4+ Ke5 29.Rxd3 Qg4+
+30.Ng3 Bf8 31.Qh8+  1-0
+
+[Event "Xtracon Chess Open 2019"]
+[Site "Helsingor DEN"]
+[Date "2019.07.22"]
+[Round "4.124"]
+[White "Nielsen,Aa"]
+[Black "Weber,Andre1"]
+[Result "0-1"]
+[WhiteElo "1936"]
+[BlackElo "1704"]
+[ECO "E80"]
+
+1.c4 g6 2.e4 Bg7 3.d4 d6 4.Nc3 Nf6 5.f3 c6 6.Be3 Nbd7 7.Bd3 e5 8.d5 c5 9.Qd2 h5
+10.h4 a6 11.Nh3 Nf8 12.Nf2 Bd7 13.Bc2 Qa5 14.O-O Qd8 15.g3 N6h7 16.Kg2 Qe7
+17.a3 Bf6 18.Rh1 Bg7 19.b4 b6 20.bxc5 bxc5 21.Rab1 Bc8 22.Bd1 Nd7 23.Bc2 O-O
+24.Bh6 f5 25.exf5 gxf5 26.Bxg7 Qxg7 27.Rbg1 Nb6 28.Qd3 e4 29.fxe4 f4 30.Kf1 f3
+31.g4 Qd4 32.gxh5+ Kh8 33.e5 Qxc4 34.e6 Bb7 35.Rg4 Qxd3+ 36.Bxd3 Nxd5 37.Nxd5 Bxd5
+38.Be4 Rab8 39.Kg1 Bxe6 40.Rg6 Rbe8 41.Bc6 Re7 42.Kh2 Bc4 43.Rxd6 Re2 44.Kg3 Nf6
+45.Bxf3 Rxf2 46.Rxf6 Rxf6 47.Kxf2 Rxf3+ 48.Kxf3 Bd5+ 49.Ke3 Bxh1 50.Kd3 Bd5
+51.Ke3 Kh7  0-1
+
+[Event "TCh-TUR 2nd League 2019"]
+[Site "Konya TUR"]
+[Date "2019.07.22"]
+[Round "1.4.2"]
+[White "Gozebe,Soner"]
+[Black "Ozturk,E"]
+[Result "0-1"]
+[WhiteElo "1656"]
+[BlackElo "2216"]
+[ECO "A42"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nd7 5.Be3 e5 6.Nge2 Nh6 7.f3 f5 8.Qd2 Nf7
+9.exf5 gxf5 10.f4 Nb6 11.b3 O-O 12.a4 Nd7 13.dxe5 dxe5 14.O-O-O c6 15.Ng3 exf4
+16.Bxf4 Qf6 17.Kc2 Nc5 18.Be3 Rd8 19.Qe1 Rxd1 20.Nxd1 Qe7 21.Qf2 Ne4 22.Nxe4 fxe4
+23.Bd4 Ne5 24.Qg3 Bf5 25.Ne3 Bg6 26.Be2 Nd3 27.Bxg7 Qxg7 28.Rb1 Nb4+ 29.Kd2 Qd4+
+30.Ke1 Rf8 31.Rc1 Qb2 32.Rd1 Qc3+ 33.Rd2 Rd8 34.Nf1 e3 35.Qxe3 Nc2+ 36.Kf2 Rf8+
+37.Qf3 Rxf3+ 38.Bxf3 Bd3  0-1
+
+[Event "42nd Eastman Open 2019"]
+[Site "Ghent BEL"]
+[Date "2019.07.23"]
+[Round "8.4"]
+[White "Heymans,Berwout"]
+[Black "Docx,S"]
+[Result "0-1"]
+[WhiteElo "1889"]
+[BlackElo "2433"]
+[ECO "E92"]
+
+1.c4 g6 2.e4 Bg7 3.d4 d6 4.Nc3 Nf6 5.Nf3 O-O 6.Be2 e5 7.d5 a5 8.Bg5 h6 9.Bh4 Na6
+10.Nd2 Qe8 11.O-O Nh7 12.f3 Bd7 13.b3 h5 14.a3 Bh6 15.Rb1 Nc5 16.Qc2 Be3+
+17.Kh1 f5 18.b4 axb4 19.axb4 Na4 20.Nd1 Bd4 21.exf5 Bxf5 22.Bd3 b5 23.cxb5 Qxb5
+24.Bxb5 Bxc2 25.Rc1 Bxd1 26.Bc6 Be2 27.Rfe1 Bd3 28.Bxa8 Rxa8 29.Nb3 Bc3 30.Re3 Bc4
+31.Rexc3 Nxc3 32.Na5 Nxd5 33.Rxc4 Nxb4 34.Rxb4 Rxa5 35.h3 g5 36.Bf2 Nf8 37.Rb8 Kf7
+38.Rb7 Ne6 39.Kh2 Ra2 40.Be3 h4  0-1
+
+[Event "Xtracon Chess Open 2019"]
+[Site "Helsingor DEN"]
+[Date "2019.07.23"]
+[Round "5.118"]
+[White "Carnstam,T"]
+[Black "Jorgensen,O"]
+[Result "1-0"]
+[WhiteElo "1967"]
+[BlackElo "1614"]
+[ECO "A42"]
+
+1.c4 g6 2.Nc3 Bg7 3.e4 d6 4.d4 c6 5.Be3 Nd7 6.f4 e5 7.fxe5 dxe5 8.d5 Ngf6
+9.Be2 cxd5 10.cxd5 a6 11.Nh3 b5 12.Nf2 Bb7 13.Rc1 Rc8 14.a4 bxa4 15.Qxa4 Ra8
+16.Qb4 Rb8 17.Ba7 Bf8 18.d6 Bh6 19.Rd1 Bxe4 20.Bxb8 Bxg2 21.Bc7 Qa8 22.Rg1 Be3
+23.Qh4 Bc6 24.Ng4 g5 25.Nxf6+ Nxf6 26.Rxg5 Bxg5 27.Qxg5 Rg8 28.Qxf6 Rg1+
+29.Kd2 Rxd1+ 30.Bxd1 Kd7 31.Bg4+ Ke8 32.Qe7+  1-0
+
+[Event "TCh-TUR 1st League 2019"]
+[Site "Konya TUR"]
+[Date "2019.07.23"]
+[Round "2.3.1"]
+[White "Guseynov,A"]
+[Black "Solodovnichenko,Y"]
+[Result "1/2-1/2"]
+[WhiteElo "2282"]
+[BlackElo "2573"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.Nge2 Nc6 6.Be3 Nh6 7.f3 f5 8.Qd2 f4 9.Bf2 O-O
+10.d5 Ne7 11.c5 Nf7 12.O-O-O c6 13.Kb1 cxd5 14.Nxd5 Nxd5 15.Qxd5 dxc5 16.Nc3 Qxd5
+17.Nxd5 b6 18.Bc4 Kh8 19.Ne7 Nd8 20.Rd6 Bf6 21.Nd5 Bg7 22.Ne7 Bf6 23.Nd5 Bg7
+24.Ne7  1/2-1/2
+
+[Event "Quebec Open 2019"]
+[Site "Longueuil CAN"]
+[Date "2019.07.23"]
+[Round "5.6"]
+[White "Chiku-Ratte,Olivier-Kenta"]
+[Black "Luksza,A"]
+[Result "1-0"]
+[WhiteElo "2364"]
+[BlackElo "2098"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 e5 5.Nge2 Nc6 6.d5 Nd4 7.Be3 Nxe2 8.Bxe2 Ne7
+9.Qd2 O-O 10.O-O-O f5 11.f3 f4 12.Bf2 b6 13.Kb1 a6 14.g3 Bd7 15.gxf4 Rxf4
+16.h4 Bg4 17.Be3 Rxf3 18.Rhg1 Bh5 19.Bxf3 Bxf3 20.Rdf1 Bh5 21.Bh6 Qd7 22.Bxg7 Kxg7
+23.Qg5 Ng8 24.Qxh5  1-0
+
+[Event "Xtracon Chess Open 2019"]
+[Site "Helsingor DEN"]
+[Date "2019.07.24"]
+[Round "6.24"]
+[White "Keinanen,Toivo"]
+[Black "Schmidt,Kr"]
+[Result "1-0"]
+[WhiteElo "2386"]
+[BlackElo "2225"]
+[ECO "E71"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nf6 5.h3 O-O 6.Nf3 e5 7.dxe5 dxe5 8.Qxd8 Rxd8
+9.Bg5 Re8 10.O-O-O Na6 11.Be3 c6 12.c5 Nc7 13.Bc4 Be6 14.Bxe6 Nxe6 15.Nxe5 Nxc5
+16.Bxc5 Rxe5 17.Bd4 Re7 18.f3 Nd7 19.Bf2 Nf8 20.Rd3 Ne6 21.Rhd1 f5 22.exf5 gxf5
+23.g3 Kf7 24.Rd7 h5 25.g4 hxg4 26.fxg4 fxg4 27.hxg4 Bh6+ 28.Kb1 Ke8 29.R7d3 b6
+30.Ne4 Nf4 31.Nd6+ Kf8 32.Rf3 Rd8 33.Bg3 Rf7 34.Nxf7 Rxd1+ 35.Kc2  1-0
+
+[Event "TCh-TUR 2nd League 2019"]
+[Site "Konya TUR"]
+[Date "2019.07.24"]
+[Round "4.9"]
+[White "Kavri,Yusuf Eren"]
+[Black "Callioglu,Yigit Sarp"]
+[Result "1/2-1/2"]
+[WhiteElo "1806"]
+[BlackElo "1639"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.d5 Nd4 6.Be3 c5 7.Nge2 Qb6 8.Qd2 Bd7
+9.Rd1 Bg4 10.h3 Bxe2 11.Bxe2 Nxe2 12.Qxe2 Qb4 13.Bd2 Qb6 14.O-O Nf6 15.Rb1 O-O
+16.e5 dxe5 17.Qxe5 Rad8 18.Qe2 Rfe8 19.Bg5 h6 20.Be3 e6 21.dxe6 Qxe6 22.Nb5 Qb6
+23.Qf3 a6 24.Nc3 Qb4 25.a3 Qxc4 26.Qxb7 Rd3 27.Qc6 Rb8 28.Qxc5 Qxc5 29.Bxc5 Nd7
+30.Bb4 Bxc3 31.Bxc3 Nb6 32.Rbd1 Rxd1 33.Rxd1 Na4 34.Be5 Re8 35.Bf6 g5 36.b3 Nc5
+37.b4 Ne4 38.Bb2 Rc8 39.Rc1 Rxc1+ 40.Bxc1 Kf8 41.Kf1 Ke7 42.Ke2 Kd6 43.f3 Nc3+
+44.Kd3 Nd5 45.Kd4 Ne7 46.Ke4 f5+ 47.Kd3 Ng6 48.Ke3 Kd5 49.Bb2 Nf4 50.g4 Nxh3
+51.gxf5 Nf4 52.f6 Ke6 53.Bd4 h5 54.Kf2 Nd5 55.Kg3 Nxf6 56.Bxf6 Kxf6 57.a4 Ke6
+58.f4 gxf4+ 59.Kxf4 Kd6 60.b5 axb5 61.axb5  1/2-1/2
+
+[Event "TCh-TUR 2nd League 2019"]
+[Site "Konya TUR"]
+[Date "2019.07.25"]
+[Round "6.9"]
+[White "Doner,Mustafa"]
+[Black "Inel,Cihangir"]
+[Result "1-0"]
+[WhiteElo "1843"]
+[BlackElo "1536"]
+[ECO "E76"]
+
+1.c4 g6 2.d4 Bg7 3.Nc3 d6 4.e4 Nf6 5.f4 e5 6.fxe5 dxe5 7.d5 a5 8.Nf3 O-O
+9.Bd3 Na6 10.O-O Re8 11.Bc2 Nc5 12.Kh1 Bd7 13.Bg5 c6 14.Qd2 Qc7 15.Qe3 cxd5
+16.Bxf6 d4 17.Nd5 dxe3 18.Nxc7 Bxf6 19.Nxe8 Rxe8 20.Rfe1 a4 21.Rxe3 Be6 22.Rd1 Bxc4
+23.Rc3 b5 24.Nd2 Rd8 25.Nxc4 Rxd1+ 26.Bxd1 Nxe4 27.Rf3 bxc4 28.Bc2 Nf2+ 29.Rxf2  1-0
+
+[Event "34th Avoine Open 2019"]
+[Site "Avoine FRA"]
+[Date "2019.07.26"]
+[Round "7.9"]
+[White "Shirazi,K"]
+[Black "Dionisi,T"]
+[Result "0-1"]
+[WhiteElo "2343"]
+[BlackElo "2405"]
+[ECO "A42"]
+
+1.c4 g6 2.Nc3 Bg7 3.d4 d6 4.e4 e5 5.Be3 exd4 6.Bxd4 Nf6 7.f3 Nc6 8.Bf2 O-O
+9.Bd3 Ne5 10.Nge2 Nfd7 11.b3 Qg5 12.Bg3 Qe3 13.Nd5 Qxd3 14.f4 Qxd1+ 15.Rxd1 Nc6
+16.Nxc7 Rb8 17.Nb5 Nc5 18.Nxd6 Bg4 19.Bf2 Ne6 20.Be3 Rfd8 21.c5 b6 22.cxb6 Bxe2
+23.Rc1 Rxd6 24.bxa7 Ra8 25.e5 Rd1+ 26.Kxe2 Rxh1 27.Rxh1 Nxa7 28.a4 Nc6 29.Kd3 Bf8
+30.Rb1 Rc8 31.g4 Nb4+ 32.Ke2 Rc2+ 33.Kf3 Rc3 34.Ke2 Nd5 35.Bd2 Nexf4+ 36.Kd1 Bb4
+37.a5 Rd3 38.Rb2 Bxa5  0-1
+
+[Event "Xtracon Chess Open 2019"]
+[Site "Helsingor DEN"]
+[Date "2019.07.26"]
+[Round "8.163"]
+[White "Harders,Poul Erik"]
+[Black "Madsen,De"]
+[Result "1-0"]
+[WhiteElo "1676"]
+[BlackElo "1529"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nh6 5.h3 f5 6.Nf3 fxe4 7.Nxe4 O-O 8.Be2 Nf7
+9.Be3 Bf5 10.O-O Nc6 11.Ng3 Bd7 12.Qd2 e5 13.d5 Ne7 14.c5 Nf5 15.Nxf5 Bxf5
+16.Rac1 h6 17.cxd6 cxd6 18.Rc4 e4 19.Nd4 Ne5 20.Rb4 Qd7 21.Bxh6 Bxh6 22.Qxh6 Rf7
+23.Rb3 Rh7 24.Qf4 Rf8 25.Nxf5 Rxf5 26.Qc1 Nf3+ 27.Bxf3 exf3 28.Rc3 Rf8 29.Qg5 Kg7
+30.Re1 Kh8 31.Re6 fxg2 32.Qxg6 Rg7 33.Qh5+ Rh7 34.Qg4 Rg7 35.Rh6+ Kg8 36.Qh5 Rh7
+37.Rg3+ Kh8 38.Rxh7+ Qxh7 39.Qxh7+ Kxh7 40.Re3 Rf5 41.Rd3 Kh6 42.Kxg2 Re5
+43.Rd2 Kg5 44.Kg3 Kf5 45.h4 Kg6 46.f4 Re1 47.Kf2 Rh1 48.Kg2 Rxh4 49.Kg3 Kh5
+50.Re2 Rg4+  1-0
+
+[Event "Dutch Open 2019"]
+[Site "Dieren NED"]
+[Date "2019.07.27"]
+[Round "5.6"]
+[White "Vrolijk,Liam"]
+[Black "Odendahl,R"]
+[Result "0-1"]
+[WhiteElo "2478"]
+[BlackElo "2352"]
+[ECO "E71"]
+
+1.c4 g6 2.d4 Bg7 3.e4 d6 4.Nc3 Nf6 5.h3 O-O 6.Be3 c5 7.Nf3 cxd4 8.Nxd4 b6
+9.g4 Bb7 10.f3 Nc6 11.Qd2 Rc8 12.O-O-O Ne5 13.b3 b5 14.Ncxb5 Nxf3 15.Nxf3 Nxe4
+16.Qb4 Nc3 17.Nxc3 Bxf3 18.Rh2 a5 19.Qb6 Bxc3 20.Be2 Be4 21.Bd3 Bf3 22.Be2 Bc6
+23.Kc2 Be5 24.Rf2 Qd7 25.Bf3 Bxf3 26.Rxf3 Rb8 27.Qxa5 Qc6 28.Qd5 Qa6 29.a4 Rxb3
+30.Kxb3 Rb8+ 31.Kc2 e6 32.Qe4 Rb2+ 33.Kd3 Qxa4 34.Rd2 d5  0-1
+
+[Event "16th Sea Festival B 2019"]
+[Site "Klaipeda LTU"]
+[Date "2019.07.27"]
+[Round "6.7"]
+[White "Ravlusevic,Evelina"]
+[Black "Gluchaciov,Nikolaj"]
+[Result "1-0"]
+[WhiteElo "1703"]
+[BlackElo "1718"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Be3 a6 6.h3 Rb8 7.Nf3 Bd7 8.Be2 Qc8
+9.d5 Ne5 10.Nxe5 dxe5 11.c5 e6 12.Rc1 f5 13.f3 h5 14.Bg5 h4 15.c6 bxc6 16.dxe6 Bxe6
+17.Qa4 Rb6 18.Be3 Bh6 19.Bxb6 cxb6 20.Bxa6 Qc7 21.Rd1 Ne7 22.Nd5 Bxd5 23.exd5 b5
+24.d6 Qb6 25.d7+ Kf7 26.Qb3+ Nd5 27.Bxb5 Kg7 28.Bxc6 Qa5+ 29.Ke2 Nf4+ 30.Kf1 Bg5
+31.Qb5 Qc7 32.Qb7 Qxb7 33.Bxb7 Rb8 34.b3 Bd8 35.Bc6 Bb6 36.Bb5 Kf8 37.a4 Ke7
+38.Rc1 Nh5 39.Rc8 Ng3+ 40.Ke1 Rb7 41.Rf1 Ba5+ 42.Kd1 Nxf1 43.Re8+ Kf6 44.d8=Q+ Bxd8
+45.Rxd8 Ne3+ 46.Kd2 Nxg2 47.Kc3 Rc7+ 48.Kb2 Ne1 49.Rd6+ Kg5 50.Bc6 Kf4 51.a5 Nxf3
+52.a6 Ra7 53.Bxf3 Kxf3 54.b4 e4 55.b5 e3 56.Kc2 e2 57.Re6 Kf2 58.Kd2 Rd7+
+59.Kc2 Rc7+ 60.Kd2 Rd7+ 61.Kc2 Ra7 62.Kd2 Kg2 63.Rxg6+  1-0
+
+[Event "TCh-TUR 2nd League 2019"]
+[Site "Konya TUR"]
+[Date "2019.07.27"]
+[Round "8.14"]
+[White "Yuksekoglu,Adem"]
+[Black "Ozcelik,Ozan"]
+[Result "1/2-1/2"]
+[WhiteElo "1803"]
+[BlackElo "1675"]
+[ECO "A42"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nd7 5.h3 e5 6.Nf3 exd4 7.Nxd4 Nc5 8.Be3 Ne6
+9.Be2 Ne7 10.O-O O-O 11.Qd2 f5 12.Nxe6 Bxe6 13.f3 Nc6 14.Rad1 Qe8 15.exf5 gxf5
+16.Rfe1 Qf7 17.Nd5 Bxd5 18.cxd5 f4 19.dxc6 fxe3 20.Qc2 bxc6 21.Qxc6 Kh8 22.Bc4 Qf4
+23.Qe4 Qxe4 24.fxe4 Bxb2 25.Rxe3 Be5 26.Rf3 Rxf3 27.gxf3 Rb8 28.Rd2 Rb2 29.Rxb2 Bxb2
+30.Kf2 Kg7 31.f4 Kf6 32.Kf3 Bd4 33.Kg4 Be3 34.Kf3 Bc1 35.a4 Bd2 36.Kg4 Bc1
+37.a5 Bd2 38.a6 Bc1  1/2-1/2
+
+[Event "Belt and Road Hunan Op C"]
+[Site "Changsha CHN"]
+[Date "2019.07.29"]
+[Round "1.26"]
+[White "Jin,Yueheng"]
+[Black "Jia,Junfan"]
+[Result "1-0"]
+[WhiteElo "1894"]
+[BlackElo ""]
+[ECO "E73"]
+
+1.d4 d6 2.c4 g6 3.Nc3 Bg7 4.e4 Nf6 5.Be2 O-O 6.Bg5 h6 7.Be3 Nbd7 8.Qd2 Kh7
+9.f3 e5 10.d5 Ng8 11.g4 Bf6 12.O-O-O Bh4 13.Nh3 a5 14.Rdg1 Nc5 15.Nf2 f6
+16.Nd3 b6 17.Ne1 f5 18.gxf5 gxf5 19.exf5 Bxf5 20.Nd3 Nxd3+ 21.Bxd3 Qf6 22.Rg4 Ne7
+23.Ne4 Bxe4 24.Bxe4+ Kh8 25.Bxh6 Rg8 26.h3 Rab8 27.Rhg1 Rxg4 28.hxg4 Ng8
+29.g5 Qf4 30.Qxf4 exf4 31.Rh1 Bg3 32.Bf8+ Nh6 33.Bxh6 Kg8  1-0
+
+[Event "Belt and Road Hunan Op C"]
+[Site "Changsha CHN"]
+[Date "2019.07.30"]
+[Round "2.17"]
+[White "Zhou,Yibo"]
+[Black "Zhou,Enming"]
+[Result "1-0"]
+[WhiteElo "1922"]
+[BlackElo "1402"]
+[ECO "E97"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nf6 5.Nf3 O-O 6.Be2 Nc6 7.O-O e5 8.d5 Ne7
+9.h3 Ne8 10.Be3 f5 11.b4 Nf6 12.Bd3 f4 13.Bd2 h6 14.c5 g5 15.Rc1 Qe8 16.Nb5 Qh5
+17.Nxc7 Rb8 18.cxd6 Ng6 19.Ne6 Rf7 20.Nh2 Qh4 21.f3 Nf8 22.Qb3 Ne8 23.Qa4 Bxe6
+24.dxe6 Nxe6 25.Qxa7 Rd8 26.Bc4 Rxd6 27.Rfd1 b5 28.Bxe6 Rxe6 29.Qb8 Qh5 30.Qxb5 Qg6
+31.Be1 Kh7 32.a4 Nc7 33.Qc4 Na8 34.a5 Rff6 35.b5 Qe8 36.Qc8 Qxb5 37.Qxa8 h5
+38.Qd5 Qe2 39.Qd3 Qb2 40.Rb1 Qa2 41.Ra1 Qb2 42.Rdb1 Qd4+ 43.Qxd4 exd4 44.Rb5 Rg6
+45.Rd1 Rd6 46.Bb4 Rd7 47.Rd5  1-0
+
+[Event "Belt and Road Hunan Op C"]
+[Site "Changsha CHN"]
+[Date "2019.07.31"]
+[Round "5.111"]
+[White "Luo,Guanlin"]
+[Black "Zhou,Zimo"]
+[Result "0-1"]
+[WhiteElo ""]
+[BlackElo "1214"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Nf3 e5 6.d5 Nge7 7.Be2 h6 8.Be3 f5 9.exf5 gxf5
+10.Nd2 f4 11.Bh5+ Kf8 12.Qf3 Bf6 13.Bxf4 exf4 14.Qxf4 Kg8 15.f3 Kh7 16.Nce4 Rf8
+17.Qe3 Bxb2 18.Nxd6 Nf5 19.Qd3 Ne5 20.O-O a6 21.g3 Qf6 22.f4 Re8 23.Qc2 Bd4+
+24.Kg2 Be3 25.Rac1 Rf8 26.Nxf5  0-1
+
+[Event "Montreal Summer IM 2019"]
+[Site "Montreal CAN"]
+[Date "2019.07.31"]
+[Round "1.1"]
+[White "Eckert,D"]
+[Black "Plotkin,Mark"]
+[Result "0-1"]
+[WhiteElo "2123"]
+[BlackElo "2357"]
+[ECO "E92"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nf6 5.Nf3 O-O 6.Be2 e5 7.d5 c5 8.O-O Nh5 9.Ne1 Nf4
+10.Bf3 f5 11.Nd3 Nxd3 12.Qxd3 Nd7 13.Bd2 Nf6 14.g3 f4 15.Bg2 g5 16.f3 h5
+17.Rab1 a5 18.Ne2 Bd7 19.b3 b5 20.cxb5 Qb6 21.Qc2 Bxb5 22.Rf2 Qa6 23.Re1 Bd3
+24.Qd1 a4 25.Nc3 axb3 26.axb3 g4 27.fxg4 Nxg4 28.Rf3 c4 29.Bh3 Qb6+ 30.Kh1 Rf6
+31.bxc4 Nf2+ 32.Rxf2 Qxf2 33.gxf4 exf4 34.Rg1 f3 35.Bg5 Qxg1+ 36.Qxg1 f2
+37.Qd1 f1=Q+  0-1
+
+[Event "8th Arber Open 2019"]
+[Site "Bayerisch Eisenstein GER"]
+[Date "2019.08.01"]
+[Round "6.7"]
+[White "Hopman,P"]
+[Black "Schelle,A"]
+[Result "1-0"]
+[WhiteElo "2347"]
+[BlackElo "2176"]
+[ECO "E73"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nf6 5.Be2 O-O 6.Be3 Na6 7.Nf3 e5 8.d5 Ng4
+9.Bg5 f6 10.Bh4 h5 11.Nd2 Nh6 12.f3 Nf7 13.Nb3 Bh6 14.Bd3 Nc5 15.Bc2 Kg7
+16.Na5 c6 17.b4 Bd7 18.a3 Be3 19.Ra2 g5 20.Bg3 h4 21.Ke2 Bd4 22.Be1 cxd5
+23.exd5 Nh6 24.Kf1 b6 25.bxc5 bxa5 26.c6 Nf5 27.Bd2 Bxc3 28.Bxf5 Bxf5 29.Bxc3 Rb8
+30.Ke2 Qb6 31.Qa4 Qc5 32.Bd2 Qd4 33.Be3 Bd3+ 34.Kd2 Qxc4 35.Qxc4 Bxc4 36.Rc2 Bxd5
+37.c7 Ra8 38.Bxa7 Kf7 39.Bb8 Rc8 40.Ke3 Ra6 41.Rb1 a4 42.g3 Bb3 43.Rc3 d5
+44.Rc5 hxg3 45.hxg3 Ke6 46.Rh1 d4+ 47.Kf2 Rd6 48.Ke2 Kf5 49.Rhc1 d3+ 50.Kd2 Bc2
+51.Rc4 Ke6 52.Rh1 Kd5 53.Rb4 Ke6 54.Rh7 Rc6 55.Rb7 Rd6 56.Ba7 Rc6 57.Bb6 Bb1
+58.Rb8  1-0
+
+[Event "Belt and Road Hunan Op C"]
+[Site "Changsha CHN"]
+[Date "2019.08.01"]
+[Round "7.97"]
+[White "Zhang,Dongao"]
+[Black "Zhou,Zimo"]
+[Result "1/2-1/2"]
+[WhiteElo ""]
+[BlackElo "1214"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Be3 e5 6.d5 Nce7 7.Bd3 h6 8.Nge2 f5
+9.f3 Nf6 10.Bf2 O-O 11.O-O f4 12.c5 a6 13.Qb3 Kh7 14.cxd6 Qxd6 15.Rac1 b6
+16.Nb1 Bb7 17.Qa3 Qxa3 18.Nxa3 Rac8 19.Nb1 Rfd8 20.Rfd1 Bf8 21.Kf1 Neg8 22.Ng1 Nd7
+23.Be2  1/2-1/2
+
+[Event "Eurasia Open Cup 2019"]
+[Site "Yekaterinburg RUS"]
+[Date "2019.08.01"]
+[Round "2.82"]
+[White "Gass,Igor"]
+[Black "Babanov,Alek"]
+[Result "1-0"]
+[WhiteElo "1586"]
+[BlackElo "1957"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Be3 e5 6.d5 Nce7 7.Nf3 f5 8.Bg5 Nf6
+9.Bd3 O-O 10.O-O fxe4 11.Nxe4 Nxe4 12.Bxe4 Qe8 13.Qd2 Bf5 14.Qe3 Bg4 15.h3 Bxf3
+16.Bxf3 Nf5 17.Qd3 Nd4 18.Be4 Qd7 19.f4 h6 20.fxe5 dxe5 21.Bd2 g5 22.b4 c6
+23.Bc3 Rf4 24.Rxf4 gxf4 25.Bxd4 exd4 26.dxc6 bxc6 27.Qf3 Rc8 28.Qxf4 Rf8
+29.Qd2 d3 30.Re1 Qd4+ 31.Kh1 Rd8  1-0
+
+[Event "Belt and Road Hunan Op C"]
+[Site "Changsha CHN"]
+[Date "2019.08.02"]
+[Round "9.99"]
+[White "Zhao,Hanya"]
+[Black "Zhou,Zimo"]
+[Result "1/2-1/2"]
+[WhiteElo ""]
+[BlackElo "1214"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Be3 e5 6.d5 Nce7 7.f3 f5 8.exf5 gxf5
+9.Bd3 Nf6 10.Qc2 O-O 11.h4 f4 12.Bf2 h6 13.O-O-O a6 14.Nge2 Nh5 15.Rdg1 Bf5
+16.Ne4 c6 17.g4 Bxg4 18.N2g3 fxg3 19.dxc6  1/2-1/2
+
+[Event "7th Famalicao Open 2019"]
+[Site "Vila Nova de Famalicao POR"]
+[Date "2019.08.02"]
+[Round "8.6"]
+[White "Pinho,P"]
+[Black "Damaso,R"]
+[Result "1-0"]
+[WhiteElo "2200"]
+[BlackElo "2425"]
+[ECO "E94"]
+
+1.d4 d6 2.c4 g6 3.e4 Bg7 4.Nc3 Nf6 5.Be2 O-O 6.Nf3 e5 7.O-O exd4 8.Nxd4 Re8
+9.f3 Nc6 10.Nc2 Nd7 11.Nd5 Nc5 12.b4 Na4 13.Rb1 a5 14.b5 Ne5 15.Nce3 Nc5
+16.b6 cxb6 17.Nxb6 Ra6 18.Nxc8 Qxc8 19.Nd5 Ne6 20.c5 Rc6 21.cxd6 Rxd6 22.Bb5 Nc6
+23.Ne7+ Rxe7 24.Qxd6 Be5 25.Qa3 Qc7 26.Bxc6 Bxh2+ 27.Kh1 bxc6 28.f4 Bxf4
+29.Rxf4 Nxf4 30.Bxf4 Qxf4 31.Qxe7 Qh6+ 32.Kg1 Qe3+ 33.Kh2 Qh6+ 34.Kg3 Qe3+
+35.Kh4 Qf4+ 36.Kh3 h5 37.Qh4 Qe5 38.a4 Kh7 39.Rf1  1-0
+
+[Event "Eurasia Open Cup 2019"]
+[Site "Yekaterinburg RUS"]
+[Date "2019.08.02"]
+[Round "3.21"]
+[White "Balashov,Y"]
+[Black "Krasikov,Vladislav"]
+[Result "1/2-1/2"]
+[WhiteElo "2474"]
+[BlackElo "2211"]
+[ECO "E97"]
+
+1.c4 g6 2.e4 Bg7 3.d4 d6 4.Nc3 Nf6 5.Be2 O-O 6.Nf3 e5 7.O-O Nc6 8.d5 Ne7
+9.b4 a5 10.Ba3 b6 11.bxa5 Rxa5 12.Bb4 Ra8 13.a4 Ne8 14.Nb5 f5 15.Nd2 Bd7
+16.Ra3 Nf6 17.f3 Bh6 18.Qc2 Kh8 19.Rfa1 Nh5 20.g3 fxe4 21.fxe4 Ng8 22.Qd1 Ngf6
+23.Bf3 Bh3 24.Qe2 Qd7 25.Nf1 Ng4 26.Bd2 Bxd2 27.Nxd2 Nhf6 28.Bg2 Bxg2 29.Kxg2 Nh6
+30.a5 bxa5 31.Rxa5 Rxa5 32.Rxa5 Qg4 33.Qxg4 Nfxg4 34.Kg1 Nxh2 35.Nxc7 N2g4
+36.Nb5 Rf2 37.Ra8+ Kg7 38.Nf1 Nf7 39.Ra7 Kg8 40.Ra8+ Kg7 41.Ra7 Kg8 42.Ra8+ Kg7
+43.Ra7 Rf3 44.Ne3 Rf2  1/2-1/2
+
+[Event "45th Badalona Open 2019"]
+[Site "Badalona ESP"]
+[Date "2019.08.03"]
+[Round "2.7"]
+[White "Midoux,S"]
+[Black "Valderrama Quiceno,Esteban Alb"]
+[Result "1/2-1/2"]
+[WhiteElo "2264"]
+[BlackElo "2429"]
+[ECO "A42"]
+
+1.c4 g6 2.Nc3 Bg7 3.d4 d6 4.e4 c6 5.h3 a6 6.Nf3 Nf6 7.Be3 O-O 8.a4 a5 9.Be2 Na6
+10.O-O Nd7 11.Qd2 e5 12.Rad1 exd4 13.Bxd4 Bxd4 14.Qxd4 Qb6 15.Qxb6 Nxb6 16.Rxd6 Nc5
+17.b3 Re8 18.Bd3 Nxd3 19.Rxd3 Nd7 20.Re3 Nc5 21.e5 Bf5 22.Nd4 Bd3 23.Rd1 Rad8
+24.Rexd3 Nxd3 25.Rxd3 Rxe5 26.Re3 f6 27.Rxe5 fxe5 28.Nde2 Rd2 29.g4 Rb2 30.Nc1 Kf7
+31.Kg2 Ke7 32.Kf3 Rc2 33.N3e2 Rd2 34.Ke3 Rd1 35.Nd3 Rh1 36.Nxe5 Rb1 37.Nd4 c5
+38.Nb5 Rxb3+ 39.Nd3 b6 40.Ke4 Rb1 41.f4 Rh1 42.Nc3 Rxh3 43.Nd5+ Kd6 44.g5 Rh2
+45.Nxb6 Re2+ 46.Kf3 Ra2 47.Ne5 Rb2 48.Nd5 Ra2 49.Nb6 Rb2 50.Nd5 Ra2 51.Nb6  1/2-1/2
+
+[Event "23rd HZ Open 2019"]
+[Site "Vlissingen NED"]
+[Date "2019.08.03"]
+[Round "1.38"]
+[White "Schlaebitz,Joel"]
+[Black "Coenen,E"]
+[Result "0-1"]
+[WhiteElo "1670"]
+[BlackElo "2101"]
+[ECO "A42"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nc6 5.Be3 e5 6.d5 Nce7 7.Bd3 f5 8.f3 Nf6 9.Nge2 O-O
+10.O-O f4 11.Bf2 g5 12.b4 g4 13.c5 Qe8 14.Nb5 gxf3 15.gxf3 Bh3 16.Kh1 Bxf1
+17.Qxf1 Qd7 18.Rc1 a6 19.cxd6 cxd6 20.Nc7 Rac8 21.Bb6 Qa4 22.Qh3 Qxb4 23.Qe6+ Rf7
+24.Bc5 Qd2 25.Bxd6 Qxd3 26.Ng1 Qd2 27.Bxe7 Qxc1 28.Qxc8+ Bf8 29.d6 Qc6 30.Bxf6 Qxd6
+31.Qg4+ Bg7 32.Ne6 h5 33.Qxh5 Qxe6 34.Bxg7 Rxg7 35.Nh3 Qg6 36.Qxg6 Rxg6 37.Nf2 Rb6
+38.Ng4 Rb2 39.h4 Rxa2 40.h5 a5 41.h6 a4 42.Nf6+ Kh8 43.h7  0-1
+
+[Event "12th Calgary Int 2019"]
+[Site "Calgary CAN"]
+[Date "2019.08.04"]
+[Round "9.1"]
+[White "Perron,Sean"]
+[Black "Bitan,B"]
+[Result "0-1"]
+[WhiteElo "2056"]
+[BlackElo "2423"]
+[ECO "E81"]
+
+1.c4 g6 2.Nc3 Bg7 3.e4 d6 4.d4 Nf6 5.f3 O-O 6.Be3 c5 7.Nge2 Nc6 8.d5 Ne5
+9.Nc1 e6 10.Qd2 exd5 11.cxd5 a6 12.a4 Nh5 13.Be2 f5 14.exf5 gxf5 15.O-O f4
+16.Bf2 Ng6 17.Ne4 Nh4 18.Nb3 Nf5 19.Na5 Qe8 20.Nc4 Qg6 21.Bd3 Qh6 22.Ra3 Rf7
+23.Re1 Bf8 24.b4 cxb4 25.Qxb4 Rg7 26.Qd2 Qg6 27.Bf1 Bd7 28.Nb6 Re8 29.Rc3 Ne3
+30.Bh4 Bf5 31.Rcxe3 fxe3 32.Qxe3 Bxe4 33.fxe4 Qg4 34.Bf2 Nf6 35.h3 Qg6 36.Qf3 Nxe4
+37.Bd3 Nd2 38.Bxg6 Nxf3+ 39.gxf3 Rxe1+  0-1
+
+[Event "23rd HZ Open 2019"]
+[Site "Vlissingen NED"]
+[Date "2019.08.04"]
+[Round "3.24"]
+[White "Van der Zalm,M"]
+[Black "Altenbernd,D"]
+[Result "1-0"]
+[WhiteElo "2062"]
+[BlackElo "1859"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Be3 e5 6.d5 Nce7 7.f4 exf4 8.Bxf4 Nf6
+9.Nf3 Bg4 10.Be2 Nd7 11.O-O h6 12.Qd2 Bxf3 13.Rxf3 g5 14.Bg3 Ng6 15.Raf1 Nde5
+16.Rf5 O-O 17.Nd1 a6 18.Ne3 b5 19.b3 bxc4 20.Nxc4 Nxc4 21.Bxc4 Qe7 22.Qe2 a5
+23.Bb5 Bd4+ 24.Kh1 Rab8 25.a4 f6 26.Qg4 Rbd8 27.Be1 Bb6 28.Bc3 Ne5 29.Qh5 Kg7
+30.Qe2 Ra8 31.Qe1 Kg8 32.h3 Kg7 33.Bc6 Rab8 34.Qd2 Kg8 35.Qe2 Kg7 36.Bb5 Ra8
+37.Rc1 Kg8 38.Rc2 Rf7 39.Qe1 Rff8 40.Re2 Kg7 41.Qd2 Qd8 42.Re1 Qe7 43.b4 axb4
+44.Bxb4 Rab8 45.Bc3 Kg8 46.Ref1 Kg7 47.Qe1 Kg8 48.Bc6 Kg7 49.a5 Ba7 50.Qa1 Kg6
+51.a6 Kg7 52.Bb7 Nd7 53.Bc6 Ne5 54.Bd4 Bxd4 55.Qxd4 Nxc6 56.dxc6 Ra8 57.a7 Qe6
+58.Rb5 Rfe8 59.Rb7 Rec8 60.Rf5 Kf7 61.Rfb5 Ke7 62.Rb8 Qg8 63.R5b7 Qd8 64.Qb2 Kf7
+65.Rxa8  1-0
+
+[Event "23rd HZ Open 2019"]
+[Site "Vlissingen NED"]
+[Date "2019.08.04"]
+[Round "3.14"]
+[White "Van Liempt,Michael"]
+[Black "Nebolsina,V"]
+[Result "1/2-1/2"]
+[WhiteElo "2091"]
+[BlackElo "2269"]
+[ECO "E92"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nf6 5.Nf3 O-O 6.Be2 e5 7.d5 a5 8.O-O Na6 9.Ne1 Nc5
+10.Qc2 Bg4 11.Bxg4 Nxg4 12.f3 Nf6 13.Be3 b6 14.b3 Nh5 15.Rd1 f5 16.a3 f4
+17.Bf2 Bf6 18.b4 axb4 19.axb4 Nd7 20.Nd3 Bh4 21.Bxh4 Qxh4 22.Ra1 Qe7 23.Nb5 Ndf6
+24.c5 bxc5 25.bxc5 Rxa1 26.Rxa1 Rb8 27.cxd6 cxd6 28.Qc6 Ne8 29.Ra7 Qd8 30.Nc7 Qh4
+31.Ra1 Ng3 32.Nxe8 Ne2+ 33.Kh1 Ng3+ 34.Kg1  1/2-1/2
+
+[Event "Iuliu Szabo Memorial 2019"]
+[Site "Satu Mare ROU"]
+[Date "2019.08.06"]
+[Round "6.7"]
+[White "Borsos,B"]
+[Black "Svetushkin,D"]
+[Result "0-1"]
+[WhiteElo "2224"]
+[BlackElo "2542"]
+[ECO "A42"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 e5 5.dxe5 dxe5 6.Qxd8+ Kxd8 7.Be3 Bh6 8.O-O-O+ Nd7
+9.Bxh6 Nxh6 10.Nf3 f6 11.c5 c6 12.Ne1 Kc7 13.Nd3 Nf7 14.Kb1 Ng5 15.Rc1 Ne6
+16.Na4 Nd4 17.g3 b6 18.cxb6+ axb6 19.Nc3 b5 20.f4 Kb6 21.h4 Re8 22.Bg2 Nf8
+23.Rhf1 Be6 24.fxe5 Bc4 25.Rfd1 Bxd3+ 26.Rxd3 fxe5 27.Bh3 Ra7 28.Rf1 b4 29.Nd1 Rea8
+30.a3 bxa3 31.Rxa3 Rxa3 32.bxa3 Nfe6 33.Bxe6 Nxe6 34.Kb2 Nc5 35.Nc3 Rd8 36.Kc2 Rd4
+37.Rf7 Nxe4 38.Nxe4 Rxe4 39.Rxh7 Re2+ 40.Kd3 Ra2 41.Ke4 Rxa3 42.Kxe5 Rxg3
+43.Kf4 Rg1 44.Ke3 Kb5 45.Kd3 Rg3+ 46.Kc2 Kc4 47.h5 Rg2+ 48.Kd1 g5 49.h6 Rh2
+50.Rg7 Kd3 51.Kc1 Kc3 52.Kd1 Rh1+ 53.Ke2 Rxh6 54.Rxg5 Rd6 55.Rc5+ Kb4 56.Rc1 c5
+57.Rb1+ Ka3 58.Rc1 Rd5 59.Ke3 Kb2 60.Rc4 Kb3 61.Rc1 c4 62.Rb1+ Kc2 63.Rh1 c3
+64.Rh8 Kb2 65.Rb8+  0-1
+
+[Event "Wroclaw Open 2019"]
+[Site "Wroclaw POL"]
+[Date "2019.08.06"]
+[Round "3.4"]
+[White "Lalic,B"]
+[Black "Zgadzaj,R"]
+[Result "1-0"]
+[WhiteElo "2420"]
+[BlackElo "2133"]
+[ECO "E94"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nf6 5.Nf3 O-O 6.Be2 Nbd7 7.O-O e5 8.Be3 Ng4
+9.Bg5 f6 10.Bd2 c6 11.d5 Qe7 12.Ne1 Nh6 13.Nd3 f5 14.dxc6 bxc6 15.c5 dxc5
+16.Qa4 Rb8 17.Qxa7 c4 18.Nc1 Rxb2 19.Bxc4+ Kh8 20.Nb3 fxe4 21.Nxe4 Qh4 22.f3 Nf5
+23.Qa3 Rc2 24.Bd3 Nd4 25.Bg5 Qh5 26.Nxd4 Rxg2+ 27.Kxg2 exd4 28.Be7 Re8 29.Ng3 Qd5
+30.Rae1 Ne5 31.Bd6 Bd7 32.Bxe5 Bxe5 33.Qb3 Qd6 34.f4 Bxf4 35.Rxe8+ Bxe8 36.Qb7 g5  1-0
+
+[Event "Eurasia Open Cup 2019"]
+[Site "Yekaterinburg RUS"]
+[Date "2019.08.06"]
+[Round "7.44"]
+[White "Kolay,Alex"]
+[Black "Zharkov,Nikolay"]
+[Result "1/2-1/2"]
+[WhiteElo "2229"]
+[BlackElo "2067"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.Nf3 exd4 6.Nxd4 Ne7 7.Be3 Nbc6 8.h4 h6
+9.Qd2 f5 10.Nxc6 Nxc6 11.O-O-O fxe4 12.Nxe4 Be6 13.Nc3 Qd7 14.Nd5 O-O-O 15.Kb1 Kb8
+16.Be2 Rde8 17.Rhe1 Qf7 18.Ka1 Bc8 19.Qc2 b6 20.Bd3 Ne5 21.Be4 Bf5 22.Bxf5 gxf5
+23.Bd4 Nc6 24.Bxg7 Qxg7 25.g3 Re5 26.Re3 Rhe8 27.a3 Re4 28.Rde1 Qd4 29.Rxe4 Rxe4
+30.Rxe4 fxe4 31.Nc3 e3 32.fxe3 Qxe3 33.Qe4 Qxe4 34.Nxe4 Ne5 35.b3 Ng4 36.Kb2 Kc8
+37.Kc3 Kd7 38.Kd4 Ke6 39.Nc3 c6 40.Ne2 Kf5 41.Nc3 Nf6 42.Nd1 Ng4 43.Nc3 h5
+44.Ne4 Ke6 45.Ng5+ Kf6 46.Ne4+ Ke7 47.Nc3 Kf6 48.Ke4  1/2-1/2
+
+[Event "6th Prague Summer Open"]
+[Site "Prague CZE"]
+[Date "2019.08.07"]
+[Round "7.12"]
+[White "Doric,N"]
+[Black "Breivik,L"]
+[Result "1/2-1/2"]
+[WhiteElo "2275"]
+[BlackElo "2158"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.d5 Nd4 6.Be3 e5 7.Nge2 Nxe2 8.Bxe2 f5
+9.exf5 Bxf5 10.h4 h5 11.Bd3 Bf6 12.Qc2 Qd7 13.Ne4 Be7 14.Bg5 O-O-O 15.O-O-O Kb8
+16.f3 Rf8 17.Kb1 Qd8 18.Bxe7 Nxe7 19.Ng5 Qd7 20.Be4 Rf6 21.c5 Rc8 22.c6 bxc6
+23.dxc6 Qxc6 24.Qd2 Qb7 25.Ka1 c6 26.Nh7 Re6 27.Ng5 Rf6 28.Nh7 Re6  1/2-1/2
+
+[Event "29th EY Girls U18 2019"]
+[Site "Bratislava SVK"]
+[Date "2019.08.08"]
+[Round "7.17"]
+[White "Chrysogelou,Athanasia-Panagiota"]
+[Black "Maksimovic,Masa"]
+[Result "1-0"]
+[WhiteElo "1907"]
+[BlackElo "2136"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 e5 5.Nge2 Nc6 6.Be3 exd4 7.Nxd4 Ne5 8.Be2 Nf6
+9.f3 O-O 10.O-O c6 11.Nc2 Qc7 12.Qd2 Be6 13.b3 Rfd8 14.Nd4 Bd7 15.Rac1 Be8
+16.Rfd1 Rac8 17.Kh1 Qb8 18.Bg5 Qc7 19.Qf4 Qe7 20.Nc2 a6 21.Qh4 Ned7 22.Ne3 Rb8
+23.Ng4 h5 24.Ne3 Rdc8 25.Qf4 Bf8 26.Qg3 Qe6 27.Bf4 Ne5 28.c5 Nfd7 29.Nc4 h4
+30.Qxh4 Nxc5 31.Qg3 Ncd7 32.h4 b5 33.Ne3 Bg7 34.b4 Ra8 35.h5 Nf8 36.hxg6 Qxg6
+37.Qh2 Rd8 38.Nf5 Qe6 39.Bg5 f6 40.Bh6 Bxh6 41.Qxh6 Ra7 42.Qe3 Rh7+ 43.Kg1 Bg6
+44.Qb6 Nf7 45.Ne3 Qe5 46.Ng4 Qf4 47.Qxc6 Ne5 48.Nd5 Qxg4 49.fxg4 Nxc6 50.Nxf6+ Kg7
+51.Nxh7 Nxb4 52.Nxf8 Kxf8 53.a3 Na2 54.Rc2 Bf7 55.Rf1 Kg7 56.Rxf7+ Kxf7 57.Rxa2 Ke6
+58.Kf2 Ke5 59.Ke3 Rc8 60.Rd2 Rc3+ 61.Rd3 Rc1 62.Rd5+ Ke6 63.g5 Rc3+ 64.Rd3 Rc7
+65.Bg4+ Ke7 66.g6 Rc6 67.Bf5 a5 68.Kf4 b4 69.g7  1-0
+
+[Event "29th EY Open U18 2019"]
+[Site "Bratislava SVK"]
+[Date "2019.08.09"]
+[Round "8.6"]
+[White "Vrolijk,Liam"]
+[Black "Maksimovic,Bojan"]
+[Result "1/2-1/2"]
+[WhiteElo "2478"]
+[BlackElo "2352"]
+[ECO "A42"]
+
+1.c4 g6 2.d4 Bg7 3.Nc3 d6 4.e4 e5 5.Nge2 exd4 6.Nxd4 Nf6 7.Be2 O-O 8.Be3 Re8
+9.f3 c6 10.Bf2 d5 11.exd5 cxd5 12.c5 Nc6 13.O-O Nh5 14.Qd2 Be5 15.g3 Bh3
+16.Rfe1 Qd7 17.Rad1 Rad8 18.a3 Ng7 19.b4 Ne6 20.Nb3 d4 21.Ne4 Bf5 22.Bc4 Bxe4
+23.Rxe4 Bf6 24.f4 a6 25.Qd3 Nc7 26.Nd2 Nd5 27.Rxe8+ Rxe8 28.Ne4 Rxe4 29.Qxe4 Nc3
+30.Qf3 Nxd1 31.Qxd1 h5 32.Qf3 Ne7 33.Bf1 Nc6 34.Qe4 Kg7 35.Be2 Ne7 36.Bf3 Nc6
+37.Qd5 Qe7 38.Be4 Qc7 39.Kg2 Qe7 40.h3 Qc7 41.Kf3 Qe7 42.Bd3 Qc7 43.Qd6 Qc8
+44.Kg2 Qe8 45.Qd5 Qc8 46.Bc4 Qc7 47.Kf3 Qe7 48.Bb3 Qc7 49.Qd6 Qc8 50.g4 hxg4+
+51.hxg4 Qh8 52.Kg2 Qc8 53.Kf3 Qh8 54.Kg2 Qc8 55.Bd1 Be7 56.Qd5 Qc7 57.Kf3 g5
+58.Bg3 gxf4 59.Bxf4 Qd8 60.Qxd8 Bxd8 61.Ke4 Kf8 62.Ba4 Ke8 63.Kd5 Kd7 64.Be5 d3
+65.Bf4 Bf6 66.Kc4 Bb2 67.Kb3 Bg7 68.Kc4 Bb2 69.Bd2 Ke6 70.Kxd3 Bxa3 71.Bxc6 bxc6
+72.Kc3 a5 73.bxa5 Kd5 74.Bg5 Bxc5 75.Bd8 Bd4+ 76.Kb4 c5+ 77.Kb3 c4+ 78.Kb4 Bc5+
+79.Kc3 Bd4+  1/2-1/2
+
+[Event "6th Prague Summer Open"]
+[Site "Prague CZE"]
+[Date "2019.08.09"]
+[Round "9.12"]
+[White "Jedlicka,A"]
+[Black "Vokac,M"]
+[Result "1/2-1/2"]
+[WhiteElo "2227"]
+[BlackElo "2319"]
+[ECO "A42"]
+
+1.d4 g6 2.e4 Bg7 3.c4 d6 4.Nc3 c5 5.d5 e6 6.Bd3 exd5 7.cxd5 Ne7 8.Nf3 Bg4
+9.h3 Bxf3 10.Qxf3 Nd7 11.Qd1  1/2-1/2
+
+[Event "29th EY Open U18 2019"]
+[Site "Bratislava SVK"]
+[Date "2019.08.10"]
+[Round "9.9"]
+[White "Pantzar,Milton"]
+[Black "Hakobyan,Aram"]
+[Result "1/2-1/2"]
+[WhiteElo "2356"]
+[BlackElo "2559"]
+[ECO "E70"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nf6 5.Nge2 O-O 6.Ng3 c5 7.d5 e6 8.Be2 exd5
+9.cxd5 Nbd7 10.O-O a6 11.a4 Re8 12.Bg5 h6 13.Be3 h5 14.Bg5 Rb8 15.Qd2 Qa5
+16.f4 Qb4 17.Kh1 Nh7 18.Bh4 c4 19.e5 Nc5 20.Rad1 dxe5 21.f5 Nd3 22.fxg6 fxg6
+23.Bxd3 cxd3 24.Qxd3 Qg4 25.d6 Bd7 26.Nd5 Re6 27.Qe4 g5 28.Qg6 Rxg6  1/2-1/2
+
+[Event "9th Split Open 2019"]
+[Site "Split CRO"]
+[Date "2019.08.10"]
+[Round "8.1"]
+[White "Diermair,A"]
+[Black "Dijkhuis,Tycho"]
+[Result "1/2-1/2"]
+[WhiteElo "2473"]
+[BlackElo "2395"]
+[ECO "E73"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nf6 5.Be2 O-O 6.Bg5 Nc6 7.d5 Ne5 8.Nf3 Nxf3+
+9.Bxf3 e6 10.Qd2 exd5 11.cxd5 Re8 12.O-O Bd7 13.Rad1 Qc8 14.h3 h5 15.Bh6 Qd8
+16.Rfe1 Nh7 17.Bxg7 Kxg7 18.Re3 Qh4 19.Be2 Re7 20.Qd4+ Nf6 21.Qc4 Qg5 22.Bf1 Qe5
+23.Qb4 b6 24.Bb5 h4 25.Bxd7 Rxd7 26.Ne2 Nh5 27.Rc1 Re8 28.Nd4 Nf4 29.Nf3  1/2-1/2
+
+[Event "Bruges Masters 2019"]
+[Site "Bruges BEL"]
+[Date "2019.08.11"]
+[Round "1.9"]
+[White "Goudriaan,E"]
+[Black "Vandendriessche,J"]
+[Result "1-0"]
+[WhiteElo "2341"]
+[BlackElo "2078"]
+[ECO "E90"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nf6 5.Nf3 O-O 6.h3 e5 7.d5 a5 8.g4 Na6 9.Be3 Nd7
+10.Nd2 Ndc5 11.g5 c6 12.h4 Nb4 13.Bxc5 dxc5 14.a3 Na6 15.Qf3 Nc7 16.O-O-O cxd5
+17.cxd5 Bd7 18.a4 Qe8 19.Nc4 Ra6 20.Na3 Bxa4 21.Nxa4 Qxa4 22.Bxa6 Nxa6 23.h5 c4
+24.hxg6 hxg6 25.Rh4 Nc5 26.Kb1 c3 27.Rdh1 cxb2 28.Qh3 f6 29.gxf6 Bxf6 30.Rh8+ Kf7
+31.Rxf8+ Kxf8 32.Qc8+ Kf7 33.Rh7+ Bg7 34.Qxc5 Qxe4+ 35.Kxb2 Kg8 36.Rh3 Qf5
+37.Rb3 e4+ 38.Ka2 Qg4 39.Rxb7 Qd1 40.Qc8+ Kh7 41.Qh3+ Kg8 42.Rb8+ Bf8 43.Qe6+ Kg7
+44.Rb7+ Kh6 45.Qh3+ Kg5 46.Qg3+  1-0
+
+[Event "FSIM August 2019"]
+[Site "Budapest HUN"]
+[Date "2019.08.12"]
+[Round "8.1"]
+[White "To,N"]
+[Black "Leszko,Bence"]
+[Result "1/2-1/2"]
+[WhiteElo "2388"]
+[BlackElo "2230"]
+[ECO "A69"]
+
+1.c4 g6 2.Nc3 Bg7 3.e4 d6 4.d4 Nf6 5.f4 O-O 6.Nf3 c5 7.d5 e6 8.Be2 exd5 9.cxd5 Re8
+10.e5 dxe5 11.fxe5 Ng4 12.Bg5 Qb6 13.O-O Nxe5 14.Nxe5 Bxe5 15.Bc4 Qxb2 16.d6 Rf8
+17.Rc1 Bxc3 18.Rb1 Bd4+ 19.Kh1 Qc3 20.Rc1 Qb2 21.Rb1 Qc3 22.Rc1 Qb2 23.Rb1  1/2-1/2
+
+[Event "1st Athens of the East Op"]
+[Site "Madurai IND"]
+[Date "2019.08.12"]
+[Round "2.4"]
+[White "Jayachandra,Srinivas Vellanki"]
+[Black "Tukhaev,A"]
+[Result "0-1"]
+[WhiteElo "2046"]
+[BlackElo "2541"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Be3 e5 6.Nge2 Nh6 7.f3 f6 8.Qd2 Nf7
+9.d5 Ne7 10.g3 c5 11.Bg2 f5 12.O-O O-O 13.Rab1 b6 14.b4 Bd7 15.bxc5 dxc5
+16.a4 Nc8 17.Nb5 Ncd6 18.Nxd6 Nxd6 19.Qc2 Qc8 20.a5 fxe4 21.fxe4 Rxf1+ 22.Bxf1 Nxe4
+23.axb6 axb6 24.Rxb6 Qc7 25.Qb1 Nd6 26.Nc1 Rf8 27.Be2 Bh3 28.Rc6 Qf7 29.Qd3 e4
+30.Qd1 Bd4 31.Bxd4 cxd4 32.Qe1 d3 33.Nxd3 exd3 34.Bxd3 Ne4 35.Ra6 Nc5  0-1
+
+[Event "Bruges Masters 2019"]
+[Site "Bruges BEL"]
+[Date "2019.08.14"]
+[Round "8.6"]
+[White "Maugenest,Ghislain"]
+[Black "Pel,B"]
+[Result "0-1"]
+[WhiteElo "2068"]
+[BlackElo "2255"]
+[ECO "A42"]
+
+1.d4 d6 2.c4 g6 3.e4 Bg7 4.Nc3 e5 5.d5 f5 6.exf5 gxf5 7.Qh5+ Kf8 8.Bd3 Nf6
+9.Qd1 Na6 10.Nge2 Qe8 11.O-O Qg6 12.Ng3 h5 13.f4 e4 14.Bb1 Rg8 15.Qe2 Ng4
+16.Ngxe4 fxe4 17.f5 Bd4+ 18.Kh1 Qe8 19.f6 Rg6 20.f7 Qe7 21.Nxe4 Bd7 22.Qd3 Bg7
+23.h3 Ne5 24.Qd1 Bg4 25.Qc2 Nb4 26.Qb3 a5 27.a3 Be2 28.Rf5 Qh4 29.Bd2 Bxc4
+30.Qd1 Nbd3 31.Ng5 Rxg5 32.Bxg5 Nf2+ 33.Rxf2 Qxf2 34.Qxh5 Bxd5  0-1
+
+[Event "35th Geraardsbergen Open"]
+[Site "Geraardsbergen BEL"]
+[Date "2019.08.14"]
+[Round "1.5"]
+[White "Dreelinck,Adriaan"]
+[Black "Middelhoven,Hein"]
+[Result "0-1"]
+[WhiteElo "1711"]
+[BlackElo "2237"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Be3 e5 6.d5 Nce7 7.Qd2 f5 8.f3 Nf6 9.Bd3 f4
+10.Bf2 c5 11.dxc6 bxc6 12.Bc2 O-O 13.O-O-O Ne8 14.c5 d5 15.exd5 cxd5 16.Nxd5 Be6
+17.Bb3 Nc6 18.Ne2 Na5 19.Ne7+ Qxe7 20.Bxe6+ Qxe6 21.Qxa5 e4 22.Nd4 Qc4+ 23.Qc3 Qxa2
+24.fxe4 Rb8 25.Rhe1 Nc7 26.Qa3 Qc4+ 27.Qc3 Qa4 28.Qa3 Qc4+ 29.Qc3 Qa6 30.Qa3 Qc8
+31.e5 Nd5 32.Nf3 Nb4 33.Qb3+ Kh8 34.Ng5 Qf5 35.Ne6 Qf7 36.Nd4 Qe7 37.Ne6 Qf7
+38.Nd4 Qb7 39.c6 Qa6 40.Qa3 Na2+ 41.Kd2 Qc4 42.Ra1 Nb4 43.Rac1 Qd5 44.Qf3 Qa5
+45.Ra1 Na2+ 46.Ke2 Qa6+ 47.Kd1 Rxb2 48.Re2  0-1
+
+[Event "Korchnoi Memorial Open"]
+[Site "St Petersburg RUS"]
+[Date "2019.08.14"]
+[Round "1.38"]
+[White "Shadunts,Kirill"]
+[Black "Tologontegin,S"]
+[Result "0-1"]
+[WhiteElo "1920"]
+[BlackElo "2386"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.d5 Ne7 6.Be3 f5 7.f3 Nd7 8.Nge2 O-O 9.Nc1 a5
+10.Be2 b6 11.Rb1 Nc5 12.b3 fxe4 13.fxe4 Kh8 14.a3 Bd7 15.Qd2 Ng8 16.Bf3 Bh6
+17.Bxh6 Qh4+ 18.Qf2 Qxh6 19.O-O Nf6 20.Qe2 g5 21.h3 g4 22.hxg4 Nxg4 23.b4 Qh2+  0-1
+
+[Event "BSSZ Aranytiz GM 2019"]
+[Site "Budapest HUN"]
+[Date "2019.08.16"]
+[Round "1.4"]
+[White "Horvath,Dominik"]
+[Black "Secheres,Ad"]
+[Result "1-0"]
+[WhiteElo "2425"]
+[BlackElo "2394"]
+[ECO "E94"]
+
+1.c4 g6 2.e4 Bg7 3.d4 d6 4.Nc3 Nf6 5.Nf3 O-O 6.Be2 e5 7.O-O exd4 8.Nxd4 Re8
+9.f3 c6 10.Bf4 Nh5 11.Be3 f5 12.Qd2 f4 13.Bf2 Be5 14.Rfd1 Qf6 15.Rac1 Nd7
+16.b4 Nf8 17.Nb3 Be6 18.Bd4 Bf7 19.Na5 Qe7 20.Bxe5 dxe5 21.Qd6 a6 22.c5 Ng7
+23.Bc4 Bxc4 24.Qxe7 Rxe7 25.Nxc4 Rc8 26.Na4 Rcc7 27.Rd8 Ne6 28.Rb8 Nd4 29.Rd1 Kg7
+30.Nxe5 Nd7 31.Rd8 Nxe5 32.R1xd4 g5 33.Nb6 g4 34.Kf2 Re6 35.R4d6 Rg6 36.Re8 Rg5
+37.Rdd8 gxf3 38.Rg8+ Kh6 39.Rxg5 Kxg5 40.gxf3 Rg7 41.Rd6 Kh4 42.a3 h5 43.Rf6 Kh3
+44.Rf5 Ng6 45.Rg5 h4 46.Kg1 a5 47.bxa5 Rg8 48.Nc4  1-0
+
+[Event "Korchnoi Memorial Open"]
+[Site "St Petersburg RUS"]
+[Date "2019.08.16"]
+[Round "3.72"]
+[White "Kuznetsov,Mikhail"]
+[Black "Pogorelskikh,Sofia"]
+[Result "1/2-1/2"]
+[WhiteElo "1914"]
+[BlackElo "2189"]
+[ECO "E82"]
+
+1.c4 g6 2.e4 Bg7 3.d4 d6 4.Nc3 Nf6 5.f3 O-O 6.Be3 b6 7.Nge2 c5 8.Qd2 Nc6
+9.d5 Ne5 10.Ng3 e6 11.dxe6 Bxe6 12.b3 Nc6 13.Rc1 Nd7 14.Bd3 Nd4 15.O-O Ne5
+16.Rcd1 Nec6 17.Nge2 a6 18.Bh6 Bxh6 19.Qxh6 Qf6 20.h3 Rfb8 21.f4 Qg7 22.Qh4 b5
+23.f5 Bd7 24.Nd5 g5 25.Qh5 f6 26.Nxd4 Nxd4 27.h4 Be8 28.Qg4 h6 29.Kf2 Ra7
+30.Rh1 Rbb7 31.hxg5 hxg5 32.Qh3 Bf7 33.Ne3 Nc6 34.Be2 Nd4 35.Bh5 Re7 36.Bf3 Kf8
+37.Qh8+ Bg8 38.Nd5 Qxh8 39.Rxh8 Rh7 40.Rxh7 Rxh7 41.Nxf6 Re7 42.cxb5 axb5
+43.Rd2 Bf7 44.Ng4 Bh5 45.Ne3 g4 46.Nd5 gxf3 47.Nxe7 fxg2 48.Nc8 g1=Q+ 49.Kxg1 Nf3+
+50.Kf2 Nxd2 51.Nxd6 b4 52.Ke3 Nb1 53.Nb7 Nc3 54.Nxc5 Kf7 55.Nd3 Nxa2 56.Kd4 Be2
+57.Nf4 Ba6 58.Kc5 Bb7 59.e5 Bc8  1/2-1/2
+
+[Event "Lichtenberger Sommer 2019"]
+[Site "Berlin GER"]
+[Date "2019.08.17"]
+[Round "1.74"]
+[White "Tschirschwitz,S"]
+[Black "Guder,Sibylle"]
+[Result "0-1"]
+[WhiteElo "1495"]
+[BlackElo "1893"]
+[ECO "E90"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nf6 5.Nf3 O-O 6.Bd3 Nbd7 7.O-O e5 8.dxe5 dxe5
+9.Bc2 c6 10.b3 Qa5 11.Bb2 Rd8 12.Qe2 Nf8 13.Rfd1 Bg4 14.Qe3 Bxf3 15.Qxf3 Ne6
+16.Rxd8+ Rxd8 17.Bd3 Rd7 18.h3 Qd8 19.Rd1 Nc5 20.Bc2 Rxd1+ 21.Nxd1 Nfxe4
+22.Bxe4 Nxe4 23.Qxe4 Qxd1+ 24.Kh2 Qd6 25.f3 h5 26.Kg1 Kh7 27.Qe2 f6 28.Bc1 a6
+29.Be3 Bf8 30.Qc2 Be7 31.Kf2 Kg7 32.g4 hxg4 33.hxg4 Qd8 34.Kg2 Bb4 35.Qe2 Qd7
+36.Kf1 Ba5 37.Qc2 f5 38.gxf5 Qxf5 39.Qxf5 gxf5 40.Ke2 Kg6 41.Kd3 Kh5 42.a3 Bd8
+43.c5 Kg6 44.b4 Kf6 45.Kc4 Ke6 46.a4 Bc7 47.a5 Bd8 48.Kd3 Kd5 49.f4 e4+ 50.Kc3 Bf6+
+51.Kc2 Bd4 52.Bd2 Bf2  0-1
+
+[Event "ch-FRA w 2019"]
+[Site "Chartres FRA"]
+[Date "2019.08.17"]
+[Round "1.2"]
+[White "Navrotescu,A"]
+[Black "Safranska,A"]
+[Result "1-0"]
+[WhiteElo "2210"]
+[BlackElo "2128"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 e5 5.Nge2 Nc6 6.Be3 Nh6 7.f3 f5 8.d5 Ne7 9.Qd2 Nf7
+10.g3 O-O 11.Bg2 c5 12.O-O Kh8 13.a3 Ng8 14.exf5 Bxf5 15.g4 Bd7 16.Ne4 b6
+17.N2g3 Rb8 18.Rf2 Qe7 19.Bf1 Bh6 20.g5 Bg7 21.Bd3 Bf5 22.h4 h5 23.gxh6 Nfxh6
+24.Bg5 Qd7 25.Rh2 Bxe4 26.Bxe4 Nf5 27.h5 Nge7 28.hxg6+ Kg8 29.Bxe7 Nxe7 30.Qg5 Rf4
+31.Rh7 Bf6 32.Qh6 Rxe4 33.Rh8+  1-0
+
+[Event "Kupreichik Mem Rapid 2019"]
+[Site "Minsk BLR"]
+[Date "2019.08.17"]
+[Round "9.28"]
+[White "Tyurin,Artem"]
+[Black "Arlou,V"]
+[Result "0-1"]
+[WhiteElo "2057"]
+[BlackElo "1759"]
+[ECO "A42"]
+
+1.c4 g6 2.Nc3 Bg7 3.d4 d6 4.e4 e5 5.Be3 Nc6 6.d5 Nce7 7.Be2 f5 8.f3 Nf6 9.Qd2 f4
+10.Bf2 Bd7 11.Bd3 a6 12.Nge2 g5 13.Nc1 Ng6 14.Be2 O-O 15.Nd3 h5 16.h3 Kf7
+17.c5 Rh8 18.O-O-O Qe7 19.Kb1 g4 20.Rc1 g3 21.Bg1 Nh4 22.Bf1 Bh6 23.c6 bxc6
+24.dxc6 Be6 25.Nb4 a5 26.Nbd5 Nxd5 27.Nxd5 Bxd5 28.Qxd5+ Qe6 29.Qd2 Kg7 30.Bc4 Qe8
+31.Bd5 Ng6 32.Qc3 Ne7 33.Be6 Bg5 34.Qc4 Qg6 35.Rd1 Rhd8 36.h4 Bf6 37.Ka1 Qe8
+38.Bd5 Rdb8 39.Rc1 Rb4 40.Qd3 Qb8 41.Rc2 Qb5 42.Bc4 Qb8 43.a3 Ra4 44.Bb3 Rd4
+45.Bxd4 exd4 46.Qc4 Qf8 47.Rd1 Rb8 48.Qe6 Ng6 49.Bd5 Qe7 50.Qf5 Qe5 51.Qxe5 dxe5
+52.Rc5 Ra8 53.Rb5 Be7 54.Rd3 Bxh4 55.Rb7 Bd8 56.Be6 Kf6 57.Bd7 Ke7 58.Rdb3 Kd6
+59.Bh3 Kxc6 60.R7b5 Be7 61.Be6 a4 62.Bd5+ Kd7 63.Bxa8 axb3 64.Rd5+ Bd6 65.Bb7 Nh4
+66.Ba6 Nxg2 67.Rb5 Ne3 68.Rb8 h4 69.Rg8 h3 70.Bc8+ Ke7 71.Bxh3 d3 72.Rg7+ Kf6
+73.Bf1 Nxf1  0-1
+
+[Event "Stockholm Open 2019"]
+[Site "Stockholm SWE"]
+[Date "2019.08.17"]
+[Round "8.1"]
+[White "Pettersson,Al"]
+[Black "Karlsson,L"]
+[Result "1/2-1/2"]
+[WhiteElo "2075"]
+[BlackElo "2454"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Be3 e5 6.d5 Nd4 7.Nge2 Bg4 8.f3 Bxf3
+9.gxf3 Nxf3+ 10.Kf2 Nh4 11.Ng3 f5 12.exf5 Nh6 13.Be2 O-O 14.Qd2 N6xf5 15.Kg1 Nxe3
+16.Qxe3 Rf4 17.Nce4 Bh6 18.Qd3 Qd7 19.h3 Raf8 20.Rf1 Rxf1+ 21.Nxf1 Bf4 22.Nfg3 h5
+23.Rh2 Nf5 24.Rg2 Kh8 25.Nxf5 Qxf5 26.Ng3 Qxh3 27.Nf1  1/2-1/2
+
+[Event "8th Ideon Andron Op 2019"]
+[Site "Anogia GRE"]
+[Date "2019.08.18"]
+[Round "1.10"]
+[White "Galunova,T"]
+[Black "Vaishali,R"]
+[Result "1-0"]
+[WhiteElo "2143"]
+[BlackElo "2411"]
+[ECO "A42"]
+
+1.d4 d6 2.e4 g6 3.c4 Bg7 4.Nc3 e5 5.Nge2 Nc6 6.Be3 Nf6 7.d5 Ne7 8.f3 O-O
+9.g4 c6 10.Qd2 cxd5 11.cxd5 a6 12.Ng3 b5 13.h4 Ne8 14.h5 f5 15.gxf5 gxf5
+16.Bg5 b4 17.Nd1 f4 18.Nf5 Bxf5 19.exf5 Bf6 20.Bh6 Rf7 21.Bd3 Kh8 22.Nf2 Ng8
+23.Ng4 Bh4+ 24.Ke2 Nef6 25.Rxh4 Nxg4 26.Bg5 Qxg5 27.Rxg4 Qxh5 28.Rag1 Nf6
+29.Rg5 Qh2+ 30.R1g2 Qh1 31.Rg1 Qh2+ 32.R1g2 Qh3 33.Qxb4 Rg8 34.Qxd6 Qxg2+
+35.Rxg2 Rxg2+ 36.Kf1 Rxb2 37.Qxe5 Rxa2 38.d6 Rd2 39.Bc4 Rf8 40.Qe7 Rd1+ 41.Kg2 Rd2+
+42.Kh3  1-0
+
+[Event "1st Athens of the East Op"]
+[Site "Madurai IND"]
+[Date "2019.08.18"]
+[Round "10.16"]
+[White "Jayachandra,Srinivas Vellanki"]
+[Black "Rathnakaran,K"]
+[Result "1/2-1/2"]
+[WhiteElo "2046"]
+[BlackElo "2337"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Be3 e5 6.d5 Nce7 7.Nge2 f5 8.f3 Nf6
+9.h3 O-O 10.Qd2 c6 11.g4 cxd5 12.cxd5 f4 13.Bf2 Bd7 14.Nc1 a6 15.a4 Rc8 16.Be2 h5
+17.g5 Nh7 18.h4 Rf7 19.Nb3 Bf8 20.a5 Qe8 21.O-O Rb8 22.Rfc1 Nc8 23.Qd1 Be7
+24.Nd2 Bxg5 25.hxg5 Nxg5 26.Kf1 Nh3 27.Bd3 Qd8 28.Qe1 g5 29.Ke2 g4 30.Bh4 Qe8
+31.Kd1 g3 32.Nc4 Rg7 33.Ne2 Ba4+ 34.Kd2 b6 35.Rc3 bxa5 36.Qc1 Bb5 37.b3 a4
+38.bxa4 Bxa4 39.Qa3 Bb5 40.Nxd6 Nxd6 41.Qxd6 Bxd3 42.Kxd3 Rb2 43.Rc6 Nf2+
+44.Kc3 Rgb7 45.Raxa6 Nd1+ 46.Kd3 Nf2+ 47.Kc3 Nd1+ 48.Kd3 Nf2+  1/2-1/2
+
+[Event "55th Rubinstein Mem"]
+[Site "Polanica Zdroj POL"]
+[Date "2019.08.18"]
+[Round "2.19"]
+[White "Hasterok,Mateusz"]
+[Black "Luba,L"]
+[Result "0-1"]
+[WhiteElo "1911"]
+[BlackElo "2130"]
+[ECO "E80"]
+
+1.d4 d6 2.c4 g6 3.e4 Bg7 4.Nc3 Nf6 5.f3 c6 6.Be3 Qc7 7.Qd2 h5 8.Nge2 Nbd7
+9.Nc1 e5 10.Nb3 Bf8 11.O-O-O b6 12.f4 Ng4 13.Bg1 exf4 14.Kb1 Bh6 15.h3 Ne3
+16.Re1 Nxf1 17.Rxf1 h4 18.Qe2 Ba6 19.Nd2 O-O-O 20.Nf3 g5 21.b4 Bb7 22.Rc1 Rde8
+23.d5 c5 24.Bf2 a6 25.b5 a5 26.Qc2 Qd8 27.Be1 Qe7 28.Bd2 Bg7 29.Rhe1 Qf6
+30.e5 Nxe5 31.Ne4 Nxc4 32.Qb3 Rxe4 33.Rxe4 Nxd2+ 34.Nxd2 Bxd5 35.Rec4 Qg6+
+36.Qc2 Bxc4 37.Qxg6 Bxa2+ 38.Kxa2 fxg6 39.Nc4 Kc7 40.Re1 Be5  0-1
+
+[Event "27th Poznan Open 2019"]
+[Site "Poznan POL"]
+[Date "2019.08.18"]
+[Round "2.30"]
+[White "Niemier,Hubert"]
+[Black "Lakowski,Filip"]
+[Result "1-0"]
+[WhiteElo "1654"]
+[BlackElo "1272"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nf6 5.Bd3 O-O 6.Nge2 e5 7.d5 Nbd7 8.O-O Nc5
+9.Bc2 Ne8 10.b4 Nd7 11.Rb1 b6 12.Be3 Ba6 13.Bb3 f5 14.exf5 gxf5 15.f4 Qh4
+16.Qd2 Nef6 17.h3 Nh5 18.Bf2 Qf6 19.Be3 Qh4 20.Na4 Ndf6 21.Nac3 Nd7 22.Rbd1 Bh6
+23.Rf3 e4 24.Rf2 Rf7 25.Nd4 Rf6 26.Nce2 Rg6 27.Nxf5 Qxh3 28.Ne7+ Kf7 29.Nxg6 Qg3  1-0
+
+[Event "27th Poznan Open 2019"]
+[Site "Poznan POL"]
+[Date "2019.08.18"]
+[Round "2.26"]
+[White "Kaczmarek,Jan"]
+[Black "Malaczek,M"]
+[Result "0-1"]
+[WhiteElo "1292"]
+[BlackElo "1998"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nd7 5.Nf3 h6 6.Be3 e5 7.d5 Ne7 8.Qd2 f5 9.exf5 gxf5
+10.Qc2 Nf6 11.O-O-O O-O 12.c5 Bd7 13.Bc4 Kh8 14.h3 f4 15.cxd6 cxd6 16.Bd2 a6
+17.Bb3 Bf5  0-1
+
+[Event "27th Poznan Open 2019"]
+[Site "Poznan POL"]
+[Date "2019.08.19"]
+[Round "3.3"]
+[White "Chojnacki,K"]
+[Black "Suliborski,J"]
+[Result "1-0"]
+[WhiteElo "2360"]
+[BlackElo "2132"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Nge2 e5 6.d5 Nce7 7.Be3 f5 8.f3 Nf6
+9.h3 O-O 10.Qd2 c5 11.g4 a6 12.exf5 gxf5 13.Bg5 Qe8 14.Ng3 Bd7 15.Bd3 b5
+16.Bxf5 Nxf5 17.gxf5 e4 18.O-O-O exf3 19.Bh6 b4 20.Bxg7 Kxg7 21.Rde1 Qd8
+22.Nd1 Kh8 23.Rhf1 Ra7 24.Rxf3 Bc8 25.Nf2 Raf7 26.Ng4 Nxg4 27.hxg4 Qh4 28.Qf4 Rg8
+29.Qxd6 Qxg4 30.Qe5+ Rfg7 31.Qe4 Qg5+ 32.Qe3 Qh4 33.f6 Qxc4+ 34.Kb1 Rf7 35.Nf5 Bxf5+
+36.Rxf5 Qh4 37.d6 Rxf6 38.Rd5 Rd8 39.d7 Qg4 40.Qe5 Qg6+ 41.Ka1 Kg8 42.Qe7  1-0
+
+[Event "Korchnoi Memorial Open"]
+[Site "St Petersburg RUS"]
+[Date "2019.08.19"]
+[Round "6.129"]
+[White "Trushnikov,V"]
+[Black "Korobitsyna,Olesya"]
+[Result "0-1"]
+[WhiteElo "1703"]
+[BlackElo "1816"]
+[ECO "E71"]
+
+1.c4 g6 2.Nc3 Bg7 3.d4 d6 4.e4 Nf6 5.h3 O-O 6.Be3 Nc6 7.Qd2 e5 8.dxe5 dxe5
+9.Qxd8 Rxd8 10.Bg5 Nb4 11.Rc1 c6 12.a3 Nd3+ 13.Bxd3 Rxd3 14.Nf3 Nd7 15.Ke2 Rd6
+16.Rhd1 Re6 17.Rc2 h6 18.Be3 f5 19.Bc1 Nc5 20.exf5 gxf5 21.Nh4 Re8 22.b4 Nb3
+23.Kf1 Nd4 24.Rcd2 Be6 25.c5 Bf6 26.Nf3 Nb3 27.Rd6 e4 28.Nd4 Nxd4 29.R6xd4 Bxd4
+30.Rxd4 Rad8 31.Rd6 Bc4+ 32.Kg1 Rxd6 33.cxd6 Rd8 34.Bf4 Kf7 35.Kh2 Ke6 36.Kg3 Rg8+
+37.Kh2 Bf1 38.g3 h5 39.Nd1 Be2 40.Ne3 b6 41.Kg2 c5 42.bxc5 bxc5 43.Nc2 Bd3
+44.Ne1 c4 45.Nxd3 exd3 46.Kf1 c3 47.f3 Rb8 48.g4 Rb1+ 49.Kf2 fxg4 50.hxg4 d2  0-1
+
+[Event "Korchnoi Memorial Open"]
+[Site "St Petersburg RUS"]
+[Date "2019.08.19"]
+[Round "6.54"]
+[White "Khadzhiev,Valery"]
+[Black "Kovalev,Vit"]
+[Result "0-1"]
+[WhiteElo "2071"]
+[BlackElo "2237"]
+[ECO "A42"]
+
+1.d4 g6 2.e4 Bg7 3.c4 d6 4.Nc3 Nc6 5.Be3 e5 6.Nge2 Nf6 7.f3 O-O 8.Qd2 a6
+9.d5 Ne7 10.c5 Ne8 11.g4 f5 12.h3 dxc5 13.Bxc5 Nd6 14.b3 b6 15.Be3 b5 16.Bg2 Bd7
+17.O-O h5 18.g5 h4 19.Bf2 Nec8 20.Bxh4 f4 21.Rae1 Bh6 22.Nd1 Bxg5 23.Bxg5 Qxg5
+24.Nf2 a5 25.Rc1 Ra7 26.Rc2 b4 27.Rfc1 Nb5 28.Ng4 Ncd6 29.Rb1 Rf7 30.Qc1 Re7
+31.Qe1 Kf7 32.Qf2 Ra8 33.Rbc1 Rh8 34.Kf1 Bc8 35.Ke1 Rh7 36.Rc5 Ke8 37.Ng1 Rhf7
+38.Bf1 Nc3 39.Bd3 Rh7 40.Rxa5 Bxg4 41.hxg4 Rh1 42.Ra8+ Kf7 43.Bf1 Ndxe4 44.fxe4 Nxe4
+45.Nf3 Qxg4 46.Qe2 Qf5 47.d6 Nxd6 48.Nd2 e4 49.Qg2 e3  0-1
+
+[Event "Korchnoi Memorial Open"]
+[Site "St Petersburg RUS"]
+[Date "2019.08.20"]
+[Round "7.29"]
+[White "Irgaliyev,Alikhan"]
+[Black "Tologontegin,S"]
+[Result "0-1"]
+[WhiteElo "2137"]
+[BlackElo "2386"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.Nge2 Nc6 6.Be3 Nf6 7.f3 O-O 8.d5 Ne7
+9.Qd2 Ne8 10.O-O-O f5 11.Kb1 a6 12.h4 Nf6 13.Bg5 Bd7 14.c5 Rf7 15.Nc1 f4
+16.Bc4 b5 17.Bb3 Nh5 18.c6 Be8 19.g4 fxg3 20.Qg2 h6 21.Bd2 Nc8 22.N3e2 Qf6
+23.Rdf1 Nb6 24.Ba5 Rb8 25.Nxg3 Nf4 26.Qf2 h5 27.Nge2 Qd8 28.Rfg1 Kh7 29.Nxf4 exf4
+30.Rg2 Nc4 31.Bxc4 bxc4 32.Qe1 Qf6 33.Rhh2 c3 34.Nb3 cxb2 35.Rc2 Rb5 36.Bc3 Qe7
+37.Bxg7 Rxg7 38.Qc3 g5 39.hxg5 Rxg5 40.Rcg2 a5 41.Nd4 Rc5 42.Qd3 Bg6 43.Rxg5 Qxg5
+44.Kxb2 Rxd5 45.Qc3 Rc5 46.Ne6 Rb5+ 47.Ka3 Qe7 48.Nxf4 d5+ 49.Ka4 Rb4+ 50.Kxa5 Rc4
+51.Qb3 Qc5+ 52.Ka6 Qxc6+  0-1
+
+[Event "28th Feffernitz Open 2019"]
+[Site "Feffernitz AUT"]
+[Date "2019.08.21"]
+[Round "5.5"]
+[White "Behling,R"]
+[Black "Markun,B"]
+[Result "0-1"]
+[WhiteElo "2048"]
+[BlackElo "2261"]
+[ECO "E88"]
+
+1.c4 g6 2.e4 Bg7 3.d4 d6 4.Nc3 Nf6 5.f3 O-O 6.Be3 e5 7.d5 c6 8.Bd3 cxd5 9.cxd5 Nh5
+10.Nge2 f5 11.Qd2 a6 12.O-O-O Nd7 13.Kb1 b5 14.Rc1 Nb6 15.b3 Bd7 16.Bh6 Bxh6
+17.Qxh6 f4 18.Rcf1 b4 19.Nd1 a5 20.g3 a4 21.gxf4 Nxf4 22.Nxf4 Rxf4 23.h4 axb3
+24.axb3 Qc7 25.Nb2 Qa7 26.h5 Qa2+ 27.Kc1 Rc8+ 28.Bc4 Nxc4 29.bxc4 Rxc4+ 30.Nxc4 Qxc4+
+31.Kb1 Qb3+  0-1
+
+[Event "TCh-ESP 2nd Div 2019"]
+[Site "Linares ESP"]
+[Date "2019.08.22"]
+[Round "6.3"]
+[White "Garriga Cazorla,Pere"]
+[Black "Jimenez Martinez,Jo"]
+[Result "1-0"]
+[WhiteElo "2495"]
+[BlackElo "2264"]
+[ECO "E90"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nf6 5.Nf3 O-O 6.h3 e5 7.d5 a5 8.g4 Na6 9.Be3 Nd7
+10.a3 Nac5 11.Nd2 a4 12.h4 c6 13.g5 f5 14.Rg1 f4 15.Bxc5 Nxc5 16.Qf3 cxd5
+17.cxd5 Bd7 18.O-O-O Qa5 19.Kb1 b5 20.Na2 Rfc8 21.Bh3 Qd8 22.Nb4 Bxh3 23.Qxh3 Qd7
+24.Rh1 Kf7 25.Rc1 Qxh3 26.Rxh3 h5 27.Rhc3 Ke8 28.Nd3 Bf8 29.Nf3 Rcb8 30.Nxc5 dxc5
+31.Nxe5 Bg7 32.Nc6 Bxc3 33.Rxc3 b4 34.axb4 cxb4 35.Rc4 Rb5 36.Ka2 Rc8 37.Rd4 Rc5
+38.Rxb4 Rc2 39.f3 Ra8 40.Kb1 Rf2 41.Ne5 Ke7 42.Rb6 a3 43.bxa3 Rxa3 44.d6+ Kf8
+45.d7 Ke7 46.Rb8  1-0
+
+[Event "World Cadets U12 2019"]
+[Site "Weifang CHN"]
+[Date "2019.08.22"]
+[Round "2.1"]
+[White "Chen,Yuan2"]
+[Black "Zhou,Liran"]
+[Result "1/2-1/2"]
+[WhiteElo "1884"]
+[BlackElo "2311"]
+[ECO "E81"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nf6 5.f3 O-O 6.Be3 c5 7.dxc5 dxc5 8.Qxd8 Rxd8
+9.Bxc5 Nc6 10.Nge2 b6 11.Ba3 Ba6 12.Nb5 Rac8 13.Nec3 Nd7 14.O-O-O Nc5 15.Be2 Bb7
+16.Rxd8+ Rxd8 17.Rd1 a6 18.Rxd8+ Nxd8 19.Bxc5 bxc5 20.Na3 Nc6 21.Nc2 e6 22.Ne1 Bd4
+23.Nd3 Ne5 24.Nxe5 Bxe5 25.g3 Bxc3 26.bxc3 e5 27.Kd2 Kf8 28.Ke3 Ke7 29.Bd3 f6
+30.g4 g5 31.h3 Kd6 32.Kd2 Kc6 33.Kc2 Kb6 34.Kb2 Ka5 35.Ka3 Bc6 36.Bc2 Be8
+37.Bd1 h5 38.Bc2 h4 39.Bd1 Kb6 40.Bc2 a5 41.Bd1 Bf7 42.Be2 Be8 43.Bd1 Bd7
+44.Bc2 Kc7 45.Bd1 Bc6 46.Bc2 Kb6 47.Bd1 Bb7 48.Bc2 Ba6 49.Bd3 Ka7  1/2-1/2
+
+[Event "55th Rubinstein Mem"]
+[Site "Polanica Zdroj POL"]
+[Date "2019.08.23"]
+[Round "7.9"]
+[White "Slomczewski,Michal"]
+[Black "Psyk,Radoslaw"]
+[Result "0-1"]
+[WhiteElo "2115"]
+[BlackElo "2326"]
+[ECO "A42"]
+
+1.c4 g6 2.e4 Bg7 3.d4 d6 4.Nc3 Nd7 5.Be3 e5 6.d5 Ne7 7.Bd3 O-O 8.Nge2 a5
+9.O-O f5 10.exf5 Nxf5 11.Bxf5 gxf5 12.f4 e4 13.Nd4 Nc5 14.Qh5 Nd3 15.Rab1 Qe8
+16.Qxe8 Rxe8 17.h3 Kf7 18.Nce2 Bd7 19.b3 h5 20.Nc1 Nc5 21.Nc2 b6 22.Bd4 Bxd4+
+23.Nxd4 Rg8 24.Kh2 Rg6 25.Nce2 Nd3 26.g3 h4 27.gxh4 Rh8 28.Ng3 Rxh4 29.Ndxf5 Rh8
+30.Rg1 Kf6 31.Nxe4+ Kxf5 32.Rxg6 Kxg6 33.Rg1+ Kf5 34.Rg7 Kxe4 35.Rxd7 Kf3
+36.Rg7 Nxf4 37.Rg3+ Ke4 38.Rc3 Kd4 39.Rf3 Rxh3+  0-1
+
+[Event "Lichtenberger Sommer 2019"]
+[Site "Berlin GER"]
+[Date "2019.08.24"]
+[Round "8.47"]
+[White "Wimmer,T"]
+[Black "Bellomo,Riccardo"]
+[Result "1-0"]
+[WhiteElo "1841"]
+[BlackElo "1677"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 d6 3.Nc3 Bg7 4.e4 Nd7 5.Be3 e5 6.d5 Ne7 7.g4 Nf6 8.h3 a6 9.Nge2 c5
+10.Ng3 h6 11.Be2 Bd7 12.Qd2 Rb8 13.f4 Qa5 14.fxe5 dxe5 15.O-O Nc8 16.a3 Qc7
+17.b4 b6 18.Rab1 cxb4 19.axb4 Nd6 20.c5 bxc5 21.bxc5 Nb5 22.c6 Bxc6 23.dxc6 Qxc6
+24.Nxb5 axb5 25.Rfc1 Qe6 26.Bxb5+ Kf8 27.Bc4 Rxb1 28.Bxe6 Rxc1+ 29.Qxc1 fxe6
+30.Qc5+ Kf7 31.Qxe5 Rc8 32.Qf4 Rc4 33.h4 Kg8 34.g5 e5 35.Qxe5  1-0
+
+[Event "ch-FIN Rapid 2019"]
+[Site "Helsinki FIN"]
+[Date "2019.08.24"]
+[Round "5.8"]
+[White "Westren-Doll,Jan"]
+[Black "Ruotanen,H"]
+[Result "0-1"]
+[WhiteElo ""]
+[BlackElo "1920"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Nf3 Bg4 6.Be3 e5 7.d5 Bxf3 8.Qxf3 Nd4
+9.Qd1 c5 10.Bd3 Nf6 11.Qa4+ Nd7 12.Nb5 O-O 13.Bxd4 exd4 14.O-O Ne5 15.Qb3 a6
+16.Na3 Bh6 17.Nc2 Rb8 18.f4 Ng4 19.Be2 Nf6 20.Qh3 Bg7 21.e5 Ne4 22.Bd3 f5
+23.Rae1 dxe5 24.fxe5 Bxe5 25.Bxe4 d3 26.Bxd3 Bxb2 27.Re6 Qg5 28.Rfe1 Rf7
+29.Qe3 Qh4 30.Re8+ Rxe8 31.Qxe8+ Kg7 32.d6 Bd4+ 33.Nxd4 Qxd4+ 34.Qe3 Qxd6
+35.Be2 Re7 36.Qc3+ Kh6  0-1
+
+[Event "Lidkoping Open 2019"]
+[Site "Lidkoping SWE"]
+[Date "2019.08.24"]
+[Round "1.18"]
+[White "Nordstrom,F"]
+[Black "Dyrnes,Jussi"]
+[Result "1/2-1/2"]
+[WhiteElo "2060"]
+[BlackElo "1779"]
+[ECO "A42"]
+
+1.d4 g6 2.e4 Bg7 3.c4 d6 4.Nc3 Nd7 5.Nf3 b6 6.Be2 Bb7 7.O-O Ngf6 8.Qc2 O-O
+9.h3 e5 10.Rd1 Qe7 11.dxe5 Nxe5 12.Nd4 a6 13.Bf4 h6 14.Bf1 Nh5 15.Be3 Rac8
+16.Nd5 Qd8 17.f4 Nd7 18.g4 Ng3 19.Bg2 h5 20.Bf2 h4 21.Ne2 Nxe2+ 22.Qxe2 c6
+23.Nc3 Nc5 24.e5 Re8 25.Qc2 d5 26.cxd5 cxd5 27.Nxd5 Bxd5 28.Bxd5 Qe7 29.Rac1 g5
+30.b4 Ne6 31.Qxc8 Rxc8 32.Rxc8+ Kh7 33.Be4+ Kh6 34.fxg5+ Nxg5 35.Rc6+ f6
+36.Bg2 Qxe5 37.Bxh4 Qe3+ 38.Kh2 Nf3+ 39.Bxf3 Qxf3 40.Rdd6 Qe2+ 41.Kg1 Qe3+
+42.Kg2 Qe4+ 43.Kg1 Qe3+  1/2-1/2
+
+[Event "Lidkoping Open 2019"]
+[Site "Lidkoping SWE"]
+[Date "2019.08.24"]
+[Round "3.10"]
+[White "Friberg,H"]
+[Black "Kjellqvist,Fredrik"]
+[Result "1-0"]
+[WhiteElo "2129"]
+[BlackElo "1778"]
+[ECO "A42"]
+
+1.e4 d6 2.d4 g6 3.c4 Bg7 4.Nc3 f5 5.Be3 Nc6 6.d5 Ne5 7.h3 c5 8.Qd2 Nf6 9.f4 Nf7
+10.exf5 Bxf5 11.Bd3 e6 12.dxe6 Bxe6 13.Nf3 a6 14.O-O Qd7 15.Rae1 O-O-O 16.Ng5 Bf5
+17.Bxf5 gxf5 18.Nxf7 Qxf7 19.Qd3 Qg6 20.Bd2 Nh5 21.Nd5 Kb8 22.Ne7 Qf7 23.Nxf5 d5
+24.Re7 Bd4+ 25.Kh2 dxc4 26.Qe4 Qd5 27.Qxd5 Rxd5 28.g4 Nf6 29.Bc3 Bxc3 30.bxc3 Rd2+
+31.Kg3 Rhd8 32.g5 R8d3+ 33.Rf3 Nd5 34.Rxh7 Nxc3 35.Rh8+ Kc7 36.Rxd3 cxd3
+37.g6 Ne4+ 38.Kf3 Re2 39.Rh7+ Kb6 40.Rh6 Nd2+ 41.Kg4 Rg2+ 42.Kh5 Nf3 43.g7+ Kb5
+44.Rg6 d2 45.Ne3  1-0
+
+[Event "3rd Innsbruck Open 2019"]
+[Site "Innsbruck AUT"]
+[Date "2019.08.25"]
+[Round "1.15"]
+[White "Kolbus,D"]
+[Black "Viaggi,S"]
+[Result "1-0"]
+[WhiteElo "2281"]
+[BlackElo "2027"]
+[ECO "A42"]
+
+1.c4 g6 2.e4 Bg7 3.d4 d6 4.Nc3 Nd7 5.Be3 e5 6.d5 Ne7 7.Qd2 O-O 8.f3 f5 9.O-O-O f4
+10.Bf2 a6 11.Kb1 b6 12.Nge2 Nc5 13.b4 Nb7 14.a3 Bd7 15.Nc1 a5 16.Qb2 Qe8
+17.Bd3 Qf7 18.Nb3 Kh8 19.Rc1 g5 20.h3 Rfb8 21.Rc2 Ng6 22.Rd1 Be8 23.Bf1 Bf8
+24.Nb5 axb4 25.axb4 Nh4 26.Nc3 Qg7 27.Nd4 Nd8 28.Ndb5 Ng6 29.Qb3 Qd7 30.Rdd2 Be7
+31.Ra2 Nf7 32.Na7 Qd8 33.Ra3 Bd7 34.Rda2 Qe8 35.Nab5 Rxa3 36.Rxa3 Bxb5 37.Nxb5 Qc8
+38.Qa2 Bd8 39.Na7 Qd7 40.Nc6 Rc8 41.Ra7 h5 42.Bxb6 Ne7 43.b5 Nxc6 44.dxc6 Qe6
+45.Ba5 g4 46.hxg4 hxg4 47.Bc3 Ng5 48.Qd2 Kg8 49.Qd3 g3 50.Kc2 Nf7 51.Qd5 Qxd5
+52.exd5 Kg7 53.Bd3 Kf6 54.Kd2 Ng5 55.Ra1 Be7 56.Rh1 Nf7 57.Kc2 Bd8 58.Rh4 Ke7
+59.Rg4 Rb8 60.Rg6 Ra8 61.Kb3 Ra7 62.Bf5 Ra8 63.Be6 Kf8 64.b6 Rb8 65.b7 Be7
+66.Ba5  1-0
+
+[Event "Lidkoping Open 2019"]
+[Site "Lidkoping SWE"]
+[Date "2019.08.25"]
+[Round "5.4"]
+[White "Bellon Lopez,JuM"]
+[Black "Lind,JO"]
+[Result "1-0"]
+[WhiteElo "2335"]
+[BlackElo "2164"]
+[ECO "E70"]
+
+1.d4 g6 2.e4 Bg7 3.c4 d6 4.Nc3 Nf6 5.Bg5 h6 6.Be3 O-O 7.h3 e5 8.d5 a5 9.Qd2 Kh7
+10.Bd3 Na6 11.Nge2 Qe8 12.g4 Nc5 13.Bc2 c6 14.f3 cxd5 15.cxd5 b5 16.a4 Nxa4
+17.Nxb5 Qxb5 18.Bxa4 Qb4 19.Qxb4 axb4 20.Kd2 Bd7 21.Bxd7 Nxd7 22.Rhc1 Rxa1
+23.Rxa1 f5 24.Ra7 Nf6 25.Kd3 fxe4+ 26.fxe4 Kg8 27.Rb7 h5 28.g5 Nh7 29.Rxb4 Rf3
+30.Rb8+ Bf8 31.h4 Rh3 32.b4 Rxh4 33.b5 Rh1 34.Ng1 Rh2 35.Bd2 Rg2 36.Nf3 Rg3
+37.Ke2 Rg4 38.Ke3 Nxg5 39.Nxg5 Rxg5 40.Kf3 Rg1 41.Bh6 h4 42.Bxf8 h3 43.Bxd6+ Kf7
+44.Bxe5 g5 45.Rh8 g4+ 46.Kf2 Rb1 47.Rh4 Rxb5 48.Rxg4  1-0
+
+[Event "St.Petersburg Rapid 2019"]
+[Site "St Petersburg RUS"]
+[Date "2019.08.25"]
+[Round "11.9"]
+[White "Kretov,E"]
+[Black "Sviridov,Va"]
+[Result "1-0"]
+[WhiteElo "2219"]
+[BlackElo "2556"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.d5 f5 6.Bd3 Nf6 7.Nge2 Na6 8.f3 O-O 9.Be3 fxe4
+10.Nxe4 Nxe4 11.Bxe4 Bh6 12.Bf2 Nc5 13.Nc3 a5 14.Qe2 b6 15.O-O Bd7 16.b3 Qg5
+17.Rad1 Rf7 18.Kh1 Raf8 19.Bc2 Qd8 20.a3 Bf5 21.Rb1 Nd7 22.Ne4 Bxe4 23.Bxe4 Nf6
+24.b4 axb4 25.axb4 Nh5 26.c5 Nf4 27.Qc4 bxc5 28.bxc5 Nh5 29.cxd6 cxd6 30.Rb6 Nf6
+31.Bd3 Qe7 32.Bh4 Be3 33.Rc6 g5 34.Bg3 Nh5 35.Be1 Kh8 36.Bb4 Rf6 37.g3 Qd7
+38.Kg2 Rh6 39.Qg4 Qe7 40.Rxd6 Nf6 41.Rxf6 Qxf6 42.Bxf8 Qxf8 43.Re1 Bd4 44.Qxg5 Rb6
+45.Re2 Rb3 46.Be4 Rb6 47.Ra2 Rb7 48.d6 Rg7 49.Qh5 Bc5 50.Ra8  1-0
+
+[Event "3rd Hyderabad Open 2019"]
+[Site "Hyderabad IND"]
+[Date "2019.08.26"]
+[Round "9.5"]
+[White "Sahoo,U"]
+[Black "Rathnakaran,K"]
+[Result "1/2-1/2"]
+[WhiteElo "2278"]
+[BlackElo "2337"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Be3 e5 6.Nge2 Nf6 7.f3 O-O 8.d5 Ne7
+9.Qd2 c6 10.Nc1 cxd5 11.cxd5 Nh5 12.g4 Nf4 13.Nd3 f5 14.gxf5 gxf5 15.Nxf4 exf4
+16.Bd4 Ng6 17.Bxg7 Qh4+ 18.Qf2 Kxg7 19.Qxh4 Nxh4 20.Kf2 fxe4 21.Nxe4 Bf5
+22.Rg1+ Kh6 23.Nxd6 Rad8 24.Nxf5+ Nxf5 25.Bc4 Ne3 26.Bb3 a5 27.Rae1 Rf5 28.Re2 Rh5
+29.Ke1 Rh3 30.Rd2 Rd6 31.Rg8 Rxf3 32.Rd4 b5 33.Ke2 Rh3 34.Rxf4 a4 35.Rf3 Rxf3
+36.Kxf3 Nf5 37.Bd1 Rxd5 38.Be2 Rd2 39.Bxb5 Rxb2 40.Bxa4 Rxa2 41.Bd7 Nh4+
+42.Kf4 Rf2+ 43.Ke3 Rxh2 44.Rg4 Ng6 45.Bf5 Nh4 46.Be4 Ng6 47.Bxg6 hxg6 48.Kf3 Kh5
+49.Ra4 Rh1 50.Kg3 Rg1+ 51.Kh2 Rg4 52.Ra5+ Kh4 53.Ra2 g5 54.Rb2  1/2-1/2
+
+[Event "3rd Innsbruck Open 2019"]
+[Site "Innsbruck AUT"]
+[Date "2019.08.28"]
+[Round "6.9"]
+[White "Ruff,M"]
+[Black "Pfatteicher,Lukas"]
+[Result "1-0"]
+[WhiteElo "2353"]
+[BlackElo "2149"]
+[ECO "A42"]
+
+1.c4 g6 2.d4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Be3 e5 6.d5 Nd4 7.Nge2 Nxe2 8.Bxe2 Bh6
+9.Bxh6 Nxh6 10.Qd2 Ng8 11.h4 Qf6 12.Qe3 Bd7 13.c5 dxc5 14.Qxc5 Qd6 15.Qe3 f6
+16.h5 g5 17.O-O Ne7 18.Nb5 Bxb5 19.Bxb5+ Kf7 20.Rac1 Rhc8 21.Rfd1 Kg7 22.Be2 Rd8
+23.Rc4 c6 24.dxc6 Qxd1+ 25.Bxd1 Rxd1+ 26.Kh2 Nxc6 27.b4 Rd7 28.Qh3 Re7 29.h6+ Kf7
+30.b5 Nd4 31.Qa3 b6 32.Qd6 Rae8 33.a4 Kg6 34.Rc7 Kf7 35.Rc3 Kg6 36.Rc8 Kf7
+37.Qd5+ Kf8 38.Rc3 Re6 39.Rc7 R6e7 40.Rc3 Re6 41.g3 g4 42.Rc7 R6e7 43.Rc1 Re6
+44.Kg2 R6e7 45.Rc3 Re6 46.Rc7 R6e7 47.Rc1 Re6 48.Qd7 R8e7 49.Rc8+ Kf7 50.Qd8 Re8
+51.Qd7+ R8e7 52.Qd5 Kg6 53.Rg8+ Kxh6 54.Rxg4 Rf7 55.Qc4 f5 56.Qc1+  1-0
+
+[Event "21st Sants Open 2019"]
+[Site "Barcelona ESP"]
+[Date "2019.08.29"]
+[Round "7.53"]
+[White "Riera Montano,R"]
+[Black "Gual Pascual,A"]
+[Result "0-1"]
+[WhiteElo "2160"]
+[BlackElo "2337"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.Nge2 Nd7 6.Be3 Ne7 7.f3 O-O 8.g4 a6 9.h4 exd4
+10.Nxd4 Ne5 11.Be2 c5 12.Nc2 Be6 13.Nd5 b5 14.b3 bxc4 15.bxc4 f5 16.gxf5 gxf5
+17.Bg5 Bxd5 18.Bxe7 Qxe7 19.Qxd5+ Kh8 20.Rb1 fxe4 21.fxe4 Qf6 22.Kd1 Ng6
+23.Rb3 Nf4 24.Qg5 Nxe2 25.Qxf6 Rxf6 26.Kxe2 Re8 27.Rb6 Rxe4+ 28.Kd3 Re8 29.Rh3 Bh6
+30.Rg3 a5 31.Ra6 Rf1 32.Ne3 Bxe3 33.Rxe3 Rd1+ 34.Ke2 Rxe3+ 35.Kxe3 Rd4 36.Rxa5 Rxc4
+37.Ra6 Rd4 38.a4 Kg7 39.a5 Kf6 40.Ra7 Rxh4 41.a6 Ra4 42.Rxh7 Rxa6 43.Rh5 Ke6
+44.Kd3 Ra4 45.Kc3 d5 46.Rh6+ Kd7 47.Kc2 Re4 48.Kd3 Re6 49.Rh8 Rg6 50.Kc2 Kd6
+51.Rc8 Rg5 52.Kd2 c4 53.Kc2 Ke5 54.Rh8 Rg3 55.Rh4 d4 56.Kc1 Rg1+ 57.Kc2 Rg2+
+58.Kc1 c3 59.Rh3 Ke4 60.Rh4+ Kd3 61.Rh3+ Kc4 62.Rh4 Kb3 63.Rxd4 Rg1+  0-1
+
+[Event "Serbian League Women 2019"]
+[Site "Subotica SRB"]
+[Date "2019.08.29"]
+[Round "8.3"]
+[White "Vuckovic,L"]
+[Black "Gruic,J"]
+[Result "1-0"]
+[WhiteElo "1866"]
+[BlackElo "2117"]
+[ECO "E70"]
+
+1.d4 d6 2.c4 g6 3.Nc3 Bg7 4.e4 Nf6 5.Bg5 c6 6.Be2 Nbd7 7.Qd2 h6 8.Be3 Nb6
+9.h3 Qc7 10.Nf3 e5 11.b3 Bd7 12.d5 c5 13.O-O Nc8 14.Qc2 g5 15.Nh2 Ne7 16.Nb5 Qb8
+17.Rab1 a6 18.Nc3 Qc8 19.Na4 Qd8 20.b4 b5 21.Nc3 cxb4 22.Rxb4 bxc4 23.Bb6 Qb8
+24.Rfb1 O-O 25.Rxc4 Bb5 26.Be3 Qe8 27.Nxb5 axb5 28.Rc7 Rc8 29.Bxb5 Qd8 30.Rxc8 Nxc8
+31.Bc6 Qa5 32.Bd2 Qd8 33.Rb8 Nd7 34.Ra8 Ndb6 35.Ra3 Ne7 36.Ba5 Qc7 37.Rb3 Rb8
+38.Qb1 Nec8 39.Ng4 Qa7 40.Be1 Bf8 41.a4 Kg7 42.a5 Nd7 43.Rxb8 Nxb8 44.Bb7 Qc5
+45.Bd2 Be7 46.a6 f5 47.exf5 Nxa6 48.Bxa6 Qxd5 49.Be3 Qc6 50.Qb7 Na7 51.Qxe7+  1-0
+
+[Event "85th Southwest Open 2019"]
+[Site "Irving USA"]
+[Date "2019.08.31"]
+[Round "5.9"]
+[White "Stremavicius,T"]
+[Black "Arribas Lopez,A"]
+[Result "1-0"]
+[WhiteElo "2490"]
+[BlackElo "2436"]
+[ECO "A42"]
+
+1.c4 g6 2.d4 Bg7 3.e4 d6 4.Nc3 Nd7 5.Be2 e5 6.d5 h5 7.h4 Bh6 8.Bxh6 Nxh6
+9.Qd2 a5 10.O-O-O Nc5 11.f4 exf4 12.Qxf4 Qe7 13.Nf3 Ng4 14.Rhf1 O-O 15.Bd3 f5
+16.Ng5 Bd7 17.Qd2 f4 18.Rde1 Ne5 19.Be2 Bg4 20.Kb1 Rf6 21.Qd4 Raf8 22.Bf3 c6
+23.Rd1 Qc7 24.Rf2 a4 25.Rc2 Qa5 26.Ne2 Re8 27.Qd2 Qa6 28.Bxg4 hxg4 29.Nxf4 Nxc4
+30.Qd4 Rxf4 31.Rxc4 Ref8 32.dxc6 bxc6 33.Qxd6  1-0
+
+[Event "TCh-POL Ekstraliga 2019"]
+[Site "Katowice POL"]
+[Date "2019.08.31"]
+[Round "4.3"]
+[White "Wojtaszek,R"]
+[Black "Brodowski,P"]
+[Result "1-0"]
+[WhiteElo "2739"]
+[BlackElo "2430"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nc6 5.d5 Nd4 6.Be3 e5 7.Nge2 Nxe2 8.Bxe2 Ne7
+9.c5 dxc5 10.Bxc5 O-O 11.O-O b6 12.Ba3 Bb7 13.Nb5 Bh6 14.Qc2 c5 15.dxc6 Nxc6
+16.Rad1 Nd4 17.Nxd4 exd4 18.Bxf8 Bxf8 19.Bc4 Rc8 20.Qd3 Qh4 21.Qxd4 Qxe4
+22.Qxe4 Bxe4 23.Rd4 Bf5 24.Rfd1 Rc7 25.g4 Bc8 26.b3 Bc5 27.Rd8+ Kg7 28.h3 h5
+29.gxh5 Bxh3 30.hxg6 Kxg6 31.R1d3 Bf5 32.Rg3+ Kf6 33.Rf3 Ke7 34.Rh8 Be6 35.Bxe6 Kxe6
+36.Rh6+ Ke7 37.Rxf7+  1-0
+
+[Event "2nd European Corporate"]
+[Site "Minsk BLR"]
+[Date "2019.08.31"]
+[Round "6.1"]
+[White "Khotenashvili,B"]
+[Black "Sviridov,Va"]
+[Result "0-1"]
+[WhiteElo "2453"]
+[BlackElo "2556"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.dxe5 dxe5 6.Qxd8+ Kxd8 7.Bg5+ f6 8.O-O-O+ Nd7
+9.Be3 c6 10.f4 exf4 11.Bxf4 Bh6 12.g3 Ke7 13.Kc2 Ne5 14.h3 Be6 15.b3 Bg7
+16.Bc1 Nh6 17.Ba3+ Ke8 18.Nge2 Nhf7 19.Nf4 Bd7 20.Be2 Bf8 21.Bc1 Bd6 22.Be3 b6
+23.Na4 Bc7 24.c5 b5 25.Nc3 b4 26.Na4 Ke7 27.Rd4 Rab8 28.Ba6 Nf3 29.Rdd1 N3g5
+30.Bd3 Ne5 31.h4 Ng4 32.Rhe1 Nf3 33.Re2 Nxe3+ 34.Rxe3 Ne5 35.Ba6 Bg4 36.Be2 Bd7
+37.Nb2 g5 38.hxg5 fxg5 39.Nfd3 Be6 40.Nxe5 Bxe5 41.Nc4 Bxc4 42.Bxc4 h5 43.Red3 Rbd8
+44.Rxd8 Rxd8 45.Rh1 Rh8 46.Be2 h4 47.gxh4 gxh4 48.Bg4 Bd4 49.Kd3 Bxc5 50.e5 Bf2
+51.Ke4 Rg8 52.Bf5 Rd8 53.Kf3 Bg3 54.e6 Rd4 55.Rc1 Rf4+ 56.Kg2 Rxf5 57.Rxc6 Rf2+
+58.Kh3 Rh2+ 59.Kg4 Rxa2  0-1
+
+[Event "85th Southwest Open 2019"]
+[Site "Irving USA"]
+[Date "2019.09.01"]
+[Round "7.2"]
+[White "Shtembuliak,E"]
+[Black "Gabuzyan,H"]
+[Result "1/2-1/2"]
+[WhiteElo "2548"]
+[BlackElo "2610"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 e5 5.Nf3 Bg4 6.d5 Nd7 7.Be2 Bxf3 8.Bxf3 h5
+9.O-O Bh6 10.Bxh6 Nxh6 11.b4 O-O 12.Rc1 Kg7 13.Re1 a5 14.a3 f5 15.Qd2 Nf6
+16.c5 axb4 17.axb4 Rf7 18.Ra1 Rb8 19.exf5 Nxf5 20.Ne4 Nxe4 21.Bxe4 Nd4 22.Ra3 Rf4
+23.g3 Rf6 24.f4 Qf8 25.fxe5 dxe5 26.Qg5 Re8 27.Ra7 Rf5 28.Qe3 Rf3 29.Bxf3 Nxf3+
+30.Kg2 Nxe1+ 31.Qxe1 Re7 32.Qe4 Qb8 33.Ra2 b6 34.h4 Qc8 35.cxb6 cxb6 36.d6 Qe6
+37.Rd2 Rd7 38.Qc6 e4 39.Qxb6 e3 40.Qd4+ Kh7 41.Re2 Rxd6 42.Qxe3 Qxe3 43.Rxe3 Rd2+
+44.Kf3 Rb2 45.Re7+ Kh6 46.Rb7 Rb3+ 47.Kf4 Rb1 48.b5 Rb4+ 49.Ke5 Rb3 50.Kf4 Rb4+
+51.Ke5 Rb3 52.b6 Rxg3 53.Rd7 Rb3 54.b7 g5 55.hxg5+ Kxg5 56.Kd5 Rb1 57.Kc4 Rc1+
+58.Kb5 Rb1+ 59.Ka6 Ra1+ 60.Kb6 Rb1+ 61.Kc7  1/2-1/2
+
+[Event "Serbian League Women 2019"]
+[Site "Subotica SRB"]
+[Date "2019.09.01"]
+[Round "11.1"]
+[White "Srdanovic,Jovana"]
+[Black "Petrovic,Mari"]
+[Result "1/2-1/2"]
+[WhiteElo "2005"]
+[BlackElo "1987"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nd7 5.Be3 e5 6.d5 Ngf6 7.Bd3 O-O 8.h3 h6 9.Nge2 a5  1/2-1/2
+
+[Event "18th Izmir Open 2019"]
+[Site "Izmir TUR"]
+[Date "2019.09.03"]
+[Round "3.6"]
+[White "Demir,Baran"]
+[Black "Isik,Alparslan"]
+[Result "1-0"]
+[WhiteElo "1859"]
+[BlackElo "2200"]
+[ECO "A42"]
+
+1.c4 g6 2.e4 Bg7 3.d4 d6 4.Nc3 e5 5.d5 Ne7 6.h3 O-O 7.g4 a5 8.Nge2 Na6 9.Ng3 Nc5
+10.Be3 Bd7 11.Qd2 c6 12.Be2 a4 13.h4 cxd5 14.cxd5 Qa5 15.h5 b5 16.Bh6 a3
+17.hxg6 fxg6 18.b3 Bxh6 19.Rxh6 Rac8 20.Rc1 Nb7 21.Nf5 Nxf5 22.gxf5 Kg7 23.Rh3 h5
+24.Rxh5 Rf6 25.Qh6+ Kf7 26.fxg6+ Rxg6 27.Qh7+ Rg7 28.Rf5+ Bxf5 29.Qxf5+ Ke7
+30.Qxc8 Nc5 31.Kf1 Rf7 32.Nxb5 Rf8 33.Qg4 Qd2 34.Rxc5 dxc5  1-0
+
+[Event "2nd San Cristobal Open"]
+[Site "San Cristobal de La Laguna ESP"]
+[Date "2019.09.03"]
+[Round "4.9"]
+[White "Villagran Carrasco,J"]
+[Black "Zenker,U"]
+[Result "1/2-1/2"]
+[WhiteElo "2086"]
+[BlackElo "2166"]
+[ECO "A42"]
+
+1.d4 d6 2.c4 g6 3.Nc3 Bg7 4.e4 Nc6 5.Be3 e5 6.Nge2 exd4 7.Nxd4 Nge7 8.Qd2 O-O
+9.Be2 f5 10.exf5 Nxf5 11.Nxf5 Bxf5 12.O-O Kh8 13.Rad1 Qf6 14.Nd5 Qf7 15.Bh6 Rae8
+16.Bxg7+ Qxg7 17.Rfe1 b6 18.Qc3 Qxc3 19.Nxc3 Nb4 20.Bf1 a5 21.a3 Na6 22.f3 Kg7
+23.Kf2 Kf7 24.Nb5 Rxe1 25.Rxe1 Re8 26.Rxe8 Kxe8 27.Ke3 Bd7 28.Bd3 Bxb5 29.cxb5 Nc5
+30.Bc2 Ke7 31.h4 Kf6 32.h5 Ne6 33.hxg6 hxg6 34.Ke4 g5 35.g3 Nd8 36.Bb3 Nb7
+37.Kd5 Nd8 38.Ke4 Nb7 39.Bc4 Nc5+ 40.Kd4 Nd7 41.b4 axb4 42.axb4 Ne5 43.Bd5 Ke7
+44.Bb7 Kf6 45.Be4 Nd7 46.Kd5 Ke7 47.Kc6 Kd8 48.f4 gxf4 49.gxf4 Nf6 50.Bf3 Ne8
+51.Bh5 Nf6 52.Bf3 Ne8 53.f5 Nf6 54.Bd1 Ng8 55.Kb7 Kd7 56.Bb3 Nf6 57.Be6+ Kd8  1/2-1/2
+
+[Event "1st Niteroi Chess Open"]
+[Site "Niteroi BRA"]
+[Date "2019.09.05"]
+[Round "2.5"]
+[White "Torella,R"]
+[Black "Santiago,Y"]
+[Result "0-1"]
+[WhiteElo "2058"]
+[BlackElo "2487"]
+[ECO "E91"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nf6 5.Nf3 O-O 6.Be2 Bg4 7.Be3 Nfd7 8.Qd2 e5
+9.Rd1 Nc6 10.dxe5 dxe5 11.Ng5 Bxe2 12.Nxe2 Nd4 13.O-O c5 14.Nc3 Nb8 15.Nd5 Nbc6
+16.f4 exf4 17.Bxf4 h6 18.Nf3 g5 19.Bg3 f5 20.exf5 Nxf5 21.Bc7 Qe8 22.Rde1 Qh5
+23.Ne5 Nfd4 24.Nd7 Rxf1+ 25.Rxf1 Qe2 26.Qxe2 Nxe2+ 27.Kf2 Nf4 28.b3 Ne6 29.Bg3 Rd8
+30.N7f6+ Kf7 31.Kg1 Kg6 32.h3 Ned4 33.Bc7 Rf8 34.Bd6 Rf7 35.Bxc5 Bxf6 36.b4 Ne6
+37.Be3 Bd4 38.Bxd4 Rxf1+  0-1
+
+[Event "Maia Cup Rapid 2019"]
+[Site "Tbilisi GEO"]
+[Date "2019.09.05"]
+[Round "2.5"]
+[White "Fier,A"]
+[Black "Endeladze,R"]
+[Result "1-0"]
+[WhiteElo "2549"]
+[BlackElo "1904"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nc6 5.d5 Nd4 6.Be3 e5 7.Nge2 Nxe2 8.Bxe2 f5
+9.exf5 Bxf5 10.h4 h5 11.Qd2 Nf6 12.f3 b6 13.O-O-O a6 14.Rdg1 b5 15.g4 hxg4
+16.fxg4 Ne4 17.Qe1 Nxc3 18.gxf5 Nxe2+ 19.Qxe2 Rxh4 20.Qg2 Rxh1 21.Qxg6+  1-0
+
+[Event "Kurnosov Mem Rapid 2019"]
+[Site "Chelyabinsk RUS"]
+[Date "2019.09.07"]
+[Round "8.6"]
+[White "Volkov,Sergey1"]
+[Black "Shariyazdanov,A"]
+[Result "1-0"]
+[WhiteElo "2557"]
+[BlackElo "2519"]
+[ECO "A42"]
+
+1.d4 g6 2.e4 Bg7 3.c4 d6 4.Nc3 e5 5.d5 a5 6.Bd3 Nd7 7.h4 Ngf6 8.Bc2 Nc5 9.Be3 Bd7
+10.Qe2 O-O 11.O-O-O a4 12.Kb1 Qb8 13.h5 Nxh5 14.Rxh5 gxh5 15.Qxh5 b5 16.cxb5 Qe8
+17.Nf3 f5 18.Qh2 f4 19.Bxc5 dxc5 20.Bxa4 Rf6 21.Bb3 Rh6 22.Qg1 Bxb5 23.Nxb5 Qxb5
+24.d6+ c4 25.Qf1 Kf8 26.Bxc4 Qc5 27.Rd5 Qb6 28.d7 Rd8 29.a4 Rd6 30.a5 Qa7
+31.Rxd6 cxd6 32.a6 Rxd7 33.Qd3 Ke7 34.Qd5 Kd8 35.Bb5 Re7 36.Qxd6+ Kc8 37.Nh4 Qxf2
+38.Qxe7 Qe1+ 39.Kc2 Qf2+ 40.Kb3  1-0
+
+[Event "TCh-POL 2nd League 2019"]
+[Site "Jastrzebia Gora POL"]
+[Date "2019.09.07"]
+[Round "1.7"]
+[White "Pacan-Milej,Kosma"]
+[Black "Suliborski,J"]
+[Result "1-0"]
+[WhiteElo "2287"]
+[BlackElo "2169"]
+[ECO "A42"]
+
+1.d4 g6 2.e4 Bg7 3.c4 d6 4.Nc3 Nc6 5.d5 Nd4 6.Be3 e5 7.Nge2 Nxe2 8.Bxe2 f5
+9.exf5 Bxf5 10.g4 Bd7 11.h4 c5 12.h5 Qa5 13.hxg6 hxg6 14.Rxh8 Bxh8 15.Qc2 Kf7
+16.O-O-O Nf6 17.g5 Bf5 18.Bd3 e4 19.Nxe4 Nxe4 20.Bxe4 Bxe4 21.Qxe4 Re8 22.Qf4+ Ke7
+23.Rh1 Be5 24.Rh7+ Kd8 25.Qg4 Re7 26.Rxe7 Kxe7 27.Kb1 Qe1+ 28.Bc1 Bd4 29.f3 Qe2
+30.Qe4+ Qxe4+ 31.fxe4 Be5 32.Kc2 a6 33.Kb3 Kd7 34.Ka4 Kc7 35.Ka5 Bd4 36.a3 Be5
+37.b4 cxb4 38.axb4 Bd4 39.Bf4 Kd7 40.Bd2 Kc7 41.Bf4 Kd7 42.b5 axb5 43.Kxb5 b6
+44.Ka4 Kc7 45.Kb3 Bg7 46.Be3 Bf8 47.Ka4 Be7 48.Kb5 Kb7 49.Bxb6 Bxg5 50.e5 dxe5
+51.c5 e4 52.c6+ Ka8 53.d6 e3 54.d7  1-0
+
+[Event "Panchenko Mem Open 2019"]
+[Site "Chelyabinsk RUS"]
+[Date "2019.09.09"]
+[Round "1.37"]
+[White "Galiev,Ernest"]
+[Black "Matveev,V3"]
+[Result "0-1"]
+[WhiteElo "1875"]
+[BlackElo "2372"]
+[ECO "E84"]
+
+1.e4 d6 2.d4 g6 3.c4 Bg7 4.Nc3 Nf6 5.f3 O-O 6.Be3 Nc6 7.Qd2 a6 8.Nge2 Rb8
+9.g4 b5 10.Ng3 e5 11.d5 Nd4 12.Bxd4 exd4 13.Nce2 d3 14.Qxd3 bxc4 15.Qd2 Nxg4
+16.fxg4 Rxb2 17.Qc1 Bxg4 18.Rb1 c3 19.Bg2 Bxe2 20.Nxe2 Qh4+ 21.Kf1 Bh6 22.Qe1 Qf6+
+23.Kg1 Be3+ 24.Qf2 Qxf2+  0-1
+
+[Event "TCh-POL 1st League 2019"]
+[Site "Dzwirzyno POL"]
+[Date "2019.09.09"]
+[Round "3.4"]
+[White "Winiarski,M"]
+[Black "Tofil,B"]
+[Result "1/2-1/2"]
+[WhiteElo "2213"]
+[BlackElo "2202"]
+[ECO "A42"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 c6 5.Be3 Qa5 6.Qd2 a6 7.Bd3 b5 8.Nge2 Bb7
+9.O-O Nd7 10.b4 Qc7 11.a4 bxc4 12.Bxc4 Ngf6 13.Bh6 O-O 14.Bxg7 Kxg7 15.Bd3 e5
+16.dxe5 Nxe5 17.f4 Nxd3 18.Qxd3 Rfe8 19.Kh1 Rad8 20.Ng3 Qb6 21.a5 Qc7 22.Na4  1/2-1/2
+
+[Event "TCh-POL 2nd League 2019"]
+[Site "Jastrzebia Gora POL"]
+[Date "2019.09.12"]
+[Round "6.15"]
+[White "Szczesniak,A"]
+[Black "Rams,M"]
+[Result "1/2-1/2"]
+[WhiteElo "1941"]
+[BlackElo "2175"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 e5 5.d5 Ne7 6.Bd3 Nd7 7.h4 h5 8.Be3 O-O 9.Qd2 Nc5
+10.Bc2 f5 11.f3 f4 12.Bf2 Kh7 13.O-O-O Ng8 14.Kb1 Rf7 15.Nge2 Bf8 16.Nc1 Nf6
+17.Nd3 Nfd7  1/2-1/2
+
+[Event "Panchenko Mem Open 2019"]
+[Site "Chelyabinsk RUS"]
+[Date "2019.09.13"]
+[Round "5.3"]
+[White "Stupak,K"]
+[Black "Tologontegin,S"]
+[Result "1/2-1/2"]
+[WhiteElo "2551"]
+[BlackElo "2369"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.Nf3 Bg4 6.d5 Nd7 7.Be2 Bxf3 8.Bxf3 h5
+9.O-O Bh6 10.g3 h4 11.Bg2 Bxc1 12.Rxc1 Ngf6 13.b4 Kf8 14.Na4 a5 15.a3 axb4
+16.axb4 b5 17.cxb5 Qb8 18.Ra1 Kg7 19.Qe2 Ra7 20.Nc3 Rxa1 21.Rxa1 Qb6 22.Qd2 hxg3
+23.hxg3 Qb7 24.Qd3 Ra8 25.Ra5 Ra7 26.Qc4 Nb6 27.Qa2 Ra8 28.Nb1 Qc8 29.Qe2 Qg4
+30.Qxg4 Nxg4 31.Bh3 Nf6 32.Nd2 Kf8 33.f3 Ke7 34.Kf2 Rh8 35.Kg2 Ra8 36.f4 Ne8
+37.Kf3 Kd8 38.Ra6 Ke7 39.Nb3 Kf6 40.Na5 g5 41.Nc6 gxf4 42.gxf4 exf4 43.Kxf4 Ng7
+44.Bg4 Rh8 45.e5+ dxe5+ 46.Nxe5 Nh5+ 47.Bxh5 Rxh5 48.Nd7+ Ke7 49.Nxb6 cxb6
+50.Rxb6 Rxd5 51.Ke4 Rd1 52.Rc6 Kd7 53.Ke5 f5 54.Rc3 Rd6 55.Rc4 Rb6 56.Rc5 Rh6
+57.Rc4 Rb6 58.Kxf5 Rxb5+ 59.Ke4 Kd6 60.Kd3 Rb7 61.Rh4 Kc6 62.Kc4 Rg7 63.Rh6+ Kb7
+64.Kb5 Rg5+ 65.Ka4 Rf5 66.b5 Rf1 67.Rh7+ Kb6 68.Rh6+ Kb7 69.b6 Ra1+ 70.Kb5 Rb1+
+71.Kc4 Rxb6 72.Rxb6+ Kxb6  1/2-1/2
+
+[Event "TCh-POL 2nd League 2019"]
+[Site "Jastrzebia Gora POL"]
+[Date "2019.09.15"]
+[Round "9.13"]
+[White "Kaczmarek,Ar"]
+[Black "Suliborski,J"]
+[Result "1/2-1/2"]
+[WhiteElo "2061"]
+[BlackElo "2169"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nc6 5.d5 Nd4 6.Be3 e5 7.Nge2 Nxe2 8.Bxe2 Ne7  1/2-1/2
+
+[Event "TCh-POL 2nd League 2019"]
+[Site "Jastrzebia Gora POL"]
+[Date "2019.09.15"]
+[Round "9.8"]
+[White "Sieciechowicz,M"]
+[Black "Tomczak,Raf"]
+[Result "1/2-1/2"]
+[WhiteElo "2364"]
+[BlackElo "2320"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 c6 5.Be3 e5 6.dxe5 dxe5 7.Qxd8+ Kxd8 8.O-O-O+ Ke8
+9.c5 Be6 10.Nf3 h6 11.Nd2 Nd7 12.Nc4 Kd8 13.b4 Ne7 14.b5 Bf6 15.Be2 Nc8 16.Na5 Kc7
+17.Nxb7 Kxb7 18.bxc6+ Kxc6 19.Bb5+ Kc7 20.Bxd7 Bxd7 21.Nd5+ Kc6 22.Nxf6 Be6
+23.Rd2 Rb8 24.Rhd1 Rb4 25.f3 h5 26.Bf2 h4 27.Nd5 Ra4 28.Rb2 h3 29.g4 f5 30.Nb4+ Kc7
+31.gxf5 gxf5 32.exf5 Bxf5 33.Nd5+ Kc6 34.Nb4+ Kc7 35.Bg3 Re8 36.Re1 Re6 37.Rxe5 Rxe5
+38.Bxe5+ Kd7 39.f4 a5 40.Rd2+ Ke8 41.Na6 Ne7 42.Bd6 Nc6 43.Nc7+ Kf7 44.Kb2 Re4
+45.Nd5 Re1 46.Nc3 Rg1 47.a3 Rg2 48.Rxg2 hxg2 49.Ne2 Nd4 50.Ng1 Ke6 51.Be5 Kd5
+52.Kc3 Nc6  1/2-1/2
+
+[Event "1st Lakecity Rapid 2019"]
+[Site "Udaipur IND"]
+[Date "2019.09.15"]
+[Round "6.16"]
+[White "Kothari Pranit"]
+[Black "Arun Rathee"]
+[Result "0-1"]
+[WhiteElo "1698"]
+[BlackElo "1959"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nd7 5.Be2 e6 6.Nf3 Ne7 7.O-O b6 8.Be3 Bb7
+9.Qc2 a6 10.Rad1 O-O 11.b4 h6 12.c5 Qe8 13.Ne1 Kh7 14.f3 a5 15.Nb5 Qb8 16.a3 axb4
+17.axb4 Ba6 18.Rb1 Rd8 19.Rf2 d5 20.Bf1 Bxb5 21.Bxb5 c6 22.Bf1 e5 23.dxe5 Bxe5
+24.f4 Bg7 25.e5 Nf5 26.Bc1 bxc5 27.bxc5 Qa7 28.Bd3 Nd4 29.Qb2 Qxc5 30.Be3 Ra4
+31.Nc2 Rb8 32.Qc1 Rxb1 33.Qxb1 Qc3 34.Bxd4 Qxd3 35.Rf3 Qa6 36.Kh1 c5 37.Bg1 d4
+38.Qb3 Qc4 39.Qb1 Nf8 40.Ne1 Qa2 41.Qe4 Ne6 42.h4 d3 43.Qxd3 Rxf4 44.Rxf4 Nxf4
+45.Qf3 Bxe5 46.g3 Nh5 47.Qxf7+ Qxf7  0-1
+
+[Event "Panchenko Mem Open 2019"]
+[Site "Chelyabinsk RUS"]
+[Date "2019.09.17"]
+[Round "9.29"]
+[White "Simantsev,M"]
+[Black "Zharkov,Nikolay"]
+[Result "1-0"]
+[WhiteElo "2346"]
+[BlackElo "2109"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.Nf3 exd4 6.Nxd4 Nc6 7.Be3 Nge7 8.h4 h6
+9.Qd2 f5 10.Nxc6 Nxc6 11.Bd3 fxe4 12.Bxe4 Bf5 13.Bxf5 gxf5 14.O-O-O Qf6 15.Nd5 Qf7
+16.Rhe1 O-O-O 17.Bxa7 b6 18.Qc2 Rhe8 19.Qa4 Kb7 20.Rxe8 Rxe8 21.Bxb6 cxb6
+22.Qb5 Bd4 23.Rxd4 Nxd4 24.Qxb6+ Kc8 25.Qxd4 Re4 26.Qh8+ Kb7 27.b3 Re2 28.Qd4 Kc8
+29.a4 Qe6 30.Qh8+ Kd7 31.Qg7+ Kd8 32.Nf4 Re1+ 33.Kd2 Qe4 34.Qxh6 Kd7 35.Qg7+ Kc6
+36.Qa7 Qxf4+ 37.Kxe1 Qc1+ 38.Ke2 Qc2+ 39.Kf3 Qxb3+ 40.Kf4 Qxc4+ 41.Kxf5 Qxh4
+42.Qa6+ Kc7 43.Qa5+ Kd7 44.Qb5+ Kc7 45.g3 Qh7+ 46.Kf4 Qf7+ 47.Ke3 Qe6+ 48.Kd2 Qa2+
+49.Ke1 d5 50.a5 Kd6 51.a6 d4 52.Kf1  1-0
+
+[Event "TCh-EUR Senior +50 2019"]
+[Site "Mali Losinj CRO"]
+[Date "2019.09.20"]
+[Round "3.4"]
+[White "Ledger,A"]
+[Black "Druckenthaner,A"]
+[Result "0-1"]
+[WhiteElo "2343"]
+[BlackElo "2283"]
+[ECO "A42"]
+
+1.d4 d6 2.c4 g6 3.Nc3 Bg7 4.e4 e5 5.d5 Nh6 6.h4 c5 7.Bd3 Qe7 8.Nge2 Na6 9.Ng3 Bd7
+10.a3 f6 11.Bc2 Nf7 12.h5 Bh6 13.Bxh6 Nxh6 14.Ba4 O-O-O 15.Bxd7+ Qxd7 16.Qd2 Nf7
+17.Nb5 Kb8 18.Qa5 Rc8 19.O-O-O f5 20.Rd3 f4 21.Ne2 Qd8 22.Qa4 Qg5 23.f3 Qxg2
+24.Re1 Qf2 25.Kd1 Ng5 26.Ng1 Rhd8 27.Rb3 Rc7 28.Nxc7 Nxc7 29.Rc3 gxh5 30.Qc2 Qg3
+31.b4 h4 32.bxc5 dxc5 33.Rb3 h3 34.Ne2 Qf2 35.Qb2 Nxf3 36.Rxf3 Qxf3 37.Qxe5 h2
+38.Qe7 Re8 39.Qxh7 Qd3+ 40.Kc1 Qxe4 41.Qxh2 Qxc4+ 42.Kb2 f3 43.d6 Rxe2+ 44.Rxe2 Qxe2+  0-1
+
+[Event "TCh-ROU Div A 2019"]
+[Site "Mamaia ROU"]
+[Date "2019.09.21"]
+[Round "1.2"]
+[White "Andronescu,M"]
+[Black "Mihai,C"]
+[Result "1-0"]
+[WhiteElo "2124"]
+[BlackElo "1931"]
+[ECO "E68"]
+
+1.e4 g6 2.d4 d6 3.c4 Bg7 4.Nc3 Nf6 5.Nf3 O-O 6.g3 Nbd7 7.Bg2 e5 8.O-O h6
+9.h3 Nh5 10.Be3 c6 11.Qd2 Kh7 12.Rad1 Qe7 13.Rfe1 Nb6 14.b3 Be6 15.d5 cxd5
+16.exd5 Bd7 17.c5 Nc8 18.g4 e4 19.Nxe4 Qxe4 20.Ng5+  1-0
+
+[Event "Gaprindashvili Cup 2019"]
+[Site "Tbilisi GEO"]
+[Date "2019.09.21"]
+[Round "1.5"]
+[White "Nigalidze,G"]
+[Black "Lomsadze,D"]
+[Result "1-0"]
+[WhiteElo "2508"]
+[BlackElo "2304"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 c5 5.d5 Bxc3+ 6.bxc3 f5 7.exf5 Bxf5 8.h3 e5
+9.g4 Bc8 10.Nf3 Nd7 11.Ng5 Qe7 12.Bd3 Ngf6 13.O-O O-O 14.Ne6 Rf7 15.Bh6 e4
+16.Be2 Ne5 17.Ng5 Bd7 18.Nxf7 Nxf7 19.Bf4 h5 20.gxh5 g5 21.Bg3 Bxh3 22.Re1 Re8
+23.Qd2 Qd7 24.Qe3 Ng4 25.Bxg4 Bxg4 26.Kf1 Bxh5 27.Reb1 Re7 28.Ke1 Qa4 29.Kd2 Qxc4
+30.Rg1 Qxd5+ 31.Kc2 c4 32.Bf4 Qd3+ 33.Kb2 Kf8 34.Bxg5 Re5 35.Bf6 Rb5+ 36.Kc1 Rf5
+37.Bg7+ Ke7 38.Qxa7 Ke6 39.Rb1 b6 40.Qxb6 Ng5 41.Rb2 Nh3 42.Qd8 Rc5 43.Re1 Rd5
+44.Qc8+ Kf7 45.Rb7+ Kg6 46.Qe6+  1-0
+
+[Event "SCO Open 2019"]
+[Site "Qingdao CHN"]
+[Date "2019.09.23"]
+[Round "5.13"]
+[White "Wang,Shixu B"]
+[Black "Kabilov,Amin"]
+[Result "1/2-1/2"]
+[WhiteElo "2398"]
+[BlackElo "2199"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.Nf3 Nd7 6.Bg5 f6 7.Be3 Nh6 8.h3 Nf7 9.Bd3 c6
+10.Qd2 Qe7 11.d5 c5 12.g3 a6 13.Rb1 f5 14.Qe2 f4 15.Bd2 fxg3 16.fxg3 O-O
+17.O-O Bh6 18.Kg2 Bxd2 19.Qxd2 Nf6 20.Rf2 Bd7 21.Rbf1 Nh5 22.Be2 b5 23.cxb5 axb5
+24.Bxb5 Bxb5 25.Nxb5 Kg7 26.Nc3 h6 27.Nh2 Qd7 28.Ng4 Ng5 29.Rxf8 Rxf8 30.Rxf8 Kxf8
+31.Qf2+ Kg7 32.a4 Qb7 33.h4 Qd7 34.Qe2 Nh7 35.a5 N7f6 36.Nxf6 Nxf6 37.a6 Nh5
+38.Nb5 Qd8 39.Nxd6 Qxd6 40.a7 Qf8 41.Qa6 Qa8 42.Qb6 Qc8 43.Qc6 Nf4+ 44.Kf2 Qh3
+45.gxf4 Qh2+ 46.Ke1 Qg1+ 47.Ke2 Qg2+ 48.Kd3 Qf1+ 49.Kc3 Qe1+ 50.Kd3 Qf1+
+51.Kd2 Qf2+ 52.Kc3 Qd4+ 53.Kb3 Qb4+ 54.Ka2 Qa5+ 55.Kb1 Qe1+ 56.Ka2 Qa5+ 57.Kb3 Qb4+  1/2-1/2
+
+[Event "24th City of Barcelona Op"]
+[Site "Barcelona ESP"]
+[Date "2019.09.27"]
+[Round "1.1"]
+[White "Jimenez Ruano,Adrian"]
+[Black "Kamsky,G"]
+[Result "0-1"]
+[WhiteElo "2311"]
+[BlackElo "2685"]
+[ECO "E90"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nf6 5.Nf3 O-O 6.h3 c6 7.Be2 e5 8.d5 Na6 9.Be3 Bd7
+10.g4 Nc5 11.Nd2 cxd5 12.cxd5 Rc8 13.g5 Nh5 14.Bxc5 Rxc5 15.Bxh5 gxh5 16.Qxh5 f5
+17.gxf6 Qxf6 18.O-O-O b5 19.Kb1 b4 20.Ne2 Qh6 21.Qxh6 Bxh6 22.Rh2 Bb5 23.Nc1 Rxc1+
+24.Rxc1 Bxd2 25.Rd1 Bh6 26.Rg2+ Kf7 27.Rg3 Ke7 28.a3 a5 29.axb4 axb4 30.f3 b3
+31.f4 Be2 32.Re1 exf4 33.Rxb3 f3 34.Rb7+ Kf6 35.Rxh7 f2 36.Rh1 Be3 37.Rd7 Rg8  0-1
+
+[Event "24th City of Barcelona Op"]
+[Site "Barcelona ESP"]
+[Date "2019.09.27"]
+[Round "1.17"]
+[White "Maloberti,D"]
+[Black "Ladron de Guevara Pinto,P"]
+[Result "0-1"]
+[WhiteElo "2122"]
+[BlackElo "2447"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Be3 e5 6.Nge2 Nf6 7.d5 Ne7 8.h3 O-O
+9.g4 a6 10.Ng3 c6 11.Qd2 b5 12.g5 Ne8 13.dxc6 Nxc6 14.cxb5 Nd4 15.Bxd4 exd4
+16.Nd5 axb5 17.Bxb5 Nc7 18.Nxc7 Qxc7 19.h4 Bb7 20.f4 f5 21.gxf6 Bxf6 22.h5 g5
+23.fxg5 Be5 24.Rg1 d5 25.Qd3 Kh8 26.exd5 Bxd5 27.Ne2 Qa5+  0-1
+
+[Event "2nd Gujarat Open 2019"]
+[Site "Ahmedabad IND"]
+[Date "2019.09.28"]
+[Round "9.17"]
+[White "Kishan,G"]
+[Black "Murshed,N"]
+[Result "0-1"]
+[WhiteElo "2089"]
+[BlackElo "2405"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Be3 e5 6.Nge2 exd4 7.Nxd4 Nge7 8.g3 O-O
+9.Bg2 Ne5 10.Qe2 c5 11.Nc2 Be6 12.Nd5 b5 13.cxb5 Nxd5 14.exd5 Bf5 15.Rd1 Qa5+
+16.Qd2 Qxb5 17.Na3 Qa6 18.Qe2 Bd3 19.Qd2 Rab8 20.b3 Qxa3 21.f4 Ng4 22.Qxd3 Nxe3  0-1
+
+[Event "Dutch League 2019-20"]
+[Site "Netherlands NED"]
+[Date "2019.09.28"]
+[Round "1.1"]
+[White "Reinderman,D"]
+[Black "Martens,M"]
+[Result "1-0"]
+[WhiteElo "2572"]
+[BlackElo "2364"]
+[ECO "A42"]
+
+1.c4 g6 2.e4 Bg7 3.d4 d6 4.Nc3 e5 5.d5 Nd7 6.Bd3 Ne7 7.Bc2 O-O 8.g4 c5 9.Nge2 Nb6
+10.Ng3 Nxc4 11.Qe2 Na5 12.h4 f6 13.f4 exf4 14.Bxf4 a6 15.a4 Rb8 16.h5 g5
+17.Bd2 c4 18.Nd1 b5 19.axb5 Rxb5 20.O-O Nb3 21.Bxb3 cxb3 22.Bc3 Qb6+ 23.Kg2 h6
+24.Ne3 f5 25.Bxg7 Kxg7 26.gxf5 Ng8 27.Rac1 Bd7 28.Ng4 Nf6 29.Nxf6 Rxf6 30.Qd2 a5
+31.Rc4 Rc5 32.Rxc5 Qxc5 33.Rc1 Qb6 34.Ne2 a4 35.Nd4 Rf7 36.Rc4 Kh7 37.Qc3 Re7
+38.Ne6 Rf7 39.Nd4 Re7 40.Nc6 Rf7 41.Rxa4 Qb5 42.Qc4 Qb6 43.Qd4 Qb5 44.Rc4 Rf8
+45.Kg3 Qa6 46.Ne7 Qa5 47.Ng6 Re8 48.Rc1 Rc8 49.Rxc8 Qe1+ 50.Qf2 Qxf2+ 51.Kxf2 Bxc8
+52.f6  1-0
+
+[Event "2nd Gujarat Open 2019"]
+[Site "Ahmedabad IND"]
+[Date "2019.09.29"]
+[Round "10.16"]
+[White "Satkar,Chirag"]
+[Black "Rathnakaran,K"]
+[Result "0-1"]
+[WhiteElo "2052"]
+[BlackElo "2325"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Be3 e5 6.d5 Nce7 7.Qd2 f5 8.f3 f4 9.Bf2 Nf6
+10.O-O-O a6 11.Kb1 Bd7 12.Nge2 b5 13.c5 O-O 14.a3 Qb8 15.Nc1 b4 16.axb4 Qxb4
+17.N3a2 Qb8 18.c6 Be8 19.g4 Bf7 20.Nc3 g5 21.h4 h6 22.h5 Kh8 23.Qc2 Bg8 24.Ka1 Qe8
+25.Nb3 a5 26.Bb5 Qb8 27.Ba4 Nc8 28.Nc1 Nb6 29.Bb3 a4 30.Ba2 Ra5 31.N1e2 Qa7
+32.Rd2 Rb8 33.Nb1 Qa8 34.Nec3 Nc8 35.Na3 Rb4 36.Nc4 Ra6 37.Rc1 Qb8 38.Qd1 Ne7
+39.Na3 Ra8 40.Rcc2 Bf7 41.Qe2 Qc8 42.Ncb5 Ra5 43.Nc3 Qb8 44.Nc4 Ra8 45.Na3 Nc8
+46.Nc4 Ng8 47.Na3 Nge7 48.Bc4 Na7 49.Ba2 Bf6 50.Ncb1 Kg7 51.Nc3 Be8 52.Bg1 Kh8
+53.Bf2 Bg7 54.Bg1 Bf7 55.Bf2 Bg8 56.Bg1 Bh7 57.Bf2 Ng8 58.Bg1 Nf6 59.Bf2 Nc8
+60.Bc4 Ne7 61.Ba2 Bg8 62.Bg1 Bf7 63.Bf2 Qc8 64.Bg1 Neg8 65.Nd1 Ra5 66.Bc4 Qa8
+67.Ba2 Rb3 68.Nc3 Qc8 69.Nd1 Nxg4 70.Bxb3 axb3 71.Rc3 N4f6 72.Rxb3 Ne7 73.Rb7 Nfxd5
+74.exd5 Nxd5 75.Qe4 Bg8 76.Nf2 Qa8 77.Rd3 Rc5 78.Rdb3 Rc1+ 79.Ka2 Rxg1 80.Rb8 Qxb8  0-1
+
+[Event "Chess24 Banter Blitz Cup"]
+[Site "chess24.com INT"]
+[Date "2019.09.29"]
+[Round "1.7"]
+[White "Perez Ponsa,F"]
+[Black "Jumabayev,R"]
+[Result "1/2-1/2"]
+[WhiteElo "2564"]
+[BlackElo "2630"]
+[ECO "A42"]
+
+1.d4 g6 2.e4 Bg7 3.c4 d6 4.Nc3 e5 5.Nf3 exd4 6.Nxd4 Ne7 7.Be2 Nbc6 8.Be3 f5
+9.Nxc6 bxc6 10.Qd2 O-O 11.h4 fxe4 12.h5 Nf5 13.hxg6 hxg6 14.Nxe4 Qe7 15.f3 Nxe3
+16.Qxe3 Bxb2 17.Rb1 Bg7 18.Qg5 Bc3+ 19.Kd1 Qxg5 20.Nxg5 Bf5 21.Rb3 Bg7 22.Bd3 Bxd3
+23.Rxd3 Rab8 24.Rb3 Rfe8 25.Kd2 a5 26.Rhb1 Rxb3 27.Rxb3 Bh6 28.f4 Bxg5 29.fxg5 Re5
+30.Rb7 Rxg5 31.Rxc7 Rxg2+ 32.Kd3 Rxa2 33.Rxc6 Ra1 34.c5 Kf7 35.cxd6 Rd1+
+36.Ke4 Ke6 37.d7+ Kxd7 38.Rxg6 Kc7 39.Ra6 Ra1 40.Kd5 Kb7 41.Rh6 Rc1 42.Kd4 a4
+43.Kd3 a3 44.Rh2 Kb6 45.Ra2 Rh1 46.Kc4 Rh4+ 47.Kb3 Kb5 48.Rxa3 Rh3+ 49.Kb2 Rxa3
+50.Kxa3  1/2-1/2
+
+[Event "Tatry Open 2019"]
+[Site "Tatranske Zruby SVK"]
+[Date "2019.09.29"]
+[Round "2.6"]
+[White "Sejkora,V"]
+[Black "Jablonicky,Martin"]
+[Result "1/2-1/2"]
+[WhiteElo "2144"]
+[BlackElo "2342"]
+[ECO "A42"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 e5 5.d5 Nf6 6.h3 a5 7.Nf3 Na6 8.Bd3 O-O 9.Be3 Nd7
+10.g4 Ndc5 11.Bc2 c6 12.a3 Rb8 13.Rb1 cxd5 14.Nxd5 a4 15.Nc3 Be6 16.Nd2 Rc8
+17.Bxa4 Nxa4 18.Qxa4 f5 19.gxf5 gxf5 20.exf5 Bxf5 21.Nde4 Qh4 22.Nxd6 Bxb1
+23.Nxb1 Rcd8 24.Qd1 Rf6 25.Qd5+ Kh8 26.c5 Rdf8 27.Ne4 Nc7 28.Qxb7 Rg6 29.Nbd2 Ne6
+30.Nd6 Nd4 31.Qd5 Nc2+ 32.Kd1 Nxe3+ 33.fxe3 Qh5+ 34.Kc1 Bh6 35.c6 Bxe3 36.c7 Qe2
+37.Rd1 Rg7 38.Nf7+ Rgxf7 39.Qxf7 Rxf7 40.c8=Q+ Kg7 41.Qg4+ Qxg4 42.hxg4 Rf2
+43.Kc2 Bd4 44.Re1 Bxb2 45.Kxb2 Rxd2+ 46.Kc3 Rd4 47.g5 Rd5 48.Kc4 Rd4+ 49.Kc3 Rd5  1/2-1/2
+
+[Event "Tatry Open 2019"]
+[Site "Tatranske Zruby SVK"]
+[Date "2019.09.30"]
+[Round "4.5"]
+[White "Motuz,K"]
+[Black "Borsos,B"]
+[Result "1/2-1/2"]
+[WhiteElo "2359"]
+[BlackElo "2210"]
+[ECO "A42"]
+
+1.c4 g6 2.d4 Bg7 3.Nc3 d6 4.e4 e5 5.Nge2 Nc6 6.Be3 Nh6 7.d5 Ne7 8.f3 f5 9.Qd2 Nf7
+10.Nc1 c5 11.dxc6 bxc6 12.b4 a5 13.b5 O-O 14.bxc6 Nxc6 15.Bd3 Be6 16.Nd5 Nd4
+17.O-O Bxd5 18.cxd5 fxe4 19.fxe4 Qh4 20.Nb3 Bh6 21.Bxh6 Nxb3 22.axb3 Qxh6
+23.Qxh6 Nxh6 24.Rxf8+ Kxf8 25.h3 Nf7 26.b4 a4 27.Ra3 Ke7 28.Kf2 h5 29.h4 Nh6
+30.Be2 Ng8 31.Ke3 Nf6 32.Kd3 Kd8 33.Bd1 Kc7 34.Rxa4 Rxa4 35.Bxa4 Kb6 36.Bc2 Ng4
+37.Ba4 Nf6 38.Kc4 Kc7 39.Bd1 Kb6 40.Be2 Nd7 41.g4 hxg4 42.Bxg4 Nf6 43.Bf3 Nh5
+44.Be2 Nf4 45.Bf1 Nh5 46.Kc3 Nf6 47.Bd3 Kc7 48.Kd2 Kd8 49.Ke3 Ke7 50.Bb5 Kd8
+51.Kf3 Kc7 52.Ba4 Kb6 53.Ke3 Ng4+ 54.Kd3 Nf2+ 55.Ke3 Ng4+ 56.Kf3 Nf6 57.Ke2 Nxe4
+58.Bc2 Nc3+ 59.Kf3 Nxd5 60.Bxg6 Nf6 61.h5  1/2-1/2
+
+[Event "Tatry Open 2019"]
+[Site "Tatranske Zruby SVK"]
+[Date "2019.10.01"]
+[Round "5.6"]
+[White "Borsos,B"]
+[Black "Lanc,A"]
+[Result "1-0"]
+[WhiteElo "2210"]
+[BlackElo "2284"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 e5 5.Nge2 Nc6 6.Be3 Nh6 7.d5 Ne7 8.f3 f5 9.Qd2 Nf7
+10.Nc1 c5 11.dxc6 bxc6 12.b4 a5 13.b5 Bb7 14.Bd3 O-O 15.O-O c5 16.Rb1 f4
+17.Bf2 h5 18.Be2 g5 19.Rd1 Bh6 20.Qe1 Qc8 21.Na4 Qe6 22.Nb3 g4 23.Nbxc5 dxc5
+24.Nxc5 Qc8 25.Rd7 g3 26.Rxe7 gxf2+ 27.Qxf2 Rb8 28.b6 Bc6 29.b7 Qd8 30.Re6 Bxb7
+31.Nxb7 Qc8 32.Reb6 Bg5 33.Kh1 Re8 34.c5 Re6 35.Nxa5 Rexb6 36.Rxb6 Ra8 37.Nc6 Kg7
+38.Bc4 Qc7 39.g3 Qd7 40.Kg2 fxg3 41.hxg3  1-0
+
+[Event "Tatry Open 2019"]
+[Site "Tatranske Zruby SVK"]
+[Date "2019.10.02"]
+[Round "6.4"]
+[White "Borsos,B"]
+[Black "Vyskocil,N"]
+[Result "1/2-1/2"]
+[WhiteElo "2210"]
+[BlackElo "2306"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nd7 5.Be3 e5 6.d5 a5 7.f3 Ne7 8.Qd2 f5 9.Bd3 f4
+10.Bf2 O-O 11.Nge2 b6 12.Nb5 Nc5  1/2-1/2
+
+[Event "World Youth Open U14 2019"]
+[Site "Mumbai IND"]
+[Date "2019.10.04"]
+[Round "4.16"]
+[White "Titze,Leo"]
+[Black "Huang,Patrick"]
+[Result "1/2-1/2"]
+[WhiteElo "1927"]
+[BlackElo "2120"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.d5 Na6 6.Be2 f5 7.exf5 Bxf5 8.g4 Bd7
+9.h4 Qe7 10.Be3 Nh6 11.Bg5 Qf8 12.Nh3 Nf7 13.Qc2 Nxg5 14.hxg5 Qe7 15.O-O-O O-O-O
+16.f3 Rde8 17.Ne4 Nc5 18.Nhf2 h6 19.Nxc5 Qxg5+ 20.Kb1 dxc5 21.Ne4 Qf4 22.Nxc5 e4
+23.Qb3 b6 24.Nxe4 Bxg4 25.fxg4 Rxe4 26.Bd3 Re3 27.Rhf1 Qe5 28.c5 Kb8 29.a4 Rd8
+30.cxb6 axb6 31.a5 Rxd5 32.axb6 c6 33.Qa2 Qe7 34.Qa7+ Qxa7 35.bxa7+ Kxa7
+36.Rf7+ Kb6 37.Rxg7 Rexd3 38.Rxd3 Rxd3 39.Rxg6 Rh3 40.Ka2 Kb5 41.Rg8 Kc4
+42.Rg7 Kd5 43.g5 h5 44.g6 Ke5 45.Rc7 Kf5 46.Rxc6 Rg3 47.b4 h4 48.Rc4 h3 49.Rh4 Kxg6
+50.b5 Kg5 51.Rh8 Rg2+ 52.Ka3 Rg3+ 53.Ka4 Rg4+ 54.Ka5 Rh4 55.Rg8+ Kf5 56.Rg1 h2
+57.Rh1 Ke5 58.Ka6 Kd6 59.b6 Kc5 60.Rc1+ Rc4 61.Rh1 Rc2 62.Ka7 Ra2+ 63.Kb7 Rc2
+64.Ka7 Ra2+ 65.Kb7 Rg2 66.Ka7 Ra2+  1/2-1/2
+
+[Event "Chigorin Memorial 2019"]
+[Site "St Petersburg RUS"]
+[Date "2019.10.05"]
+[Round "1.15"]
+[White "Sivuk,V"]
+[Black "Ponomarev,Denis"]
+[Result "1-0"]
+[WhiteElo "2559"]
+[BlackElo "2031"]
+[ECO "E71"]
+
+1.d4 g6 2.e4 Bg7 3.c4 d6 4.Nc3 Nf6 5.h3 O-O 6.Be3 c5 7.Nf3 cxd4 8.Nxd4 Nc6
+9.Be2 Nxd4 10.Bxd4 b6 11.O-O Bb7 12.Qd3 Rc8 13.Rad1 Nd7 14.Bxg7 Kxg7 15.Qd4+ Kg8
+16.b3 Qc7 17.Bg4 h5 18.Nb5 Qd8 19.Bxd7 Qxd7 20.Nxa7 Ra8 21.Nb5 Rxa2 22.Qxb6 Rfa8
+23.Nc3 R2a3 24.Rfe1 Qc6 25.Qb4 Bc8 26.Nd5 R3a7 27.e5 Rb7 28.exd6  1-0
+
+[Event "41st Arco Open 2019"]
+[Site "Arco ITA"]
+[Date "2019.10.06"]
+[Round "3.44"]
+[White "Behling,R"]
+[Black "Fratini,M"]
+[Result "1-0"]
+[WhiteElo "2062"]
+[BlackElo "1838"]
+[ECO "E81"]
+
+1.c4 g6 2.e4 Bg7 3.d4 d6 4.Nc3 Nf6 5.f3 O-O 6.Be3 c6 7.Nge2 Nbd7 8.Qd2 a6
+9.g4 b5 10.Ng3 b4 11.Nd1 c5 12.Be2 Qc7 13.d5 a5 14.Bh6 e6 15.Bxg7 Kxg7 16.O-O exd5
+17.exd5 Re8 18.Nf2 Ne5 19.h3 Qe7 20.Rfe1 Qd8 21.f4 Ned7 22.Bd3 Ba6 23.g5 Ng8
+24.Nge4 Qb6 25.b3 Ne7 26.Nf6 Nxf6 27.gxf6+ Kf8 28.fxe7+  1-0
+
+[Event "41st Arco Open 2019"]
+[Site "Arco ITA"]
+[Date "2019.10.06"]
+[Round "3.15"]
+[White "Cardili,M"]
+[Black "Qendro,L"]
+[Result "1/2-1/2"]
+[WhiteElo "2078"]
+[BlackElo "2312"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.Nf3 exd4 6.Nxd4 Nc6 7.Be3 Nge7 8.Be2 O-O
+9.O-O f5 10.exf5 Bxd4 11.Bxd4 Nxf5 12.Be3 Nxe3 13.fxe3 Rxf1+ 14.Qxf1 Be6
+15.Qf4 Qe7 16.Bf3 Rf8 17.Qe4 Ne5 18.Be2 b6 19.Rf1 Rxf1+ 20.Bxf1 Kg7 21.Be2 a5
+22.Nb5 Bf5 23.Qf4 Bd3 24.Bxd3 Nxd3 25.Qd4+ Ne5 26.Nc3 Qf7 27.Nd5 g5 28.b3 Qf5
+29.e4 Qg4  1/2-1/2
+
+[Event "41st Arco Open 2019"]
+[Site "Arco ITA"]
+[Date "2019.10.07"]
+[Round "4.72"]
+[White "Wild,H"]
+[Black "Paletta,Giuseppe"]
+[Result "1-0"]
+[WhiteElo "1870"]
+[BlackElo "1655"]
+[ECO "A42"]
+
+1.c4 g6 2.d4 Bg7 3.Nc3 d6 4.e4 e5 5.Be3 Nd7 6.d5 Ngf6 7.b4 b6 8.Bd3 O-O 9.f3 Nh5
+10.Nge2 Nf4 11.Kf2 Nxd3+ 12.Qxd3 f5 13.h4 f4 14.Bd2 Nf6 15.g4 fxg3+ 16.Nxg3 h5
+17.Ke2 Qe8 18.a4 Bd7 19.Nb5 Qc8 20.a5 a6 21.Nc3 Qb7 22.Rab1 b5 23.cxb5 axb5
+24.Rhc1 Rf7 25.Rc2 Kh7 26.Rbc1 Be8 27.Kf2 Rc8 28.Kg2 Bd7 29.Be3 Be8 30.Nge2 Bd7
+31.Ng1 Kg8 32.Qd2 Nh7 33.Qe1 Be8 34.Nce2 Nf6 35.Bb6 c5 36.dxc6 Qa6 37.Qd2 Bf8
+38.Nh3 Kg7 39.Ng5  1-0
+
+[Event "Chigorin Memorial 2019"]
+[Site "St Petersburg RUS"]
+[Date "2019.10.07"]
+[Round "3.154"]
+[White "Petrov,Igor"]
+[Black "Nikitin,Vladimir"]
+[Result "1-0"]
+[WhiteElo "1584"]
+[BlackElo "1821"]
+[ECO "E81"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nf6 5.f3 O-O 6.Be3 Nbd7 7.Qd2 e5 8.d5 a6 9.O-O-O Ne8
+10.g4 c6 11.h4 cxd5 12.cxd5 b5 13.h5 b4 14.Na4 Qa5 15.b3 Nc5 16.Nxc5 dxc5
+17.hxg6 fxg6 18.Qh2 Nf6 19.Bg5 Bd7 20.Bxf6 Rxf6 21.g5 Rf4 22.Qxh7+ Kf7 23.Rh6 Qxa2
+24.Qxg6+ Kf8 25.Rh7 Qa1+ 26.Kd2 Qc3+ 27.Ke2 Rf7 28.Qd6+ Ke8 29.Kf2 Qc2+ 30.Be2 Rd8
+31.Qg6 Kf8 32.Rxg7 Rxg7 33.Qf6+ Rf7 34.Qh8+ Ke7 35.d6+ Ke6 36.Qh6+  1-0
+
+[Event "Momcilo Gvozednovic Mem"]
+[Site "Valjevo SRB"]
+[Date "2019.10.08"]
+[Round "5.3"]
+[White "Budisavljevic,Luka"]
+[Black "Markovic,Miros1"]
+[Result "1/2-1/2"]
+[WhiteElo "2432"]
+[BlackElo "2392"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.d5 Nd4 6.Be3 c5 7.Nf3 Bg4 8.Be2 Nxe2
+9.Qxe2 Nf6 10.h3 Bxf3 11.Qxf3 Nd7 12.Qe2 O-O 13.O-O a6 14.f4 Re8 15.e5 dxe5
+16.f5 b5 17.Ne4 Nf6 18.Bxc5 bxc4 19.Nxf6+ exf6 20.Qxc4 Qd7 21.Qe4 a5 22.Rf2 Rac8
+23.Be3 Qb5 24.Rd1 Red8 25.d6 Rd7 26.Rd5 Qb7 27.Qd3 a4 28.Ra5 Qb4 29.Rd5  1/2-1/2
+
+[Event "Almaty Open 2019"]
+[Site "Almaty KAZ"]
+[Date "2019.10.09"]
+[Round "4.12"]
+[White "Sisabayev,K"]
+[Black "Tologontegin,S"]
+[Result "0-1"]
+[WhiteElo "2289"]
+[BlackElo "2369"]
+[ECO "A42"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 e5 5.Be3 Nc6 6.d5 Nd4 7.Nge2 Nxe2 8.Bxe2 f5
+9.exf5 Bxf5 10.g4 Bd7 11.Qd2 Nf6 12.h3 Qe7 13.O-O-O a6 14.c5 O-O 15.cxd6 cxd6
+16.Bb6 Rac8 17.Kb1 Be8 18.Rc1 Bf7 19.g5 Nh5 20.Bg4 Rc4 21.Ne2 Rxc1+ 22.Rxc1 Nf4
+23.Rc7 Qxg5 24.Be3 Bxd5 25.Nc3 Bc6 26.Qxd6 Rd8 27.Be6+ Kh8 28.Rc8 Rxc8 29.Bxc8 h5
+30.Qc7 Qf6 31.a4 Ne6 32.Qb6 Qe7 33.a5 Nf4 34.Bc5 Qf7 35.Ka1 Kh7 36.h4 Nd5
+37.Qb3 Qc7 38.Nxd5 Qxa5+ 39.Kb1 Qxc5 40.Nc3 Qf8 41.Be6 Qxf2 42.Nd5 Qxh4 43.Qf3 e4
+44.Qf7 e3 45.Ne7 Be4+ 46.Ka2 Qf2  0-1
+
+[Event "Chigorin Memorial 2019"]
+[Site "St Petersburg RUS"]
+[Date "2019.10.09"]
+[Round "5.25"]
+[White "Bryakin,M"]
+[Black "Kovalev,Vit"]
+[Result "1-0"]
+[WhiteElo "2436"]
+[BlackElo "2240"]
+[ECO "E71"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nf6 5.h3 O-O 6.Be3 e5 7.d5 Na6 8.Nf3 Nc5 9.Nd2 a5
+10.g4 c6 11.a3 a4 12.Be2 Qa5 13.O-O Bd7 14.Rc1 Rac8 15.Kh2 cxd5 16.cxd5 b5
+17.f3 Rc7 18.Na2 Rfc8 19.Nb4 Ne8 20.Rc3 f5 21.Qb1 f4 22.Bf2 Na6 23.Nxa6 Qxa6
+24.Rfc1 Qa5 25.Qd3 Bf6 26.Rxc7 Rxc7 27.Rxc7 Qxc7 28.b4 Qd8 29.Bg1 Bh4 30.Qb1 Qc8
+31.Qb2 Be1 32.Nb1 Qd8 33.Kg2 Qh4 34.Kf1 Bg3 35.Bd3 Qxh3+ 36.Qg2 Qh4 37.Nc3 Nc7
+38.Bb6 h5 39.Ne2 hxg4 40.Nxg3 fxg3 41.fxg4 Bxg4 42.Kg1 Ne8 43.Bxb5 Nf6 44.Bd8 Kg7
+45.Bd3 g5 46.Bxf6+ Kxf6 47.Bf1 Ke7 48.Qc2 Bf3 49.Qc7+ Ke8 50.Bb5+ Kf8 51.Qxd6+ Kg8
+52.Qe6+ Kg7 53.Qxe5+ Kg8 54.Qe8+ Kg7 55.Qd7+ Kg8 56.Qc8+ Kg7 57.Qc3+ Kh7
+58.Qxf3 Qh2+ 59.Kf1 g4 60.Qg2 Qh4 61.e5 Qg5 62.Qxg3 Qc1+ 63.Kf2 Qd2+ 64.Be2 Qd4+
+65.Kf1 Qb2 66.Qh4+ Kg7 67.Qxg4+ Kh8 68.Qf3 Qc1+ 69.Kf2 Qd2 70.d6  1-0
+
+[Event "41st Arco Open 2019"]
+[Site "Arco ITA"]
+[Date "2019.10.11"]
+[Round "8.41"]
+[White "Farkas,Otto Jr."]
+[Black "Battistella,S"]
+[Result "1/2-1/2"]
+[WhiteElo "1826"]
+[BlackElo "2017"]
+[ECO "E83"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nf6 5.f3 O-O 6.Be3 Nc6 7.Qd2 a6 8.O-O-O Rb8
+9.Kb1 Re8 10.g4 e5 11.d5 Nd4 12.Bxd4 exd4 13.Nce2 Bxg4 14.Nxd4 Nxe4 15.fxe4 Bxd1
+16.Qxd1 Rxe4 17.Ngf3 Qf6 18.Bh3 Rxd4 19.Nxd4 Qxd4 20.Qxd4 Bxd4 21.Bd7 Rd8
+22.Ba4 f5 23.Rd1 Be3 24.Kc2 Kg7 25.Kd3 f4 26.Ke4 Kf6 27.Kf3 g5 28.h3 h5 29.Rf1 Ke7
+30.Bc2 Kf6 31.Ba4 Ke5 32.Rd1 Rg8 33.Bd7 Rg7 34.Be6 c5 35.b3 b5 36.cxb5 axb5  1/2-1/2
+
+[Event "Canadian Int Open 2019"]
+[Site "Montreal CAN"]
+[Date "2019.10.11"]
+[Round "1.22"]
+[White "Xu,Daniel"]
+[Black "Cazelais,M"]
+[Result "0-1"]
+[WhiteElo "1838"]
+[BlackElo "2170"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Nf3 Bg4 6.Be3 e5 7.d5 Nd4 8.Be2 Bxf3
+9.Bxf3 c5 10.dxc6 bxc6 11.O-O Ne7 12.Be2 O-O 13.Qd2 f5 14.f3 f4 15.Bf2 g5
+16.Rab1 Ng6 17.b4 g4 18.fxg4 f3 19.gxf3 Rxf3 20.Bxd4 Rxf1+ 21.Rxf1 exd4 22.Nd1 Qh4
+23.Qe1 Qe7 24.Bd3 Ne5 25.Qe2 Qh4 26.Nf2 Rf8 27.Kg2 Rf3 28.c5 Re3 29.Qd1 Nxd3
+30.Qb3+ d5 31.Nxd3 Qxg4+  0-1
+
+[Event "41st Arco Open 2019"]
+[Site "Arco ITA"]
+[Date "2019.10.12"]
+[Round "9.24"]
+[White "Facchetti,L"]
+[Black "Ager,J"]
+[Result "0-1"]
+[WhiteElo "1921"]
+[BlackElo "2147"]
+[ECO "E73"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nf6 5.Be2 O-O 6.Be3 Na6 7.Qd2 e5 8.d5 Nc5
+9.f3 Nh5 10.b4 Na6 11.c5 Nxb4 12.a3 Na6 13.Bxa6 bxa6 14.Nge2 a5 15.Nb5 f5
+16.O-O a6 17.Qxa5 fxe4 18.fxe4 Nf4 19.Ng3 Nxg2 20.Rxf8+ Bxf8 21.Qxc7 Qh4
+22.Kxg2 Bh3+ 23.Kg1 axb5 24.Qb7 Qd8 25.c6 Qa5 26.Rf1 Bxf1 27.Kxf1 Qa6 28.Qd7 b4+
+29.Kg2 bxa3 30.Bg5 Qc8  0-1
+
+[Event "Chigorin Memorial 2019"]
+[Site "St Petersburg RUS"]
+[Date "2019.10.13"]
+[Round "9.163"]
+[White "Erin,Aleksandr V."]
+[Black "Kotlyar,Anfisa"]
+[Result "1-0"]
+[WhiteElo "1612"]
+[BlackElo "1118"]
+[ECO "A42"]
+
+1.e4 d6 2.d4 g6 3.c4 Bg7 4.Nc3 Bd7 5.Be3 Nf6 6.f3 Nc6 7.Nge2 e5 8.d5 Na5
+9.Ng3 b6 10.b4 Nb7 11.a3 a5 12.Bd3 O-O 13.Nge2 axb4 14.axb4 Rxa1 15.Qxa1 Qa8
+16.Kf2 Rb8 17.Qb2 Nd8 18.Ra1 Qb7 19.Qa3 Kf8 20.Ke1 Ke7 21.Qa7 Qxa7 22.Rxa7 Rb7
+23.Ra8 Ng8 24.g4 f6 25.Kd2 Bh6 26.Nc1 Bxe3+ 27.Kxe3 Nh6 28.Nb3 f5 29.exf5 gxf5
+30.g5 Nhf7 31.h4 Kf8 32.f4 e4 33.Be2 Kg7 34.h5 c6 35.Nd4 c5 36.bxc5 bxc5
+37.Ndb5 Rb6 38.Na4 Rb7 39.Nac3 Rb6 40.Kf2 Rb7 41.Kg3 Be8 42.Kh4 Re7 43.h6+ Kg8
+44.Nxd6 Nxd6 45.Rxd8 Rd7 46.Ra8 Rb7 47.Nb5 Rd7 48.Nxd6  1-0
+
+[Event "ch-RUS Rapid 2019"]
+[Site "Sochi RUS"]
+[Date "2019.10.15"]
+[Round "4.15"]
+[White "Yuffa,D"]
+[Black "Jary,S"]
+[Result "1-0"]
+[WhiteElo "2577"]
+[BlackElo "2275"]
+[ECO "A42"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nc6 5.Be3 Nf6 6.d5 Nb8 7.Nf3 O-O 8.Be2 Bg4
+9.O-O Nbd7 10.h3 Bxf3 11.Bxf3 c5 12.g4 a6 13.a4 a5 14.Ra3 Ne8 15.Bg2 Nc7
+16.f4 Na6 17.Qe2 Nb4 18.Nb5 Ra6 19.Bf2 e5 20.f5 g5 21.h4 f6 22.hxg5 fxg5
+23.Rh3 Nf6 24.Bf3 Ra8 25.Be3 h6 26.Rf2 Kf7 27.Rfh2 Rh8 28.Qd2 Qe7 29.Bxg5 hxg5
+30.Qxg5 Rag8 31.Qg6+ Kf8 32.g5 Rxh3 33.Rxh3 Nd3 34.Rg3 Ne8 35.f6 Bxf6 36.Qxg8+ Kxg8
+37.gxf6+ Kf7 38.fxe7  1-0
+
+[Event "ch-RUS Rapid 2019"]
+[Site "Sochi RUS"]
+[Date "2019.10.15"]
+[Round "5.24"]
+[White "Litvinov,Anton"]
+[Black "Apryshko,G"]
+[Result "0-1"]
+[WhiteElo "2010"]
+[BlackElo "2382"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nd7 5.Be2 e6 6.h4 h6 7.Be3 Ne7 8.Qd2 f5 9.Nh3 e5
+10.f4 fxe4 11.fxe5 dxe5 12.dxe5 Nf5 13.Nxe4 Qxh4+ 14.Nhf2 Qe7 15.Ng4 Nxe3
+16.Qxe3 Nxe5 17.Nxe5 Qxe5 18.Qc3 Bf5 19.Bf3 Qxe4+ 20.Bxe4 Bxc3+  0-1
+
+[Event "ch-RUS Rapid 2019"]
+[Site "Sochi RUS"]
+[Date "2019.10.16"]
+[Round "7.30"]
+[White "Ivlev,Aleksey"]
+[Black "Pervakov,S"]
+[Result "1-0"]
+[WhiteElo "2292"]
+[BlackElo "2093"]
+[ECO "E92"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.d5 Nf6 6.Be2 O-O 7.Nf3 Na6 8.Bg5 Qe8
+9.Nd2 Bd7 10.O-O h6 11.Be3 Nh7 12.a3 f5 13.f3 f4 14.Bf2 Rf7 15.b4 Bf8 16.Nb3 g5
+17.c5 Bc8 18.cxd6 cxd6 19.Nb5 b6 20.Rc1 h5 21.Rc6 Qd8 22.Qc2 Bb7 23.Rc3 Rg7
+24.Rc1 g4 25.Kh1 Qg5 26.Nd2 g3 27.Bg1 gxh2 28.Bf1 hxg1=Q+ 29.Kxg1 Qg3 30.Nc4 Rg6
+31.Qf2 h4 32.Qxg3 hxg3 33.Rb1 Ng5 34.a4 Nf7 35.a5 bxa5 36.Nxa5 Bc8 37.Nc6 Bd7
+38.Nbxa7 Nb8 39.b5 Nxc6 40.Nxc6 Nd8 41.b6 Nb7 42.Na7 Nc5 43.Nc6 Bc8 44.Rcc1 Rg7
+45.Ra1 Rxa1 46.Rxa1 Rb7 47.Rb1 Bd7 48.Na5 Rb8 49.b7 Be7 50.Nc6 Bxc6 51.dxc6 Bd8
+52.Bc4+ Kf8 53.Kf1 Ke7 54.Ke2 Ne6 55.Bd5 Nd4+ 56.Kd3 Bc7 57.Rh1 Ba5 58.Rh7+ Kd8
+59.Kc4 Bb6 60.Kb4 Nxf3 61.Kb5 Bc7 62.Rd7+ Ke8 63.Rxc7 Nd4+ 64.Kb6  1-0
+
+[Event "ch-RUS Rapid 2019"]
+[Site "Sochi RUS"]
+[Date "2019.10.16"]
+[Round "7.31"]
+[White "Gabitov,Ru"]
+[Black "Sadovsky,Artem"]
+[Result "0-1"]
+[WhiteElo "2172"]
+[BlackElo "2411"]
+[ECO "A42"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 e5 5.d5 f5 6.f3 Nf6 7.Bd3 O-O 8.Be3 fxe4 9.Nxe4 Nxe4
+10.Bxe4 Bf5 11.Qc2 Bh6 12.Bxf5 gxf5 13.Bxh6 Qh4+ 14.Qf2 Qxh6 15.Ne2 Nd7 16.Nc3 Rf7
+17.g3 a5 18.Qd2 Qg6 19.O-O-O Nc5 20.Qc2 Kh8 21.Na4 Nxa4 22.Qxa4 f4 23.Qb3 fxg3
+24.hxg3 Raf8 25.f4 exf4 26.gxf4 Rxf4 27.Rhg1 Qf6 28.Kb1 b6 29.a3 Rf2 30.Rh1 Qf3
+31.Qb5 Qe4+ 32.Ka1 Qe8 33.Qb3 R8f3 34.Rd3 Qf7 35.Qc3+ Qf6 36.Rxf3 Rxf3 37.Qc2 Rxa3+
+38.Kb1 Rh3 39.Rxh3 Qf1+ 40.Ka2 Qxh3 41.Qe4 Qd7 42.Qf4 Qg7 43.Qf5 Qe7 44.Qc8+ Kg7
+45.Qg4+ Kh6 46.Qh3+ Kg6 47.Qg4+ Qg5 48.Qe6+ Qf6 49.Qg4+ Kh6 50.Qh3+ Kg7 51.Qg4+ Qg6
+52.Qd7+ Qf7 53.Qg4+ Kh8 54.Qc8+ Kg7 55.Qg4+ Kf6 56.Qh4+ Ke5 57.Qg3+ Kd4 58.Qc3+ Ke4
+59.Qe1+ Kd3 60.Qc3+ Ke2 61.Qc2+ Kf3 62.Qd3+ Kg4 63.Qe2+ Qf3 64.Qe6+ Qf5 65.Qe2+ Kh4
+66.Qe1+ Kh5 67.Qe7 b5 68.Qxc7 bxc4 69.Qxd6 Qc2 70.Qe5+ Kg4 71.Qd4+ Kf5 72.Ka1 Qd3
+73.Qf2+ Ke5 74.Qe1+ Kxd5 75.Qxa5+ Ke4 76.Qa8+ Ke3 77.Qg2 Qe4 78.Qg3+ Kd2
+79.Qc3+ Kd1 80.Qh3 Qd3 81.Qh1+ Kc2 82.Qh2+ Kc1 83.Qh1+ Qd1 84.Qh6+ Kc2+ 85.Ka2 Qb1+
+86.Ka3 Qxb2+ 87.Ka4 Qb3+ 88.Ka5 Qd3 89.Ka4 Kb2 90.Qg7+ c3 91.Qb7+ Kc1 92.Ka3 c2+
+93.Ka2 Qc4+ 94.Ka3 Kd2  0-1
+
+[Event "ch-RUS Blitz 2019"]
+[Site "Sochi RUS"]
+[Date "2019.10.17"]
+[Round "8.31"]
+[White "Derjabin,I"]
+[Black "Kozak,A"]
+[Result "1/2-1/2"]
+[WhiteElo "2333"]
+[BlackElo "2230"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 e5 5.d5 Ne7 6.Nge2 O-O 7.Ng3 f5 8.exf5 Nxf5
+9.Bd3 a5 10.O-O Na6 11.Nxf5 Bxf5 12.Bxf5 gxf5 13.f4 e4 14.Be3 Nc5 15.Qe2 Nd3
+16.Rab1 c6 17.Kh1 Kh8 18.Nd1 cxd5 19.cxd5 Qe8 20.Nf2 Nxf2+ 21.Qxf2 Qb5 22.Rfd1 Rf6
+23.Rbc1 Rg6 24.Rc7 Qxb2 25.Qxb2 Bxb2 26.Rxb7 Bg7 27.Rc1 Kg8 28.a4 h5 29.Kg1 h4
+30.Kf2 Rg4 31.Rcc7 Bf6 32.Rc6 Rd8 33.Rbb6 Be7 34.Rc7 Bf6 35.Rbb7 Bg7 36.h3 Rg6
+37.Bb6 Re8 38.Be3 Rd8 39.Rd7 Rc8 40.Rdc7 Rd8 41.Rc6 Bf8 42.Bd4 Bh6 43.Be3 Bg7
+44.Rbb6 Bf8 45.Rb7 Bg7 46.Bb6 Re8 47.Be3 Rd8 48.Rcc7 Bf8 49.Kf1 Rg3 50.Kf2 Rg6
+51.Rf7 Rc8 52.Rfc7 Rd8 53.Rc6 Bg7 54.Rb5 Ra8 55.Rc7 Bf8 56.Bb6 Rb8 57.Bxa5 Ra8
+58.Rc4 Rg3 59.Bc3 e3+ 60.Kf1 Re8 61.Be1 e2+ 62.Kg1 Rd3 63.Rc1 Rd1 64.Rbb1 Rxc1
+65.Rxc1 Bh6 66.Rc4 Rb8 67.Kf2 Rb2 68.a5 Ra2  1/2-1/2
+
+[Event "ch-RUS Blitz 2019"]
+[Site "Sochi RUS"]
+[Date "2019.10.17"]
+[Round "10.23"]
+[White "Papenin,N"]
+[Black "Bryakin,M"]
+[Result "1/2-1/2"]
+[WhiteElo "2295"]
+[BlackElo "2440"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e6 5.h4 h6 6.Nge2 Ne7 7.Ng3 b6 8.Be3 Bb7 9.Bd3 Nd7
+10.f4 a6 11.h5 g5 12.fxg5 hxg5 13.Qg4 c5 14.d5 Ne5 15.Qe2 Ng8 16.O-O Nh6
+17.Qd2 Nxd3 18.Qxd3 Ng4 19.Nce2 Be5 20.Bd2 Qe7 21.Bc3 O-O-O 22.Qf3 Bxc3 23.Qxg4 Be5
+24.Rab1 b5 25.b4 Qc7 26.cxb5 axb5 27.bxc5 Qxc5+ 28.Kh1 Kb8 29.Rxf7 exd5 30.Qe6 Rhe8
+31.Qg6 dxe4 32.Rc1 Qb6 33.Qh7 Rh8 34.Qf5 e3 35.Rcc7 Qxc7 36.Rxc7 Kxc7 37.Qd3 Bf4
+38.Qxb5 d5 39.Qc5+ Kb8 40.Nf5 Rxh5+ 41.Kg1 Rdh8 42.Nfg3 R5h6 43.a4 Rc6 44.Qd4 Rhc8
+45.a5 Rc4 46.Qf6 R8c6 47.Qh8+ Ka7 48.Qb2 d4 49.Nxd4 Rc1+ 50.Nf1 R1c5 51.Nxc6+ Rxc6
+52.Qd4+ Kb8 53.Qh8+ Rc8 54.Qb2 Rc6 55.Qh8+ Rc8 56.Qb2 Rc6 57.Qh8+ Rc8 58.Qb2 Rc6
+59.Qh8+ Rc8  1/2-1/2
+
+[Event "TCh-SUI 2019"]
+[Site "Switzerland SUI"]
+[Date "2019.10.19"]
+[Round "8.5"]
+[White "Degtiarev,E"]
+[Black "Hochstrasser,M"]
+[Result "1-0"]
+[WhiteElo "2387"]
+[BlackElo "2335"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Nge2 e5 6.Be3 exd4 7.Nxd4 Nge7 8.h4 f5
+9.h5 fxe4 10.Nxe4 Bf5 11.hxg6 hxg6 12.Rxh8+ Bxh8 13.Nxf5 Nxf5 14.Qg4 Nce7
+15.Qh3 Bxb2 16.Rb1 Be5 17.f4 Bg7 18.g4 Nxe3 19.Qxe3 Qd7 20.Bh3 Qc6 21.f5 gxf5
+22.gxf5 Bh6 23.Nf6+ Kf7 24.Qe6+ Kf8 25.Nd7+ Ke8 26.f6 Qh1+ 27.Kf2 Qh2+ 28.Kf3  1-0
+
+[Event "TCh-BEL 2019-20"]
+[Site "Belgium BEL"]
+[Date "2019.10.20"]
+[Round "3.4"]
+[White "Vanstreels,L"]
+[Black "Kerigan,D"]
+[Result "0-1"]
+[WhiteElo "2117"]
+[BlackElo "2387"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.d5 Nd4 6.Be3 e5 7.dxe6 Nxe6 8.Nge2 Ne7
+9.Nd4 O-O 10.Be2 f5 11.O-O f4 12.Nxe6 Bxe6 13.Bd2 Nc6 14.Nd5 Be5 15.Bg4 Nd4
+16.Bxe6+ Nxe6 17.Qg4 Qe8 18.Bc3 c6 19.Bxe5 dxe5 20.Nc3 f3 21.Rad1 fxg2 22.Qxg2 Nf4
+23.Qg4 Rf7 24.h4 h5 25.Qg3 Qe6 26.b3 Raf8 27.c5 Nh3+ 28.Kh2 Nxf2 29.Rd6 Ng4+
+30.Kg2 Qxd6 31.cxd6 Rxf1 32.d7 R8f2+ 33.Qxf2 Rxf2+ 34.Kg1 Rf8  0-1
+
+[Event "Targu Mures Open 2019"]
+[Site "Targu Mures ROU"]
+[Date "2019.10.20"]
+[Round "6.9"]
+[White "Ferenczi,S"]
+[Black "Rusan,P"]
+[Result "0-1"]
+[WhiteElo "1902"]
+[BlackElo "2105"]
+[ECO "E83"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nf6 5.f3 O-O 6.Be3 Nc6 7.Qd2 a6 8.O-O-O Re8
+9.g4 e5 10.Nge2 b5 11.d5 Na5 12.Ng3 Nxc4 13.Bxc4 bxc4 14.h4 Nd7 15.h5 Nc5
+16.Bxc5 dxc5 17.hxg6 hxg6 18.g5 Rb8 19.Rh2 Rb6 20.Kb1 Bd7 21.Rdh1 Qe7 22.d6 Rxd6
+23.Nd5 Rxd5 24.Qxd5 Be6 25.Qd2 Rd8 26.Qc1 Rd3 27.Rf2 Qd8 28.Rff1 c3 29.Rd1 cxb2
+30.Qc2 c4 31.Ne2 c6 32.Kxb2 Bf8 33.Ka1 Qa5 34.Rh2 Bb4 35.Rf2 Bd2 36.Rb1 Bxg5
+37.Nc1 Ra3 38.Rh2 Kg7 39.Rb8 Rc3 40.Rh7+  0-1
+
+[Event "SPICE Cup Open 2019"]
+[Site "Saint Louis USA"]
+[Date "2019.10.22"]
+[Round "1.17"]
+[White "Kavutskiy,K"]
+[Black "Gosdin,Kaleb"]
+[Result "1/2-1/2"]
+[WhiteElo "2414"]
+[BlackElo "2028"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nc6 5.Be3 e5 6.d5 Nce7 7.g4 f5 8.gxf5 gxf5
+9.Qh5+ Ng6 10.exf5 Qh4 11.Qd1 Bxf5 12.Nf3 Qe7 13.Qd2 Nf6 14.Ng5 Ng4 15.Nge4 Qh4
+16.Ng3 Nxe3 17.fxe3 O-O 18.O-O-O e4 19.Rg1 Kh8 20.Be2 Ne5 21.Nxf5 Rxf5 22.Rg2 Nf3
+23.Bxf3 exf3 24.Rf2 Qxc4 25.e4 Bxc3 26.Qxc3+ Qxc3+ 27.bxc3 Rf4 28.Rd3 Raf8
+29.Re3 Kg7 30.Kd2 Kf6 31.Rfxf3 Ke5 32.Rxf4 Rxf4 33.Kd3 Rh4 34.Rf3 Rxe4  1/2-1/2
+
+[Event "22nd European Teams Women"]
+[Site "Batumi GEO"]
+[Date "2019.10.24"]
+[Round "1.10"]
+[White "Ozturk,Ku"]
+[Black "Novkovic,J"]
+[Result "1-0"]
+[WhiteElo "2317"]
+[BlackElo "2146"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nc6 5.Be3 e5 6.Nge2 f5 7.exf5 Bxf5 8.d5 Nce7
+9.Ng3 Bh6 10.Bd3 Bxe3 11.fxe3 Nh6 12.O-O O-O 13.Nce4 Bxe4 14.Nxe4 Nef5 15.Qe2 Qe7
+16.Rf2 Ng7 17.Raf1 Rxf2 18.Qxf2 Nh5 19.Be2 Ng7 20.g4 Kh8 21.h4 Rg8 22.Ng5 Re8
+23.Kg2 c6 24.Qf6 Qxf6 25.Rxf6 cxd5 26.cxd5 Rd8 27.Rf7 Rb8 28.Rd7 Kg8 29.Rxd6 Ne8
+30.Re6 Rc8 31.d6 Rd8 32.Bc4 Kh8 33.Re7 Nf6 34.Rxb7 Rxd6 35.Rb8+ Kg7 36.Ne6+ Kf7
+37.g5 Rd2+ 38.Kf1 Nfg4 39.Rb7+ Kg8 40.Ke1 Rc2 41.Bb3 Rh2 42.gxh6 Nxh6 43.Ng5+ Kf8
+44.Nxh7+ Ke8 45.Nf6+ Kd8 46.Be6 Rh1+ 47.Kd2 Nf5 48.Nd5  1-0
+
+[Event "58th World Juniors 2019"]
+[Site "New Delhi IND"]
+[Date "2019.10.24"]
+[Round "10.1"]
+[White "Wang,Shixu B"]
+[Black "Shtembuliak,E"]
+[Result "1/2-1/2"]
+[WhiteElo "2370"]
+[BlackElo "2577"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.d5 a5 6.Be2 Na6 7.Be3 Bd7 8.Nf3 Nh6 9.Qc1 Ng4
+10.Bg5 f6 11.Bd2 f5 12.Ng5 Nc5 13.exf5 gxf5 14.h3 Nf6 15.Qc2 h6 16.Ne6 Nxe6
+17.dxe6 Bxe6 18.O-O-O O-O 19.g4 f4 20.Rhg1 Nh7 21.Ne4 Kh8 22.Bd3 Bg8 23.h4 b5
+24.g5 bxc4 25.Bxc4 Bxc4 26.gxh6 Bf6 27.Nxf6 Qxf6 28.Qxc4 Qxh6 29.Rg4 Qh5
+30.Rdg1 Qf7 31.Rxf4 Qxc4+  1/2-1/2
+
+[Event "SPICE Cup Open 2019"]
+[Site "Saint Louis USA"]
+[Date "2019.10.24"]
+[Round "4.18"]
+[White "Lehmann,Spencer"]
+[Black "Gosdin,Kaleb"]
+[Result "1/2-1/2"]
+[WhiteElo "2223"]
+[BlackElo "2028"]
+[ECO "A42"]
+
+1.d4 d6 2.c4 g6 3.Nc3 Bg7 4.e4 Nc6 5.d5 Nd4 6.Be3 c5 7.Nge2 Qb6 8.Na4 Qa5+
+9.Bd2 Qa6 10.Nxd4 Bxd4 11.Nc3 Qb6 12.Bd3 Bd7 13.Rb1 Nf6 14.h3 Nh5 15.Be2 Ng7
+16.Bg4 f5 17.exf5 Nxf5 18.Ne2 Bf6 19.O-O O-O 20.Bc3 Qa6 21.b3 b5 22.Bxf6 Rxf6
+23.Qc2 Raf8 24.Rbc1 Qc8 25.Qd2 b4 26.Bxf5 Bxf5 27.Ng3 R8f7 28.f4 Qf8 29.Rf2 Bd7
+30.Rcf1 Bf5 31.Qe3 a5 32.Ne2 Bd7 33.g4 e5 34.Kg2 exf4 35.Nxf4 g5 36.Nd3 h6  1/2-1/2
+
+[Event "45th Guernsey Open 2019"]
+[Site "Vale GCI"]
+[Date "2019.10.25"]
+[Round "6.15"]
+[White "Dijksterhuis,R"]
+[Black "Gravett,A"]
+[Result "1/2-1/2"]
+[WhiteElo "1937"]
+[BlackElo "1831"]
+[ECO "E94"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nf6 5.Nf3 O-O 6.Be2 c6 7.O-O e5 8.dxe5 dxe5
+9.Qc2 Qc7 10.b4 a5 11.b5 Nbd7 12.Nd2 Re8 13.a4 Nc5 14.Nb3 Nxb3 15.Qxb3 Be6
+16.Be3 Rac8 17.Rfc1 Qb8 18.f3 Nd7 19.Rab1 Bf8 20.Qb2 Bb4 21.Nd5 cxd5 22.cxd5 Bxd5
+23.exd5 Qd6 24.Bc4 Ba3 25.Qd2 Bxc1 26.Rxc1 b6 27.Bb3 Nc5 28.Ba2 Nxa4 29.Rc6 Rxc6
+30.bxc6 Rc8 31.f4 e4 32.f5 gxf5 33.h3 Nc5 34.Bf4 Qd8 35.Bg5 Qd6 36.Bf4 Qd8
+37.Bg5  1/2-1/2
+
+[Event "4th ch-ASEAN Women 2019"]
+[Site "Bac Giang VIE"]
+[Date "2019.10.28"]
+[Round "5.3"]
+[White "Bach,Ngoc Thuy Duong"]
+[Black "Nguyen Thi Thanh An"]
+[Result "0-1"]
+[WhiteElo "2154"]
+[BlackElo "2280"]
+[ECO "E97"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nf6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7
+9.b4 a5 10.Ba3 b6 11.bxa5 Rxa5 12.Bb4 Ra8 13.a4 Ne8 14.Nb5 f5 15.Nd2 Bd7
+16.Qb3 Bh6 17.f3 Nf6 18.Qd3 Nh5 19.g3 fxe4 20.fxe4 Nf6 21.Bf3 Bh3 22.Rfe1 Nc8
+23.a5 bxa5 24.Rxa5 Rb8 25.Ra6 Qd7 26.Nf1 Nb6 27.Ra5 Ng4 28.c5 Nc4 29.Bxg4 Qxg4
+30.Raa1 Rxb5 31.Rab1 Rxb4 32.Rxb4 Qf3 33.Qxf3 Rxf3 34.cxd6 cxd6  0-1
+
+[Event "13th Figueira da Foz Open"]
+[Site "Figueira da Foz POR"]
+[Date "2019.10.28"]
+[Round "2.19"]
+[White "Moes Joaquim,Carlos"]
+[Black "Morais,Mario Martins Freitas"]
+[Result "0-1"]
+[WhiteElo "1400"]
+[BlackElo "1742"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 c6 5.Nf3 Bg4 6.Be2 Qb6 7.Na4 Qc7 8.O-O Nf6
+9.Nc3 O-O 10.Bg5 Nbd7 11.Rc1 Qa5 12.Qd2 e5 13.d5 cxd5 14.cxd5 a6 15.a3 b5
+16.h3 Bxf3 17.Bxf3 Rfc8 18.Rc2 Qb6 19.Rfc1 Qb7 20.Be2 Nc5 21.Qe3 Nb3 22.Re1 Nd4
+23.Rd2 Nd7 24.Bg4 f5 25.exf5 Nxf5 26.Bxf5 gxf5 27.Be7 Qc7 28.f4 e4 29.Kh2 Nf8
+30.Bh4 Ng6 31.Bf2 Bxc3 32.Rc1 Bxd2 33.Rxc7 Bxe3 34.Rxc8+ Rxc8 35.Bxe3 Ne7  0-1
+
+[Event "Harrachov Open 2019"]
+[Site "Prichovice CZE"]
+[Date "2019.10.29"]
+[Round "4.7"]
+[White "Holasek,P"]
+[Black "Kopriva,Martin"]
+[Result "1-0"]
+[WhiteElo "2120"]
+[BlackElo "2039"]
+[ECO "E73"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nf6 5.Be2 O-O 6.Bg5 Na6 7.Qc1 e5 8.d5 Qe8
+9.f3 Nd7 10.h4 f6 11.Bh6 f5 12.exf5 gxf5 13.h5 Ndc5 14.Bxg7 Kxg7 15.Qg5+ Kh8
+16.O-O-O Qf7 17.Nh3 Rg8 18.Qh4 Bd7 19.g4 Na4 20.Nxa4 Bxa4 21.Rdg1 c6 22.g5 f4
+23.Bd3 Nb4 24.Bb1 cxd5 25.g6 Qc7 26.Qf6+ Rg7 27.b3 Qc5 28.h6 Qe3+ 29.Kb2 Qd2+
+30.Ka3 Nd3 31.Qxg7+  1-0
+
+[Event "Hasselbacken Open 2019"]
+[Site "Stockholm SWE"]
+[Date "2019.11.01"]
+[Round "2.5"]
+[White "Pettersson,Al"]
+[Black "Roshka,Yevgeniy"]
+[Result "0-1"]
+[WhiteElo "2064"]
+[BlackElo "2415"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.d5 a5 6.Bd3 Na6 7.Nge2 Nc5 8.Bc2 Nh6
+9.Ng3 O-O 10.O-O f5 11.exf5 Nxf5 12.Nxf5 Bxf5 13.Bxf5 gxf5 14.Be3 b6 15.Qd2 Qh4
+16.b3 f4 17.Bxc5 f3 18.Be3 Qg4  0-1
+
+[Event "Hasselbacken Open 2019"]
+[Site "Stockholm SWE"]
+[Date "2019.11.01"]
+[Round "4.5"]
+[White "Johansson,G1"]
+[Black "Roshka,Yevgeniy"]
+[Result "0-1"]
+[WhiteElo "2196"]
+[BlackElo "2415"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 e5 5.dxe5 dxe5 6.Qxd8+ Kxd8 7.f4 Be6 8.Nf3 Nc6
+9.Be3 Nf6 10.O-O-O+ Kc8 11.g3 Ng4 12.Bg1 exf4 13.gxf4 Bh6 14.Ng5 Nge5 15.h4 Nd7
+16.Nd5 Bg4 17.Re1 Nd8 18.Bd4 Re8 19.Bh3 Bxh3 20.Rxh3 Ne6 21.Be3 c6 22.Nc3 f6
+23.Nxe6 Rxe6 24.h5 g5 25.fxg5 Bxg5 26.Bxg5 fxg5 27.Rf3 Re7 28.e5 Kc7 29.e6 Rae8
+30.Rg1 Ne5 31.Rf6 g4 32.Rf5 Rxe6 33.Kc2 Nxc4 34.Rf7+ R8e7 35.Rxe7+ Rxe7 36.Kb3 Ne3
+37.Rg3 Kd6  0-1
+
+[Event "23rd OIBM 2019"]
+[Site "Tegernsee GER"]
+[Date "2019.11.01"]
+[Round "7.28"]
+[White "Miller,Ed"]
+[Black "Kraich,Klaus"]
+[Result "1/2-1/2"]
+[WhiteElo "2402"]
+[BlackElo "2183"]
+[ECO "A42"]
+
+1.e4 d6 2.c4 g6 3.d4 Bg7 4.Nc3 e5 5.dxe5 dxe5 6.Qxd8+ Kxd8 7.Bg5+ f6 8.O-O-O+ Bd7
+9.Be3 Bh6 10.Nd5 Bxe3+ 11.Nxe3 Ne7 12.h4 h5 13.g3 Kc8 14.f4 exf4 15.gxf4 a5
+16.Nf3 Na6 17.Bd3 Nc5 18.Bc2 Bc6 19.Nd5 Bxd5 20.exd5 Kd7 21.Rhg1 Rhg8 22.Rd2 Ke8
+23.Nd4 Rd8 24.f5 gxf5 25.Rxg8+ Nxg8 26.Bxf5 Ne7 27.Bh3 c6 28.Ne6 Nxe6 29.Bxe6 cxd5
+30.cxd5 Ng6 31.d6 Nf4 32.Bc4 Ng6 33.Be2 Rc8+ 34.Kb1 Rc5 35.a4 Nxh4 36.Bb5+ Kd8
+37.Re2 Re5 38.Rc2 Nf5 39.Rc7 Rd5 40.Rxb7 Nxd6 41.Rd7+ Kc8 42.Bc6 Rd4 43.b3 h4
+44.Ra7 f5 45.Kc2 Rf4 46.Kd3 Rg4 47.Bd5 h3 48.Rh7 Ne4 49.Be6+ Kb8 50.Bxf5 Nc5+
+51.Kc3 Rg3+ 52.Kc4 Nxb3 53.Bxh3 Nd2+ 54.Kb5 Rb3+ 55.Ka6 Rb2 56.Bd7 Ne4 57.Bb5 Nd6
+58.Kxa5 Nxb5 59.axb5 Rf2 60.Ka6 Rf8 61.Rh6 Rg8 62.Rb6+ Ka8 63.Rd6 Kb8 64.b6 Rh8
+65.Kb5 Rg8 66.Kc6 Rh8 67.b7 Rg8 68.Kb6 Rh8 69.Rc6 Rg8 70.Rc8+ Rxc8 71.bxc8=Q+ Kxc8  1/2-1/2
+
+[Event "Hampshire Open 2019"]
+[Site "Fareham ENG"]
+[Date "2019.11.02"]
+[Round "2"]
+[White "Kuzhelev,Timur"]
+[Black "Marsh,R"]
+[Result "1-0"]
+[WhiteElo "1716"]
+[BlackElo "1937"]
+[ECO "A42"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nc6 5.Be3 e5 6.d5 Nce7 7.b4 f5 8.f3 Nf6 9.Bd3 O-O
+10.Qd2 f4 11.Bf2 g5 12.O-O-O Rf7 13.g4 Ng6 14.Kb1 Bf8 15.Nge2 a5 16.b5 c5
+17.dxc6 bxc6 18.a4 Be6 19.Ka1 Qe7 20.Rb1 d5 21.exd5 Qa3+ 22.Qa2 cxd5 23.Qxa3 Bxa3
+24.c5 d4 25.Ne4 Nxe4 26.Bxe4 Rd8 27.c6 d3 28.Nc3 Bb4 29.Na2 d2 30.Nxb4 axb4
+31.Rhd1 b3 32.Kb2 Ne7 33.b6 Nc8 34.c7 Rd6 35.b7 Rxc7 36.b8=Q Rc2+ 37.Bxc2  1-0
+
+[Event "Hasselbacken Open 2019"]
+[Site "Stockholm SWE"]
+[Date "2019.11.02"]
+[Round "5.8"]
+[White "Dudin,Gleb"]
+[Black "Karlsson,J"]
+[Result "1-0"]
+[WhiteElo "2337"]
+[BlackElo "2072"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Be3 e5 6.Nge2 f5 7.exf5 Bxf5 8.d5 Nce7
+9.Qd2 Nf6 10.f3 c6 11.g4 Bd7 12.h4 cxd5 13.cxd5 Qa5 14.Rd1 O-O 15.Ng3 Rac8
+16.Be2 b5 17.a3 a6 18.O-O h5 19.Bg5 Rce8 20.Nce4 Qxd2 21.Rxd2 Nexd5 22.gxh5 gxh5
+23.Nxf6+ Nxf6 24.Rxd6 Bc8 25.Rc1 e4 26.Rc7 Re6 27.Rcc6 Rxd6 28.Rxd6 exf3
+29.Bxf3 Ng4 30.Bd5+ Kh8 31.Nxh5 Bd4+ 32.Kh1 Bxb2 33.Nf4 Bf5 34.Rxa6 Be5 35.Rb6 Rd8
+36.Bxd8 Bxf4 37.Bg5 Bxg5 38.hxg5 Nf2+ 39.Kg2 Nh3 40.Rh6+  1-0
+
+[Event "Hasselbacken Open 2019"]
+[Site "Stockholm SWE"]
+[Date "2019.11.02"]
+[Round "6.7"]
+[White "Soderstrom,Adrian"]
+[Black "Dudin,Gleb"]
+[Result "0-1"]
+[WhiteElo "1999"]
+[BlackElo "2337"]
+[ECO "A42"]
+
+1.e4 d6 2.d4 g6 3.c4 Bg7 4.Nc3 e5 5.Nf3 Bg4 6.d5 Nd7 7.Be2 Bxf3 8.Bxf3 h5
+9.Be2 a5 10.Be3 Bh6 11.Bxh6 Nxh6 12.a3 O-O 13.O-O Nc5 14.b4 axb4 15.axb4 Rxa1
+16.Qxa1 Nb3 17.Qa7 b6 18.Nb5 Nd2 19.Ra1 Nxe4 20.Qxc7 Qh4 21.Qxb6 Nf5 22.Bd3 Nd4
+23.Bxe4 Qxe4 24.Nxd4 exd4 25.Qxd6 Re8 26.h3 d3 27.Qf6 d2 28.Kh2 Qe1 29.c5 d1=Q
+30.Rxd1 Qxd1 31.Qf3 Qd4 32.d6 Rb8 33.Qg3 h4 34.Qg4 Rxb4 35.d7 Qe5+ 36.f4 Qc7
+37.c6 Rd4 38.Qxh4 Kg7 39.Qg5 f6 40.Qg4 Qxc6 41.f5 Qd6+  0-1
+
+[Event "45th SAIF POWERTEC ch-BAN"]
+[Site "Dhaka BAN"]
+[Date "2019.11.07"]
+[Round "6.12"]
+[White "Hossain,D"]
+[Black "Sharon,S M"]
+[Result "1-0"]
+[WhiteElo "2092"]
+[BlackElo "2097"]
+[ECO "A42"]
+
+1.d4 d6 2.e4 g6 3.c4 Bg7 4.Nc3 Nc6 5.Be3 e5 6.d5 Nd4 7.Nge2 Bg4 8.f3 Bxf3
+9.Qa4+ Qd7 10.Qxd7+ Kxd7 11.gxf3 Nc2+ 12.Kd2 Nxa1 13.Bh3+ Kd8 14.Rxa1 Bh6
+15.f4 exf4 16.Nxf4 Bg7 17.Rf1 Ne7 18.Nfe2 Rf8 19.Bg5 h6 20.Bf6 Bxf6 21.Rxf6 Nf5
+22.Bxf5 Ke7 23.e5 dxe5 24.Ne4 gxf5 25.Rxf5 f6 26.N2g3 c6 27.Nh5 cxd5 28.cxd5 Rg8
+29.d6+ Ke6 30.Rxf6+ Kd5 31.Nhg3 Raf8 32.d7 Rd8 33.Rd6+ Kc4 34.Kc2 h5 35.b3+ Kb5
+36.Kc3 b6 37.a4+ Ka5 38.Nxh5 Rh8 39.Nef6 Ka6 40.Re6 Kb7 41.Rxe5 Kc6 42.Re6+ Kc7
+43.Re8 Rh6 44.Re6 Rdh8 45.Nf4  1-0
+
+[Event "SuperChess Blitz 2019"]
+[Site "Bucharest ROU"]
+[Date "2019.11.09"]
+[Round "1.5"]
+[White "David,Alexandru"]
+[Black "Istratescu,A"]
+[Result "0-1"]
+[WhiteElo "2428"]
+[BlackElo "2563"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.Nge2 Nd7 6.Be3 Ngf6 7.f3 c6 8.Qd2 O-O
+9.d5 cxd5 10.cxd5 a6 11.g4 h5 12.h3 b5 13.Ng3 h4 14.Nge2 Nh7 15.Rg1 Nb6 16.b3 Kh8
+17.a4 bxa4 18.Nxa4 Nxa4 19.Rxa4 Bd7 20.Ra3 f5 21.gxf5 gxf5 22.Nc3 f4 23.Bf2 Bf6
+24.Rxa6 Rxa6 25.Bxa6 Ng5 26.Rxg5 Bxg5 27.b4 Bxh3 28.b5 Bg2 29.b6 h3 30.Bg1 Bh4+
+31.Kd1 Bxf3+ 32.Kc1 Rg8 33.Bf2 h2 34.Bxh4 h1=Q+  0-1
+
+[Event "35th ECC Women 2019"]
+[Site "Budva MNE"]
+[Date "2019.11.11"]
+[Round "2.3"]
+[White "Batsiashvili,N"]
+[Black "Mammadova,G"]
+[Result "1-0"]
+[WhiteElo "2422"]
+[BlackElo "2369"]
+[ECO "A42"]
+
+1.c4 g6 2.Nc3 Bg7 3.d4 d6 4.e4 e5 5.Be3 exd4 6.Bxd4 Nf6 7.Nf3 Nc6 8.Be3 O-O
+9.h3 Re8 10.Bd3 Nb4 11.Bb1 b6 12.O-O Bb7 13.Nd2 a5 14.Re1 Na6 15.Bg5 Qd7
+16.Bc2 Nc5 17.Qf3 Re6 18.Nd5 Nxd5 19.cxd5 Ree8 20.Bf6 Bxf6 21.Qxf6 Qe7 22.Qd4 Qe5
+23.Nf3 Qxd4 24.Nxd4 Re7 25.f3 Rae8 26.Kf2 h5 27.h4 Kg7 28.Red1 Ra8 29.b3 Bc8
+30.a3 Bd7 31.b4 Nb7 32.Rdc1 Nd8 33.Bd3 Be8 34.Bb5 Bxb5 35.Nxb5 axb4 36.axb4 Rxa1
+37.Rxa1 c6 38.Nxd6 cxd5 39.Ra8 Rd7 40.Ne8+ Kh6 41.Nf6 Rd6 42.e5  1-0
+
+[Event "World Senior 50+ 2019"]
+[Site "Bucharest ROU"]
+[Date "2019.11.12"]
+[Round "1.12"]
+[White "Minescu,D"]
+[Black "Pavlovic,Milos"]
+[Result "0-1"]
+[WhiteElo "2046"]
+[BlackElo "2482"]
+[ECO "E81"]
+
+1.c4 g6 2.d4 Bg7 3.Nc3 d6 4.e4 Nf6 5.f3 O-O 6.Be3 Nbd7 7.Qd2 a6 8.g4 c5 9.d5 b5
+10.cxb5 Qa5 11.Bh6 Bxh6 12.Qxh6 axb5 13.Bxb5 Ne5 14.O-O-O Ba6 15.Bxa6 Qxa6
+16.Nh3 Rfb8 17.Nf2 Qc4 18.Qd2 Rxa2 19.Qc2 Ra1+ 20.Nb1 Rxb2 21.Kxb2 Ra2+  0-1
+
+[Event "World Senior 50+ 2019"]
+[Site "Bucharest ROU"]
+[Date "2019.11.12"]
+[Round "1.23"]
+[White "Van der Werf,M"]
+[Black "Gebhardt,Uw"]
+[Result "1-0"]
+[WhiteElo "2401"]
+[BlackElo "1943"]
+[ECO "A42"]
+
+1.d4 g6 2.e4 Bg7 3.c4 d6 4.Nc3 Nc6 5.d5 Nd4 6.Be3 c5 7.Nge2 Qb6 8.Na4 Qa5+
+9.Bd2 Qd8 10.Bc3 e5 11.dxe6 Nxe6 12.Bxg7 Nxg7 13.Nac3 Nf6 14.Nf4 O-O 15.Be2 Ne6
+16.Nxe6 Bxe6 17.O-O Qe7 18.f4 Bd7 19.Bf3 Bc6 20.Qc2 Rfd8 21.Rae1 Qf8 22.e5 Bxf3
+23.Rxf3 Ne8 24.Nd5 Ng7 25.Rh3 Ne8 26.Qf2 h6 27.e6  1-0
+
+[Event "35th ECC Women 2019"]
+[Site "Budva MNE"]
+[Date "2019.11.13"]
+[Round "4.3"]
+[White "Tomilova,E"]
+[Black "Khotenashvili,B"]
+[Result "1/2-1/2"]
+[WhiteElo "2345"]
+[BlackElo "2446"]
+[ECO "E91"]
+
+1.c4 g6 2.e4 Bg7 3.d4 d6 4.Nc3 Nf6 5.Nf3 O-O 6.Be2 Nbd7 7.e5 Ne8 8.h4 c5
+9.exd6 Nxd6 10.h5 cxd4 11.Nxd4 Nf6 12.hxg6 hxg6 13.Be3 Nf5 14.Nxf5 Qxd1+
+15.Rxd1 Bxf5 16.b3 b6 17.Nb5 Be4 18.Bf3 Bxf3 19.gxf3 Rfc8 20.a4 a6 21.Nc3 Rab8
+22.Ke2 Rb7 23.Nd5 Nxd5 24.Rxd5 Kf8 25.f4 f5 26.Rhd1 Ke8 27.R1d3 Bf6 28.Kd1 Bg7
+29.a5 bxa5 30.Rxa5 Rc6 31.Rad5 Rc8 32.Kc2 Bf6 33.Bd2 Bh4 34.Rh3 Bf6 35.Rg3 Kf7
+36.Ra5 Rc6 37.Rd3 Bh4 38.f3 Ke8 39.Rad5 Rb8 40.Bc3 Kf7 41.Rd1 Bf6 42.Rd8 Rxd8
+43.Rxd8 e5 44.Rd5 exf4 45.Bd2 Ke6 46.Bxf4 g5 47.Bd2 Rd6 48.Ra5 Rc6 49.Kd3 Rd6+
+50.Kc2 Rc6 51.Kd3 Rd6+  1/2-1/2
+
+[Event "35th ECC Open 2019"]
+[Site "Budva MNE"]
+[Date "2019.11.14"]
+[Round "5.16"]
+[White "Vujovic,Savo"]
+[Black "Iivonen,M"]
+[Result "1-0"]
+[WhiteElo "2040"]
+[BlackElo "2096"]
+[ECO "A42"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nd7 5.Nf3 c5 6.Be2 a6 7.O-O cxd4 8.Nxd4 Ngf6
+9.Be3 O-O 10.f4 Qc7 11.Rc1 e6 12.Bf3 Rb8 13.g4 b6 14.Ncb5 axb5 15.cxb5 Qb7
+16.Nc6 d5 17.exd5 Nxd5 18.Bxd5 exd5 19.Bd4 f6 20.Re1 Qa8 21.Re7 Rb7 22.Qb3 Nc5
+23.Bxc5 bxc5 24.Qxd5+ Kh8 25.Nd8 Rxe7 26.Qxa8 Rxd8 27.Rxc5 Ree8 28.Rd5 Bf8
+29.Qc6 Kg8 30.Rxd8 Rxd8 31.b6 Rd1+ 32.Kf2 Bd7 33.Qc4+ Kg7 34.b7 Bd6 35.Qc8 Bxf4
+36.b8=Q Bxb8 37.Qxb8 Bxg4 38.a4 Rd2+ 39.Ke3 Re2+  1-0
+
+[Event "St Louis Winter A 2019"]
+[Site "Saint Louis USA"]
+[Date "2019.11.14"]
+[Round "5.3"]
+[White "Sarana,A"]
+[Black "Xiong,Jeffery"]
+[Result "0-1"]
+[WhiteElo "2664"]
+[BlackElo "2712"]
+[ECO "A42"]
+
+1.d4 g6 2.e4 Bg7 3.c4 d6 4.Nc3 e5 5.d5 a5 6.Bd3 Na6 7.a3 Nc5 8.Bc2 Ne7 9.Rb1 f5
+10.b4 axb4 11.axb4 Nxe4 12.Nxe4 fxe4 13.Ne2 e3 14.Bxe3 Nf5 15.Ba4+ Bd7 16.Bxd7+ Qxd7
+17.O-O O-O 18.Nc3 Nxe3 19.fxe3 Rxf1+ 20.Qxf1 e4 21.Nxe4 Qe7 22.Qd3 Re8 23.Nc3 Bxc3
+24.Qxc3 Qxe3+ 25.Qxe3 Rxe3 26.Ra1 Rc3 27.Ra7 Rxc4 28.Rxb7 Kf7 29.b5 Kf6 30.b6 cxb6
+31.Rxb6 Ke5 32.Rb7 h5 33.Rg7 Rg4 34.Kf2 Kxd5 35.g3 Kd4 36.Kf3 Rg5 37.h3 Rf5+
+38.Ke2 Re5+ 39.Kf3 Re6 40.g4 d5 41.gxh5 gxh5 42.h4 Re3+ 43.Kf2 Re4 44.Ra7 Rf4+
+45.Kg3 Rf5 46.Kg2 Ke4 47.Re7+ Kd3 48.Rg7 d4 49.Rg8 Ke4 50.Re8+ Re5 51.Rd8 Ke3
+52.Kf1 Re4  0-1
+
+[Event "World Senior 50+ 2019"]
+[Site "Bucharest ROU"]
+[Date "2019.11.15"]
+[Round "4.44"]
+[White "Sarno,S"]
+[Black "Heid,Michael"]
+[Result "1-0"]
+[WhiteElo "2319"]
+[BlackElo "1927"]
+[ECO "A42"]
+
+1.c4 g6 2.d4 Bg7 3.e4 d6 4.Nc3 e5 5.d5 a5 6.Bd3 Ne7 7.Be3 Nd7 8.Nge2 b6 9.a3 Nc5
+10.Bc2 Bd7 11.b4 axb4 12.axb4 Na6 13.Rb1 O-O 14.Nc1 f5 15.f3 f4 16.Bf2 g5
+17.Nd3 Ng6 18.Ba4 Nh4 19.Bxh4 gxh4 20.Bxd7 Qxd7 21.h3 Nb8 22.Ra1 Rxa1 23.Qxa1 Qd8
+24.O-O Nd7 25.Nb5 Nf6 26.Rf2 Rf7 27.Ra2 Bf8 28.Ra8 Qd7 29.Qa6 Rg7 30.Qc8  1-0
+
+[Event "World Senior 50+ 2019"]
+[Site "Bucharest ROU"]
+[Date "2019.11.16"]
+[Round "5.53"]
+[White "Lopez de Turiso,J"]
+[Black "Munos,Jean Marc Lucien Jose"]
+[Result "1/2-1/2"]
+[WhiteElo "1947"]
+[BlackElo "1504"]
+[ECO "A42"]
+
+1.c4 g6 2.d4 Bg7 3.Nc3 d6 4.e4 e5 5.dxe5 dxe5 6.Qxd8+ Kxd8 7.Bg5+ f6 8.O-O-O+ Ke8
+9.Be3 c6 10.g3 Be6 11.b3 Nh6 12.f3 Nd7 13.Bh3 Ke7 14.Bxe6 Kxe6 15.Nge2 Nf7
+16.Rd2 Rhd8 17.Rhd1 b6 18.h4 Bf8 19.Kb2 Nc5 20.b4 Rxd2+ 21.Rxd2 Nb7 22.Kb3 Rd8
+23.Rxd8 Nfxd8 24.a4 Nf7 25.Nd1 a5 26.b5 Nc5+ 27.Bxc5 Bxc5 28.bxc6 Kd6 29.Ndc3 Kxc6
+30.Nd5 f5 31.Nf6 h6 32.h5 gxh5 33.Nxh5 fxe4 34.fxe4 Nd6 35.Nf6 Nf7 36.Nc1 Bf2
+37.g4 Bh4 38.Nd5 Nd6 39.Nd3 Nxe4 40.Nxe5+ Kb7  1/2-1/2
+
+[Event "84th ch-ESP 2019"]
+[Site "Marbella ESP"]
+[Date "2019.11.17"]
+[Round "2.21"]
+[White "Garcia Vicente,N"]
+[Black "Ladron de Guevara Pinto,P"]
+[Result "0-1"]
+[WhiteElo "2175"]
+[BlackElo "2442"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nd7 5.Be3 e5 6.Nf3 Ngf6 7.Be2 O-O 8.O-O exd4
+9.Nxd4 Re8 10.f3 c6 11.Qd2 d5 12.cxd5 cxd5 13.Ndb5 Nb6 14.Bf4 d4 15.Rad1 Nh5
+16.Bg5 f6 17.Be3 f5 18.Bxd4 Be6 19.Bxg7 Qxd2 20.Rxd2 Nxg7 21.Rfd1 Rec8 22.Nd6 Rc7
+23.Nd5 Bxd5 24.exd5 a6 25.b3 Rd8 26.Nc4 Nxc4 27.bxc4 Ne8 28.Rc2 Rc5 29.Rb2 Nd6
+30.Rb6 Rd7 31.Rd4 Kf7 32.Kf2 Ke7 33.h4 Kd8 34.Ke3 Kc7 35.Rb2 h6 36.g4 Re7+
+37.Kf4 b5 38.cxb5 axb5 39.a4 fxg4 40.fxg4 Rc3 41.Bd3 Rf7+ 42.Kg3 bxa4 43.Kg2 a3
+44.Ra2 g5 45.hxg5 hxg5 46.Be2 Kb6 47.Rb4+ Kc5 48.Ra4 Re7 49.Bd1 Re1 50.Be2 Rb3
+51.Kf2 Rb2 52.Kxe1 Rxa2 53.Ra5+ Kb4 54.Ra6 Ne4 55.d6 Ra1+ 56.Bd1 Nc3 57.Kd2 Rxd1+
+58.Kc2 Rd5 59.Rb6+ Nb5  0-1
+
+[Event "World Senior 65+ 2019"]
+[Site "Bucharest ROU"]
+[Date "2019.11.18"]
+[Round "6.32"]
+[White "Bray,David"]
+[Black "Meulders,R"]
+[Result "1/2-1/2"]
+[WhiteElo "2031"]
+[BlackElo "2193"]
+[ECO "A42"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 e5 5.Nf3 Nc6 6.dxe5 Nxe5 7.Nxe5 dxe5 8.Qxd8+ Kxd8
+9.Bg5+ f6 10.O-O-O+ Bd7 11.Be3 Ne7 12.Be2 Kc8 13.Rd2 Be6 14.Rhd1 Nc6 15.Kb1 b6
+16.c5 Kb7 17.Bb5 Rhf8 18.Nd5 Rf7 19.Rc1 bxc5 20.Rxc5 Nd8 21.Nb4 a5 22.Nc6 Rf8
+23.Rdc2 Rf7  1/2-1/2
+
+[Event "15th Ugra Governor's Cup"]
+[Site "Khanty-Mansiysk RUS"]
+[Date "2019.11.19"]
+[Round "1.3"]
+[White "Guseva,Marina"]
+[Black "Kokarev,Dm"]
+[Result "0-1"]
+[WhiteElo "2366"]
+[BlackElo "2601"]
+[ECO "E83"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nf6 5.f3 O-O 6.Nge2 Nc6 7.Be3 a6 8.Qd2 Bd7
+9.Rc1 b5 10.cxb5 axb5 11.b3 b4 12.Nd1 Qb8 13.Nf2 e5 14.d5 Ne7 15.Nd3 c5 16.Rc2 Ne8
+17.g4 f5 18.gxf5 gxf5 19.Rg1 Ng6 20.Bg5 f4 21.Nec1 Bf6 22.h4 Kh8 23.Qh2 Qd8
+24.Rcg2 Bxg5 25.Rxg5 Nf6 26.h5 Ne7 27.Bh3 h6 28.Rg7 Rg8 29.Rf7 Bxh3 30.Rxf6 Rxg1+
+31.Qxg1 Ng8 32.Rg6 Qh4+ 33.Nf2 Qxh5 34.Rxd6 Qxf3 35.Qh2 Qe3+ 36.Kd1 Qd4+
+37.Kc2 c4 38.bxc4 Qxc4+ 39.Kb1 b3 40.a4 Qc2+  0-1
+
+[Event "World Senior 50+ 2019"]
+[Site "Bucharest ROU"]
+[Date "2019.11.20"]
+[Round "8.18"]
+[White "Psakhis,L"]
+[Black "Angskog,K"]
+[Result "1-0"]
+[WhiteElo "2461"]
+[BlackElo "2149"]
+[ECO "A42"]
+
+1.d4 d6 2.e4 g6 3.c4 Bg7 4.Nc3 e5 5.Nge2 Nc6 6.Be3 f5 7.exf5 Bxf5 8.d5 Nce7
+9.Ng3 Nf6 10.Be2 O-O 11.O-O c5 12.Qd2 Kh8 13.Bg5 Qa5 14.a3 Neg8 15.b4 cxb4
+16.axb4 Qd8 17.Ra3 a6 18.f3 h6 19.Be3 Rf7 20.Nge4 Bf8 21.Bd3 Rc8 22.b5 axb5
+23.Nxb5 Bxe4 24.fxe4 Qe8 25.Raa1 Ng4 26.Bb6 Be7 27.Rxf7 Qxf7 28.Rf1 Qg7 29.Qb2 Rf8
+30.h3 Rxf1+ 31.Bxf1 N4f6 32.c5 dxc5 33.Qxe5 Nd7 34.Qxg7+ Kxg7 35.Bc7 Bf6
+36.Kf2 Be5 37.Bd8 Ngf6 38.Ke3 Ne8 39.Be2 Nd6 40.Be7 Nxb5 41.Bxb5 Bd4+ 42.Kd3 Ne5+
+43.Kc2 Kf7 44.Bd8 c4 45.Kb1 Bc3 46.Bb6 Bb4 47.Bd4 Bd6 48.Kc2 Ke7 49.Kc3 Kd8
+50.Bxc4 Kc7 51.Bb5 Kd8 52.Be3 Nf7 53.Bb6+ Ke7 54.Be2 Ne5 55.Be3 g5 56.Bg4 Kd8
+57.Bb6+ Bc7 58.Bc5 Nf7 59.Bh5 Nd6 60.Kd3 b6 61.Bd4 Ke7 62.e5  1-0
+
+[Event "World Senior 50+ 2019"]
+[Site "Bucharest ROU"]
+[Date "2019.11.21"]
+[Round "9.11"]
+[White "Psakhis,L"]
+[Black "Smolin,S1"]
+[Result "1-0"]
+[WhiteElo "2461"]
+[BlackElo "2103"]
+[ECO "A42"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 e5 5.Nge2 exd4 6.Nxd4 Nc6 7.Be3 Nge7 8.h4 h5
+9.Qd2 Ne5 10.Be2 N7c6 11.O-O-O Be6 12.f4 Ng4 13.Nxc6 bxc6 14.Bd4 O-O 15.Bxg7 Kxg7
+16.Qd4+ Qf6 17.Qxf6+ Kxf6 18.Bxg4 Bxg4 19.Rd3 Be6 20.b3 Ke7 21.Re1 Kd7 22.Kb2 Rad8
+23.Ka3 Kc8 24.Kb4 Bg4 25.g3 f6 26.Ka5 Rfe8 27.Ree3 Rd7 28.c5 Re6 29.b4 Rde7
+30.Ka6 Kb8 31.b5 cxb5 32.c6 Re8 33.Rd5 R6e7 34.Rxb5+ Ka8 35.Re1 Be6 36.Rb4 d5
+37.Ka5 Bf7 38.Nb5 Rb8 39.e5 Rb6 40.Nd4 Be8 41.Rxb6 axb6+ 42.Ka6 Kb8 43.e6 Kc8
+44.a4 Rg7 45.Ka7 g5 46.hxg5 fxg5 47.f5  1-0
+
+[Event "World Senior 65+ 2019"]
+[Site "Bucharest ROU"]
+[Date "2019.11.23"]
+[Round "11.20"]
+[White "Heinig,Wo"]
+[Black "Dovzhenko,V"]
+[Result "1-0"]
+[WhiteElo "2241"]
+[BlackElo "2079"]
+[ECO "E94"]
+
+1.d4 g6 2.e4 Bg7 3.c4 d6 4.Nc3 Nd7 5.Nf3 e5 6.Be2 Ngf6 7.O-O O-O 8.Be3 exd4
+9.Nxd4 Re8 10.f3 a5 11.Qd2 Nc5 12.Rfd1 b6 13.Bf1 Bb7 14.Rac1 Qe7 15.Bf2 Nh5
+16.Nd5 Qd7 17.b3 Nf6 18.Bh4 Nxd5 19.cxd5 Ba6 20.Bxa6 Rxa6 21.Bf2 Raa8 22.Qc2 Bh6
+23.Rb1 Bf4 24.a3 Be5 25.b4 axb4 26.axb4 Na6 27.Qc4 Bg7 28.Rd2 Reb8 29.Nc6 Re8
+30.Ra2 Qc8 31.Rb3 Qb7 32.Rba3 b5 33.Qd3 Bf6 34.Ra5 Kg7 35.Qa3 Nxb4  1-0
+
+[Event "World Senior 50+ 2019"]
+[Site "Bucharest ROU"]
+[Date "2019.11.23"]
+[Round "11.21"]
+[White "Lewis,An"]
+[Black "Smolin,S1"]
+[Result "1/2-1/2"]
+[WhiteElo "2264"]
+[BlackElo "2103"]
+[ECO "A42"]
+
+1.c4 g6 2.d4 Bg7 3.e4 d6 4.Nc3 Nc6 5.Be3 e5 6.d5 Nce7 7.Qd2 f5 8.f3 Nf6 9.Bd3 O-O
+10.Nge2 c5 11.exf5 gxf5  1/2-1/2
+
+[Event "Nov Lviv Tradition IM"]
+[Site "Lviv UKR"]
+[Date "2019.11.23"]
+[Round "7.5"]
+[White "Papunidi,Matvey"]
+[Black "Roshka,Yevgeniy"]
+[Result "0-1"]
+[WhiteElo "2052"]
+[BlackElo "2415"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 e5 5.Nf3 Nd7 6.g3 Ne7 7.Bg2 O-O 8.O-O exd4
+9.Nxd4 Nc6 10.Be3 Nde5 11.b3 Ng4 12.Nxc6 Nxe3 13.fxe3 bxc6 14.Rc1 Qg5 15.Qe2 Bd7
+16.Na4 h5 17.c5 h4 18.gxh4 Qxh4 19.cxd6 Be5 20.Bf3 cxd6 21.Nb2 Kg7 22.Nd3 Qg5+
+23.Kh1 Bxh2 24.Rf2 Rh8 25.Rg2 Bf4+ 26.Kg1 Bxe3+ 27.Nf2 Bxf2+  0-1
+
+[Event "84th ch-ESP 2019"]
+[Site "Marbella ESP"]
+[Date "2019.11.23"]
+[Round "8.21"]
+[White "Martin Hernandez,R"]
+[Black "Bernabeu Lopez,C"]
+[Result "1/2-1/2"]
+[WhiteElo "2206"]
+[BlackElo "2366"]
+[ECO "E91"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nf6 5.Be2 O-O 6.Nf3 Bg4 7.Be3 Nfd7 8.Ng1 Bxe2
+9.Ngxe2 c5 10.O-O cxd4 11.Bxd4 Bxd4 12.Nxd4 Nc6 13.b3 a5 14.Qd2 Nc5 15.Rfd1 Ne5
+16.f4 Ned3 17.Qe3 Nb4 18.a3 Nxb3 19.Nxb3 Nc2 20.Qf2 Nxa1 21.Rxa1 Rc8 22.Nd2 Rc5
+23.Rb1 Qc8 24.Nd5 Re8 25.f5 b5 26.f6 bxc4 27.fxe7 Rxd5 28.exd5 Rxe7 29.Qd4 c3
+30.Rc1 c2 31.Nf3 Qf5 32.Qd2 Rc7 33.Qxa5 Rc5 34.Qd2 Qe4 35.Kf1 Qc4+ 36.Qe2 Qb3
+37.h3 Qb2 38.Qd2 Rxd5 39.Qxc2 Qxa3 40.Qc8+ Kg7 41.Qc3+ Qxc3 42.Rxc3 Kf6 43.Ke2 Ra5
+44.Rd3 Ra6 45.g4 h6 46.Ke3 Ke6 47.Kf4 Kf6 48.h4 Ra4+ 49.Rd4 Ra6 50.Nd2 Ke6
+51.Nc4 Rc6 52.Re4+ Kf6 53.Ne3 Rc5 54.Re8 Ra5 55.Rh8 Kg7 56.Rd8 Ra4+ 57.Kf3 Rd4
+58.Re8 h5 59.gxh5  1/2-1/2
+
+[Event "58th TCh-DEN Ex 2019-20"]
+[Site "Denmark DEN"]
+[Date "2019.11.24"]
+[Round "2.1"]
+[White "Skytte,R"]
+[Black "Hillarp Persson,T"]
+[Result "1/2-1/2"]
+[WhiteElo "2373"]
+[BlackElo "2542"]
+[ECO "E73"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nf6 5.Be2 O-O 6.Bg5 Na6 7.Nf3 h6 8.Be3 Ng4
+9.Bc1 e5 10.O-O c6 11.h3 exd4 12.Nxd4 Nf6 13.Bf4 Re8 14.Bf3 Nh7 15.g4 Be5
+16.Be3 Qh4 17.Bg2 Ng5 18.Bxg5 Qxg5 19.Nde2 Qe7 20.f4 Bg7 21.Qd2 Be6 22.b3 Nc5
+23.Rad1 Rad8 24.Rf2 a5 25.Rdf1 Bc8 26.Ng3 Qh4 27.Nce2 h5 28.gxh5 f5 29.exf5 gxf5
+30.Qxa5 Re3 31.Rf3 Rxf3 32.Rxf3  1/2-1/2
+
+[Event "15th Ugra Governor's Cup"]
+[Site "Khanty-Mansiysk RUS"]
+[Date "2019.11.25"]
+[Round "9.15"]
+[White "Zakaryan,David"]
+[Black "Obgolts,Erik"]
+[Result "1/2-1/2"]
+[WhiteElo "2338"]
+[BlackElo "2371"]
+[ECO "E90"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nf6 5.Nf3 O-O 6.h3 e5 7.d5 Nh5 8.g3 f5 9.exf5 gxf5
+10.Nh4 Nf4 11.Qc2 Na6 12.a3 c6 13.Nf3 Ng6 14.Bg5 Qe8 15.O-O-O cxd5 16.Rxd5 e4
+17.Nd4 Nc7 18.Rxd6 Bxd4 19.Rxd4 Ne6 20.Be3 Nxd4 21.Bxd4 Be6 22.g4 Rd8 23.Bxa7 Qc6
+24.Rg1 Bxc4 25.gxf5 Rxf5 26.Bxc4+ Qxc4 27.Qxe4 Qxe4 28.Nxe4 Rf4 29.Nc3 Kf7
+30.Be3 Rc4 31.Kc2 Ne7 32.Kb3 Rh4 33.Rg3 h6 34.Rf3+ Kg6 35.Ne2 Nd5 36.Bc1 Re8
+37.Ng1 Rd4 38.Rg3+ Kh7 39.Nf3 Rd1 40.Bd2 Rf1 41.Kc4 Nf6 42.Be3 Nh5 43.Rg4 Rxe3
+44.fxe3 Rxf3 45.Re4 Rxh3 46.Re7+ Kg6 47.a4 Nf6 48.Rxb7 Rxe3 49.a5 Re1 50.Rb3 h5
+51.a6 Ra1 52.Ra3 Rxa3 53.bxa3 Ne8 54.a7 Nc7 55.Kc5 h4  1/2-1/2
+
+[Event "St Louis Inv IM 2019"]
+[Site "Saint Louis USA"]
+[Date "2019.11.26"]
+[Round "9.4"]
+[White "Cervantes Landeiro,Thalia"]
+[Black "Torres Rosas,L"]
+[Result "1/2-1/2"]
+[WhiteElo "2227"]
+[BlackElo "2360"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.d5 a5 6.Be3 Na6 7.Bd3 Bd7 8.Nge2 Qh4
+9.O-O Nh6 10.f3 f5 11.Qe1 Qe7 12.Nb5 f4 13.Bf2 b6 14.c5 bxc5 15.Qxa5 O-O
+16.Nxc7 Nxc7 17.Qxc7 Bf6 18.Bc4 Rfc8 19.Qb7 Rcb8 20.Qc7 Nf7 21.a4 Nd8 22.Bxc5 Rc8
+23.Qb6 Rxc5  1/2-1/2
+
+[Event "15th Governor's Cup Rapid"]
+[Site "Khanty-Mansiysk RUS"]
+[Date "2019.11.28"]
+[Round "11.6"]
+[White "Shimanov,A"]
+[Black "Obgolts,Erik"]
+[Result "1/2-1/2"]
+[WhiteElo "2587"]
+[BlackElo "2361"]
+[ECO "E91"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nf6 5.Nf3 O-O 6.Be2 Bg4 7.Be3 Nfd7 8.Rc1 e5
+9.d5 a5 10.Nd2 Bxe2 11.Qxe2 f5 12.f3 Bh6 13.Bf2 Qg5 14.Rg1 Na6 15.h4 Qe7
+16.Kd1 Nf6 17.g4 fxg4 18.fxg4 Bf4 19.Kc2 Qd7 20.Rcd1 a4 21.a3 Nc5 22.Bxc5 dxc5
+23.Nf1 Ne8 24.h5 Nd6 25.hxg6 hxg6 26.Ne3 Bxe3 27.Qxe3 Qf7 28.Qxc5 Qf2+ 29.Qxf2 Rxf2+
+30.Kd3 Raf8 31.Rg3 Rxb2 32.c5 Nc8 33.Rb1 Rxb1 34.Nxb1 Rf1 35.Nd2 Ra1 36.Kc2 b6
+37.Rc3 Ra2+ 38.Kc1 bxc5 39.Rxc5 Nd6 40.Rxc7 Rxa3 41.Rc6 Nb5 42.Nc4 Ra2 43.Rxg6+ Kh7
+44.Rb6 Nd4 45.Kb1 Rc2 46.Nxe5 a3 47.Nc6 a2+ 48.Ka1 Ne2 49.Nb4 Rc4 50.e5 Rd4
+51.Kxa2 Nc3+ 52.Kb3 Nxd5 53.Nxd5 Rxd5 54.Re6 Rd4 55.g5 Rg4 56.Kc3 Kg7 57.Rd6 Kf7
+58.Rf6+ Kg7 59.Kd3 Rxg5 60.Kd4 Rg1 61.Kd5 Ra1 62.Rb6 Kf7 63.Rc6 Rd1+ 64.Ke4 Re1+
+65.Kd5 Rd1+ 66.Ke4 Re1+ 67.Kf4 Rf1+ 68.Kg3 Re1 69.Rf6+ Ke7 70.Kf4 Rf1+ 71.Kg5 Rxf6
+72.exf6+ Kf7 73.Kf5 Kf8 74.Ke5 Kf7 75.Kf5 Kf8 76.f7 Kxf7 77.Ke4  1/2-1/2
+
+[Event "ch-EUR Women Blitz 2019"]
+[Site "Monaco MNC"]
+[Date "2019.11.29"]
+[Round "2.5"]
+[White "Bensdorp,M"]
+[Black "Gaponenko,I"]
+[Result "0-1"]
+[WhiteElo "2228"]
+[BlackElo "2427"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 e5 5.d5 Na6 6.Bd3 Nc5 7.Bc2 a5 8.Nge2 Nf6
+9.O-O O-O 10.Rb1 Bd7 11.b3 Ne8 12.a3 f5 13.exf5 gxf5 14.f4 e4 15.Be3 Nf6
+16.h3 Qe8 17.Nd4 c6 18.b4 axb4 19.axb4 Nd3 20.dxc6 bxc6 21.Bxd3 exd3 22.Qxd3 Qg6
+23.b5 c5 24.Nc6 Rae8 25.Rf3 Ne4 26.Nd5 Kh8 27.Kh2 Qh6 28.Qc2 Qg6 29.Bc1 Qf7
+30.Bb2 Be6 31.Ne3 Qd7 32.Rd1 Qf7 33.Nf1 Rg8 34.Ng3 Bxb2 35.Qxb2+ Rg7 36.Nxe4 fxe4
+37.Rg3 Rg8 38.Rf1 Bxc4 39.Rf2 Bd5 40.Qa1 h5 41.Rg5 Kh7 42.Ra2 Qxf4+  0-1
+
+[Event "ch-EUR Women Rapid 2019"]
+[Site "Monaco MNC"]
+[Date "2019.11.30"]
+[Round "3.14"]
+[White "Batsiashvili,N"]
+[Black "Novkovic,J"]
+[Result "1-0"]
+[WhiteElo "2422"]
+[BlackElo "2161"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.Nge2 Nc6 6.d5 Nce7 7.h4 f5 8.h5 f4 9.hxg6 hxg6
+10.Rxh8 Bxh8 11.Bd2 Nf6 12.Nc1 Bg7 13.Nd3 a6 14.Qc2 Kf7 15.O-O-O Ng4 16.Be2 Qh8
+17.Kb1 Qh2 18.Bf3 Bd7 19.c5 Qh4 20.Be1 Nh2 21.Qb3 Rb8 22.cxd6 cxd6 23.Qb6 Qf6
+24.Qc7 Bg4 25.Bxg4 Nxg4 26.Qxb8 f3 27.g3 Bh6 28.Qxb7 Bg5 29.Qxa6 Nxd5 30.exd5  1-0
+
+[Event "20th Puhajarve Rapid"]
+[Site "Puhajarve EST"]
+[Date "2019.11.30"]
+[Round "24.4"]
+[White "Jarvet,Juri"]
+[Black "Kapp,Viljar"]
+[Result "1-0"]
+[WhiteElo ""]
+[BlackElo ""]
+[ECO "A42"]
+
+1.c4 g6 2.d4 d6 3.Nc3 Bg7 4.e4 e5 5.d5 Nf6 6.Be2 O-O 7.Bg5 c5 8.Nf3 h6 9.Bh4 Bg4
+10.Nd2 Bxe2 11.Qxe2 Qd7 12.f3 Na6 13.a3 Nc7 14.g4 h5 15.h3 Nce8 16.Bg5 Nh7
+17.Be3 Bf6 18.gxh5 gxh5 19.O-O-O h4 20.Rdg1+ Kh8 21.f4 Ng7 22.f5 Rg8 23.Rg4 Nh5
+24.Rxg8+ Rxg8 25.Qxh5 Bg5 26.Bxg5 Rxg5 27.Qxh4 f6 28.Qf2 Qg7 29.Nd1 Rg2 30.Qf3 Rg3
+31.Qh5 Rg5 32.Qh4 Kg8 33.Nf2 Rg1+ 34.Rxg1 Qxg1+ 35.Kc2 Qg5 36.Qxg5+ Nxg5
+37.h4 Nf7 38.Ng4 Kg7 39.b4 b6 40.Nf3 Nh6 41.Nxh6 Kxh6 42.Kd3 Kh5 43.Ke3 Kg4
+44.Ng5 Kxh4 45.Nf7  1-0
+
+[Event "5th CNE ch-NED Rapid w"]
+[Site "Amstelveen NED"]
+[Date "2019.12.01"]
+[Round "1.3"]
+[White "Peng Zhaoqin"]
+[Black "Lanchava,T"]
+[Result "1-0"]
+[WhiteElo "2364"]
+[BlackElo "2236"]
+[ECO "A42"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nd7 5.f4 e5 6.fxe5 dxe5 7.d5 Ngf6 8.Be3 O-O
+9.Be2 Qe7 10.Nh3 Nc5 11.Nf2 Rd8 12.O-O c6 13.Qc2 Ne8 14.b4 Na6 15.a3 f5 16.c5 f4
+17.Bc1 Nf6 18.dxc6 bxc6 19.Qa4 Nb8 20.Bb2 g5 21.Rad1 Rf8 22.b5 Qxc5 23.Qc4+ Qxc4
+24.Bxc4+ Kh8 25.a4 Bd7 26.Rd6 cxb5 27.axb5 Rc8 28.Be2 Be8 29.Ra1 Nbd7 30.Kf1 Bf8
+31.Rda6 Bb4 32.Nd5 Nxd5 33.exd5 Bc5 34.Nd3 Bb6 35.Nxe5 Nxe5 36.Bxe5+ Kg8
+37.R6a2 Bf7 38.Rd2 Be3 39.Rdd1 Re8 40.Bf6 h6 41.d6 Bb6 42.Bd4 Rxe2 43.Kxe2 Bh5+
+44.Kd3 Bxd1 45.Rxd1 Kf7 46.Re1 Bd8 47.Kc4 h5 48.Kd5 g4 49.Ra1 Rb8 50.Kc6 Ke6
+51.Re1+ Kf5 52.Bxa7 Rc8+ 53.Kd7 Ra8 54.b6 Bh4 55.Re8 f3 56.gxf3 gxf3 57.Rxa8 f2
+58.Rf8+ Bf6 59.b7 f1=Q 60.b8=Q Qc4 61.Qb1+ Kg5 62.Qg1+ Kf5 63.Qc5+  1-0
+
+[Event "Top 16 Russian Rapid GP"]
+[Site "Khanty-Mansiysk RUS"]
+[Date "2019.12.01"]
+[Round "1.7"]
+[White "Nesterov,Arseniy"]
+[Black "Kokarev,Dm"]
+[Result "0-1"]
+[WhiteElo "2482"]
+[BlackElo "2606"]
+[ECO "E73"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nf6 5.Be2 O-O 6.Be3 Na6 7.h4 c5 8.d5 e6 9.dxe6 Bxe6
+10.h5 Qb6 11.Qd2 Qb4 12.Rh4 Rfe8 13.O-O-O Qa5 14.hxg6 fxg6 15.Nf3 Nb4 16.a3 Nc6
+17.Rdh1 Rad8 18.Bh6 Bh8 19.Bg5 Nd4 20.Nxd4 cxd4 21.Qxd4 Qxg5+ 22.f4 Qc5 23.Qxc5 dxc5
+24.e5 h5 25.exf6 Bxf6 26.R4h2 Bf5 27.g4 hxg4 28.Nd5 Bd4 29.Rg2 Be4 30.Rhh2 Bxg2
+31.Rxg2 g3 32.Bd3 Re1+ 33.Kc2 Rg1 34.Rxg1 Bxg1 35.Bxg6 Bd4  0-1
+
+[Event "Top 16 Russian Rapid GP"]
+[Site "Khanty-Mansiysk RUS"]
+[Date "2019.12.01"]
+[Round "5.6"]
+[White "Pridorozhni,A"]
+[Black "Golubov,Saveliy"]
+[Result "0-1"]
+[WhiteElo "2602"]
+[BlackElo "2469"]
+[ECO "E87"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nf6 5.f3 O-O 6.Be3 e5 7.d5 c5 8.Qd2 Nh5 9.Nge2 f5
+10.exf5 gxf5 11.O-O-O Nd7 12.Kb1 a6 13.h3 Nb6 14.b3 f4 15.Bf2 e4 16.Nxe4 Bf5
+17.Nc3 Qf6 18.Rc1 Bxe4+ 19.fxe4 Ng3 20.Rg1 Nxf1 21.Rgxf1 Qe5 22.Bg1 Rf7 23.Bh2 Raf8
+24.Rf3 Nc8 25.a4 Ne7 26.Rcf1 Ng6 27.Kc2 Qe7 28.g3 Bxc3 29.Rxc3 Qxe4+ 30.Kb2 fxg3
+31.Rxf7 Rxf7 32.Bxg3 Rf6 33.Re3 Qf5 34.a5 h5 35.Qe1 Kh7 36.h4 Qg4 37.Qc3 Rf7
+38.Ka3 Nxh4 39.Bxh4 Qxh4 40.Qd3+ Kg7 41.Rg3+ Kf8 42.Qg6 Qf6 43.Qg8+ Ke7 44.Re3+ Kd7
+45.Qe8+ Kc7 46.Re1 h4 47.Ka2 h3 48.Re6 Qg7 49.Re2 Qh7 50.Ka3 Rg7 51.Qf8 Rf7
+52.Qe8 Qg7 53.Ka2 Rd7 54.Qe6 Qg3 55.Qh6 Qc3 56.Qh4 Kb8 57.Rh2  0-1
+
+[Event "Top 16 Russian Rapid GP"]
+[Site "Khanty-Mansiysk RUS"]
+[Date "2019.12.02"]
+[Round "9.8"]
+[White "Sakaev,K"]
+[Black "Golubov,Saveliy"]
+[Result "1/2-1/2"]
+[WhiteElo "2596"]
+[BlackElo "2469"]
+[ECO "E73"]
+
+1.d4 g6 2.e4 Bg7 3.c4 d6 4.Nc3 Nf6 5.Be2 O-O 6.Be3 c5 7.d5 e6 8.Nf3 exd5
+9.cxd5 Bg4 10.Nd2 Bxe2 11.Qxe2 Ne8 12.O-O Na6 13.Nc4 f5 14.f3 Nac7 15.a4 Qe7
+16.Qd3 Rd8  1/2-1/2
+
+[Event "Third Sat 122 GM 2019"]
+[Site "Novi Sad SRB"]
+[Date "2019.12.04"]
+[Round "5.3"]
+[White "Wang Qibiao"]
+[Black "Xu,Zhihang"]
+[Result "1/2-1/2"]
+[WhiteElo "2289"]
+[BlackElo "2506"]
+[ECO "E71"]
+
+1.e4 d6 2.d4 g6 3.c4 Bg7 4.Nc3 Nf6 5.h3 O-O 6.Be3 c5 7.Nf3 Qa5 8.Bd3 Nc6
+9.d5 Nb4 10.O-O Nxd3 11.Qxd3 a6 12.a4 Bd7 13.Rfe1 Rfd8 14.Bd2 Qc7 15.e5 Bf5
+16.Qe2 dxe5 17.Nxe5 Ne4 18.Bf4 Nd6 19.g4 Bc8 20.Qf3 Rf8 21.Re2 g5 22.Bh2 f5
+23.Qd3 f4 24.Rae1 Bf6 25.h4 Nf7 26.Nxf7 Rxf7 27.hxg5 Bd4 28.Qf3 Qd6 29.Re4 Qg6
+30.Rxf4 Bd7  1/2-1/2
+
+[Event "European Rapid 2019"]
+[Site "Tallinn EST"]
+[Date "2019.12.05"]
+[Round "3.9"]
+[White "Postny,E"]
+[Black "Kukk,S"]
+[Result "1/2-1/2"]
+[WhiteElo "2605"]
+[BlackElo "2194"]
+[ECO "E92"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nf6 5.Nf3 O-O 6.Be2 e5 7.d5 a5 8.h3 Na6 9.Bg5 h6
+10.Be3 Qe7 11.Nd2 Nh7 12.O-O f5 13.f3 f4 14.Bf2 g5 15.a3 Bd7 16.b4 h5 17.c5 axb4
+18.axb4 Nxb4 19.Qb3 Na6 20.c6 bxc6 21.dxc6+ Be6 22.Nd5 Qf7 23.Rxa6 Rab8 24.Qc2 Bxd5
+25.exd5 e4 26.Nxe4 Rb2 27.Qc4 Rfb8 28.Ra2 R2b4 29.Qd3 Be5 30.Ra7 Rb3 31.Qa6 g4
+32.fxg4 f3 33.Bxf3 Rxf3 34.gxf3 Qxf3 35.Rxc7 Qxh3 36.Rc8+ Nf8 37.Bg3 Bd4+
+38.Bf2 Be5 39.Bg3 Bd4+ 40.Bf2 Be5 41.Bg3 Bd4+ 42.Bf2  1/2-1/2
+
+[Event "European Rapid 2019"]
+[Site "Tallinn EST"]
+[Date "2019.12.05"]
+[Round "6.26"]
+[White "Sanz Wawer,Daniel"]
+[Black "Mohr,G"]
+[Result "0-1"]
+[WhiteElo "2212"]
+[BlackElo "2433"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 c5 5.d5 e6 6.Nge2 exd5 7.cxd5 Ne7 8.Bg5 h6
+9.Be3 a6 10.a4 O-O 11.Qd2 Kh7 12.h4 Nd7 13.f4 h5 14.g4 Nf6 15.gxh5 Nxh5 16.O-O-O b5
+17.f5 Qa5 18.Bg5 Re8 19.f6 Nxf6 20.h5 Nxh5 21.Ng3 Kg8 22.Nxh5 gxh5 23.Bh6 Bxc3
+24.bxc3 Ng6 25.Bd3 Qxa4 26.Kb2 b4 27.Ra1 bxc3+ 28.Kxc3 Qd4+ 29.Kc2 c4 30.Bf1  0-1
+
+[Event "2nd Citta di Imola Open"]
+[Site "Imola ITA"]
+[Date "2019.12.06"]
+[Round "1.3"]
+[White "Malfagia,A"]
+[Black "Rombaldoni,D"]
+[Result "0-1"]
+[WhiteElo "2192"]
+[BlackElo "2493"]
+[ECO "A42"]
+
+1.d4 d6 2.e4 g6 3.c4 Bg7 4.Nc3 Nc6 5.Nge2 e5 6.d5 Nce7 7.h4 f5 8.h5 Nh6 9.hxg6 hxg6
+10.Ng1 f4 11.Be2 Bd7 12.Bd2 g5 13.Bh5+ Kf8 14.Nh3 g4 15.Ng5 Nc8 16.Ne6+ Bxe6
+17.dxe6 Qg5 18.Qa4 Nb6 19.Qa5 Ng8 20.c5 dxc5 21.Qxc5+ Ne7 22.O-O-O Rxh5 23.Rxh5 Qxh5
+24.Nb5 Qg6 25.Nxc7 Rc8 26.Bb4 Bf6 27.Rd7 Kg8 28.Qd6 Qxe4 29.Rd8+ Kh7 30.Bc3 Qc6
+31.Ne8 Qxd6 32.Nxf6+ Kg6 33.Rxd6 Kxf6  0-1
+
+[Event "Skopje Open 2019"]
+[Site "Skopje MKD"]
+[Date "2019.12.06"]
+[Round "1.5"]
+[White "Ruseva,Eva"]
+[Black "Zlatanovic,B"]
+[Result "0-1"]
+[WhiteElo "1746"]
+[BlackElo "2365"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.d5 f5 6.Nf3 Nf6 7.Qc2 Na6 8.Bd3 O-O 9.Bg5 Nb4
+10.Qe2 c6 11.a3 Nxd3+ 12.Qxd3 c5 13.O-O-O fxe4 14.Nxe4 Bf5 15.Bxf6 Rxf6 16.Nfd2 Rf7
+17.Qe3 Qf8 18.f3 Bxe4 19.Qxe4 Bh6 20.Kb1 Bxd2 21.Rxd2 Rb8 22.b3 b5 23.Rb2 a5
+24.a4 Rf4 25.Qc2 bxa4 26.bxa4 Rxb2+ 27.Kxb2 e4 28.Qc3 exf3 29.gxf3 Rxf3 30.Qxa5 Rf2+
+31.Kc1 Qf4+  0-1
+
+[Event "European Blitz 2019"]
+[Site "Tallinn EST"]
+[Date "2019.12.07"]
+[Round "7.36"]
+[White "Krutti,V"]
+[Black "Troyke,C"]
+[Result "1/2-1/2"]
+[WhiteElo "2295"]
+[BlackElo "2317"]
+[ECO "E74"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nf6 5.Be2 O-O 6.Bg5 c5 7.d5 h6 8.Bf4 e6 9.Qd2 exd5
+10.cxd5 Re8 11.f3 a6 12.a4 h5 13.a5 Qc7 14.Bd3 Nbd7 15.Nge2 Ne5 16.O-O Nxd3
+17.Qxd3 Nd7 18.Qd2 Ne5 19.b3 b6 20.axb6 Qxb6 21.Rfb1 Bd7 22.Kh1 h4 23.h3 a5
+24.Bg5 Qa6 25.Bxh4 f5 26.Bg5 Nd3 27.Be3 Ne5 28.Nf4 g5 29.Ne6 f4 30.Bf2 Qd3
+31.Be1 Bxe6 32.dxe6 Rxe6 33.Nd5 Qf1+ 34.Kh2 Nxf3+ 35.gxf3 Qxf3 36.Nc7 Rxe4
+37.Qd5+ Kh7 38.Ra2 Re2+ 39.Rxe2 Qxe2+ 40.Kh1 Qf1+ 41.Kh2 Qe2+ 42.Qg2 Qxg2+
+43.Kxg2 Ra7 44.Nb5 Re7 45.Bxa5 Re2+ 46.Kf3 Re3+ 47.Kg4 Kg6 48.Be1 d5 49.Bf2 Rd3
+50.h4 gxh4 51.Bxh4 c4 52.b4 Rb3 53.Rxb3 cxb3 54.Na3 Bf8 55.Be1 f3 56.Kxf3 Kf5
+57.Nb1 d4 58.Ke2 Ke4 59.Nd2+ Kd5 60.Nxb3 Kc4 61.Na5+ Kb5 62.Kd3 Bxb4 63.Bxb4 Kxb4  1/2-1/2
+
+[Event "European Blitz 2019"]
+[Site "Tallinn EST"]
+[Date "2019.12.07"]
+[Round "10.35"]
+[White "Hjartarson,J"]
+[Black "Shvyrjov,I"]
+[Result "0-1"]
+[WhiteElo "2524"]
+[BlackElo "2382"]
+[ECO "E83"]
+
+1.c4 g6 2.Nc3 Bg7 3.d4 d6 4.e4 Nc6 5.Nge2 Nf6 6.f3 a6 7.Be3 O-O 8.Qd2 b5
+9.cxb5 axb5 10.Nxb5 Na5 11.Nec3 Nb3 12.Qd1 Nxa1 13.Qxa1 Ba6 14.Be2 Nd7 15.O-O c6
+16.Na3 Bxe2 17.Nxe2 Qa5 18.Qc1 c5 19.Rd1 cxd4 20.Nxd4 Rfc8 21.Nc6 Bxb2 22.Nxe7+ Kf8
+23.Qxb2 Kxe7 24.Nb5 Rab8 25.Rb1 Ne5 26.h4 f6 27.Qb3 Nc4 28.Bf4 Rc6 29.a4 Ne5
+30.Qa3 Ra8 31.Nxd6 Qc5+ 32.Qxc5 Rxc5 33.Nb5  0-1
+
+[Event "European Blitz 2019"]
+[Site "Tallinn EST"]
+[Date "2019.12.07"]
+[Round "13.32"]
+[White "Krutti,V"]
+[Black "Marie,M"]
+[Result "0-1"]
+[WhiteElo "2295"]
+[BlackElo "2228"]
+[ECO "E80"]
+
+1.c4 g6 2.d4 Bg7 3.e4 d6 4.Nc3 Nf6 5.f3 a6 6.Bg5 h6 7.Be3 Nbd7 8.Nh3 e5 9.d5 Qe7
+10.Qd2 Nh5 11.Nf2 g5 12.Qc2 Nf8 13.O-O-O Ng6 14.Kb1 Bd7 15.Rc1 b6 16.b3 O-O
+17.Nfd1 Rfb8 18.Nb2 b5 19.g3 Rb7 20.Ncd1 c5 21.dxc6 Bxc6 22.Nc3 Nf8 23.Nd5 Qe8
+24.Ka1 Ne6 25.Bh3 Nd4 26.Qd1 bxc4 27.Rxc4 Bb5 28.Rc3 Be2 29.Qc1 Bxf3 30.Rf1 Ne2
+31.Qd2 Nxc3 32.Nxc3 g4 33.Bg2 Bxg2 34.Qxg2 Qe6 35.Nd5 Rc8 36.Qe2 Rb5 37.Rd1 Nf6
+38.Nxf6+ Bxf6 39.Nc4 Be7 40.Rf1 Kg7 41.Rf5 Rb4 42.Qxg4+ Kf8 43.Qe2 a5 44.Bd2 Rbxc4
+45.bxc4 Qxc4 46.Bxh6+ Ke8 47.Qxc4 Rxc4 48.Bd2 a4  0-1
+
+[Event "European Blitz 2019"]
+[Site "Tallinn EST"]
+[Date "2019.12.07"]
+[Round "14.21"]
+[White "Gretarsson,He"]
+[Black "Troyke,C"]
+[Result "1-0"]
+[WhiteElo "2406"]
+[BlackElo "2317"]
+[ECO "E76"]
+
+1.d4 g6 2.e4 Bg7 3.c4 d6 4.Nc3 Nf6 5.f4 O-O 6.Nf3 c5 7.dxc5 Qa5 8.Bd3 Qxc5
+9.Qe2 Bg4 10.Be3 Qa5 11.O-O Nc6 12.Rac1 Rac8 13.Bb1 e6 14.Rfd1 Rfd8 15.h3 Bxf3
+16.Qxf3 Qb4 17.Qe2 Na5 18.b3 Nh5 19.Qd3 Bh6 20.Rf1 a6 21.g4 d5 22.exd5 Nf6
+23.g5 exd5 24.gxf6 dxc4 25.Qe4 Re8 26.Qf3 cxb3 27.Nd5 bxa2 28.Bxa2 Rxc1 29.Nxb4 Rc3
+30.Nd5 Ra3 31.Ne7+ Kh8 32.Bxf7 Rf8 33.Bd5 Rxf6 34.Bd4  1-0
+
+[Event "European Blitz 2019"]
+[Site "Tallinn EST"]
+[Date "2019.12.07"]
+[Round "17.5"]
+[White "Postny,E"]
+[Black "Sanal,V"]
+[Result "0-1"]
+[WhiteElo "2605"]
+[BlackElo "2549"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nd7 5.Nf3 e5 6.Be2 Ne7 7.O-O O-O 8.Re1 Nc6
+9.Be3 Re8 10.d5 Ne7 11.Nd2 f5 12.f3 f4 13.Bf2 g5 14.b4 h5 15.c5 Nf6 16.Nc4 g4
+17.cxd6 cxd6 18.Nb5 Ng6 19.Ncxd6 g3 20.hxg3 fxg3 21.Bxg3 Rf8 22.Nxc8 Rxc8
+23.d6 h4 24.Bh2 Nh5 25.d7 Rc6 26.Rf1 Ng3 27.Rf2 Nf4 28.Bf1 Kh7 29.Nd6 Qxd7
+30.Nf5 Qxd1 31.Rxd1 Nxf5 32.exf5 Rxf5 33.Bxf4 Rxf4 34.Bd3+ Kh6 35.Be4 Rb6
+36.Rfd2 Rxb4 37.Rd6+ Rf6 38.Rd7 Rd4 39.R1xd4 exd4 40.Rxb7 Rd6 41.Bd3 a5 42.Rb5 a4
+43.Ra5 Rc6 44.Rxa4 Rc1+ 45.Kh2 Be5+ 46.Kh3 Kg5 47.f4+ Kxf4 48.g3+ hxg3 49.Ra8 Rh1+
+50.Kg2 Rh2+ 51.Kg1 Rd2 52.Bc4 d3 53.Rd8 Bc7 54.Rd4+ Ke3 55.Rd7 Bb6 56.Rd6 Kf3+  0-1
+
+[Event "European Blitz 2019"]
+[Site "Tallinn EST"]
+[Date "2019.12.07"]
+[Round "17.30"]
+[White "Babula,V"]
+[Black "Troyke,C"]
+[Result "0-1"]
+[WhiteElo "2574"]
+[BlackElo "2317"]
+[ECO "E91"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nf6 5.Nf3 O-O 6.Be2 Bg4 7.Be3 Nfd7 8.Rc1 e5
+9.d5 f5 10.Ng5 Bxe2 11.Qxe2 Nc5 12.h4 h6 13.Nf3 fxe4 14.Nd2 Nd3+ 15.Kd1 Nxc1
+16.Kxc1 Nd7 17.Ndxe4 a6 18.Qg4 Kh7 19.h5 g5 20.Bxg5 hxg5 21.h6 Bf6 22.Ng3 Nc5
+23.b4 Nd3+ 24.Kc2 Nf4 25.Nce4 c6 26.Qf5+ Kh8 27.h7 cxd5 28.cxd5 Qc8+  0-1
+
+[Event "European Blitz 2019"]
+[Site "Tallinn EST"]
+[Date "2019.12.07"]
+[Round "18.9"]
+[White "Dragnev,Valentin"]
+[Black "Mamedov,Rau"]
+[Result "0-1"]
+[WhiteElo "2553"]
+[BlackElo "2659"]
+[ECO "A42"]
+
+1.d4 d6 2.e4 g6 3.c4 Bg7 4.Nc3 Nc6 5.Nge2 e5 6.d5 Nce7 7.Be3 f5 8.f3 Nf6
+9.Qd2 O-O 10.h3 c6 11.g4 cxd5 12.cxd5 b5 13.gxf5 b4 14.Na4 gxf5 15.Rg1 fxe4
+16.Bh6 Ng6 17.Bxg7 Kxg7 18.f4 Qa5 19.fxe5 dxe5 20.b3 Qxd5 21.Qxb4 e3 22.Qc3 Qf3
+23.O-O-O Bf5 24.Nc5 Rac8 25.Kb2 Kh8 26.Rc1 Rfd8 27.Ka3 Qd5 28.Ng3 Be6 29.Bg2 Qd6
+30.Qxe3 Nd5 31.Qf2 Rf8 32.Ne4 Qe7 33.Qd2 Rfd8 34.Qg5 Qf8 35.Rgf1 Ndf4 36.Rf2 Bd5
+37.Kb2 Bxe4 38.Nxe4 Nd3+  0-1
+
+[Event "European Blitz 2019"]
+[Site "Tallinn EST"]
+[Date "2019.12.07"]
+[Round "22.2"]
+[White "Lysyj,I"]
+[Black "Guseinov,G"]
+[Result "1-0"]
+[WhiteElo "2594"]
+[BlackElo "2666"]
+[ECO "E91"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nf6 5.Nf3 O-O 6.Be2 c6 7.O-O Na6 8.Be3 e5
+9.dxe5 dxe5 10.Qxd8 Rxd8 11.h3 Re8 12.c5 Nc7 13.Rfd1 Nh5 14.Bf1 Nf4 15.Nd2 Be6
+16.Nc4 Bxc4 17.Bxc4 Re7 18.g3 Nfe6 19.Ne2 Nd4 20.Nxd4 exd4 21.Bf4 Na6 22.Bxa6 bxa6
+23.f3 f5 24.exf5 gxf5 25.Re1 Rae8 26.Rxe7 Rxe7 27.Kf1 d3 28.Rd1 Rd7 29.Bd6 Bxb2
+30.Rxd3 Kf7 31.g4 fxg4 32.hxg4 Be5 33.Ra3 Bxd6 34.cxd6 Ke6 35.Rxa6 Kxd6 36.Ke2 Kc5
+37.f4 Kb5 38.Ra3 c5 39.f5 c4 40.Rf3 Kb4 41.a3+ Kc5 42.f6 Rf7 43.g5 Kd4 44.Kd2 Ke4
+45.Rf1 Kd4 46.Kc2 Rf8 47.f7 Ke5 48.Rf6 h6 49.Rxh6 Rxf7 50.Rh2 Rf3 51.Kb2 Rb3+
+52.Ka2 Rg3 53.Rh7 Kd4 54.Rxa7 Kc3 55.Rf7 Rg2+ 56.Kb1 Kb3 57.Rb7+ Kc3 58.Rf7 Rg1+  1-0
+
+[Event "FIDE Disabled Cup 2019"]
+[Site "Ankara TUR"]
+[Date "2019.12.09"]
+[Round "1.2"]
+[White "Zabeib,M"]
+[Black "Bairamov,Ata"]
+[Result "1-0"]
+[WhiteElo "2115"]
+[BlackElo "1925"]
+[ECO "E94"]
+
+1.e4 d6 2.d4 g6 3.c4 Bg7 4.Nc3 Nf6 5.Nf3 O-O 6.Be2 e5 7.O-O Nbd7 8.Be3 Re8
+9.d5 Nf8 10.Ne1 Bd7 11.Rc1 b6 12.b4 a5 13.a3 axb4 14.axb4 c5 15.dxc6 Bxc6
+16.f3 Ne6 17.Nc2 Bf8 18.Nd5 Nd7 19.Ra1 Bxd5 20.cxd5 Nc7 21.Na3 Qb8 22.Nb5 Rc8
+23.Qd2 Rxa1 24.Rxa1 Nxb5 25.Bxb5 Rc7 26.Qa2 Be7 27.Qa8 Rc8 28.Qa7 Nf8 29.Qxe7 Rc3
+30.Bh6 Qc8 31.Qf6  1-0
+
+[Event "4th Krunoslav Hulak Mem"]
+[Site "Zagreb CRO"]
+[Date "2019.12.09"]
+[Round "4.1"]
+[White "Strikovic,A"]
+[Black "Kozul,Z"]
+[Result "1/2-1/2"]
+[WhiteElo "2468"]
+[BlackElo "2590"]
+[ECO "A42"]
+
+1.c4 g6 2.Nc3 Bg7 3.d4 d6 4.e4 Nd7 5.f3 e5 6.d5 h5 7.Bd3 a5 8.Nge2 Nc5 9.Bc2 h4
+10.O-O h3 11.g3 Bh6 12.a3 Bxc1 13.Rxc1 Nf6 14.b4 Na6 15.Rb1 axb4 16.axb4 c5
+17.dxc6 bxc6 18.Qd2 Be6 19.Rfd1 Bxc4 20.Qxd6 Qxd6 21.Rxd6 Nb8 22.Bb3 Ke7
+23.Rdd1 Bxe2 24.Nxe2 Nbd7 25.Nc1 Rhb8 26.Nd3 Ra3 27.Bc4 Ne8 28.Ne1 Nf8 29.Nd3 Nd7
+30.Ne1 Nf8 31.Nd3 Nd7  1/2-1/2
+
+[Event "FIDE Disabled Cup 2019"]
+[Site "Ankara TUR"]
+[Date "2019.12.10"]
+[Round "2.2"]
+[White "Osorio,Jesus Camilo"]
+[Black "Choroszej,A"]
+[Result "0-1"]
+[WhiteElo "1882"]
+[BlackElo "2054"]
+[ECO "E81"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nf6 5.f3 O-O 6.Be3 c5 7.dxc5 dxc5 8.Qxd8 Rxd8
+9.Bxc5 Nc6 10.Rd1 Rxd1+ 11.Nxd1 Nd7 12.Be3 Nde5 13.b3 Nb4 14.f4 Ng4 15.Bc5 Nxa2
+16.Bxe7 Bd7 17.h3 Re8 18.hxg4 Rxe7 19.Nf2 Bc3+ 20.Kd1 Bd4 21.Ngh3 Nc3+ 22.Kd2 Nxe4+
+23.Nxe4 Rxe4 24.Bd3 Re7 25.f5 Bc6 26.fxg6 hxg6 27.Ng1 Bxg2 28.Rh2 Bc6 29.Ne2 Be3+
+30.Kc3 Bf3 31.Nd4 Bxg4 32.Rg2 Bxd4+ 33.Kxd4 Bf3 34.Bxg6 Bxg2  0-1
+
+[Event "TCh-BAN Premier 2019"]
+[Site "Dhaka BAN"]
+[Date "2019.12.11"]
+[Round "5.2"]
+[White "Rahman,Tai"]
+[Black "Thapa,K"]
+[Result "1-0"]
+[WhiteElo "2241"]
+[BlackElo "1958"]
+[ECO "E90"]
+
+1.d4 g6 2.e4 d6 3.c4 Bg7 4.Nc3 Nf6 5.Nf3 Bg4 6.Be2 O-O 7.O-O Nc6 8.Be3 a5
+9.Qd2 Re8 10.Rfe1 e5 11.d5 Ne7 12.c5 Nxe4 13.Nxe4 f5 14.Nfg5 Bxe2 15.Ne6 Qd7
+16.Nxg7 Kxg7 17.Bh6+ Kf7 18.Ng5+ Kf6 19.Rxe2 Ng8 20.Ne6 f4 21.Bxf4  1-0
+
+[Event "79th ch-UKR Women 2019"]
+[Site "Lutsk UKR"]
+[Date "2019.12.11"]
+[Round "2.3"]
+[White "Zhukova,N"]
+[Black "Berdnyk,Mariia"]
+[Result "1-0"]
+[WhiteElo "2324"]
+[BlackElo "2319"]
+[ECO "E76"]
+
+1.c4 g6 2.e4 Bg7 3.d4 d6 4.Nc3 Nf6 5.f4 c5 6.d5 O-O 7.Nf3 e6 8.dxe6 fxe6
+9.Bd3 Nc6 10.O-O Nd4 11.Bd2 e5 12.Nxd4 exd4 13.Nd5 Nxd5 14.cxd5 a6 15.a4 Bd7
+16.Qe1 Re8 17.Qg3 c4 18.Bxc4 Rxe4 19.Bd3 Re8 20.f5 Bxf5 21.Bxf5 gxf5 22.Rxf5 Qd7
+23.Qg4 Re7 24.Raf1 Kh8 25.Qh4 Rae8 26.Rh5 Be5 27.Rhf5 Bg7 28.Rh5 Be5 29.Rhf5 Bg7
+30.Bh6 Re4 31.Qxe4 Bxh6 32.Qxd4+  1-0
+
+[Event "Sunway Sitges Open 2019"]
+[Site "Sitges ESP"]
+[Date "2019.12.13"]
+[Round "1.30"]
+[White "Dragnev,Valentin"]
+[Black "Gallego Bergada,A"]
+[Result "1-0"]
+[WhiteElo "2553"]
+[BlackElo "2193"]
+[ECO "E81"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 Nf6 5.f3 O-O 6.Be3 c5 7.Nge2 Nc6 8.d5 Ne5
+9.Ng3 h5 10.Be2 h4 11.Nf1 e6 12.Bg5 h3 13.Ne3 exd5 14.Nexd5 hxg2 15.Rg1 Be6
+16.Qd2 Ned7 17.O-O-O Qa5 18.Ne7+ Kh7 19.Rxg2 b5 20.cxb5 Bxa2 21.Nc6  1-0
+
+[Event "4th Krunoslav Hulak Mem"]
+[Site "Zagreb CRO"]
+[Date "2019.12.13"]
+[Round "8.4"]
+[White "Livaic,Leon"]
+[Black "Nguyen,P"]
+[Result "1-0"]
+[WhiteElo "2505"]
+[BlackElo "2413"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.Nge2 Nd7 6.d5 Ngf6 7.f3 a5 8.Be3 Nc5
+9.Qd2 Nfd7 10.h4 f5 11.exf5 gxf5 12.Ng3 O-O 13.Nh5 f4 14.Bf2 Bh8 15.Be2 Qe8
+16.g4 e4 17.Nxe4 Nxe4 18.fxe4 Qxe4 19.O-O-O Ne5 20.Rhe1 a4 21.Bd3 Nxd3+ 22.Qxd3 Qxd3
+23.Rxd3 b5 24.c5 b4 25.c6 Ra5 26.Rdd1 a3 27.b3 Bb2+ 28.Kc2 Kh8 29.Bd4+ Bxd4
+30.Rxd4 f3 31.Rf4 Rc5+ 32.Kb1 Kg8 33.Nf6+ Kg7 34.g5 Kg6 35.Rxf3 Bf5+ 36.Ka1 Be4
+37.Rf4 Bg2 38.Kb1 Bh3 39.Rg1 Bf5+ 40.Ka1 h5 41.Nd7  1-0
+
+[Event "Orbis 4 GM 2019"]
+[Site "Paracin SRB"]
+[Date "2019.12.14"]
+[Round "6.5"]
+[White "Lee,Jun Hyeok"]
+[Black "Brenjo,S"]
+[Result "1-0"]
+[WhiteElo "2404"]
+[BlackElo "2430"]
+[ECO "A42"]
+
+1.c4 g6 2.d4 Bg7 3.Nc3 d6 4.e4 Nc6 5.d5 Nd4 6.Be3 c5 7.Nge2 Bg4 8.f3 Nxe2
+9.Bxe2 Bd7 10.O-O Nf6 11.f4 h5 12.h3 h4 13.e5 Nh5 14.e6 fxe6 15.dxe6 Bxe6
+16.f5 Bf7 17.fxg6 Bxg6 18.Bd3 Bxd3 19.Qxd3 Bxc3 20.bxc3 Ng3 21.Rfe1 Rg8 22.Rab1 Qd7
+23.Rb5 Qc6 24.Bf4 Nh5 25.Qe4 O-O-O 26.Qf5+ Kb8 27.Rb2 Nxf4 28.Qxf4 Rg7 29.Qxh4 Rdg8
+30.Qe4 Kc7 31.g4 e5 32.Rf2 Rh8 33.Kg2 a6 34.Rf6 Rgh7 35.Qxc6+ Kxc6 36.Re3 b5
+37.g5 bxc4 38.g6 Rg7 39.Rxe5 Rb8 40.Re4 Rb2+ 41.Kg3 Rd2 42.h4 Kd7 43.h5  1-0
+
+[Event "26th Zadar Open A 2019"]
+[Site "Zadar CRO"]
+[Date "2019.12.16"]
+[Round "2.6"]
+[White "Dev,Shah"]
+[Black "Livaic,Leon"]
+[Result "1-0"]
+[WhiteElo "2242"]
+[BlackElo "2505"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.Nge2 exd4 6.Nxd4 Nc6 7.Be3 Nge7 8.Qd2 O-O
+9.O-O-O f5 10.f3 f4 11.Bf2 Ne5 12.Bh4 h6 13.Bxe7 Qxe7 14.Nd5 Qd7 15.Nxf4 Qf7
+16.Nd5 c6 17.Ne3 a6 18.Kb1 b5 19.Rc1 Bd7 20.Be2 Rfd8 21.Rhf1 c5 22.Nb3 Be6
+23.Qc2 bxc4 24.Nxc4 Nc6 25.Rcd1 Nb4 26.Qc1 d5 27.Nxc5 dxc4 28.Rxd8+ Rxd8
+29.Nxe6 c3 30.Bc4 c2+ 31.Ka1 Rc8 32.Bb3 Kh8 33.Nxg7 Qxg7 34.Rf2 Kh7 35.Rd2 Qa7
+36.Bxc2 Qc7 37.Kb1 Qf7 38.b3 a5 39.Qb2 Qa7 40.a3 Nc6 41.Qf6 Qc7 42.Qd6 Qg7
+43.Qd7 Ne7 44.Rd6 Rf8 45.e5 Rf7 46.e6 Rf8 47.Ra6  1-0
+
+[Event "26th Zadar Open A 2019"]
+[Site "Zadar CRO"]
+[Date "2019.12.17"]
+[Round "4.23"]
+[White "Ly,Dominik"]
+[Black "Plenkovic,Z"]
+[Result "0-1"]
+[WhiteElo "2220"]
+[BlackElo "2355"]
+[ECO "E92"]
+
+1.c4 g6 2.e4 Bg7 3.d4 d6 4.Nc3 Nf6 5.Nf3 O-O 6.Be2 e5 7.d5 a5 8.Bg5 h6 9.Bh4 Na6
+10.Nd2 Bd7 11.O-O Qe8 12.b3 h5 13.f3 Nh7 14.a3 Bh6 15.Rb1 Be3+ 16.Kh1 Bc5
+17.Qc1 f5 18.exf5 gxf5 19.f4 e4 20.Re1 Qg6 21.Nf1 Nf6 22.h3 c6 23.Ne3 Rac8
+24.Nc2 cxd5 25.Bxf6 Rxf6 26.Nxd5 Rf7 27.Qd2 Kh7 28.Bf1 Be6 29.b4 Ba7 30.Nde3 Qg3
+31.c5 dxc5 32.b5 Bb8 33.Nd5 Nc7 34.Re3 Qg7 35.Nb6 Rg8 36.Bc4 Bxc4 37.Nxc4 Ne6
+38.g3 h4 39.Qd5 Nxf4  0-1
+
+[Event "Kazakhstan Cup Final 2019"]
+[Site "Almaty KAZ"]
+[Date "2019.12.18"]
+[Round "8.3"]
+[White "Urazayev,Arystanbek"]
+[Black "Utegaliyev,A"]
+[Result "1-0"]
+[WhiteElo "2433"]
+[BlackElo "2502"]
+[ECO "E80"]
+
+1.c4 g6 2.Nc3 Bg7 3.d4 d6 4.e4 Nf6 5.f3 c6 6.Be3 a6 7.Qd2 b5 8.O-O-O bxc4
+9.Bxc4 d5 10.Bb3 h6 11.Nge2 e6 12.Kb1 a5 13.e5 Nfd7 14.h4 Nb6 15.Qc2 Ba6
+16.Nf4 Bc4 17.Nxe6 fxe6 18.Qxg6+ Kf8 19.Qxe6 Bxb3 20.axb3 a4 21.bxa4 Nc4
+22.Bc1 Qb6 23.h5 Qb3 24.Ka1 Ra7 25.Rh4 Rf7 26.f4 Re7 27.Qg6 Na3 28.bxa3 Qxc3+
+29.Bb2 Qb3 30.Rd3 Qc2 31.Rg3 Qe4 32.Qxe4 dxe4 33.f5 Nd7 34.Rxe4 Ke8 35.Reg4 Rh7
+36.Rg6 Nxe5 37.dxe5 Bxe5 38.Bxe5 Rxe5 39.Re6+ Re7 40.Rxe5 Rxe5 41.Rg6 Rxf5
+42.Rxh6 Rg5 43.Rh7 Rg3 44.h6 Rxa3+ 45.Kb1 Kf8 46.Ra7 Kg8 47.Kb2 Re3 48.g4 Kh8
+49.a5 c5 50.Rc7 Re6 51.g5 c4 52.Rxc4 Re5 53.g6 Rb5+ 54.Kc3 Rb8 55.a6 Ra8
+56.a7 Rd8 57.Rb4 Rc8+ 58.Kb2 Rg8 59.Rb8 Rxb8+ 60.axb8=Q+  1-0
+
+[Event "2nd Ferreira do Alentejo"]
+[Site "Ferreira do Alentejo POR"]
+[Date "2019.12.21"]
+[Round "8.3"]
+[White "Nie,X"]
+[Black "Malakhatko,V"]
+[Result "1/2-1/2"]
+[WhiteElo "2210"]
+[BlackElo "2470"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.Nge2 Nd7 6.Be3 Ne7 7.h4 f5 8.exf5 gxf5
+9.Bg5 h6 10.Bxe7 Qxe7 11.Nd5 Qd8 12.Ng3 O-O 13.Nh5 c6 14.Nxg7 Kxg7 15.Nc3 Qf6
+16.d5 Nb6 17.Be2 Bd7 18.Qb3 Rac8 19.a4 Rc7 20.a5 Nc8 21.O-O-O Ne7 22.Qa3 Rd8
+23.Kb1 cxd5 24.cxd5 Rdc8 25.Qb4 Kh8 26.f3 Ng6  1/2-1/2
+
+[Event "ch-CZE Blitz 2019"]
+[Site "Prague CZE"]
+[Date "2019.12.21"]
+[Round "9.6"]
+[White "Dubansky,B"]
+[Black "Rasik,V"]
+[Result "0-1"]
+[WhiteElo "2224"]
+[BlackElo "2476"]
+[ECO "E81"]
+
+1.e4 d6 2.d4 g6 3.c4 Bg7 4.Nc3 Nf6 5.f3 O-O 6.Be3 a6 7.Qd2 c6 8.O-O-O b5
+9.h4 h5 10.Bh6 bxc4 11.Bxg7 Kxg7 12.Bxc4 d5 13.Bb3 dxe4 14.fxe4 c5 15.dxc5 Qxd2+
+16.Rxd2 Nbd7 17.c6 Ne5 18.Ba4 Bg4 19.Nf3 Bxf3 20.gxf3 Nxf3 21.Rf2 Ne5 22.Rd1 Rac8
+23.Kb1 Nxc6 24.Nd5 Nxe4 25.Re2 f5 26.Bxc6 Rxc6 27.Nxe7 Re6 28.Rxe4 fxe4 29.Nd5 e3
+30.Re1 e2 31.Nc3 Rf1  0-1
+
+[Event "29th TCh-SLO National"]
+[Site "Slovenia SLO"]
+[Date "2019.12.21"]
+[Round "8.3"]
+[White "Urbanc,P"]
+[Black "Srebrnic,A"]
+[Result "1-0"]
+[WhiteElo "2212"]
+[BlackElo "2165"]
+[ECO "A42"]
+
+1.c4 d6 2.Nc3 g6 3.d4 Bg7 4.e4 Nc6 5.d5 Nd4 6.Be3 c5 7.dxc6 Nxc6 8.Qd2 Nf6
+9.h3 b6 10.Nf3 Bb7 11.Rc1 O-O 12.Bd3 Nd7 13.b3 Nde5 14.Nxe5 dxe5 15.O-O Nd4
+16.Rfd1 Rc8 17.Bb1 a6 18.f4 f6 19.Bxd4 exd4 20.Qxd4 Qc7 21.Nd5 Bxd5 22.exd5 f5
+23.Qf2 Qc5 24.Qxc5 bxc5 25.Re1 Bf6 26.Re6 a5 27.Bc2 Rfd8 28.Rce1 Kf7 29.g4 fxg4
+30.hxg4 Rd6 31.g5 Bd4+ 32.Kg2 Rc7 33.Kf3 Rb7 34.f5 gxf5 35.Bxf5 Rxe6 36.Rxe6 a4
+37.Bc2 axb3 38.axb3 Kg8 39.Rh6 Bg7 40.Rh3 Rb6 41.Bxh7+ Kf7 42.Kg4 Bd4 43.Bc2 Ra6
+44.g6+ Kg8 45.Rh2 Ra1 46.Re2 Kf8 47.Kf5 Ke8 48.d6 Rf1+ 49.Kg4 Rg1+ 50.Kf3 Bf6
+51.Bf5 Kd8 52.d7 Kc7 53.Re6 Rg5 54.Ke4 Rh5 55.Rc6+  1-0
+
+[Event "Sunway Sitges Open 2019"]
+[Site "Sitges ESP"]
+[Date "2019.12.22"]
+[Round "10.22"]
+[White "Santos Latasa,J"]
+[Black "Karthik,V4"]
+[Result "0-1"]
+[WhiteElo "2585"]
+[BlackElo "2470"]
+[ECO "A42"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nc6 5.d5 Nd4 6.Be3 c5 7.Nge2 Nxe2 8.Bxe2 Qa5
+9.Qd2 Nf6 10.O-O O-O 11.h3 a6 12.a3 Nd7 13.Bh6 Bxh6 14.Qxh6 Rb8 15.Rfb1 Re8
+16.Qd2 Nf6 17.Bd3 e6 18.Qg5 Qd8 19.b4 exd5 20.cxd5 cxb4 21.axb4 Bd7 22.Qe3 Rc8
+23.Qd4 Nh5 24.Rc1 Qg5 25.Kh1 Nf4 26.Bf1 Rc7 27.Na2 Rxc1 28.Rxc1 Bb5 29.Qd1 Bxf1
+30.Qxf1 Rxe4 31.Rd1 Qe5 32.g3 Nxd5 33.b5 a5 34.Qd3 Nb4 35.Nxb4 Rxb4  0-1
+
+[Event "29th Erfurt Master Open"]
+[Site "Erfurt GER"]
+[Date "2019.12.27"]
+[Round "3.2"]
+[White "Kaiser,D"]
+[Black "Meissner,F"]
+[Result "1-0"]
+[WhiteElo "2228"]
+[BlackElo "2377"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nc6 5.Be3 e5 6.d5 Nce7 7.g4 Nf6 8.f3 h5 9.g5 Nh7
+10.h4 f6 11.Qd2 fxg5 12.hxg5 O-O 13.O-O-O Rf7 14.Be2 Bd7 15.Nh3 a6 16.c5 Qf8
+17.Nf2 Nc8 18.Nd3 dxc5 19.Nxc5 Nd6 20.Kb1 Qe7 21.Rc1 Nf8 22.Nxd7 Qxd7 23.Nd1 Nh7
+24.Nf2 a5 25.Nd3 b6 26.Rc6 Re8 27.Rhc1 Qd8 28.a4 Ree7 29.b3 Rd7 30.Nb2 Nf8
+31.Nc4 Nc8 32.Qc2 Ne7 33.Re6 Qb8 34.Nxe5 Bxe5 35.Rxe5 Nc8 36.Re8 Rde7 37.Qc6 Rxe8
+38.Qxe8 Qb7 39.Bd4 Re7 40.Qd8 Kf7 41.e5 c5 42.dxc6 Qc7 43.Bc4+ Kg7 44.e6+  1-0
+
+[Event "World Rapid Women 2019"]
+[Site "Moscow RUS"]
+[Date "2019.12.27"]
+[Round "6.59"]
+[White "Nosacheva,Mariya"]
+[Black "Gansvind,V"]
+[Result "1-0"]
+[WhiteElo "2243"]
+[BlackElo "2081"]
+[ECO "A42"]
+
+1.e4 g6 2.d4 d6 3.c4 Bg7 4.Nc3 c6 5.f4 Qb6 6.Nf3 Bg4 7.e5 Nh6 8.Na4 Qa5+
+9.Bd2 Qc7 10.h3 Bxf3 11.Qxf3 Nf5 12.Bc3 h5 13.g4 hxg4 14.hxg4 Rxh1 15.Qxh1 Ne3
+16.Bd3 Qd7 17.f5 dxe5 18.Nc5 Qd6 19.Ne4 Qc7 20.Qh7 exd4 21.Qxg7 dxc3 22.Qh8+ Kd7
+23.Nc5+ Kd6 24.Qd4+ Nd5 25.Ne4+ Kd7 26.cxd5 cxd5 27.Qxd5+ Kc8 28.Rc1 Nc6
+29.Rxc3 gxf5 30.gxf5 Qb6 31.Bb5 Qg1+ 32.Kd2 Qh2+ 33.Kc1 Qh6+ 34.Kc2 Kc7 35.Bxc6 bxc6
+36.Qe5+ Kd8 37.Rd3+ Ke8 38.f6 e6 39.Qd6  1-0
+
+[Event "Przepiorki Mem 2019"]
+[Site "Warsaw POL"]
+[Date "2019.12.27"]
+[Round "2.19"]
+[White "Kowalski,Igor"]
+[Black "Malaczek,M"]
+[Result "1-0"]
+[WhiteElo "2354"]
+[BlackElo "2028"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 e5 5.Be3 exd4 6.Bxd4 Nf6 7.f3 O-O 8.Qd2 Be6
+9.h4 Nc6 10.Bf2 Ne5 11.b3 c6 12.Bd4 Qc7 13.O-O-O a6 14.Be2 Rfd8 15.f4 Neg4
+16.Bxg4 Bxg4 17.Nf3 b5 18.Qe3 Qa5 19.e5 Qa3+ 20.Kb1 Bf5+ 21.Ka1 Ng4 22.Qe2 c5
+23.Bf2 Nxf2 24.Qxf2 dxe5 25.Nxe5 bxc4 26.Qb2 Qb4 27.Nd5 Rxd5 28.Rxd5 c3 29.Qf2 c2
+30.Qd2 Qxd2 31.Rxd2 Re8 32.Kb2 Rxe5 33.fxe5 Bxe5+ 34.Kc1 Bf4 35.Rf1 Be3 36.Rf3 Bh6
+37.Rc3 Bf8 38.Rd8 Kg7 39.Rxf8  1-0
+
+[Event "57th Groningen Open 2019"]
+[Site "Groningen NED"]
+[Date "2019.12.28"]
+[Round "7.6"]
+[White "Danada,T"]
+[Black "Krasenkow,M"]
+[Result "1/2-1/2"]
+[WhiteElo "2271"]
+[BlackElo "2611"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.d5 a5 6.Be3 Bh6 7.Bxh6 Nxh6 8.Qd2 Ng4
+9.h4 h5 10.f3 Nh6 11.O-O-O Na6 12.Kb1 Nc5 13.Be2 f5 14.Bd3 f4 15.Bc2 Bd7
+16.g3 fxg3 17.Qg2 g5 18.Qxg3 Nf7 19.Nge2 Qf6 20.Rdg1 Rg8 21.f4 exf4 22.Nxf4 Bg4
+23.hxg5 Rxg5 24.Qe3 O-O-O 25.Nxh5 Rxh5 26.Rxh5 Bxh5 27.Qh3+ Kb8 28.Qxh5 Ne5
+29.Qe2 Rh8 30.Na4 Nf3 31.Rd1 Nxa4 32.Bxa4 Rh2 33.e5 Qf4 34.Qd3 Nxe5 35.Qd4 Rh4
+36.Qxf4 Rxf4 37.b3 Ka7 38.Kc2 Kb6 39.Kc3 Kc5 40.a3 Rf3+ 41.Kc2 Ng4 42.Rd3 Rf2+
+43.Kc3 Ra2 44.b4+ Kb6 45.Kb3 Re2 46.Rc3 Nf6 47.Rc2 Re1 48.Kb2 Ne4 49.Rg2 Re3
+50.Bc2 Nf6 51.Rg7 axb4 52.axb4 c6 53.dxc6 bxc6 54.Rg5 Nd7 55.Rg4 Ne5 56.Rd4 Kc7
+57.Rh4 Kd7 58.Bf5+ Ke7 59.b5 Kf6 60.Bc2 Kg5 61.Re4 Rxe4 62.Bxe4 Nxc4+ 63.Kc3 cxb5
+64.Bc6  1/2-1/2
+
+[Event "Karlstad Open 2019"]
+[Site "Karlstad SWE"]
+[Date "2019.12.28"]
+[Round "5.5"]
+[White "Vernersson,P"]
+[Black "Karlsson,J"]
+[Result "1-0"]
+[WhiteElo "2264"]
+[BlackElo "2054"]
+[ECO "A42"]
+
+1.d4 g6 2.e4 Bg7 3.c4 d6 4.Nc3 Nc6 5.Be3 e5 6.d5 Nce7 7.Qd2 f5 8.f3 Nf6 9.O-O-O b6
+10.Bd3 a5 11.Bh6 O-O 12.Bxg7 Kxg7 13.exf5 gxf5 14.Nge2 Bd7 15.Ng3 Qe8 16.Kb1 Qg6
+17.f4 e4 18.Be2 h5 19.Rhg1 Kh7 20.Nf1 Qh6 21.g3 Rg8 22.Ne3 Rg6 23.Ng2 Rf8
+24.Rdf1 Rg7 25.Nd1 Ng6 26.Nf2 Re7 27.Nh3 e3 28.Nxe3 Rfe8 29.Ng5+ Kg8 30.Rf3 Ng4
+31.Nxg4 fxg4 32.Rf2 Bf5+ 33.Bd3 Qf8 34.Ne6 Qf6 35.Qc2 Bxd3 36.Qxd3 c6 37.Re2 c5
+38.Rge1 Nf8 39.Kc1 a4 40.a3 Ng6 41.Qc2 Ra8 42.Ng5 Rxe2 43.Rxe2 Nf8 44.Qe4 Ra7
+45.h4 Rb7 46.Ne6 Ng6 47.Qd3 Ne7 48.Nd8 Rd7 49.Nc6 Nf5 50.Re8+ Kg7 51.Re6 Qf8
+52.Qc3+ Nd4 53.Nxd4  1-0
+
+[Event "8th Lorca Open 2019"]
+[Site "Lorca ESP"]
+[Date "2019.12.28"]
+[Round "5.7"]
+[White "Narciso Dublan,M"]
+[Black "Peng,Li Min"]
+[Result "1-0"]
+[WhiteElo "2516"]
+[BlackElo "2451"]
+[ECO "A42"]
+
+1.c4 g6 2.d4 Bg7 3.e4 d6 4.Nc3 e5 5.Nge2 Ne7 6.dxe5 dxe5 7.Qxd8+ Kxd8 8.Bg5 c6
+9.Rd1+ Ke8 10.Nc1 Be6 11.b4 f5 12.exf5 gxf5 13.Nb3 Nd7 14.Be2 Kf7 15.Na5 Rab8
+16.O-O Rhc8 17.c5 e4 18.Bh5+ Ng6 19.Ne2 Nf6 20.Bxg6+ hxg6 21.Bf4 b6 22.Nxc6 Rxc6
+23.Bxb8 bxc5 24.bxc5 Rxc5 25.Bxa7 Ra5 26.Bd4 Rxa2 27.Nc3 Ra6 28.Ra1 Rc6 29.Ra7+ Nd7
+30.Bxg7 Kxg7 31.Nb5 Kf6 32.Nd4 Rd6 33.Nxe6 Kxe6 34.Rfa1 Nc5 35.h4 Ke5 36.R7a5 Kd4
+37.g3 Rb6 38.Rd1+ Nd3 39.h5 gxh5 40.Rxf5 e3 41.fxe3+ Kxe3 42.Rxh5 Rg6 43.Kh2 Nf2
+44.Re1+ Kd4 45.Rh8 Rd6 46.Rh4+ Kc3 47.Kg2 Nd3 48.Re2 Rg6 49.Rhe4 Nc5 50.Re8 Rd6
+51.g4 Kd3 52.Kg3 Nd7 53.R2e6  1-0
+
+[Event "World Rapid Women TB 2019"]
+[Site "Moscow RUS"]
+[Date "2019.12.28"]
+[Round "2"]
+[White "Lei Tingjie"]
+[Black "Koneru,H"]
+[Result "0-1"]
+[WhiteElo "2483"]
+[BlackElo "2574"]
+[ECO "A42"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nd7 5.Be3 e5 6.d5 h6 7.f3 Ne7 8.Qd2 f5 9.Bd3 Nf6
+10.Nge2 c5 11.dxc6 bxc6 12.Bc2 Be6 13.Rd1 Nc8 14.Bb3 f4 15.Bf2 Qe7 16.Ba4 Bd7
+17.Nc1 O-O 18.c5 d5 19.exd5 e4 20.d6 Qe8 21.Qe2 e3 22.Bg1 Bf5 23.Nd3 g5 24.h4 a5
+25.hxg5 hxg5 26.Bb3+ Be6 27.Ba4 Na7 28.Qc2 Rb8 29.Kf1 Qg6 30.Re1 Bf5 31.Rd1 Nd7
+32.Qe2 Bxd3 33.Rxd3 Nxc5 34.Bb3+ Rxb3 35.axb3 Qxd3 36.Qxd3 Nxd3 37.Ke2 Nc1+
+38.Kd1 Nxb3 39.Ne4 Rf5 40.g4 Rd5+ 41.Kc2 Nd4+ 42.Kd3 Nxf3+ 43.Ke2 Nd4+ 44.Kd3 Nab5
+45.d7 Rxd7  0-1
+
+[Event "World Rapid Women 2019"]
+[Site "Moscow RUS"]
+[Date "2019.12.28"]
+[Round "9.20"]
+[White "Mamedjarova,T"]
+[Black "Mammadova,G"]
+[Result "0-1"]
+[WhiteElo "2310"]
+[BlackElo "2386"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nd7 5.Nf3 e5 6.d5 Ne7 7.Be2 O-O 8.O-O h6 9.Rb1 a5
+10.a3 f5 11.b4 axb4 12.axb4 Nf6 13.Bd3 f4 14.c5 g5 15.b5 dxc5 16.Nxe5 Ne8
+17.d6 Nxd6 18.Qb3+ Kh8 19.Nf3 Bg4 20.Be2 Ng6 21.h3 Bxf3 22.Bxf3 Ne5 23.Nd5 c4
+24.Qd1 b6 25.Bb2 Ra2 26.Kh1 Rxb2 27.Rxb2 Nxf3 28.Rb1 Ne5 29.f3 h5 30.Qe2 Qd7
+31.Rfd1 g4 32.Qf1 Nd3 33.Rd2 Bd4 34.Rxd3 cxd3 35.Qxd3 Be5 36.Qf1 gxh3 37.gxh3 Rg8
+38.Rb2 Bxb2  0-1
+
+[Event "World Rapid 2019"]
+[Site "Moscow RUS"]
+[Date "2019.12.28"]
+[Round "14.9"]
+[White "Duda,J"]
+[Black "Guseinov,G"]
+[Result "1-0"]
+[WhiteElo "2758"]
+[BlackElo "2666"]
+[ECO "E83"]
+
+1.c4 g6 2.d4 Bg7 3.e4 d6 4.Nc3 Nf6 5.f3 O-O 6.Be3 Nc6 7.Nge2 a6 8.Qd2 Bd7
+9.g4 b5 10.h4 h5 11.g5 Ne8 12.cxb5 Na5 13.bxa6 Nc4 14.Qc1 Nxe3 15.Qxe3 c6
+16.f4 Qb6 17.O-O-O Nc7 18.Bh3 Bxh3 19.Rxh3 Nxa6 20.f5 Rfb8 21.Rd2 c5 22.Nd5 Qd8
+23.a3 Nc7 24.dxc5 Nxd5 25.exd5 gxf5 26.g6 Qa5 27.Qxe7 Qxc5+ 28.Rc3 Qa7 29.gxf7+ Kh7
+30.Rc7 Rc8 31.f8=N+ Kh8 32.Qxg7+  1-0
+
+[Event "Przepiorki Mem 2019"]
+[Site "Warsaw POL"]
+[Date "2019.12.28"]
+[Round "4.24"]
+[White "Siekanska,Maria"]
+[Black "Malaczek,M"]
+[Result "1-0"]
+[WhiteElo "1773"]
+[BlackElo "2028"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 e5 5.Nf3 Nc6 6.d5 Nce7 7.Be2 h6 8.b4 a5 9.bxa5 Rxa5
+10.Nd2 f5 11.a4 Nf6 12.Ba3 O-O 13.Bb4 Ra8 14.c5 Nxe4 15.Ndxe4 fxe4 16.cxd6 cxd6
+17.Nxe4 Nf5 18.O-O Qh4 19.Bd3 Bd7 20.a5 Rad8 21.Rc1 Be8 22.Rc7 Bf7 23.g3 Qh3
+24.Be2 Nh4 25.gxh4 Qxh4 26.Qd3 g5 27.Be1 Qf4 28.Bd2 Qh4 29.Ng3 e4 30.Qxe4 Rde8
+31.Qd3 Rxe2 32.Qxe2 Bxd5 33.Qh5 Qa4 34.Bc3 Bf7 35.Nf5 Bxc3 36.Nxh6+ Kg7 37.Nxf7  1-0
+
+[Event "Pan-Am Intercollegiate"]
+[Site "Charlotte USA"]
+[Date "2019.12.29"]
+[Round "5.1"]
+[White "Ipatov,Alexander"]
+[Black "Shtembuliak,E"]
+[Result "1/2-1/2"]
+[WhiteElo "2631"]
+[BlackElo "2600"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 e5 5.d5 a5 6.Bd3 Na6 7.Nge2 Qh4 8.O-O Nh6
+9.f3 O-O 10.Qe1 Qe7 11.Kh1 Bd7 12.Be3 f5 13.exf5 Nxf5 14.Bf2 Nc5 15.Bc2 Bh6
+16.Ng3 b6 17.Nxf5 gxf5 18.f4 Rae8 19.fxe5 dxe5 20.d6 cxd6 21.Nd5 Qg7 22.Nxb6 Bc6
+23.Nd5 Bxd5 24.cxd5 Nd7 25.Rd1 Bg5 26.Qxa5 e4 27.Bd4 Bf6 28.Bxf6 Nxf6 29.Rde1 Re5
+30.Qb6 Qe7 31.a4 Ng4 32.h3 Nf6 33.Bd1 Kh8 34.a5 Rg8 35.a6 f4 36.Qb7 f3 37.Qxe7 fxg2+
+38.Kh2 gxf1=N+ 39.Rxf1 Rxe7 40.Rxf6 e3 41.Re6 Rf7 42.Bg4 h5 43.Bxh5 Rf2+
+44.Kh1 Rc8 45.Rh6+ Kg7 46.Rg6+ Kf8 47.Rg2 Rc1+ 48.Kh2 Rd2 49.Be2 Rxb2  1/2-1/2
+
+[Event "30th Cracovia Open A"]
+[Site "Krakow POL"]
+[Date "2019.12.29"]
+[Round "3.17"]
+[White "Fus,Jakub"]
+[Black "Gbyl,A"]
+[Result "1-0"]
+[WhiteElo "2363"]
+[BlackElo "2243"]
+[ECO "E73"]
+
+1.c4 g6 2.e4 Bg7 3.d4 d6 4.Nc3 Nf6 5.Be2 O-O 6.Bg5 h6 7.Be3 Nbd7 8.Qd2 c5
+9.d5 Kh7 10.g4 b5 11.cxb5 Nb6 12.g5 hxg5 13.Bxg5 Rh8 14.h4 Kg8 15.a4 a6 16.Rd1 axb5
+17.axb5 Bd7 18.Nf3 Na4 19.e5 Nxc3 20.bxc3 Ne4 21.Qe3 Nxg5 22.Qxg5 dxe5 23.Nxe5 f6
+24.Qxg6 fxe5 25.Rg1 Qf8 26.d6 e6 27.b6 Rxh4 28.b7 Rb8 29.Ra1 Rxb7 30.Ra8 Bc8
+31.Ba6 Rh2 32.f4 Ra2 33.Bxb7 Rxa8 34.Bxa8 exf4 35.Bc6 f3 36.Kf2 c4 37.d7  1-0
+
+[Event "World Blitz 2019"]
+[Site "Moscow RUS"]
+[Date "2019.12.29"]
+[Round "1.59"]
+[White "Smirin,I"]
+[Black "Novikov,St1"]
+[Result "1/2-1/2"]
+[WhiteElo "2607"]
+[BlackElo "2531"]
+[ECO "E73"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nf6 5.Be2 O-O 6.Bg5 h6 7.Be3 c5 8.dxc5 Qa5
+9.Bd2 Qxc5 10.Nf3 Bg4 11.Be3 Qa5 12.O-O Nc6 13.Rc1 Rfc8 14.b3 a6 15.Bd2 Qd8
+16.h3 Bxf3 17.Bxf3 Nd4 18.Be3 Nxf3+ 19.Qxf3 b5 20.c5 dxc5 21.e5 Nd7 22.e6 fxe6
+23.Rfd1 Qe8 24.Ne4 c4 25.bxc4 Ne5 26.Qg3 Nxc4 27.Bd4 e5 28.Bc5 Rd8 29.Qg4 Qf7
+30.Rd7 Qf5 31.Rxd8+ Rxd8 32.Qe2 Rd7 33.a4 Kh7 34.axb5 axb5 35.f3 Qe6 36.Rb1 Qc6
+37.h4 Rd5  1/2-1/2
+
+[Event "World Blitz 2019"]
+[Site "Moscow RUS"]
+[Date "2019.12.29"]
+[Round "3.87"]
+[White "Rychagov,A"]
+[Black "Indjic,A"]
+[Result "1/2-1/2"]
+[WhiteElo "2545"]
+[BlackElo "2619"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 e5 5.d5 a5 6.Bd3 Na6 7.Bc2 h5 8.Ba4+ Bd7 9.Bxd7+ Qxd7
+10.Nf3 Bh6 11.Bxh6 Nxh6 12.Qd2 Ng4 13.O-O Nc5 14.b3 h4 15.h3 Nf6 16.Qe3 Qe7
+17.Rab1 Nh5 18.Ne2 f5 19.Nd2 Nf6 20.Nc3 f4 21.Qe2 g5 22.f3 Nh5 23.Rfc1 Ng3
+24.Qd1 Qh7 25.Qc2 Rf8 26.a3 Nd7 27.b4 axb4 28.axb4 Nf6 29.Ra1 Rb8 30.c5 Kf7
+31.cxd6 cxd6 32.Nb5 Rbd8 33.Qd3 Rd7 34.Rc7 Kg6 35.Rac1 Rff7 36.Rc8 Kh6 37.Nc7 g4
+38.hxg4 h3 39.gxh3 Kg6 40.Kg2 Qh4 41.Ne6 Rde7 42.Nxf4+ exf4 43.e5+ Kg7 44.e6 Rf8
+45.Rxf8 Kxf8 46.Qg6 Ne8 47.Rc4 Ne2 48.Nf1 Qh7 49.Qxh7 Rxh7 50.Re4 Nc3 51.Rxf4+ Ke7
+52.Rd4 Nc7 53.Ne3 Kf6 54.Rf4+ Ke7 55.Nf5+ Kd8 56.e7+ Kd7 57.Rc4 N3xd5 58.g5 Nxe7
+59.Nxe7 Rxe7 60.f4 Ne6 61.Kg3 Rf7 62.Kg4 d5 63.Rc1 Rxf4+ 64.Kh5 Rxb4 65.g6 Nf4+
+66.Kg5 Nxg6 67.Kxg6 Rh4 68.Rc3 d4 69.Rb3 Kc6 70.Kg5 Re4 71.h4 b5 72.h5 Re3
+73.Rb1 Rg3+ 74.Kf6 Rh3 75.Kg6 Kc5 76.h6 d3 77.h7 d2 78.Rd1 Rg3+ 79.Kf7 Rh3
+80.Kg7  1/2-1/2
+
+[Event "World Blitz 2019"]
+[Site "Moscow RUS"]
+[Date "2019.12.29"]
+[Round "5.28"]
+[White "Jumabayev,R"]
+[Black "Morozevich,A"]
+[Result "1-0"]
+[WhiteElo "2646"]
+[BlackElo "2659"]
+[ECO "E97"]
+
+1.d4 g6 2.c4 Bg7 3.Nc3 d6 4.e4 Nf6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7
+9.b4 Ne8 10.c5 h6 11.a4 f5 12.a5 Nf6 13.Nd2 Kh8 14.a6 b6 15.cxd6 cxd6 16.f3 g5
+17.Nc4 Ng6 18.Nb5 Ne8 19.exf5 Bxf5 20.Ne3 Bd7 21.Nc3 e4 22.Ra3 exf3 23.Bxf3 Rc8
+24.Ne4 Ne5 25.Be2 Rxf1+ 26.Qxf1 Qe7 27.Ng3 Qf6 28.Bd2 Qxf1+ 29.Kxf1 Nc7 30.Rc3 Rf8+
+31.Ke1 Nb5 32.Rc1 Nd4 33.Rc7 Nxe2 34.Nxe2 Nd3+ 35.Kd1 Ba4+ 36.Nc2 Rf1+ 37.Be1 Nxe1
+38.Rxa7 Nf3+  1-0
+
+[Event "World Blitz 2019"]
+[Site "Moscow RUS"]
+[Date "2019.12.29"]
+[Round "11.55"]
+[White "Ganguly,S"]
+[Black "Guseinov,G"]
+[Result "1-0"]
+[WhiteElo "2633"]
+[BlackElo "2666"]
+[ECO "E73"]
+
+1.c4 g6 2.Nc3 Bg7 3.d4 d6 4.e4 Nf6 5.Be2 O-O 6.Be3 Nc6 7.d5 Ne5 8.h3 c6 9.Nf3 Nxf3+
+10.Bxf3 Nd7 11.Be2 Qa5 12.Bd4 Bh6 13.f3 c5 14.Bf2 b5 15.cxb5 a6 16.O-O axb5
+17.Bxb5 Nb6 18.a4 Ba6 19.Qe2 Bxb5 20.Qxb5 Bg7 21.Rfb1 Rfb8 22.Ra3 Qb4 23.Rb3 Qxb5
+24.Rxb5 Nc4 25.Be1 Rc8 26.Rb7 Kf8 27.b3 Na5 28.Rb6 c4 29.b4 Bd4+ 30.Bf2 Bxc3
+31.bxa5 Bxa5 32.Rc6 Rxc6 33.dxc6 c3 34.Rb5 c2 35.Be3 Bc3 36.c7 Kg7 37.Rb8 Rxa4
+38.c8=Q  1-0
+
+[Event "Bremen Silvester Open"]
+[Site "Bremen GER"]
+[Date "2019.12.30"]
+[Round "7.2"]
+[White "Wachinger,Nikolas"]
+[Black "Hoerstmann,Ma"]
+[Result "1-0"]
+[WhiteElo "2234"]
+[BlackElo "2208"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 e5 5.Nge2 Ne7 6.Be3 O-O 7.Qd2 Nd7 8.O-O-O f5
+9.Bg5 exd4 10.Nxd4 Nf6 11.Bd3 fxe4 12.Nxe4 Nf5 13.Nf3 Be6 14.h4 Qd7 15.Nxf6+ Bxf6
+16.h5 Bg7 17.hxg6 hxg6 18.g4 Ng3 19.fxg3 Rxf3 20.Be4 Qf7 21.Bf4 Rxf4 22.gxf4 Bxc4
+23.b3 Re8 24.Rde1 Rxe4 25.Rxe4 Bd5 26.Re8+ Qxe8 27.Qxd5+ Qf7 28.Qxf7+ Kxf7
+29.Kd2 c5 30.Ke3 d5 31.f5 gxf5 32.gxf5 b5 33.Rd1 Bd4+ 34.Rxd4 cxd4+ 35.Kxd4 Kf6
+36.Kxd5 Kxf5 37.Kc5  1-0
+
+[Event "Hastings Masters 2019-20"]
+[Site "Hastings ENG"]
+[Date "2019.12.30"]
+[Round "3.48"]
+[White "Kumar,Sanjit S"]
+[Black "Barton,A"]
+[Result "1/2-1/2"]
+[WhiteElo "1501"]
+[BlackElo "1945"]
+[ECO "A42"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nd7 5.Nf3 e6 6.Bg5 Ne7 7.Be2 h6 8.Be3 b6 9.Qd2 Bb7
+10.a3 a6 11.b4 Nf6 12.Bd3 Ng4 13.Bf4 e5 14.dxe5 Nxe5 15.Be2 N7c6 16.O-O Nxf3+
+17.Bxf3 Nd4 18.Rad1 Nxf3+ 19.gxf3 Qh4 20.Bg3 Qf6 21.Nd5 Bxd5 22.Qxd5 O-O
+23.Kg2 g5 24.Rfe1 Rfd8 25.Qb7 a5 26.b5 Rac8 27.e5 dxe5 28.Bxe5 Qf5 29.Bxg7 Rxd1
+30.Rxd1 Kxg7 31.Qd5 Qxd5 32.Rxd5 Kf6 33.f4 Kg6 34.fxg5 hxg5 35.c5 f6 36.cxb6 cxb6
+37.Rd6 Rc3 38.Rxb6 Rxa3 39.Ra6 a4 40.b6 Rb3 41.Rxa4 Rxb6 42.Ra5 Rb3 43.Rc5 f5
+44.Rc6+ Kh5 45.Rc4 g4 46.Rf4 Kg5 47.Ra4 f4 48.Ra8 Kh4 49.Rh8+ Kg5 50.Rg8+ Kh4  1/2-1/2
+
+[Event "World Blitz Women 2019"]
+[Site "Moscow RUS"]
+[Date "2019.12.30"]
+[Round "14.38"]
+[White "Nosacheva,Mariya"]
+[Black "Nebolsina,V"]
+[Result "0-1"]
+[WhiteElo "2243"]
+[BlackElo "2240"]
+[ECO "E81"]
+
+1.e4 g6 2.d4 Bg7 3.c4 d6 4.Nc3 Nf6 5.f3 O-O 6.Be3 Nbd7 7.Nge2 c5 8.d5 Ne5
+9.Nc1 e6 10.Qd2 exd5 11.cxd5 a6 12.a4 Rb8 13.a5 b5 14.axb6 Rxb6 15.Be2 Rb4
+16.O-O Qb6 17.b3 Qb7 18.Bxa6 Qc7 19.Bxc8 Rxc8 20.Ra6 c4 21.Ra7 Qb8 22.N3a2 Rxb3
+23.Nxb3 cxb3 24.Nc3 Nc4 25.Qf2 Nxe3 26.Qxe3 Rxc3 27.Qxc3 Qxa7+ 28.Kh1 b2
+29.Qc8+ Bf8 30.Qc3 Bg7 31.Qc8+ Bf8 32.Qc3 Qa2 33.Qc2 Nd7 34.Rb1 Bg7 35.f4 Nc5
+36.e5 dxe5 37.Rxb2 Qa5 38.Rb8+ Bf8 39.d6 Qe1+  0-1
+
+[Event "World Blitz 2019"]
+[Site "Moscow RUS"]
+[Date "2019.12.30"]
+[Round "18.25"]
+[White "Sakaev,K"]
+[Black "Indjic,A"]
+[Result "1/2-1/2"]
+[WhiteElo "2596"]
+[BlackElo "2619"]
+[ECO "A42"]
+
+1.d4 g6 2.c4 Bg7 3.e4 d6 4.Nc3 e5 5.d5 a5 6.Be2 Na6 7.Be3 h5 8.Nf3 Bh6 9.Qd2 Bxe3
+10.Qxe3 Bg4 11.Nd2 Nf6 12.f3 Bd7 13.h4 Nc5 14.g3 Kf8 15.Nb3 b6 16.Nxc5 bxc5
+17.O-O-O Rb8 18.Rhf1 Qe7 19.f4 Kg7 20.f5 gxf5 21.exf5 Rbg8 22.Ne4 Nxe4 23.Qxe4 Qf6
+24.Rf3 Kf8 25.Rdf1 Rg4 26.Qc2 Rhg8 27.Qc3 a4 28.Kb1 Ke7 29.a3 e4 30.Re3 Qxc3
+31.bxc3 Rxg3 32.f6+ Kf8 33.Rxe4 Rg1 34.Re7 Be8 35.Rxg1 Rxg1+ 36.Kc2 Rg2 37.Kd2 Rh2
+38.Rxc7 Rxh4 39.Ke3 Rh3+ 40.Bf3 Rg3 41.Kf4 Rg6 42.Kf5 h4 43.Bg4 Rh6 44.Kg5 Rg6+
+45.Kf5 Rh6 46.Kg5 Rg6+ 47.Kf5  1/2-1/2
+
+[Event "ch-AUS 2020"]
+[Site "Sydney AUS"]
+[Date "2020.01.02"]
+[Round "1.2"]
+[White "O'Chee,K"]
+[Black "Ikeda,J"]
+[Result "0-1"]
+[WhiteElo "2156"]
+[BlackElo "2438"]
+[ECO "A42"]
+
+1.c4 g6 2.Nc3 Bg7 3.d4 d6 4.e4 e5 5.Nf3 Nc6 6.d5 Nd4 7.Nxd4 exd4 8.Nb5 a6
+9.Nxd4 Qh4 10.Qd3 Nf6 11.Be2 Nxe4 12.Be3 O-O 13.O-O Re8 14.Rae1 Bd7 15.Bf3 Nc5
+16.Qd2 b5 17.b3 b4 18.Rd1 a5 19.Nb5 Bxb5 20.Bg5 Ne4 21.Bxh4 Nxd2 22.Rxd2 Bd7
+23.Bg3 g5 24.h3 Bc3 25.Re2 f5 26.Rxe8+ Bxe8 27.h4 h6 28.Bd1 f4 29.Bh2 Bg6
+30.Bg4 a4 31.g3 axb3 32.axb3 Bc2 33.hxg5 Bxb3 34.Be6+ Kg7 35.gxf4 Bc2 36.gxh6+ Kxh6
+37.f5 b3 38.Bf4+ Kg7 39.Bc1 Ra1 40.Kh2 Be5+ 41.Kh3 b2 42.Rg1+ Kh7 43.Bg8+ Kh8  0-1
+
+[Event "Charlotte Open 2020"]
+[Site "Charlotte USA"]
+[Date "2020.01.05"]
+[Round "8.6"]
+[White "Iotov,V"]
+[Black "Korley,K"]
+[Result "1-0"]
+[WhiteElo "2516"]
+[BlackElo "2416"]
+[ECO "A42"]
+
+1.c4 g6 2.d4 Bg7 3.e4 d6 4.Nc3 Nf6 5.Bd3 O-O 6.Nge2 c5 7.d5 a6 8.a4 e5 9.h3 h5
+10.Bg5 Qa5 11.Qd2 Nbd7 12.Be3 Re8 13.f3 Nf8 14.g4 Bd7 15.Rg1 Reb8 16.Ng3 hxg4
+17.hxg4 b5 18.Nf5 Bxf5 19.gxf5 bxc4 20.Bxc4 Nh5 21.b3 Rb7 22.Ne2 Qd8 23.O-O-O Rab8
+24.Kc2 Rb4 25.Rb1 Qa5 26.Kd3 Nd7 27.fxg6 f5 28.Rg5 f4 29.Rxh5 fxe3 30.Kxe3 Nb6
+31.Kf2 Nxc4 32.bxc4 Qd8 33.Rbh1 R8b7 34.Qc1 Rxa4 35.Qg1 Ra2 36.Qg4 Qe8 37.Qh3 Rxe2+
+38.Kxe2 Rb2+ 39.Kd3  1-0
+
+[Event "49th Rilton Cup 2019-20"]
+[Site "Stockholm SWE"]
+[Date "2020.01.05"]
+[Round "9.21"]
+[White "Kenneskog,Theodor"]
+[Black "Piesik,P"]
+[Result "1/2-1/2"]
+[WhiteElo "2305"]
+[BlackElo "2417"]
+[ECO "E98"]
+
+1.c4 g6 2.e4 Bg7 3.d4 d6 4.Nc3 Nf6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7
+9.Ne1 Ne8 10.Be3 f5 11.f3 f4 12.Bf2 g5 13.Rc1 Ng6 14.c5 h5 15.Nd3 Rf7 16.Kh1 Bf8
+17.Rg1 Nf6 18.cxd6 Bxd6 19.g3 fxg3 20.Rxg3 Nh7 21.Nb5 a6 22.Nxd6 cxd6 23.Qd2 Rg7
+24.Rgg1 Bh3 25.Be3 Nf4 26.Nxf4 gxf4 27.Bf2 Rc8 28.Qe1 Rc7 29.Rxc7 Qxc7 30.Rxg7+ Kxg7
+31.Qc3 Qd8 32.Qe1 Qc7 33.Qc3 Qd8 34.Qe1 Nf8 35.Bh4 Qc7 36.Qc3 Qb6 37.Be1 Qd8
+38.Qd3 Kf7 39.Bf1 Bd7 40.Qb3 Qc7 41.Qc3 Qb6 42.Kg2 Ng6 43.Bf2 Qd8 44.Kh1 Ke8
+45.Qb4 Qc7 46.Qc3 Qd8 47.Qb4 Bc8 48.Qb6 Qxb6 49.Bxb6 Nh4 50.Be2 Bh3 51.Kg1 Kd7  1/2-1/2
+
