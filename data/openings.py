@@ -3,15 +3,15 @@ import re
 # Feel free to expand this project by adding
 # more games to the gamelists.py script.
 
-open('opening_var.txt','w').writelines([ line for line in open('data\openings\modern_q.txt') if line[0:2] == "1."])
-open('opening_var.txt','a').writelines([ line for line in open('data\openings\nimzo.txt') if line[0:2] == "1."])
-open('opening_var.txt','a').writelines([ line for line in open('data\openings\data\openings\carlsen.txt') if line[0:2] == "1."])
-open('opening_var.txt','a').writelines([ line for line in open('data\openings\nakamura.txt') if line[0:2] == "1."])
-open('opening_var.txt','a').writelines([ line for line in open('data\openings\karpov.txt') if line[0:2] == "1."])
-open('opening_var.txt','a').writelines([ line for line in open('data\openings\kasparov.txt') if line[0:2] == "1."])
-open('opening_var.txt','a').writelines([ line for line in open('data\openings\anand.txt') if line[0:2] == "1."])
-open('opening_var.txt','a').writelines([ line for line in open('data\openings\giri.txt') if line[0:2] == "1."])
-open('opening_var.txt','a').writelines([ line for line in open('data\openings\karjakin.txt') if line[0:2] == "1."])
+open('data\samples\opening_var.txt','w').writelines([ line for line in open('data\samples\modern_q.txt') if line[0:2] == "1."])
+open('data\samples\opening_var.txt','a').writelines([ line for line in open('data\samples\nimzo.txt') if line[0:2] == "1."])
+open('data\samples\opening_var.txt','a').writelines([ line for line in open('data\samples\data\openings\carlsen.txt') if line[0:2] == "1."])
+open('data\samples\opening_var.txt','a').writelines([ line for line in open('data\samples\nakamura.txt') if line[0:2] == "1."])
+open('data\samples\opening_var.txt','a').writelines([ line for line in open('data\samples\karpov.txt') if line[0:2] == "1."])
+open('data\samples\opening_var.txt','a').writelines([ line for line in open('data\samples\kasparov.txt') if line[0:2] == "1."])
+open('data\samples\opening_var.txt','a').writelines([ line for line in open('data\samples\anand.txt') if line[0:2] == "1."])
+open('data\samples\opening_var.txt','a').writelines([ line for line in open('data\samples\giri.txt') if line[0:2] == "1."])
+open('data\samples\opening_var.txt','a').writelines([ line for line in open('data\samples\karjakin.txt') if line[0:2] == "1."])
 
 f = open("opening_var.txt",'r')
 lines = f.readlines()
