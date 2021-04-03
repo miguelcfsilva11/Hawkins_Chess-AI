@@ -7,18 +7,31 @@ class generator:
 
     @staticmethod
     def turn_alge(number):
+        """
+        Takes a number, returns an alphabet letter
+        corresponding to the column that it represents.
+        """
         turn_alge_dic = {0: "a", 1:"b", 2:"c",
             3: "d", 4:"e", 5:"f", 6:"g", 7:"h"}
         return turn_alge_dic[number]
 
     @staticmethod
     def possible_matrix(mx, player, pieces, last_move, castling_chance):
+        """
+        Generates all possible moves and returns both an
+        an array containing the board states and strings
+        representing the legal plays in Coordinate Notation.
 
+        :param mx: board's state.
+        :param player: the color of player's pieces.
+        :param last_move: the last move played.
+        :param castling_chance: an array that holds
+        information on whether each player can castle.
+        """
         piece_value = {"P": 10, "Q": 90, "B": 30, "N": 30, "R": 50,
                         "p": 10, "q": 90, "b": 30, "n": 30, "r": 50, "k": 0, "K": 0}
 
-        order_list = [] #generate child_nodes
-        captures = []
+        order_list = []
         final_options = []
         algebric_states = []
         if True in castling_chance:
@@ -33,17 +46,22 @@ class generator:
                             algebric_states.append("castleR")
                             value = 20
                             order_list.append((generator.castle(mx, player, "right"), value))
+
             if castling_chance[0] == True:
                 if mx[king_side*8].upper() in "R" and mx[king_side*8+1] == "-" and mx[king_side*8+2] == "-" and mx[king_side*8+3] == "-" and mx[king_side*8+4].upper() in "K":
                     if mx[king_side*8+4] in pieces and mx[king_side*8] in pieces and not is_attacked(mx, player, pieces, last_move, king_side*8+4):
+                        
                         if not is_attacked(mx, player, pieces, last_move, king_side*8+2) and not is_attacked(mx, player, pieces, last_move, king_side*8+3):
+
                             algebric_states.append("castleL")
                             value = 20
                             order_list.append((generator.castle(mx, player, "left"), 20))
         
         for i in range(len(mx)):
+            
             row = i//8
             col = i%8
+
             if mx[i].upper() in "P" and mx[i] in pieces:
                 if player == "Black":
                     if row+1 < 8: final_options.append((row+1,col))
@@ -267,8 +285,6 @@ class generator:
                         if not attacked:
                             if mx[position[0]*8+ position[1]] not in pieces and mx[position[0]*8 + position[1]] != "-":
                                 value =  piece_value[mx[position[0]*8 + position[1]]]
-                                if value > 10:
-                                    captures.append((possible, value))
                                 order_list.append((possible, value))
                             else:
                                 value = 0
@@ -277,13 +293,25 @@ class generator:
                             algebric_states.append(alge_order)
 
             final_options = []
-        capture_moves = [tuple[0] for tuple in sorted(captures, key=itemgetter(1), reverse=True)]
         possible_states = [tuple[0] for tuple in sorted(order_list, key=itemgetter(1), reverse = True)]
 
-        return (possible_states, algebric_states, capture_moves)
+        return (possible_states, algebric_states)
 
     @staticmethod
     def move(pos, final, player, order, mx, letter):
+        """
+        Returns an updated board based
+        on the move that was played.
+
+        :param pos: moved piece's initial position.
+        :param final: moved piece's final position.
+        :param player: the color of the player's pieces.
+        :param order: one of three possible move categories.
+        :param mx: board's state.
+
+        :param letter: in case of promotion, this parameter
+        specifies to which piece the user desires to promote.
+        """
         mx = list(mx)
         if order == "en_passant":
             mx[final[0]*8 + final[1]] = mx[pos[0]*8 + pos[1]]
@@ -303,6 +331,13 @@ class generator:
 
     @staticmethod
     def castle(mx, player, side):
+        """
+        Updates the board after the
+        selected castle move.
+
+        :param player: the color of player's pieces.
+        :param side: the left or right side of the board.
+        """
         new_mx = list(mx)
         if player == "White":
             if side == "right":
@@ -333,6 +368,13 @@ class generator:
 
     @staticmethod
     def fen_generator(mx, player):
+        """
+        Generates a FEN string that
+        encapsulates the board's state.
+
+        :param mx: board's state
+        :param player: the color of player's pieces.
+        """
         
         import io
 
@@ -352,7 +394,9 @@ class generator:
                 if empty > 0:
                     s.write(str(empty))
                 s.write('/')
+
             # Move one position back to overwrite last '/'
+
             s.seek(s.tell() - 1)
 
             if player == "Black":
@@ -364,6 +408,13 @@ class generator:
 
     @staticmethod
     def change_notation(fen, move):
+        """
+        Converts a string that represents a move
+        in SAN Notation to Coordinate Notation.
+
+        :param fen: FEN string that represents the board.
+        :param move: move that was played in SAN Notation
+        """
         board = chess.Board(fen)
         coordmove = str(board.parse_san(move))
         return coordmove

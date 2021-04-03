@@ -3,6 +3,13 @@ from functools import lru_cache
 
 @lru_cache(maxsize = 200000)
 def evaluate(mx):
+	"""
+	Evaluates a given board. Returns negative values
+	in case the white pieces have an advantage, and 
+	positive ones when the black pieces are winning.
+
+	:param mx: board's state.
+	"""
 
 	pawn_table = [  0,   0,   0,   0,   0,   0,   0,   0,
            				 75,  80,  85,  70, 100,  80,  85,  90,
