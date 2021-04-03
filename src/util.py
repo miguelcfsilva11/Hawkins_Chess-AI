@@ -1,5 +1,3 @@
-# code to handle string formatting when printing to terminal
-# we'll use this later on
 
 class colors:
 
