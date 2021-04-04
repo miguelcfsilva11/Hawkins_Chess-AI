@@ -14,11 +14,15 @@ Hawkins plays at a really high-level, even when compared to the strongest AIs ev
 # Run It
 
 Hawkins runs on both Unix and Windows terminals. In order to put the engine to test, you must either download the source code or install its package, which is available via [PyPI](https://pypi.org/project/hawkins/).
+
 To install it:
+
 `
   pip install hawkins
   `
+  
 After the installation process, run the following command to start playing:
+
 `
   python -m hawkins.chessboard
   ` 
