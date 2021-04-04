@@ -1,8 +1,10 @@
 import re
 
-# Feel free to expand this project by adding
-# more games to the gamelists.py script.
-
+# Running this script will update the 'opening_var.txt' file.
+# Copy the content stored in that file and paste it into the
+# 'game_moves' variable on 'gamelists.py'. Feel free to expand
+# this project by adding more games in '.txt' format to this script.
+ 
 open('data\samples\opening_var.txt','w').writelines([ line for line in open('data\samples\modern_q.txt') if line[0:2] == "1."])
 open('data\samples\opening_var.txt','a').writelines([ line for line in open('data\samples\nimzo.txt') if line[0:2] == "1."])
 open('data\samples\opening_var.txt','a').writelines([ line for line in open('data\samples\data\openings\carlsen.txt') if line[0:2] == "1."])
