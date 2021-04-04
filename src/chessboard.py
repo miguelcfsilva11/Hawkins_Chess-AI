@@ -1,6 +1,5 @@
 import math, random, os, sys
-
-sys.path.insert(0, 'data')
+import time
 
 from gamelists import game_moves
 from generator import generator
@@ -9,8 +8,8 @@ from movements import movements
 from rules import is_attacked, check_order
 from heuristic import evaluate
 from util import *
-import time
 
+os.system("color")
 
 # Pairing Unicode Pieces with their correspondant letters.
 
