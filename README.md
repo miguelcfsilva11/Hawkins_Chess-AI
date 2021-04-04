@@ -17,12 +17,12 @@ Hawkins runs on both Unix and Windows terminals. In order to put the engine to t
 
 To install it:
 
-`
+```
   pip install hawkins
-  `
+```
   
 After the installation process, run the following command to start playing:
 
-`
+```
   python -m hawkins.chessboard
-  ` 
+``` 
