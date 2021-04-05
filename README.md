@@ -12,7 +12,7 @@ Hawkins plays at a really high-level, even when compared to the strongest AIs ev
 
 # Run It
 
-Hawkins runs on both Unix and Windows terminals. In order to put the engine to test, you must either download the source code or install its package, which is available via [PyPI](https://pypi.org/project/hawkins/). (Note: Windows may have a hard a time rendering Unicode characters that represent our chess pieces. Please choose an adequate font for your terminal, such as _NSimSum_, to avoid that).
+Hawkins runs on both Unix/Linux and Windows terminals. In order to put the engine to test, you must either download the source code or install its package, which is available via [PyPI](https://pypi.org/project/hawkins/). (Note: Windows may have a hard a time rendering Unicode characters that represent our chess pieces. Please choose an adequate font for your terminal, such as _NSimSum_, to avoid that).
 
 To get the package:
 
