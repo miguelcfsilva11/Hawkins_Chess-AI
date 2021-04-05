@@ -26,7 +26,7 @@ class Hawkins:
     def search(self, mx, player, depth, last_move, castling_chance):
         """
         Performs iterative, deeper Minimax Searches
-        while there is computational resources left.
+        while there are computational resources left.
 
         :param mx: board's state.
         :param player: the color of AI's pieces.
