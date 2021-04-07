@@ -1,7 +1,7 @@
 # Hawkins - Chess AI
 <img src="image/hawkins-logo-full.png" width="546" height="200">
 
-"Hawkins" is an open-source, competitive Chess AI powered by multiple tree search algorithms. It makes use of various optimization techniques, mostly extensions of alpha-beta pruning and cache memoization, along with other traditional chess engine methods. It comes with its own GUI (which was heavily inspired by [Nick Zuber's](https://github.com/nickzuber/chs) board design) and many levels of difficulty.
+"Hawkins" is an open-source, competitive Chess AI powered by multiple tree search algorithms. It makes use of various optimization techniques, such as alpha-beta pruning and its most common extensions along with cache memoization. It comes with its own GUI (which was heavily inspired by [Nick Zuber's](https://github.com/nickzuber/chs) board design) and many levels of difficulty.
 # Engine Performance
 
 Hawkins plays at a really high-level, even when compared to the strongest AIs ever built with Python. In this particular game, Hawkins went head to head with Stockfish's fifth level on [lichess](https://lichess.org/) (rated ~2000 ELO), and won after dozens of well-crafted moves.
