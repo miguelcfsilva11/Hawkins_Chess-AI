@@ -314,7 +314,7 @@ def possible_matrix():
 
     return dic_return
 
-@app.route('/moves', methods=['POST'])
+@app.route('/update', methods=['POST'])
 def move():
     """
     Returns an updated board based
@@ -335,8 +335,8 @@ def move():
     last_move = data["last_move"]
     letter = data["letter"]
     player = data["player"]
-    pos = list(data["pos"].split(","))
-    final = list(data["final"].split(","))
+    pos = [int(x) for x in (data["pos"].split(","))]
+    final = [int(x) for x in (data["final"].split(","))]
 
     if mx[pos[0]*8+ pos[1]].upper() in "K" and (pos[1] == final[1] - 2):
         return castle(mx, player, "right")
