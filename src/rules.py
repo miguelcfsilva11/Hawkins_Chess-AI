@@ -10,6 +10,7 @@ def check_order(mx, pos, final, player, last_move):
     :returns: a tuple that contains a boolean value
     and an string that categorizes the move.
     """
+
     if mx[pos[0]*8 + pos[1]].upper() in "P":
         return movements.pawn_movement(mx,pos, final, last_move, player)
 
