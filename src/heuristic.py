@@ -133,9 +133,13 @@ def evaluate(mx):
 
 	piece_value = {"P": -100, "Q": -930, "B": -320, "N": -280, "R": -480,
 					   "p": 100, "q": 930, "b": 320, "n": 280, "r": 480}
+					   
 	piece_to_table = {"P": pawn_table, "Q": queen_table, "B": bishop_table, "N": knight_table, "R": rook_table,
 						  "p": pawn_black_table[::-1], "q": queen_black_table[::-1], "b": bishop_black_table[::-1],
 						  "n": knight_black_table[::-1], "r": rook_black_table[::-1]}
+
+	white_pawn_rows = set()
+	black_pawn_rows = set()
 
 	minor_white_pieces = 0
 	minor_black_pieces = 0
@@ -146,6 +150,7 @@ def evaluate(mx):
 
 	if "k" not in mx:
 		return -10000
+
 	if "K" not in mx:
 		return 10000
 
@@ -153,7 +158,18 @@ def evaluate(mx):
 	for pos in range(len(mx)):
 		if mx[pos] in "-":
 			continue
-			
+		elif mx[pos] == "P":
+			if (pos%8) in white_pawn_rows:
+				score += 5
+			else:
+				white_pawn_rows.add(pos%8)
+
+		elif mx[pos] == "p":
+			if (pos%8) in black_pawn_rows:
+				score -= 5
+			else:
+				black_pawn_rows.add(pos%8)
+
 		elif mx[pos] == "Q":
 			queen_dif -= 1
 		elif mx[pos] == "q":
@@ -199,21 +215,20 @@ def evaluate(mx):
 
 		score += piece_value[mx[pos]]
 		if mx[pos].lower() == mx[pos]:
-			score += piece_to_table[mx[pos]][pos] * 0.6
+			score += piece_to_table[mx[pos]][pos] * 0.4
 		else:
-			score -= piece_to_table[mx[pos]][pos] * 0.6
+			score -= piece_to_table[mx[pos]][pos] * 0.4
 
 	if minor_black_pieces <= 2 or minor_white_pieces <= 2: 
-		score += (kingend_table[::-1][black_king_spot] - kingend_table[white_king_spot]) * 0.6
+		score += (kingend_table[::-1][black_king_spot] - kingend_table[white_king_spot]) * 0.4
 		score += math.sqrt(abs(4 - white_king_spot//8)^2 + abs(4 - white_king_spot%8)^2) * 1.4
 		score += (10 - math.sqrt(abs(black_king_spot//8 - white_king_spot//8)^2 + abs(black_king_spot%8 - white_king_spot%8)^2)) * 1.4
 	else:
-		score += (kingmid_black_table[::-1][black_king_spot] - kingmid_table[white_king_spot]) * 0.6
+		score += (kingmid_black_table[::-1][black_king_spot] - kingmid_table[white_king_spot]) * 0.4
 
 	if white_bishops == 2:
 		score -= 40
 	if black_bishops == 2:
 		score += 40
-	score += queen_dif * 480
-		
+	score += queen_dif * 300	
 	return score
