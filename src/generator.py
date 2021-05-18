@@ -340,29 +340,35 @@ class generator:
         """
         new_mx = list(mx)
         if player == "White":
+
             if side == "right":
                 new_mx[7*8 + 4] = "-"
                 new_mx[7*8 + 5] = "R"
                 new_mx[7*8 + 6] = "K"
                 new_mx[7*8 + 7] = "-"
+
             if side == "left":
                 new_mx[7*8 + 0] = "-"
                 new_mx[7*8 + 1] = "-"
                 new_mx[7*8 + 2] = "K"
                 new_mx[7*8 + 3] = "R"
                 new_mx[7*8 + 4] = "-"
+
         if player == "Black":
+
             if side == "right":
                 new_mx[4] = "-"
                 new_mx[5] = "r"
                 new_mx[6] = "k"
                 new_mx[7] = "-"
+
             if side == "left":
                 new_mx[0] = "-"
                 new_mx[1] = "-"
                 new_mx[2] = "k"
                 new_mx[3] = "r"
                 new_mx[4] = "-"
+                
         kx = "".join(new_mx)
         return kx
 
