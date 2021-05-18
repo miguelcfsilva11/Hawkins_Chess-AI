@@ -11,9 +11,6 @@ def evaluate(mx):
 	:param mx: board's state.
 	"""
 
-	original_pos = {"r": (0, 7), "b": (2, 5), "n": (1, 6), "q" : (3,),
-					"R": (56, 63), "B": (58, 61), "N": (57, 62), "Q": (59,)}
-
 	pawn_table = [  0,   0,   0,   0,   0,   0,   0,   0,
            				 75,  80,  85,  70, 100,  80,  85,  90,
             			 10,  30,  20,  45,  40,  30,  45,   10,
@@ -146,13 +143,9 @@ def evaluate(mx):
 
 	minor_white_pieces = 0
 	minor_black_pieces = 0
-
 	white_bishops = 0
 	black_bishops = 0
-
 	queen_dif = 0
-	unmoved = 0
-
 	score = 0
 
 	if "k" not in mx:
@@ -221,14 +214,10 @@ def evaluate(mx):
 					current = (current[0]-1, current[1])
 
 		score += piece_value[mx[pos]]
-
-		if mx[pos].upper() != "P" and pos in original_pos[mx[pos]]:
-			unmoved = 1
-
 		if mx[pos].lower() == mx[pos]:
-			score += piece_to_table[mx[pos]][pos] * 0.4 * unmoved
+			score += piece_to_table[mx[pos]][pos] * 0.4
 		else:
-			score -= piece_to_table[mx[pos]][pos] * 0.4 * unmoved
+			score -= piece_to_table[mx[pos]][pos] * 0.4
 
 	if minor_black_pieces <= 2 or minor_white_pieces <= 2: 
 		score += (kingend_table[::-1][black_king_spot] - kingend_table[white_king_spot]) * 0.4
