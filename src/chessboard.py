@@ -112,7 +112,7 @@ class board:
                 self.player1, self.player2 = self.player2, self.player1
                 self.player1pieces, self.player2pieces = self.player2pieces, self.player1pieces
 
-                board.output_matrix(self, mx, self.player1)
+                board.gameplay(self)
 
             else:
                 print("Bye!")
@@ -369,12 +369,12 @@ class board:
                         initial_pos = (8-int(pos[1]), movements.alge(pos[0])-1)
                         final = (8-int(pos[3]), movements.alge(pos[2])-1)
                             
-                        result = check_order(mx, initial_pos, final, self.player1, moves_log[-1])
+                        result = check_order(mx, initial_pos, final, self.player2, moves_log[-1])
                             
                         if result[1] == "en_passant":
-                            mx = generator.move(initial_pos, final, self.player1, "en_passant", mx, "letter")
+                            mx = generator.move(initial_pos, final, self.player2, "en_passant", mx, "letter")
                         else:
-                            mx = generator.move(initial_pos, final, self.player1, "step", mx, "letter")
+                            mx = generator.move(initial_pos, final, self.player2, "step", mx, "letter")
 
                     board.output_matrix(self, mx, self.player1)
                     moves_log.append(board.get_move(mx, temp_mx))
@@ -395,7 +395,7 @@ class board:
 
                 if human_move.upper() in "RESTART":
                     playable = False
-                    board.endgame(self)
+                    continue
 
                 elif human_move.upper() in "HELP":
 
@@ -499,7 +499,7 @@ class board:
                 board.output_matrix(self, mx, self.player2)
 
                 if playable == False:
-                    board.endgame(self)
+                    continue
 
                 else:
                     temp_mx = mx
@@ -534,20 +534,26 @@ class board:
                                 ai_response = possible_lines[choice][1+round*2]
                             else:
                                 ai_response = possible_lines[choice][round*2]
+                            
+                            if ai_response == "O-O":
+                                mx = generator.castle(mx, self.player2, "right")
+                            elif ai_response == "O-O-O":
+                                mx = generator.castle(mx, self.player2, "left")
 
-                            san_moves_log.append(ai_response)
-                            move = generator.change_notation(fen_state, ai_response)
-                            
-                            pos = list(move)
-                            initial_pos = (8-int(pos[1]), movements.alge(pos[0])-1)
-                            final = (8-int(pos[3]), movements.alge(pos[2])-1)
-                            
-                            result = check_order(mx, initial_pos, final, self.player1, moves_log[-1])
-                            
-                            if result[1] == "en_passant":
-                                mx = generator.move(initial_pos, final, self.player1, "en_passant", mx, "letter")
                             else:
-                                mx = generator.move(initial_pos, final, self.player1, "step", mx, "letter")
+                                san_moves_log.append(ai_response)
+                                move = generator.change_notation(fen_state, ai_response)
+                            
+                                pos = list(move)
+                                initial_pos = (8-int(pos[1]), movements.alge(pos[0])-1)
+                                final = (8-int(pos[3]), movements.alge(pos[2])-1)
+                            
+                                result = check_order(mx, initial_pos, final, self.player2, moves_log[-1])
+                            
+                                if result[1] == "en_passant":
+                                    mx = generator.move(initial_pos, final, self.player2, "en_passant", mx, "letter")
+                                else:
+                                    mx = generator.move(initial_pos, final, self.player2, "step", mx, "letter")
                         else:
 
                             if self.depth == 1:
@@ -579,7 +585,6 @@ class board:
 
                     board.output_matrix(self, mx, self.player1)
                     board.final(mx, self.player1, self.player1pieces, moves_log[-1])
-                    board.endgame(self)
                     moves_log.append(board.get_move(mx, temp_mx))
 
                     if playable == False:
@@ -597,7 +602,7 @@ class board:
                 print(colors.BOLD + "\n" + paddings.MID_PAD + "That's not valid!")
 
                 continue
-
+        board.endgame(self)
 
 colors = colors()
 backgrounds = backgrounds()
