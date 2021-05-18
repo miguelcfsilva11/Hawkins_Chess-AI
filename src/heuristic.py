@@ -226,9 +226,9 @@ def evaluate(mx):
 			unmoved = 1
 
 		if mx[pos].lower() == mx[pos]:
-			score += piece_to_table[mx[pos]][pos] * 0.6 * unmoved
+			score += piece_to_table[mx[pos]][pos] * 0.4 * unmoved
 		else:
-			score -= piece_to_table[mx[pos]][pos] * 0.6 * unmoved
+			score -= piece_to_table[mx[pos]][pos] * 0.4 * unmoved
 
 	if minor_black_pieces <= 2 or minor_white_pieces <= 2: 
 		score += (kingend_table[::-1][black_king_spot] - kingend_table[white_king_spot]) * 0.4
