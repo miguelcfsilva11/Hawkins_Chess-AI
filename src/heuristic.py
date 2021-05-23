@@ -215,20 +215,20 @@ def evaluate(mx):
 
 		score += piece_value[mx[pos]]
 		if mx[pos].lower() == mx[pos]:
-			score += piece_to_table[mx[pos]][pos] * 0.5
+			score += piece_to_table[mx[pos]][pos] * 0.4
 		else:
-			score -= piece_to_table[mx[pos]][pos] * 0.5
+			score -= piece_to_table[mx[pos]][pos] * 0.4
 
 	if minor_black_pieces <= 2 or minor_white_pieces <= 2: 
-		score += (kingend_table[::-1][black_king_spot] - kingend_table[white_king_spot]) * 0.5
-		score += math.sqrt(abs(4 - white_king_spot//8)^2 + abs(4 - white_king_spot%8)^2) * 1.5
-		score += (10 - math.sqrt(abs(black_king_spot//8 - white_king_spot//8)^2 + abs(black_king_spot%8 - white_king_spot%8)^2)) * 1.5
+		score += (kingend_table[::-1][black_king_spot] - kingend_table[white_king_spot]) * 0.4
+		score += math.sqrt(abs(4 - white_king_spot//8)^2 + abs(4 - white_king_spot%8)^2) * 1.4
+		score += (10 - math.sqrt(abs(black_king_spot//8 - white_king_spot//8)^2 + abs(black_king_spot%8 - white_king_spot%8)^2)) * 1.4
 	else:
-		score += (kingmid_black_table[::-1][black_king_spot] - kingmid_table[white_king_spot]) * 0.5
+		score += (kingmid_black_table[::-1][black_king_spot] - kingmid_table[white_king_spot]) * 0.4
 
 	if white_bishops == 2:
 		score -= 40
 	if black_bishops == 2:
 		score += 40
-	score += queen_dif * 300	
+	score += queen_dif * 480	
 	return score
