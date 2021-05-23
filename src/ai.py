@@ -40,7 +40,7 @@ class Hawkins:
         :param castling_chance: an array that holds
         information on whether each player can castle.
         """
-        
+
         global node
         global cut
         global maximize
@@ -65,7 +65,7 @@ class Hawkins:
             if search[0] == 10000:
                 return best_move
 
-            if time.time() - starting_point >= 3:
+            if time.time() - starting_point >= 5:
                 transposition_table = {}
                 return best_move
 
