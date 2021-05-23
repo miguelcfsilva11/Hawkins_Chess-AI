@@ -43,7 +43,6 @@ san_moves_log = ["Start"]
 # the form of a string for efficiency purposes.
 # The following string represents the initial state of the board.
 
-
 mx = "rnbqkbnrpppppppp--------------------------------PPPPPPPPRNBQKBNR"
 
 eval_bar = ""
