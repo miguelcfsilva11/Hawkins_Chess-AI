@@ -11,8 +11,12 @@ from rules import is_attacked, check_order
 # and the number of times the tree was subjected to
 # alpha-beta pruning.
 
+
 node = 0
 cut = 0
+
+maximize = False
+
 transposition_table = {}
 first_search = {}
 
@@ -36,10 +40,12 @@ class Hawkins:
         :param castling_chance: an array that holds
         information on whether each player can castle.
         """
-        global transposition_table
-        global first_search
+        
         global node
         global cut
+        global maximize
+        global first_search
+        global transposition_table
 
         if player == "Black":
             maximize = True
@@ -59,12 +65,13 @@ class Hawkins:
             if search[0] == 10000:
                 return best_move
 
-            if time.time() - starting_point >= 10:
+            if time.time() - starting_point >= 3:
                 transposition_table = {}
                 return best_move
+
             else:
                 first_search[mx] = best_move
-                
+
                 # Storing the best move found in the transposition table,
                 # in order to evaluate it first and hopefuly discard
                 # other options sooner.
@@ -100,6 +107,7 @@ class Hawkins:
 
         global node
         global cut
+        global maximize
         global first_search
         global transposition_table
 
@@ -115,7 +123,8 @@ class Hawkins:
         # a position previously evaluated. We must
         # immediately return the best move recorded.
 
-        if mx in transposition_table.keys() and transposition_table[mx][3] >= depth:
+        if mx in transposition_table.keys() and transposition_table[mx][3] >= depth and (maximize == maximizing_player):
+
             if transposition_table[mx][2] == "Exact":
                 if alpha <= transposition_table[mx][0] <= beta:
                     return transposition_table[mx][:2]
@@ -127,8 +136,6 @@ class Hawkins:
             if transposition_table[mx][2] == "Alpha":
                 if transposition_table[mx][0] < alpha:
                     return transposition_table[mx][:2]
-
-
 
         if depth == 0:
             return (evaluate(mx), mx)
@@ -276,14 +283,14 @@ class Pluto:
         information on whether each player can castle.
         """
 
-        depth = 3
+        depth = 5
 
         #Cutoff depth
 
         starting_point = time.time()
         root = Tree(mx)
 
-        while time.time() - starting_point <= 2:
+        while time.time() - starting_point <= 10:
 
             leaf = Pluto.expand(self, root.board, player, root, last_move, castling_chance)
             result = Pluto.rollout(self, player, leaf, last_move, castling_chance, depth)
